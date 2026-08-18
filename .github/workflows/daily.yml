@@ -1,0 +1,132 @@
+name: Daily Papers Build & Deploy
+
+on:
+  schedule:
+    # Every day at 00:20 UTC ≈ 08:20 Beijing time
+    - cron: '20 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '**.py'
+      - '**.js'
+      - '**.html'
+      - '**.css'
+      - 'data/**'
+      - '.github/workflows/*.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate daily data (with retry)
+        uses: nick-fields/retry@v3
+        with:
+          max_attempts: 3
+          timeout_minutes: 8
+          retry_on: error
+          command: python build/build_daily.py
+
+      - name: Check warnings and raise an issue if something is off
+        run: |
+          python - <<'PY'
+          import json, os, urllib.request, sys
+          from pathlib import Path
+          p = Path('data/daily.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+          warns = data.get('warnings') or []
+          if not warns:
+            print('No warnings.')
+            sys.exit(0)
+          print('Warnings:', warns)
+          # Build a message
+          body = (
+            f"## Daily papers build warnings\n\n"
+            f"- Generated at: `{data.get('generatedAt')}`\n"
+            f"- Count: {data.get('count')} (HF={data.get('sources',{}).get('hf')}, arXiv={data.get('sources',{}).get('arxiv')})\n"
+            f"- History total: {data.get('historyTotal')}\n"
+            f"- Added today: {data.get('addedToday')}\n\n"
+            f"Warnings: {', '.join(warns)}\n\n"
+            f"Check [data/daily.json](./data/daily.json) or run `python build/build_daily.py` locally."
+          )
+          # Use GitHub API if a token is available
+          token = os.environ.get('GITHUB_TOKEN')
+          repo = os.environ.get('GITHUB_REPOSITORY')
+          if not (token and repo):
+            print('No GITHUB_TOKEN/repo, skipping issue creation.')
+            sys.exit(0)
+          # Avoid duplicate open issues by searching titles
+          import urllib.parse
+          q = urllib.parse.urlencode({'labels':'daily-builder','state':'open','t':'d'})
+          req = urllib.request.Request(
+              f'https://api.github.com/repos/{repo}/issues?{q}',
+              headers={'Authorization': f'Bearer {token}', 'Accept':'application/vnd.github+json'}
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=15) as r:
+                  open_issues = json.loads(r.read())
+              if any(('Daily papers build warnings' in (i.get('title') or '')) for i in open_issues):
+                  print('There is already an open warning issue; not opening another.')
+                  sys.exit(0)
+              payload = json.dumps({'title':'Daily papers build warnings','body':body,'labels':['daily-builder']}).encode()
+              req2 = urllib.request.Request(
+                  f'https://api.github.com/repos/{repo}/issues',
+                  data=payload, method='POST',
+                  headers={'Authorization': f'Bearer {token}', 'Accept':'application/vnd.github+json',
+                           'Content-Type':'application/json'}
+              )
+              with urllib.request.urlopen(req2, timeout=15) as r:
+                  iss = json.loads(r.read())
+              print('Opened issue:', iss.get('html_url'))
+          except Exception as e:
+              print('Failed to create issue:', e)
+          PY
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily.json data/history.json
+          if git diff --cached --quiet; then
+            echo "No new data to commit."
+          else
+            git commit -m "chore: update daily papers $(date -u +'%Y-%m-%d')"
+            git push
+          fi
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

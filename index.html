@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Embodied Daily · 每日具身智能论文</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">ED</div>
+    <div>
+      <div class="title">Embodied Daily</div>
+      <div class="subtitle">每日具身智能论文推荐 · 最新 + 经典</div>
+    </div>
+  </div>
+  <div class="date-pill" id="datePill"></div>
+  <div class="search">
+    <input id="searchInput" type="search" placeholder="搜索标题 / 作者 / 关键词…" />
+  </div>
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-tab="today">今日</button>
+    <button class="tab" data-tab="latest">最新<span class="count" id="latestCount">0</span></button>
+    <button class="tab" data-tab="feed">精选<span class="count" id="classicsCount">0</span></button>
+    <button class="tab" data-tab="bookmarks">收藏<span class="count" id="bmCount">0</span></button>
+  </nav>
+</header>
+
+<main class="layout">
+  <aside class="sidebar">
+    <h3>主题</h3>
+    <div class="chips" id="tagChips"></div>
+    <h3>年份</h3>
+    <div class="chips" id="yearChips"></div>
+    <button id="resetFilters" class="ghost-btn">清除筛选</button>
+    <div class="tip">
+      <b>今日最新</b>每天从 Hugging Face Daily Papers + arXiv（cs.RO/cs.AI/cs.CV/cs.LG）抓取，按主题自动分类，点标签即筛最新。<br>
+      <b>经典重温</b>是 51 篇领域代表作。<br>
+      收藏保存在浏览器本地。
+    </div>
+  </aside>
+
+  <section class="content">
+    <div id="todayPane" class="pane">
+      <div class="section-title">
+        <h2 id="todayTitle">今日最新论文</h2>
+        <span class="muted" id="todaySub"></span>
+      </div>
+      <div id="heroCard" class="hero"></div>
+
+      <div class="section-title">
+        <h2 id="todayMoreTitle">更多最新</h2>
+        <span class="muted" id="hfSub"></span>
+      </div>
+      <div id="hfGrid" class="grid"></div>
+
+      <div class="section-title">
+        <h2>经典重温</h2>
+        <span class="muted">领域代表性工作 · 每日轮换</span>
+      </div>
+      <div id="todayMore" class="grid"></div>
+    </div>
+
+    <div id="feedPane" class="pane hidden">
+      <div class="section-title">
+        <h2>全部精选</h2>
+        <span class="muted" id="feedCount"></span>
+      </div>
+      <div id="feedGrid" class="grid"></div>
+    </div>
+
+    <div id="latestPane" class="pane hidden">
+      <div class="section-title">
+        <h2>最新论文</h2>
+        <span class="muted" id="latestCount2"></span>
+      </div>
+      <div id="latestGrid" class="grid"></div>
+    </div>
+
+    <div id="bookmarksPane" class="pane hidden">
+      <div class="section-title">
+        <h2>我的收藏</h2>
+        <span class="muted" id="bmEmpty" hidden>点卡片右上角 ☆ 收藏论文。</span>
+      </div>
+      <div id="bmGrid" class="grid"></div>
+    </div>
+  </section>
+</main>
+
+<div id="detail" class="detail hidden" role="dialog" aria-modal="true">
+  <div class="detail-backdrop" data-close></div>
+  <div class="detail-panel">
+    <button class="close" data-close aria-label="关闭">×</button>
+    <div id="detailContent"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <span>Embodied Daily · 本地运行 · HF Daily Papers + arXiv</span>
+  <div style="display:flex;gap:8px">
+    <button id="refreshBtn" class="ghost-btn small">🔄 刷新最新</button>
+    <button id="shuffleBtn" class="ghost-btn small">换一批经典</button>
+  </div>
+</footer>
+
+<script src="papers.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
