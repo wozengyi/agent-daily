@@ -129,8 +129,7 @@
         "Navigation",
         "Imitation Learning",
         "Reinforcement Learning",
-        "Bimanual",
-        "Foundation Models"
+        "Bimanual"
       ],
       "tags": [
         "VLA",
@@ -2272,8 +2271,7 @@
         "Reinforcement Learning",
         "Dataset",
         "Simulator",
-        "3D / Perception",
-        "Hardware"
+        "3D / Perception"
       ],
       "tags": [
         "Humanoid",
@@ -4003,5 +4001,5 @@
       "source": "hf"
     }
   },
-  "generatedAt": "2026-08-18T08:47:24.634364+00:00"
+  "generatedAt": "2026-08-18T09:14:54.075941+00:00"
 }

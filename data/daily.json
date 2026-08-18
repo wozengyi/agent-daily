@@ -1,15 +1,17 @@
 {
-  "generatedAt": "2026-08-18T08:47:24.634364+00:00",
+  "generatedAt": "2026-08-18T09:14:54.075941+00:00",
   "windowDays": 14,
   "cutoff": "2026-08-04",
-  "addedToday": 158,
+  "addedToday": 0,
   "historyTotal": 158,
   "count": 80,
   "sources": {
     "hf": 5,
     "arxiv": 75
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2608.13555",
@@ -85,8 +87,7 @@
         "Navigation",
         "Imitation Learning",
         "Reinforcement Learning",
-        "Bimanual",
-        "Foundation Models"
+        "Bimanual"
       ],
       "tags": [
         "VLA",
