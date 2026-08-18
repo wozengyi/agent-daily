@@ -205,9 +205,9 @@ function heroCurated(sel){
 function renderChips(){
   const newPs = allNewPapers();
   const classics = allClassics();
-
-  const tagSet = uniq([...newPs.flatMap(p=>p.topics||[]), ...classics.flatMap(p=>p.topics||[])]).sort();
-  const yearSet = uniq([...newPs.map(p=>String((p.date||'').slice(0,4))), ...classics.map(p=>String(p.year))]).sort((a,b)=>Number(b)-Number(a));
+  const archivePs = allArchivePapers();
+  const tagSet = uniq([...newPs.flatMap(p=>p.topics||[]), ...classics.flatMap(p=>p.topics||[]), ...archivePs.flatMap(p=>p.topics||[])]).sort();
+  const yearSet = uniq([...newPs.map(p=>String((p.date||'').slice(0,4))), ...classics.map(p=>String(p.year)), ...archivePs.map(p=>String((p.date||'').slice(0,4)))]).sort((a,b)=>Number(b)-Number(a));
 
   const fill = (hostId, set, activeSet)=>{
     const host = byId(hostId); host.innerHTML='';
@@ -337,7 +337,7 @@ function renderArchive(){
   });
   const ymOrder = Array.from(groups.keys()).sort().reverse();
   const html = ymOrder.map(ym => {
-    const cards = groups.get(ym).map(p => newCardHtml(p)).join('');
+    const cards = groups.get(ym).map(p => newCard(p)).join('');
     return '<div class="month-group"><h3 class="month-heading">' + ym + '</h3><div class="grid">' + cards + '</div></div>';
   }).join('');
   host.innerHTML = html;
@@ -355,7 +355,11 @@ function render(){
   renderToday();
   renderLatest();
   renderClassics();
+  renderArchive();
   renderBookmarks();
+  // Update counts
+  const arc = allArchivePapers();
+  byId('archiveCountBadge').textContent = arc.length;
   saveBookmarks();
   document.querySelectorAll('.tab').forEach(t=>{
     t.classList.toggle('active', t.dataset.tab===state.tab);
