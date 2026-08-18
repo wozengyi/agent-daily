@@ -1,8 +1,8 @@
-name: Daily Papers Build & Deploy
+name: Agent Daily Build & Deploy
 
 on:
   schedule:
-    - cron: '20 0 * * *'
+    - cron: '25 0 * * *'
   workflow_dispatch:
     inputs:
       backfill_years:
@@ -11,22 +11,14 @@ on:
         default: '0'
   push:
     branches: [main]
-    paths:
-      - '**.py'
-      - '**.js'
-      - '**.html'
-      - '**.css'
-      - 'data/**'
-      - '.github/workflows/*.yml'
 
 permissions:
   contents: write
   pages: write
   id-token: write
-  issues: write
 
 concurrency:
-  group: pages
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -35,19 +27,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: (Optional) Backfill multi-year history
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.backfill_years != '0' }}
         uses: nick-fields/retry@v3
         with:
           max_attempts: 2
-          timeout_minutes: 60
+          timeout_minutes: 90
           retry_on: error
-          command: python build/backfill_years.py --years ${{ github.event.inputs.backfill_years }} --max-per-month 200 --page-size 100
+          command: python build/backfill_years.py --years ${{ github.event.inputs.backfill_years }} --max-per-month 150 --page-size 100
 
       - name: Generate daily data (with retry)
         uses: nick-fields/retry@v3
@@ -65,12 +57,12 @@ jobs:
           p = Path('data/daily.json')
           data = json.loads(p.read_text(encoding='utf-8'))
           warns = list(data.get('warnings') or [])
-          if (data.get('count') or 0) < 20:
+          if (data.get('count') or 0) < 15:
               warns.append('low_paper_count')
           if warns:
               print('Warnings:', warns)
               body = (
-                f"## Daily papers build warnings\n\n"
+                f"## Agent Daily build warnings\n\n"
                 f"- Generated at: `{data.get('generatedAt')}`\n"
                 f"- Latest (7 days): {data.get('count')} (HF={data.get('sources',{}).get('hf')}, arXiv={data.get('sources',{}).get('arxiv')})\n"
                 f"- Archive: {data.get('archiveCount')}\n"
@@ -89,38 +81,47 @@ jobs:
                       headers={'Authorization': f'Bearer {token}', 'Accept':'application/vnd.github+json'}
                   )
                   try:
-                      with urllib.request.urlopen(req, timeout=15) as r:
-                          open_issues = json.loads(r.read())
-                      if any(('Daily papers build warnings' in (i.get('title') or '')) for i in open_issues):
-                          print('Warning issue already open; skipping.')
-                          sys.exit(0)
-                      payload = json.dumps({'title':'Daily papers build warnings','body':body,'labels':['daily-builder']}).encode()
-                      req2 = urllib.request.Request(
+                      with urllib.request.urlopen(req, timeout=10) as r:
+                          existing = json.loads(r.read().decode('utf-8'))
+                  except Exception: existing = []
+                  if existing:
+                      url = existing[0]['url']
+                      req = urllib.request.Request(url, data=json.dumps({'body': body}).encode(),
+                          headers={'Authorization': f'Bearer {token}', 'Content-Type':'application/json'}, method='PATCH')
+                      urllib.request.urlopen(req, timeout=10)
+                  else:
+                      req = urllib.request.Request(
                           f'https://api.github.com/repos/{repo}/issues',
-                          data=payload, method='POST',
-                          headers={'Authorization': f'Bearer {token}', 'Accept':'application/vnd.github+json',
-                                   'Content-Type':'application/json'}
+                          data=json.dumps({'title': f'[bot] Agent Daily build warning', 'body': body, 'labels':['daily-builder']}).encode(),
+                          headers={'Authorization': f'Bearer {token}', 'Content-Type':'application/json'}
                       )
-                      with urllib.request.urlopen(req2, timeout=15) as r:
-                          iss = json.loads(r.read())
-                      print('Opened issue:', iss.get('html_url'))
-                  except Exception as e:
-                      print('Failed to create issue:', e)
+                      urllib.request.urlopen(req, timeout=10)
           else:
-              print('Build healthy: count=', data.get('count'), 'archive=', data.get('archiveCount'))
+              print("Build looks healthy.")
           PY
 
-      - name: Commit updated data
+      - name: Commit daily update
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/daily.json data/history.json
-          if git diff --cached --quiet; then
+          git add data/
+          date=$(date -u +"%Y-%m-%d")
+          if git diff --staged --quiet; then
             echo "No new data to commit."
           else
-            git commit -m "chore: update daily papers $(date -u +'%Y-%m-%d')"
+            git commit -m "chore: update daily papers $date"
             git push
           fi
+
+      - name: Setup Pages
+        if: github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
 
   deploy:
     needs: build
@@ -130,15 +131,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -89,7 +89,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--port', type=int, default=8765)
+    ap.add_argument('--port', type=int, default=8766)
     args = ap.parse_args()
     os.chdir(ROOT)
     with socketserver.ThreadingTCPServer(('127.0.0.1', args.port), Handler) as httpd:
@@ -99,5 +99,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 

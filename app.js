@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'embodied-daily-bookmarks-v2';
+const STORAGE_KEY = 'agent-daily-bookmarks-v2';
 const state = {
   tab: 'today',
   search: '',
@@ -457,3 +457,4 @@ saveBookmarks();
 mountSearchExtras();
 render();
 loadBundle();
+

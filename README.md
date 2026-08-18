@@ -1,29 +1,40 @@
-# Embodied Daily - 每日具身智能论文推荐
+# Agent Daily - 每日Agent/LLM论文推荐
 
-自动推荐每日最新具身智能(Embodied AI)相关论文，数据源来自 arXiv 和 Hugging Face Daily Papers。
+自动推荐每日最新Agent与大模型相关论文，数据源来自 arXiv 和 Hugging Face Daily Papers。
+
+## 覆盖方向
+
+- **Agentic Search / RAG**: 智能检索、浏览器Agent、检索增强生成
+- **Agent Safety**: 安全对齐、越狱攻击、红队测试、Prompt Injection
+- **Error Attribution**: 错误归因、失败定位、根因分析
+- **Post-Training**: RLHF、DPO、GRPO、偏好优化、后训练对齐
+- **LLM Training**: 预训练、SFT、Scaling Law、数据工程
+- **VLM Training**: 视觉语言模型、多模态训练
+- **Multi-Agent**: 多智能体协作、通信、辩论
+- **Tool Use**: 工具调用、Function Calling
+- **Reasoning**: CoT、ToT、数学/代码推理
+- **Planning & Memory**: 任务规划、长短记忆
+- **Computer Use**: GUI操作、浏览器/桌面Agent
+- **Hallucination**: 幻觉、事实性问题
+- **Interpretability**: 可解释性、模型编辑
+- **Evaluation**: Agent评测、Benchmark
 
 ## 功能特性
 
 - **今日推荐**：每日最新论文，按热度排序
 - **最新论文**：最近 7 天内的所有匹配论文
-- **往期论文**：最近 5 年历史归档论文（5000+篇），按月份分组展示
-- **精选论文**：领域经典高影响力论文
+- **往期论文**：最近 5 年历史归档论文，按月份分组展示
+- **精选论文**：25+领域经典高影响力论文
 - **收藏功能**：本地收藏感兴趣的论文
-- **主题筛选**：支持按 VLA、WAM(World Action Models)、Manipulation、Humanoid、World Model、RL 等 20+ 主题标签筛选
+- **主题筛选**：支持按20+主题标签筛选
 - **中文翻译**：每篇论文都提供 🇨🇳 中文 按钮，直达 hjfy.top 翻译页面
 - **自动更新**：GitHub Actions 每日自动构建，持续积累历史数据
-
-## 数据来源
-
-- **arXiv**：覆盖 cs.RO, cs.AI, cs.CV, cs.LG, cs.MA, eess.SY, stat.ML, cs.HC 等分类
-- **Hugging Face Daily Papers**：社区每日热门论文
-- **主题覆盖**：VLA, WAM, 机械臂操作, 人形机器人, 运动控制, 导航, 世界模型, Sim2Real, 灵巧手, 模仿学习, 强化学习, LLM Agent, 遥操作, 移动操作, 双臂机器人, 数据集, 开源, 模拟器, 基础模型, 3D感知, 多任务, 触觉, 具身视觉, 硬件 等
 
 ## 自动部署
 
 项目使用 GitHub Actions 自动每日更新：
 
-- **定时运行**：每天 UTC 00:20 自动执行抓取和构建
+- **定时运行**：每天 UTC 00:25 自动执行抓取和构建
 - **数据积累**：history.json 是只追加的数据库，永不删除历史数据
 - **自动部署**：构建完成后自动部署到 GitHub Pages
 
@@ -31,28 +42,28 @@
 
 如果需要一次性回填多年历史：
 1. 前往仓库 Actions 页面
-2. 选择 "Daily paper build" workflow
+2. 选择 "Agent Daily Build & Deploy" workflow
 3. 点击 "Run workflow"
-4. 在 ackfill_years 输入框填写要回填的年数（如 5）
+4. 在 `backfill_years` 输入框填写要回填的年数（如 5）
 5. 运行工作流即可
 
 本地回填命令：
-`ash
-python build/backfill_years.py --years 5 --max-per-month 200 --page-size 100
-`
+```bash
+python build/backfill_years.py --years 5 --max-per-month 150 --page-size 100
+```
 
 ## 本地开发
 
-`ash
+```bash
 # 启动本地服务器
-python server.py --port 8765
+python server.py --port 8766
 
 # 手动构建每日数据
 python build/build_daily.py
-`
+```
 
-访问 http://localhost:8765 查看效果。
+访问 http://localhost:8766 查看效果。
 
 ## 线上地址
 
-https://wozengyi.github.io/embodied-daily/
+https://wozengyi.github.io/agent-daily/

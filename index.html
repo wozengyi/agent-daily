@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Embodied Daily · 每日具身智能论文</title>
+<title>Agent Daily · 每日Agent/LLM论文推荐</title>
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="topbar">
   <div class="brand">
-    <div class="logo">ED</div>
+    <div class="logo" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)">AD</div>
     <div>
-      <div class="title">Embodied Daily</div>
-      <div class="subtitle">每日具身智能论文推荐 · 最新 + 经典</div>
+      <div class="title">Agent Daily</div>
+      <div class="subtitle">每日Agent与LLM论文推荐 · 最新论文 + 经典重温</div>
     </div>
   </div>
   <div class="date-pill" id="datePill"></div>
@@ -36,8 +36,8 @@
     <div class="chips" id="yearChips"></div>
     <button id="resetFilters" class="ghost-btn">清除筛选</button>
     <div class="tip">
-      <b>今日最新</b>每天从 Hugging Face Daily Papers + arXiv（cs.RO/cs.AI/cs.CV/cs.LG）抓取，按主题自动分类，点标签即筛最新。<br>
-      <b>经典重温</b>是 51 篇领域代表作。<br>
+      <b>今日最新</b>每天从 Hugging Face Daily Papers + arXiv（cs.AI/cs.CL/cs.LG）抓取，覆盖Agentic Search、安全、错误归因、后训练、VLM/LLM训练等方向，按主题自动分类。<br>
+      <b>经典重温</b>是领域代表性工作。<br>
       收藏保存在浏览器本地。
     </div>
   </aside>
@@ -106,7 +106,7 @@
 </div>
 
 <footer class="footer">
-  <span>Embodied Daily · 本地运行 · HF Daily Papers + arXiv</span>
+  <span>Agent Daily · HF Daily Papers + arXiv · Agent安全/后训练/VLM/LLM训练</span>
   <div style="display:flex;gap:8px">
     <button id="refreshBtn" class="ghost-btn small">🔄 刷新最新</button>
     <button id="shuffleBtn" class="ghost-btn small">换一批经典</button>
