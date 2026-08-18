@@ -28,7 +28,7 @@ EMBODIMENT_KW_BROAD = [
     'sim2real', 'sim-to-real', 'domain randomization',
     'vla', 'vision-language-action', 'vision language action', 'vision-language policy',
     'diffusion policy', 'behavior cloning', 'imitation learning', 'learning from demonstration',
-    'world model for robot', 'video world model',
+    'world model for robot', 'video world model', 'world action model', 'world-action model',
     'rl for robot', 'reinforcement learning robot',
     'affordance', 'motion planning',
     'huggingface',
@@ -61,7 +61,10 @@ TOPIC_RULES = [
     ('Locomotion', [r'locomotion', r'quadruped', r'biped(al)?', r'legged robot', r'gait', r'\bspot\b']),
     ('Navigation', [r'navigation', r'pointnav', r'objectnav', r'visual navigation', r'\bslam\b',
                     r'exploration', r'path planning']),
-    ('World Model', [r'world model', r'video world model', r'latent dynamics']),
+    ('World Model', [r'world model', r'video world model', r'latent dynamics', r'world action model']),
+    # Note: 'WAM' in robotics also refers to Barrett Whole-Arm Manipulator, so we also add
+    # a Hardware rule for Barrett WAM to keep that tag when only the arm is mentioned.
+
     ('Sim2Real', [r'sim2real', r'sim-to-real', r'domain random', r'domain adaptation']),
     ('Dexterous', [r'dexter(ous|ity)', r'in-hand manipulation', r'shadow hand', r'allegro hand',
                    r'barrett hand']),
@@ -88,7 +91,7 @@ TOPIC_RULES = [
     ('Embodied Vision', [r'embodied (vision|ai|agent)', r'embodied question answering', r'\beqa\b']),
     ('Hardware', [r'\bfranka\b', r'\bpanda\b', r'\bkuka\b', r'\bur[ -]?\d', r'\bsawyer\b', r'\bbaxter\b',
                   r'\bfetch\b', r'\bunitree\b', r'\ballegro\b', r'shadow hand', r'barrett hand',
-                  r'\bwam\b', r'\baloha\b']),
+                  r'barrett\s+wam\b', r'\bwam\b\s*(arm|manipulator)', r'\baloha\b']),
     ('Autonomous Driving', [r'autonomous driving', r'self[- ]driving', r'driving policy',
                             r'urban driving', r'vehicle control']),
 ]
@@ -102,6 +105,17 @@ def classify_topics(text):
                 topics.append(name); break
     if not topics and re.search(r'robot|robotic|embodied', t):
         topics.append('Robotics')
+    # World Action Models (WAMs). The bare token 'WAM' is ambiguous (Barrett arm / Wannier / etc.),
+    # so only treat it as WAM when either the full phrase appears, or 'WAM' appears WITHOUT
+    # Barrett/arm/manipulator context in a paper that already has robotics keywords.
+    wam_phrase = re.search(r'world[ -]?action[ -]?model', t, re.I)
+    wam_acronym = bool(re.search(r'\bWAM\b', t)) and not re.search(
+        r'barrett|whole[- ]arm|\bWAM\b\s*(arm|manipulator|cable|kinematic|hand)', t, re.I)
+    if wam_phrase or wam_acronym:
+        topics.append('WAM')
+        if 'World Model' not in topics:
+            topics.append('World Model')
+
     # de-dupe preserve order
     seen=set(); out=[]
     for x in topics:
@@ -256,7 +270,7 @@ def fetch_arxiv(lookback_days=7, per_query=200):
         'all:"diffusion+policy"','all:"behavior+cloning"','all:"imitation+learning"','all:"world+model"',
         'all:VLA','all:"mobile+manipulation"','all:"end-to-end+control"','all:"motion+planning"',
         'all:unitree','all:"pi+0"','all:π0','all:openvla','all:"open+vla"','all:octo',
-        'all:aloha','all:franka','all:allegro','all:mujoco','all:isaac'
+        'all:aloha','all:franka','all:allegro','all:mujoco','all:isaac','all:"world+action+model"','ti:WAM','abs:"world+action+model"'
     ])
     queries = [
         f'({cat_or})+AND+({kw_or})',
@@ -265,6 +279,7 @@ def fetch_arxiv(lookback_days=7, per_query=200):
         f'ti:"humanoid"',
         f'ti:"VLA"',
         f'ti:"grasping"+OR+ti:"manipulation"',
+        f'(ti:WAM+OR+abs:"world action model"+OR+abs:"world-action model"+OR+ti:"world action model")+AND+(all:robot+OR+all:robotic+OR+all:embodied+OR+all:manipulation+OR+all:humanoid+OR+all:navigation)',
     ]
     out, seen = [], set()
     cutoff = (datetime.now(timezone.utc).date() - timedelta(days=lookback_days)).isoformat()
@@ -328,7 +343,7 @@ def merge_into_history(hist, new_papers):
     return added
 
 # ---------- Build ----------
-def build_bundle(hist, window_days=14, limit=80):
+def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limit=5000):
     hf = fetch_hf_days(days=14)
     arx = fetch_arxiv(lookback_days=7, per_query=200)
     # Merge sources by id (hf wins over arxiv when same id)
@@ -348,29 +363,45 @@ def build_bundle(hist, window_days=14, limit=80):
     papers = list(by_id.values())
     # Merge into history
     added = merge_into_history(hist, papers)
-    # Now build the "daily" view from history: recent N days, sorted by date then upvotes
+    # Build two views:
+    #   - recent: last `recent_days` days (shown on the homepage's "最新" panel)
+    #   - archive: everything older than `recent_days` but within `archive_days`
     all_hist = list(hist['papers'].values())
-    cutoff = (datetime.now(timezone.utc).date() - timedelta(days=window_days)).isoformat()
-    recent = [p for p in all_hist if (p.get('date') or '0000-00-00') >= cutoff]
+    today = datetime.now(timezone.utc).date()
+    recent_cutoff = (today - timedelta(days=recent_days)).isoformat()
+    archive_cutoff = (today - timedelta(days=archive_days)).isoformat()
     def keyf(p):
         return ((p.get('date') or '0000-00-00'),
                 1 if p.get('source')=='hf' else 0,
                 int(p.get('upvotes') or 0),
                 len(p.get('topics') or []))
-    recent.sort(key=keyf, reverse=True)
+    recent = sorted([p for p in all_hist if (p.get('date') or '0000-00-00') >= recent_cutoff], key=keyf, reverse=True)
+    archive = sorted([p for p in all_hist
+                       if archive_cutoff <= (p.get('date') or '0000-00-00') < recent_cutoff],
+                      key=keyf, reverse=True)
+    recent = recent[:limit]
+    archive = archive[:archive_limit]
     bundle = {
         'generatedAt': hist.get('generatedAt'),
-        'windowDays': window_days,
-        'cutoff': cutoff,
+        'recentDays': recent_days,
+        'archiveDays': archive_days,
+        'recentCutoff': recent_cutoff,
+        'archiveCutoff': archive_cutoff,
         'addedToday': added,
         'historyTotal': len(hist.get('papers',{})),
-        'count': min(limit, len(recent)),
+        'count': len(recent),
+        'archiveCount': len(archive),
         'sources': {
-            'hf': sum(1 for p in recent[:limit] if p.get('source')=='hf'),
-            'arxiv': sum(1 for p in recent[:limit] if p.get('source')=='arxiv'),
+            'hf': sum(1 for p in recent if p.get('source')=='hf'),
+            'arxiv': sum(1 for p in recent if p.get('source')=='arxiv'),
+        },
+        'archiveSources': {
+            'hf': sum(1 for p in archive if p.get('source')=='hf'),
+            'arxiv': sum(1 for p in archive if p.get('source')=='arxiv'),
         },
         'warnings': [],
-        'papers': recent[:limit],
+        'papers': recent,
+        'archive': archive,
     }
     if bundle['count'] == 0:
         bundle['warnings'].append('zero_papers')
@@ -381,17 +412,19 @@ def build_bundle(hist, window_days=14, limit=80):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--stdout', action='store_true')
-    ap.add_argument('--window', type=int, default=14)
-    ap.add_argument('--limit', type=int, default=80)
+    ap.add_argument('--recent', type=int, default=7, help='how many days to show in "latest" (default 7)')
+    ap.add_argument('--archive', type=int, default=5*365, help='how many days back the "archive" tab covers (default 365)')
+    ap.add_argument('--limit', type=int, default=80, help='max papers shown in "latest"')
+    ap.add_argument('--archive-limit', dest='archive_limit', type=int, default=5000, help='max papers shown in "archive"')
     args = ap.parse_args()
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     hist = load_history()
-    bundle = build_bundle(hist, window_days=args.window, limit=args.limit)
+    bundle = build_bundle(hist, recent_days=args.recent, archive_days=args.archive, limit=args.limit, archive_limit=args.archive_limit)
     save_history(hist)
     OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding='utf-8')
-    print(f'[build] wrote {OUT_PATH} with {bundle["count"]} papers '
-          f'(HF={bundle["sources"]["hf"]}, arXiv={bundle["sources"]["arxiv"]}, '
+    print(f'[build] wrote {OUT_PATH}: latest={bundle["count"]} (HF={bundle["sources"]["hf"]}, arXiv={bundle["sources"]["arxiv"]}), '
+          f'archive={bundle["archiveCount"]} (HF={bundle["archiveSources"]["hf"]}, arXiv={bundle["archiveSources"]["arxiv"]}), '
           f'addedToday={bundle["addedToday"]}, historyTotal={bundle["historyTotal"]})')
     if bundle['warnings']:
         print('[build] warnings:', ','.join(bundle['warnings']))

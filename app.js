@@ -263,9 +263,11 @@ function pickNewHero(list){
 }
 
 // ---------- Panels ----------
+function allLatestPapers(){ return (state.bundle && state.bundle.papers) || []; }
+function allArchivePapers(){ return (state.bundle && state.bundle.archive) || []; }
 function renderToday(){
   const curated = getCuratedSelection();
-  const news = filtered(allNewPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
+  const news = filtered(allLatestPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
   const classicList = filtered(allClassics()); // "classics revisit" block below is always 3 related from curated selection (ignoring tag filter intentionally? We'll respect filter.)
   const moreClassics = classicList.filter(p=>p.id!=='c:'+curated.hero.id).sort(()=>seededRandom(todayKey()+state.seedOffset+1)()-0.5).slice(0,3);
 
@@ -289,7 +291,7 @@ function renderToday(){
     byId('todaySub').textContent = '抓取新文失败，显示经典精选：'+state.bundleError;
   } else if(state.bundle){
     const hf = state.bundle.sources?.hf||0, arx = state.bundle.sources?.arxiv||0;
-    byId('todaySub').textContent = `${dateStr} · 新文共 ${state.bundle.count} 篇（HF ${hf} / arXiv ${arx}）${activeTagLabel}`;
+    byId('todaySub').textContent = `${dateStr} · 最近 ${state.bundle.recentDays||7} 天共 ${state.bundle.count} 篇新文（HF ${hf} / arXiv ${arx}）${activeTagLabel}`;
   }
 
   if(top){
@@ -305,8 +307,9 @@ function renderToday(){
   moreHost.innerHTML = moreClassics.map(p=>classicCard(p, {why:'推荐理由：'+(p.why||'领域代表性工作')})).join('');
 }
 function renderLatest(){
-  const list = filtered(allNewPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
-  byId('latestCount2').textContent = `共 ${list.length} 篇`;
+  const list = filtered(allLatestPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
+  const days = state.bundle?.recentDays || 7;
+  byId('latestCount2').textContent = `最近 ${days} 天，共 ${list.length} 篇`;
   byId('latestGrid').innerHTML = list.length ? list.map(p=>newCard(p)).join('') : '<div class="empty">没有匹配的新论文，试试清除筛选或点「🔄 刷新最新」。</div>';
   byId('latestCount').textContent = allNewPapers().length;
 }
@@ -316,6 +319,30 @@ function renderClassics(){
   byId('feedGrid').innerHTML = list.length ? list.map(p=>classicCard(p)).join('') : '<div class="empty">没有匹配的经典论文，换个关键词/标签。</div>';
   byId('classicsCount').textContent = allClassics().length;
 }
+function renderArchive(){
+  const list = filtered(allArchivePapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
+  const host = byId('archiveGrid');
+  byId('archiveCount').textContent = '共 ' + list.length + ' 篇（最近 ' + (state.bundle?.archiveDays||365) + ' 天，' +
+    '不含最近 ' + (state.bundle?.recentDays||7) + ' 天）';
+  if (list.length === 0) {
+    host.innerHTML = '<div class="empty">往期暂无匹配论文。随着每日构建积累，这里会展示更早的具身论文。</div>';
+    return;
+  }
+  // Group by month for readability.
+  const groups = new Map();
+  list.forEach(p => {
+    const ym = (p.date||'').slice(0,7);
+    if (!groups.has(ym)) groups.set(ym, []);
+    groups.get(ym).push(p);
+  });
+  const ymOrder = Array.from(groups.keys()).sort().reverse();
+  const html = ymOrder.map(ym => {
+    const cards = groups.get(ym).map(p => newCardHtml(p)).join('');
+    return '<div class="month-group"><h3 class="month-heading">' + ym + '</h3><div class="grid">' + cards + '</div></div>';
+  }).join('');
+  host.innerHTML = html;
+}
+
 function renderBookmarks(){
   const newPs = allNewPapers(), cls = allClassics();
   const all = [...newPs, ...cls].filter(p=>state.bookmarks.has(p.id));
@@ -336,6 +363,8 @@ function render(){
   byId('todayPane').classList.toggle('hidden', state.tab!=='today');
   byId('latestPane').classList.toggle('hidden', state.tab!=='latest');
   byId('feedPane').classList.toggle('hidden', state.tab!=='feed');
+  byId('latestPane').classList.toggle('hidden', state.tab!=='latest');
+  byId('archivePane').classList.toggle('hidden', state.tab!=='archive');
   byId('bookmarksPane').classList.toggle('hidden', state.tab!=='bookmarks');
 }
 

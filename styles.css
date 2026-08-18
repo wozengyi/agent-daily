@@ -202,3 +202,9 @@ button{font-family:inherit}
 /* Chinese translate button */
 .btn-zh{background:linear-gradient(135deg,#ef4444,#f97316);color:#fff;border:1px solid transparent;font-weight:600}
 .btn-zh:hover{filter:brightness(1.05);border-color:#fff2}
+
+/* Archive view */
+.month-group { margin: 18px 0 6px; }
+.month-heading { font-size: 14px; color: var(--muted); margin: 18px 4px 10px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+
+.archive-wrapper .grid { margin-top: 8px; }

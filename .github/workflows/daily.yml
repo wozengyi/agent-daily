@@ -2,9 +2,13 @@ name: Daily Papers Build & Deploy
 
 on:
   schedule:
-    # Every day at 00:20 UTC ≈ 08:20 Beijing time
     - cron: '20 0 * * *'
   workflow_dispatch:
+    inputs:
+      backfill_years:
+        description: 'Set >0 to run a multi-year backfill before the daily build'
+        required: false
+        default: '0'
   push:
     branches: [main]
     paths:
@@ -36,67 +40,74 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: (Optional) Backfill multi-year history
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.backfill_years != '0' }}
+        uses: nick-fields/retry@v3
+        with:
+          max_attempts: 2
+          timeout_minutes: 60
+          retry_on: error
+          command: python build/backfill_years.py --years ${{ github.event.inputs.backfill_years }} --max-per-month 200 --page-size 100
+
       - name: Generate daily data (with retry)
         uses: nick-fields/retry@v3
         with:
           max_attempts: 3
-          timeout_minutes: 8
+          timeout_minutes: 15
           retry_on: error
-          command: python build/build_daily.py
+          command: python build/build_daily.py --recent 7 --archive 1825 --limit 80 --archive-limit 5000
 
-      - name: Check warnings and raise an issue if something is off
+      - name: Warn on suspicious builds
         run: |
           python - <<'PY'
           import json, os, urllib.request, sys
           from pathlib import Path
           p = Path('data/daily.json')
           data = json.loads(p.read_text(encoding='utf-8'))
-          warns = data.get('warnings') or []
-          if not warns:
-            print('No warnings.')
-            sys.exit(0)
-          print('Warnings:', warns)
-          # Build a message
-          body = (
-            f"## Daily papers build warnings\n\n"
-            f"- Generated at: `{data.get('generatedAt')}`\n"
-            f"- Count: {data.get('count')} (HF={data.get('sources',{}).get('hf')}, arXiv={data.get('sources',{}).get('arxiv')})\n"
-            f"- History total: {data.get('historyTotal')}\n"
-            f"- Added today: {data.get('addedToday')}\n\n"
-            f"Warnings: {', '.join(warns)}\n\n"
-            f"Check [data/daily.json](./data/daily.json) or run `python build/build_daily.py` locally."
-          )
-          # Use GitHub API if a token is available
-          token = os.environ.get('GITHUB_TOKEN')
-          repo = os.environ.get('GITHUB_REPOSITORY')
-          if not (token and repo):
-            print('No GITHUB_TOKEN/repo, skipping issue creation.')
-            sys.exit(0)
-          # Avoid duplicate open issues by searching titles
-          import urllib.parse
-          q = urllib.parse.urlencode({'labels':'daily-builder','state':'open','t':'d'})
-          req = urllib.request.Request(
-              f'https://api.github.com/repos/{repo}/issues?{q}',
-              headers={'Authorization': f'Bearer {token}', 'Accept':'application/vnd.github+json'}
-          )
-          try:
-              with urllib.request.urlopen(req, timeout=15) as r:
-                  open_issues = json.loads(r.read())
-              if any(('Daily papers build warnings' in (i.get('title') or '')) for i in open_issues):
-                  print('There is already an open warning issue; not opening another.')
-                  sys.exit(0)
-              payload = json.dumps({'title':'Daily papers build warnings','body':body,'labels':['daily-builder']}).encode()
-              req2 = urllib.request.Request(
-                  f'https://api.github.com/repos/{repo}/issues',
-                  data=payload, method='POST',
-                  headers={'Authorization': f'Bearer {token}', 'Accept':'application/vnd.github+json',
-                           'Content-Type':'application/json'}
+          warns = list(data.get('warnings') or [])
+          if (data.get('count') or 0) < 20:
+              warns.append('low_paper_count')
+          if warns:
+              print('Warnings:', warns)
+              body = (
+                f"## Daily papers build warnings\n\n"
+                f"- Generated at: `{data.get('generatedAt')}`\n"
+                f"- Latest (7 days): {data.get('count')} (HF={data.get('sources',{}).get('hf')}, arXiv={data.get('sources',{}).get('arxiv')})\n"
+                f"- Archive: {data.get('archiveCount')}\n"
+                f"- History total: {data.get('historyTotal')}\n"
+                f"- Added today: {data.get('addedToday')}\n\n"
+                f"Warnings: {', '.join(warns)}\n\n"
+                f"Trigger a manual workflow run with a `backfill_years` parameter to re-seed history if needed."
               )
-              with urllib.request.urlopen(req2, timeout=15) as r:
-                  iss = json.loads(r.read())
-              print('Opened issue:', iss.get('html_url'))
-          except Exception as e:
-              print('Failed to create issue:', e)
+              token = os.environ.get('GITHUB_TOKEN')
+              repo = os.environ.get('GITHUB_REPOSITORY')
+              if token and repo:
+                  import urllib.parse
+                  q = urllib.parse.urlencode({'labels':'daily-builder','state':'open'})
+                  req = urllib.request.Request(
+                      f'https://api.github.com/repos/{repo}/issues?{q}',
+                      headers={'Authorization': f'Bearer {token}', 'Accept':'application/vnd.github+json'}
+                  )
+                  try:
+                      with urllib.request.urlopen(req, timeout=15) as r:
+                          open_issues = json.loads(r.read())
+                      if any(('Daily papers build warnings' in (i.get('title') or '')) for i in open_issues):
+                          print('Warning issue already open; skipping.')
+                          sys.exit(0)
+                      payload = json.dumps({'title':'Daily papers build warnings','body':body,'labels':['daily-builder']}).encode()
+                      req2 = urllib.request.Request(
+                          f'https://api.github.com/repos/{repo}/issues',
+                          data=payload, method='POST',
+                          headers={'Authorization': f'Bearer {token}', 'Accept':'application/vnd.github+json',
+                                   'Content-Type':'application/json'}
+                      )
+                      with urllib.request.urlopen(req2, timeout=15) as r:
+                          iss = json.loads(r.read())
+                      print('Opened issue:', iss.get('html_url'))
+                  except Exception as e:
+                      print('Failed to create issue:', e)
+          else:
+              print('Build healthy: count=', data.get('count'), 'archive=', data.get('archiveCount'))
           PY
 
       - name: Commit updated data
@@ -113,6 +124,7 @@ jobs:
 
   deploy:
     needs: build
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

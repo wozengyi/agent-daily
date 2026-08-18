@@ -22,6 +22,7 @@
   <nav class="tabs" id="tabs">
     <button class="tab active" data-tab="today">今日</button>
     <button class="tab" data-tab="latest">最新<span class="count" id="latestCount">0</span></button>
+    <button class="tab" data-tab="archive">往期<span class="count" id="archiveCountBadge">0</span></button>
     <button class="tab" data-tab="feed">精选<span class="count" id="classicsCount">0</span></button>
     <button class="tab" data-tab="bookmarks">收藏<span class="count" id="bmCount">0</span></button>
   </nav>
@@ -76,6 +77,14 @@
         <span class="muted" id="latestCount2"></span>
       </div>
       <div id="latestGrid" class="grid"></div>
+    </div>
+
+    <div id="archivePane" class="pane hidden">
+      <div class="section-title">
+        <h2>往期论文</h2>
+        <span class="muted" id="archiveCount"></span>
+      </div>
+      <div id="archiveGrid" class="archive-wrapper"></div>
     </div>
 
     <div id="bookmarksPane" class="pane hidden">

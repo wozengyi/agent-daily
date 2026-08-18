@@ -1,91 +1,58 @@
-# Embodied Daily · 每日具身智能论文推荐
+# Embodied Daily - 每日具身智能论文推荐
 
-一个本地运行 / 可部署到 GitHub Pages 的每日具身智能论文小站。
+自动推荐每日最新具身智能(Embodied AI)相关论文，数据源来自 arXiv 和 Hugging Face Daily Papers。
+
+## 功能特性
+
+- **今日推荐**：每日最新论文，按热度排序
+- **最新论文**：最近 7 天内的所有匹配论文
+- **往期论文**：最近 5 年历史归档论文（5000+篇），按月份分组展示
+- **精选论文**：领域经典高影响力论文
+- **收藏功能**：本地收藏感兴趣的论文
+- **主题筛选**：支持按 VLA、WAM(World Action Models)、Manipulation、Humanoid、World Model、RL 等 20+ 主题标签筛选
+- **中文翻译**：每篇论文都提供 🇨🇳 中文 按钮，直达 hjfy.top 翻译页面
+- **自动更新**：GitHub Actions 每日自动构建，持续积累历史数据
 
 ## 数据来源
 
-- **Hugging Face Daily Papers**（最近 14 天的每日热榜）
-- **arXiv**（cs.RO / cs.AI / cs.CV / cs.LG 最近提交，按具身关键词筛选）
+- **arXiv**：覆盖 cs.RO, cs.AI, cs.CV, cs.LG, cs.MA, eess.SY, stat.ML, cs.HC 等分类
+- **Hugging Face Daily Papers**：社区每日热门论文
+- **主题覆盖**：VLA, WAM, 机械臂操作, 人形机器人, 运动控制, 导航, 世界模型, Sim2Real, 灵巧手, 模仿学习, 强化学习, LLM Agent, 遥操作, 移动操作, 双臂机器人, 数据集, 开源, 模拟器, 基础模型, 3D感知, 多任务, 触觉, 具身视觉, 硬件 等
 
-两源合并后按 arXiv id 去重，按「当天优先 → HF 热度 → 相关性」排序，每天取 Top 60 篇。
-具身关键词覆盖：embodied / robot / manipulation / grasping / humanoid / locomotion / navigation / VLA / sim2real / dexterous / bimanual / teleoperation / imitation learning / world model 等。
+## 自动部署
 
-## 本地使用（最简单）
+项目使用 GitHub Actions 自动每日更新：
 
-1. 安装 Python 3.9+（本项目构建脚本只用标准库，无需 pip 装包）。
-2. 启动本地服务器：
-   ```
-   cd embodied-papers
-   python server.py --port 8765
-   ```
-3. 浏览器打开 http://localhost:8765/
+- **定时运行**：每天 UTC 00:20 自动执行抓取和构建
+- **数据积累**：history.json 是只追加的数据库，永不删除历史数据
+- **自动部署**：构建完成后自动部署到 GitHub Pages
 
-- 打开页面时会直接加载 `data/daily.json`（随仓库一起提交的最新数据），很快。
-- 点页面底部 **🔄 刷新最新** 会实时访问 HF + arXiv 拉取最新论文（可能需要 15-40 秒，取决于 arXiv 响应）。
-- **换一批经典** 轮换经典精选主卡。
+### 手动回填历史数据
 
-## 手动更新 daily.json（不启动服务器）
+如果需要一次性回填多年历史：
+1. 前往仓库 Actions 页面
+2. 选择 "Daily paper build" workflow
+3. 点击 "Run workflow"
+4. 在 ackfill_years 输入框填写要回填的年数（如 5）
+5. 运行工作流即可
 
-```
+本地回填命令：
+`ash
+python build/backfill_years.py --years 5 --max-per-month 200 --page-size 100
+`
+
+## 本地开发
+
+`ash
+# 启动本地服务器
+python server.py --port 8765
+
+# 手动构建每日数据
 python build/build_daily.py
-```
+`
 
-会覆盖写入 `data/daily.json`，再刷新网页即可看到新数据。
+访问 http://localhost:8765 查看效果。
 
-## 部署到 GitHub Pages（每天自动更新）
+## 线上地址
 
-把整个 `embodied-papers/` 目录作为 GitHub 仓库根目录（或子目录 `docs/` 也可）。
-仓库里已经包含：
-
-- `.github/workflows/daily.yml`：每天 UTC 00:20（北京时间 08:20）自动跑 `build/build_daily.py`，把新的 `data/daily.json` 提交回仓库，并部署到 GitHub Pages。
-- `.nojekyll`：防止 GitHub Pages 把 `_` 开头目录忽略掉。
-
-部署步骤：
-
-1. 新建一个 GitHub 仓库（比如 `embodied-daily`），把本目录所有文件 push 到 `main` 分支根目录。
-2. 在仓库 **Settings → Pages** 中：
-   - Source 选择 **GitHub Actions**（推荐，用 workflow 里的 deploy job）。
-   - 或者选择 **Deploy from a branch** → `main` / `/(root)`。如果用 branch 部署，workflow 里只需要 `build` job 提交新 `data/daily.json`，push 完成后 Pages 会自动重新发布。
-3. 打开 **Actions** 标签页，看到 "Daily Papers Build & Deploy" workflow。它会在：
-   - 每天 UTC 00:20 自动触发；
-   - 你 push 代码到 `main` 时也会触发一次；
-   - 可以点 **Run workflow** 手动触发。
-4. 几分钟后访问 `https://<你的用户名>.github.io/<仓库名>/`，就能看到当日最新论文。
-
-注意：
-- Workflow 使用 `GITHUB_TOKEN` 自动提交 `data/daily.json`。确保仓库 Settings → Actions → Workflow permissions 设为 **Read and write permissions**。
-- arXiv API 要求请求之间间隔 ≥3 秒，workflow 里已加 sleep，一次构建大约 20-40 秒。
-- 如果你想发到自己的服务器上，只要把整个目录静态托管（Nginx / Caddy / Cloudflare Pages / Vercel 等都行），然后在服务器上用 cron 定时跑 `python build/build_daily.py` 就好。
-
-## 文件结构
-
-```
-embodied-papers/
-├── index.html               页面
-├── styles.css               深色主题
-├── app.js                   前端逻辑（加载 JSON、渲染、收藏）
-├── papers.js                经典精选论文库（51 篇）
-├── server.py                本地开发服务器（含 /api/daily 实时抓取）
-├── build/
-│   └── build_daily.py       每日构建脚本（HF + arXiv）
-├── data/
-│   └── daily.json           构建产物：每日新论文 JSON（由 workflow 每天更新）
-├── .github/workflows/daily.yml
-├── .nojekyll
-└── README.md
-```
-
-## 功能概览
-
-- **今日最新**：主卡展示当天最火/最新的一篇具身新文，下面是更多新文卡片，带 🧡 HF Daily 或 📄 arXiv 来源标签、👍 点赞数、「N天前」。
-- **经典重温**：每天换一个主题，从 51 篇领域代表作里推荐 1 + 3。
-- **全部精选**：按主题 / 来源 / 年份筛选；顶部搜索框搜索标题/作者/关键词；搜索栏右侧 HF / arXiv / HF Daily 三个按钮直接跳对应站点搜索。
-- **收藏**：☆/★ 按钮收藏，保存在浏览器 localStorage。
-- **详情弹窗**：经典论文带推荐理由 + 相关推荐 + 一键搜 HF/arXiv 最新工作。
-
-## 可能的后续扩展
-
-- 接入更多来源：Papers With Code、Semantic Scholar、Google Scholar 提醒。
-- 对新文自动生成中文 TL;DR（调用 LLM）。
-- 个人化：按关键词/作者/会议过滤并邮件/通知推送。
-- 把 `papers.js` 换成可编辑的 YAML/JSON，方便维护自己的关注列表。
+https://wozengyi.github.io/embodied-daily/
