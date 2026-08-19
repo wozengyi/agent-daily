@@ -466,7 +466,7 @@ async function loadBundle(opts={}){
     }catch(e){ state.bundleError = String(e.message||e); }
   }
   try{
-    const r = await fetch('data/daily.json',{cache:'no-cache'});
+    const r = await fetch('./data/daily.json',{cache:'no-cache'});
     if(r.ok){
       const d = await r.json();
       if(d && Array.isArray(d.papers)){ state.bundle = d; }
