@@ -208,3 +208,36 @@ button{font-family:inherit}
 .month-heading { font-size: 14px; color: var(--muted); margin: 18px 4px 10px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
 
 .archive-wrapper .grid { margin-top: 8px; }
+
+.year-group {
+  margin-bottom: 20px;
+}
+.year-heading {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 14px;
+  background: var(--bg-elevated);
+  border-radius: 8px;
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+.year-toggle {
+  font-size: 12px;
+  font-family: monospace;
+  width: 16px;
+}
+.month-group {
+  margin-bottom: 16px;
+}
+.month-heading {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0 0 8px 4px;
+  font-weight: 500;
+}

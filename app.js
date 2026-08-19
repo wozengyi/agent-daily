@@ -322,25 +322,53 @@ function renderClassics(){
 function renderArchive(){
   const list = filtered(allArchivePapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
   const host = byId('archiveGrid');
-  byId('archiveCount').textContent = '共 ' + list.length + ' 篇（最近 ' + (state.bundle?.archiveDays||365) + ' 天，' +
-    '不含最近 ' + (state.bundle?.recentDays||7) + ' 天）';
+  const currentYear = new Date().getFullYear();
+  byId('archiveCount').textContent = `共 ${list.length} 篇（最近 ${Math.round((state.bundle?.archiveDays||3650)/365)} 年，不含最近 ${state.bundle?.recentDays||7} 天）`;
   if (list.length === 0) {
-    host.innerHTML = '<div class="empty">往期暂无匹配论文。随着每日构建积累，这里会展示更早的具身论文。</div>';
+    host.innerHTML = '<div class="empty">往期暂无匹配论文。历史回填进行中，每日自动更新积累。</div>';
     return;
   }
-  // Group by month for readability.
-  const groups = new Map();
+  // Group by year then month for performance with large archives
+  const years = new Map();
   list.forEach(p => {
+    const y = (p.date||'').slice(0,4);
     const ym = (p.date||'').slice(0,7);
-    if (!groups.has(ym)) groups.set(ym, []);
-    groups.get(ym).push(p);
+    if (!years.has(y)) years.set(y, new Map());
+    const months = years.get(y);
+    if (!months.has(ym)) months.set(ym, []);
+    months.get(ym).push(p);
   });
-  const ymOrder = Array.from(groups.keys()).sort().reverse();
-  const html = ymOrder.map(ym => {
-    const cards = groups.get(ym).map(p => newCard(p)).join('');
-    return '<div class="month-group"><h3 class="month-heading">' + ym + '</h3><div class="grid">' + cards + '</div></div>';
+  const yearOrder = Array.from(years.keys()).sort().reverse();
+  const html = yearOrder.map(y => {
+    const months = years.get(y);
+    const monthOrder = Array.from(months.keys()).sort().reverse();
+    const isRecent = Number(y) >= currentYear - 1;
+    const monthsHtml = monthOrder.map(ym => {
+      const cards = months.get(ym).map(p => newCard(p)).join('');
+      return `<div class="month-group"><h4 class="month-heading">${ym}</h4><div class="grid">${cards}</div></div>`;
+    }).join('');
+    return `<div class="year-group">
+      <h3 class="year-heading" data-year="${y}">
+        <span class="year-toggle">${isRecent ? '▼' : '▶'}</span>
+        ${y} 年 <span class="muted">(${months.size}个月, ${Array.from(months.values()).flat().length}篇)</span>
+      </h3>
+      <div class="year-content" data-year-content="${y}" ${isRecent ? '' : 'hidden'}>
+        ${monthsHtml}
+      </div>
+    </div>`;
   }).join('');
   host.innerHTML = html;
+  // Add toggle handlers
+  host.querySelectorAll('.year-heading').forEach(h => {
+    h.addEventListener('click', () => {
+      const y = h.dataset.year;
+      const content = host.querySelector(`[data-year-content="${y}"]`);
+      const toggle = h.querySelector('.year-toggle');
+      if(content.hidden) { content.hidden = false; toggle.textContent = '▼'; }
+      else { content.hidden = true; toggle.textContent = '▶'; }
+    });
+    h.style.cursor = 'pointer';
+  });
 }
 
 function renderBookmarks(){
