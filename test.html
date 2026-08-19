@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="log"></div>
+<script>
+const log = msg => document.getElementById('log').innerHTML += msg + '<br>';
+window.onerror = (msg, url, line) => log(`❌ Error: ${msg} at line ${line}`);
+</script>
+<script src="papers.js"></script>
+<script>
+log(`✅ papers.js loaded, classics: ${window.PAPERS.length}`);
+</script>
+<script src="app.js"></script>
+</body>
+</html>
