@@ -47,7 +47,7 @@ jobs:
           max_attempts: 3
           timeout_minutes: 25
           retry_on: error
-          command: python build/build_daily.py --recent 7 --archive 1825 --limit 80 --archive-limit 5000
+          command: python build/build_daily.py --recent 7 --archive 1825
 
       - name: Warn on suspicious builds
         run: |
@@ -134,4 +134,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 

@@ -257,7 +257,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
     hf = fetch_hf_days(days=14)
     log(f'Got {len(hf)} HF papers')
     log('Fetching arXiv papers...')
-    arx = fetch_arxiv(lookback_days=7, per_query=100)
+    arx = fetch_arxiv(lookback_days=7, per_query=300)
     log(f'Got {len(arx)} arXiv papers')
     by_id = {p['id']: dict(p) for p in arx}
     for p in hf:
@@ -287,8 +287,10 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
     archive = sorted([p for p in all_hist
                        if archive_cutoff <= (p.get('date') or '0000-00-00') < recent_cutoff],
                       key=keyf, reverse=True)
-    recent = recent[:limit]
-    archive = archive[:archive_limit]
+    if limit is not None:
+        recent = recent[:limit]
+    if archive_limit is not None:
+        archive = archive[:archive_limit]
     warnings = []
     if added == 0:
         warnings.append('zero_new_today')
@@ -325,8 +327,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--recent', type=int, default=7)
     ap.add_argument('--archive', type=int, default=5*365)
-    ap.add_argument('--limit', type=int, default=80)
-    ap.add_argument('--archive-limit', type=int, default=5000)
+    ap.add_argument('--limit', type=int, default=None, help='Max recent papers (default: all)')
+    ap.add_argument('--archive-limit', type=int, default=None, help='Max archive papers (default: all)')
     args = ap.parse_args()
     hist = load_history()
     log(f'loaded history: {len(hist.get("papers",{}))} papers')
@@ -337,3 +339,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+

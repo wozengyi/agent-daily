@@ -1,0 +1,13 @@
+  retry 1/5 in 5s: module 'build_daily' has no attribute 'CTX'
+  retry 2/5 in 10s: module 'build_daily' has no attribute 'CTX'
+  retry 3/5 in 15s: module 'build_daily' has no attribute 'CTX'
+  retry 4/5 in 20s: module 'build_daily' has no attribute 'CTX'
+  retry 5/5 in 25s: module 'build_daily' has no attribute 'CTX'
+Traceback (most recent call last):
+  File "C:\Users\wozengyi\Documents\Codex\2026-08-17\new-chat\outputs\agent-daily\build\backfill_years.py", line 151, in <module>
+    main()
+  File "C:\Users\wozengyi\Documents\Codex\2026-08-17\new-chat\outputs\agent-daily\build\backfill_years.py", line 121, in main
+    xml = fetch_page(q, start=start, max_results=args.page_size)
+  File "C:\Users\wozengyi\Documents\Codex\2026-08-17\new-chat\outputs\agent-daily\build\backfill_years.py", line 34, in fetch_page
+    raise RuntimeError(f'failed to fetch {url}')
+RuntimeError: failed to fetch https://export.arxiv.org/api/query?search_query=%28cat%3Acs.HC+OR+cat%3Acs.CV+OR+cat%3Acs.RO+OR+cat%3Acs.SD+OR+cat%3Acs.LG+OR+cat%3Astat.ML+OR+cat%3Aeess.SY+OR+cat%3Acs.AI+OR+cat%3Acs.MA%29+AND+%28all%3Arobot+OR+all%3Arobotic+OR+all%3Arobotics+OR+all%3Aembodied+OR+all%3Ahumanoid+OR+all%3Amanipulation+OR+all%3Amanipulator+OR+all%3Agrasping+OR+all%3Agrasp+OR+all%3Adexterous+OR+all%3Adexterity+OR+all%3Alocomotion+OR+all%3Alegged+OR+all%3Abiped+OR+all%3Aquadruped+OR+all%3Anavigation+OR+all%3Ateleoperation+OR+all%3Abimanual+OR+all%3Asim2real+OR+all%3A%22vision%2Blanguage%2Baction%22+OR+all%3Avla+OR+all%3A%22imitation%2Blearning%22%2Brobot+OR+all%3A%22reinforcement%2Blearning%22%2Brobot+OR+all%3A%22world%2Bmodel%22%2Brobot+OR+all%3Arobotic%2Barm+OR+all%3Amobile%2Bmanipulation%29+AND+submittedDate%3A%5B200608010000+TO+200608312359%5D&sortBy=submittedDate&sortOrder=descending&start=0&max_results=200
