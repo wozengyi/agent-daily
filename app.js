@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'agent-daily-bookmarks-v2';
+const STORAGE_KEY = 'embodied-daily-bookmarks-v2';
 const state = {
   tab: 'today',
   search: '',
@@ -263,8 +263,8 @@ function pickNewHero(list){
 }
 
 // ---------- Panels ----------
-function allLatestPapers(){ return (state.bundle && state.bundle.papers) || []; }
-function allArchivePapers(){ return (state.bundle && state.bundle.archive) || []; }
+function allLatestPapers(){ return ((state.bundle && state.bundle.papers) || []).map(newAsGeneric); }
+function allArchivePapers(){ return ((state.bundle && state.bundle.archive) || []).map(newAsGeneric); }
 function renderToday(){
   const curated = getCuratedSelection();
   const news = filtered(allLatestPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
@@ -457,4 +457,3 @@ saveBookmarks();
 mountSearchExtras();
 render();
 loadBundle();
-

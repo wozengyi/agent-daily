@@ -45,7 +45,7 @@ jobs:
         uses: nick-fields/retry@v3
         with:
           max_attempts: 3
-          timeout_minutes: 15
+          timeout_minutes: 25
           retry_on: error
           command: python build/build_daily.py --recent 7 --archive 1825 --limit 80 --archive-limit 5000
 
@@ -134,3 +134,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+

@@ -75,21 +75,19 @@ TOPIC_RULES = [
     ('World Model', [r'world model', r'latent dynamics model', r'environment model.*agent']),
 ]
 
-EXCLUDE_TOPIC_ON_HIT = {
-    ('WAM',): [],
-}
-
 # ---------- Utilities ----------
 def log(*a): print('[build]', *a, file=sys.stderr, flush=True)
 
-def fetch(url, timeout=30, retries=3, backoff=4):
+def fetch(url, timeout=60, retries=5, backoff=8):
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0 AgentDaily/1.0'})
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return r.read().decode('utf-8', errors='replace')
         except Exception as e:
-            if i == retries-1: raise
+            if i == retries-1: 
+                log(f'fetch failed after {retries} retries: {url[:60]}... {e}')
+                return ''
             time.sleep(backoff * (i+1))
     return ''
 
@@ -104,7 +102,6 @@ def norm_paper_id(pid):
 def is_relevant(text):
     t = ' ' + text.lower() + ' '
     if any(re.search(r'\b'+re.escape(h)+r'\b', t) for h in NEGATIVE_HINTS):
-        # Still accept if strong agent signal exists
         if any(re.search(r'\b'+re.escape(h)+r'\b', t) for h in ['agent', 'agents', 'agentic', 'llm', 'large language model', 'vlm', 'vision-language']):
             pass
         else:
@@ -122,15 +119,15 @@ def classify_topics(title, abstract):
 
 # ---------- Sources ----------
 def fetch_hf_days(days=14):
-    """Fetch Hugging Face daily papers JSON (public unofficial endpoint)"""
     papers = []
     for d in range(days):
         date = (datetime.now(timezone.utc) - timedelta(days=d)).strftime('%Y-%m-%d')
         try:
-            raw = fetch(f'https://huggingface.co/api/daily_papers?date={date}', timeout=20)
+            raw = fetch(f'https://huggingface.co/api/daily_papers?date={date}', timeout=30)
             data = json.loads(raw)
         except Exception as e:
             log(f'hf skip {date}: {e}'); continue
+        if not isinstance(data, list): continue
         for it in data:
             p = it.get('paper', {})
             pid = norm_paper_id(p.get('id') or arxiv_id_from_url(p.get('absUrl','')))
@@ -150,16 +147,15 @@ def fetch_hf_days(days=14):
                 'hfUrl': it.get('url') or f'https://huggingface.co/papers/{pid}',
                 'url': f'https://arxiv.org/abs/{pid}', 'topics': topics, 'tags': topics[:5]
             })
-        time.sleep(0.5)
+        time.sleep(1.0)
     return papers
 
 def fetch_page(url):
-    raw = fetch(url, timeout=40, retries=4, backoff=5)
-    # Retry on arXiv 5xx / empty
+    raw = fetch(url, timeout=60, retries=3, backoff=10)
     for _ in range(2):
         if '<feed' in raw and '<entry>' in raw: return raw
-        time.sleep(5)
-        raw = fetch(url, timeout=40, retries=2, backoff=3)
+        time.sleep(8)
+        raw = fetch(url, timeout=60, retries=2, backoff=5)
     return raw
 
 def parse_arxiv_xml(raw):
@@ -186,21 +182,16 @@ def parse_arxiv_xml(raw):
                     'authors': authors, 'arxiv': f'https://arxiv.org/abs/{pid}', 'pdf': f'https://arxiv.org/pdf/{pid}.pdf'})
     return out
 
-def fetch_arxiv(lookback_days=7, per_query=200, queries=None):
+def fetch_arxiv(lookback_days=7, per_query=100, queries=None):
     if queries is None:
         queries = [
             'all:agent', 'all:"llm agent"', 'all:"multi-agent"', 'all:"tool use"',
             'all:"agentic"', 'all:RAG', 'all:"retrieval augmented"',
             'all:"agent safety"', 'all:"llm safety"', 'all:jailbreak', 'all:"prompt injection"',
-            'all:"error attribution"', 'all:"failure attribution"',
-            'all:"post-training"', 'all:RLHF', 'all:DPO', 'all:GRPO',
-            'all:"fine-tuning" llm', 'all:"instruction tuning"', 'all:"preference optimization"',
-            'all:"vision language model"', 'all:VLM', 'all:"large multimodal model"',
+            'all:"error attribution"', 'all:"post-training"', 'all:RLHF', 'all:DPO', 'all:GRPO',
+            'all:"fine-tuning" llm', 'all:"vision language model"', 'all:VLM',
             'all:"reasoning" "language model"', 'all:"chain of thought"',
-            'all:"world model" agent', 'all:"agent memory"', 'all:"code agent"',
-            'all:"web agent"', 'all:"computer use" agent', 'all:"browser agent"',
-            'all:"agent benchmark"', 'all:"agent evaluation"',
-            'all:"interpretability" llm', 'all:"mechanistic interpretability"',
+            'all:"world model" agent', 'all:"code agent"', 'all:"web agent"', 'all:"computer use" agent',
         ]
     out = []
     seen = set()
@@ -211,6 +202,8 @@ def fetch_arxiv(lookback_days=7, per_query=200, queries=None):
                f'&start=0&max_results={per_query}&sortBy=submittedDate&sortOrder=descending')
         try:
             raw = fetch_page(url)
+            if not raw:
+                log(f'arxiv query {q[:30]}... empty response, skipping'); time.sleep(6.5); continue
             for p in parse_arxiv_xml(raw):
                 d = p['date']
                 try:
@@ -229,9 +222,10 @@ def fetch_arxiv(lookback_days=7, per_query=200, queries=None):
                 p['tags'] = topics[:5]
                 p['url'] = p['arxiv']
                 out.append(p)
+            log(f'arxiv query {q[:30]}... kept {len(out)} total so far')
         except Exception as e:
             log(f'arxiv query {q[:30]}... error: {e}')
-        time.sleep(3.2)  # rate limit
+        time.sleep(6.5)
     return out
 
 # ---------- History management ----------
@@ -252,7 +246,6 @@ def merge_into_history(hist, papers):
             hist['papers'][key] = dict(p); added += 1
         else:
             cur['upvotes'] = max(int(cur.get('upvotes',0)), int(p.get('upvotes',0)))
-            cur_topics = set(cur.get('topics') or [])
             cur['topics'] = list(dict.fromkeys(list(cur.get('topics') or []) + list(p.get('topics') or [])))[:8]
             if p.get('hfUrl'): cur['hfUrl'] = p['hfUrl']
     hist['generatedAt'] = today
@@ -260,8 +253,12 @@ def merge_into_history(hist, papers):
 
 # ---------- Bundle ----------
 def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limit=5000):
+    log('Fetching HF daily papers...')
     hf = fetch_hf_days(days=14)
-    arx = fetch_arxiv(lookback_days=7, per_query=200)
+    log(f'Got {len(hf)} HF papers')
+    log('Fetching arXiv papers...')
+    arx = fetch_arxiv(lookback_days=7, per_query=100)
+    log(f'Got {len(arx)} arXiv papers')
     by_id = {p['id']: dict(p) for p in arx}
     for p in hf:
         cur = by_id.get(p['id'])
@@ -293,7 +290,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
     recent = recent[:limit]
     archive = archive[:archive_limit]
     warnings = []
-    if added == 0 and len(archive) < 100:
+    if added == 0:
         warnings.append('zero_new_today')
     return {
         'generatedAt': hist.get('generatedAt'),
