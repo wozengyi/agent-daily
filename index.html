@@ -7,6 +7,9 @@
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<div id="__status" style="position:fixed;top:0;left:0;right:0;background:#8b5cf6;color:white;padding:8px 16px;z-index:99999;font-family:system-ui;display:block" id="status-banner">
+  Agent Daily 正在加载...
+</div>
 <header class="topbar">
   <div class="brand">
     <div class="logo" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)">AD</div>
@@ -113,7 +116,34 @@
   </div>
 </footer>
 
+<script>
+window.__status = function(msg, color='#8b5cf6'){
+  const el = document.getElementById('__status');
+  if(el){ el.style.background = color; el.textContent = msg; }
+  console.log('[Agent Daily]', msg);
+};
+window.addEventListener('error', (e)=>{
+  window.__status('❌ 错误: '+e.message, '#ef4444');
+  console.error(e);
+});
+document.addEventListener('DOMContentLoaded', ()=>{
+  window.__status('✅ DOM加载完成，正在加载论文数据...');
+});
+</script>
 <script src="papers.js"></script>
 <script src="app.js"></script>
+<script>
+window.__status('脚本加载完成');
+setTimeout(()=>{
+  const latestCount = document.getElementById('latestCount')?.textContent;
+  if(latestCount === '0' || !latestCount){
+    window.__status('⚠️ 正在加载数据，请稍候...', '#f59e0b');
+  } else {
+    window.__status('✅ 加载完成，共'+latestCount+'篇最新论文', '#10b981');
+    setTimeout(()=>{ document.getElementById('__status').style.display='none'; }, 3000);
+  }
+}, 3000);
+</script>
 </body>
 </html>
+
