@@ -4,4 +4,10 @@ __pycache__/
 .vscode/
 .idea/
 work/
-
+node_modules/
+package.json
+package-lock.json
+*.log
+test*.js
+backfill.err
+backfill.log

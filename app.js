@@ -455,26 +455,21 @@ function mountSearchExtras(){
 // ---------- Data loading ----------
 async function loadBundle(opts={}){
   state.loading = true; state.bundleError = null; render();
-  if(opts.live && location.protocol.startsWith('http')){
+  // Use embedded data first (no fetch needed!)
+  if(window.__BUNDLE__ && Array.isArray(window.__BUNDLE__.papers)){
+    state.bundle = window.__BUNDLE__;
+  } else {
+    // Fallback to fetch
     try{
-      const r = await fetch('/api/daily', {cache:'no-store'});
+      const r = await fetch('./data/daily.json',{cache:'no-cache'});
       if(r.ok){
         const d = await r.json();
-        if(d && Array.isArray(d.papers)){ state.bundle = d; state.loading=false; render(); return; }
+        if(d && Array.isArray(d.papers)){ state.bundle = d; }
       }
-      state.bundleError = '实时抓取失败（HTTP '+r.status+'）';
-    }catch(e){ state.bundleError = String(e.message||e); }
-  }
-  try{
-    const r = await fetch('./data/daily.json',{cache:'no-cache'});
-    if(r.ok){
-      const d = await r.json();
-      if(d && Array.isArray(d.papers)){ state.bundle = d; }
-      else state.bundleError = state.bundleError || 'daily.json 格式异常';
-    } else {
-      state.bundleError = state.bundleError || '找不到 data/daily.json，请先运行 build/build_daily.py';
+    }catch(e){
+      state.bundleError = String(e.message||e);
     }
-  }catch(e){ state.bundleError = state.bundleError || String(e.message||e); }
+  }
   state.loading = false;
   render();
 }
