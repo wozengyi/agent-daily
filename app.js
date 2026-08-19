@@ -344,8 +344,8 @@ function renderArchive(){
 }
 
 function renderBookmarks(){
-  const newPs = allNewPapers(), cls = allClassics();
-  const all = [...newPs, ...cls].filter(p=>state.bookmarks.has(p.id));
+  const newPs = allNewPapers(), cls = allClassics(), arcPs = allArchivePapers();
+  const all = [...newPs, ...cls, ...arcPs].filter(p=>state.bookmarks.has(p.id));
   byId('bmEmpty').hidden = all.length>0;
   byId('bmGrid').innerHTML = all.length ? all.map(p=> isClassic(p)?classicCard(p):newCard(p)).join('')
                                         : '<div class="empty">还没有收藏，点卡片右上角 ☆ 收藏论文。</div>';
@@ -390,7 +390,7 @@ document.querySelectorAll('.tab').forEach(tab=>{
 byId('searchInput').addEventListener('input', (e)=>{
   state.search = e.target.value;
   // auto-switch to latest when typing new papers; classics tab still filters via state.
-  if(state.search.trim()) state.tab='latest';
+  if(state.search.trim() && state.tab === 'today') state.tab='latest';
   render();
 });
 byId('resetFilters').addEventListener('click', ()=>{
