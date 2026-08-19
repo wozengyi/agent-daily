@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'embodied-daily-bookmarks-v2';
+const STORAGE_KEY = 'agent-daily-bookmarks-v2';
 const state = {
   tab: 'today',
   search: '',
@@ -436,7 +436,7 @@ function mountSearchExtras(){
     const b = document.createElement('button');
     b.className='hf-btn'; b.textContent=label; b.title=title;
     b.onclick = ()=>{
-      const q=(state.search||'embodied robot vla').trim();
+      const q=(state.search||'agent llm safety training').trim();
       window.open(url+encodeURIComponent(q),'_blank','noopener');
     };
     wrap.appendChild(b);
