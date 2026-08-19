@@ -1,0 +1,20 @@
+{
+  "name": "agent-daily",
+  "version": "1.0.0",
+  "description": "自动推荐每日最新大模型/Agent相关论文，数据源来自 arXiv 和 Hugging Face Daily Papers。",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wozengyi/agent-daily.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wozengyi/agent-daily/issues"
+  },
+  "homepage": "https://github.com/wozengyi/agent-daily#readme"
+}

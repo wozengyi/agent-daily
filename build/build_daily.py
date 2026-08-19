@@ -321,6 +321,7 @@ def save(hist, bundle):
     DATA_DIR.mkdir(exist_ok=True)
     HIST_PATH.write_text(json.dumps(hist, ensure_ascii=False), encoding='utf-8')
     OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False), encoding='utf-8')
+    (ROOT / 'data' / 'data.js').write_text(f'window.__BUNDLE__ = {json.dumps(bundle, ensure_ascii=False)};', encoding='utf-8')
 
 def main():
     import argparse
@@ -339,6 +340,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
