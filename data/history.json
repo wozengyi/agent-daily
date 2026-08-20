@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T14:32:13.619197+00:00",
+  "generatedAt": "2026-08-20T14:37:31.856952+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -29061,7 +29061,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19197.pdf",
       "id": "arxiv:2608.19197",
       "source": "arxiv",
-      "upvotes": 33,
+      "upvotes": 34,
       "topics": [
         "LLM Training",
         "Tool Use",
