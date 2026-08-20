@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T15:30:13.339252+00:00",
+  "generatedAt": "2026-08-20T15:41:15.591031+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -9023,7 +9023,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15869.pdf",
       "id": "arxiv:2608.15869",
       "source": "hf",
-      "upvotes": 6,
+      "upvotes": 7,
       "topics": [
         "Post-Training",
         "Reasoning",
@@ -16651,7 +16651,7 @@
       ],
       "abstract": "A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollout requires understanding whether physics, causality, and world state evolve correctly. Humans spot such violations naturally, yet no existing benchmark automates this capability: metrics are computed brute-force, leaving no reasoning chain that can be examined or verified. We introduce HarnessEval-W, an agentified evaluation pipeline that brings the harness paradigm from the LLM ecosystem to world model benchmarking. Rather than applying a fixed rubric, HarnessEval-W interprets the context of each evaluation case, decomposes the evaluation question into measurable subproblems, and spawns specialized sub-agents, each equipped with tailored context and diagnostic tools to reason over its own subproblem. The parent agent then validates the gathered evidence and summarizes it into the final verdict. This hierarchical workflow turns every evaluation into a transparent evidence tree whose complete reasoning chain justifies the result. We apply HarnessEval-W to 18 representative world models over 330 evaluation cases. Its judgments closely align with human preferences while providing verifiable, fine-grained diagnoses of every generated rollout. We open-source the full pipeline as a live benchmark and invite the broad community to contribute to grow new skills and evaluation cases as world models evolve.",
       "date": "2026-08-18",
-      "upvotes": 118,
+      "upvotes": 119,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.16859",
       "pdf": "https://arxiv.org/pdf/2608.16859.pdf",
@@ -17001,7 +17001,7 @@
       ],
       "abstract": "We present AnyTalk, a novel method for generating 3D speech animations for arbitrary characters without requiring any animation data. While existing audio-driven 3D speech animation methods rely on character-specific training data or laborious rigging/re-meshing, AnyTalk circumvents these limitations by leveraging recent video diffusion models trained on extensive video datasets. We first adapt a pre-trained video diffusion model to a target character through our Character-specific Fine-tuning (CsF) technique. By fine-tuning on rendered images of the 3D character paired with zeroed-out audio embeddings (representing \"no motion\"), we eliminate the need for animation data while preserving the motion prior of large-scale video diffusion model. We then uplift the resulting talking-head video into a 3D speech animation by estimating blendshape parameters through a proposed optimization process. AnyTalk enables lip-synced animations across diverse face meshes and blendshape configurations, significantly reducing manual effort and data requirements. We further enhance usability by distilling AnyTalk into a streamlined network, AnyTalk_{RT}, thereby enabling real-time performance. By leveraging talking-head video generation, our method broadens access to audio-driven speech animation technology for arbitrary characters. The code is publicly available at https://serin-yoon.github.io/projects/anytalk/.",
       "date": "2026-08-18",
-      "upvotes": 6,
+      "upvotes": 7,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.16143",
       "pdf": "https://arxiv.org/pdf/2608.16143.pdf",
