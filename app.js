@@ -4,6 +4,7 @@ const state = {
   search: '',
   activeTags: new Set(),
   activeYears: new Set(),
+  activeKinds: new Set(),
   bookmarks: new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')),
   seedOffset: 0,
   bundle: null,
@@ -46,6 +47,22 @@ function countBy(arr, pick){
   });
   return counts;
 }
+const KIND_LABELS = {
+  conference: '会议',
+  journal: '期刊',
+  preprint: '预印',
+  workshop: 'Workshop',
+  other: '其他'
+};
+function inferKindFromVenue(venue, source){
+  const v = (venue||'').toLowerCase();
+  if(!v && (source === 'arxiv' || source === 'hf')) return 'preprint';
+  if(/\barxiv\b|preprint/.test(v)) return 'preprint';
+  if(/journal|transactions|proceedings of the national academy|nature|science|cell|survey|computing surveys/.test(v)) return 'journal';
+  if(/conference|proceedings|symposium|workshop|\biclr\b|\bicml\b|\bneurips\b|\bnips\b|\bacl\b|\bemnlp\b|\bnaacl\b|\bcvpr\b|\biccv\b|\beccv\b|\baaai\b|\bijcai\b|\bkdd\b|\bwww\b|\bsigir\b|\bchi\b|\buist\b|\bfse\b|\bicse\b/.test(v)) return 'conference';
+  return 'other';
+}
+function kindLabel(kind){ return KIND_LABELS[kind] || KIND_LABELS.other; }
 function escapeHtml(s){
   return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
@@ -87,6 +104,7 @@ function curatedAsGeneric(p){
     date: String(p.year), // year as pseudo-date for sorting
     year: p.year, venue: p.venue,
     upvotes: 0, source: 'classic',
+    publicationKind: inferKindFromVenue(p.venue, 'classic'),
     tags: p.tags || [], topics: p.tags || [],
     why: p.why || ''
   };
@@ -98,9 +116,12 @@ function newAsGeneric(p){
     title: p.title, authors: p.authors, abstract: p.abstract||'',
     date: p.date, year: (p.date||'').slice(0,4),
     upvotes: p.upvotes||0, source: p.source,
+    venue: p.venue || (p.source==='hf'?'Hugging Face Daily':(p.source==='arxiv'?'arXiv':'')),
+    publicationKind: p.publicationKind || inferKindFromVenue(p.venue, p.source),
+    publicationTypes: p.publicationTypes || [],
+    citationCount: p.citationCount || 0,
     tags: uniq([...(p.tags||[]), ...(p.topics||[])]),
-    topics: p.topics || p.tags || [],
-    venue: p.source==='hf'?'Hugging Face Daily':'arXiv'
+    topics: p.topics || p.tags || []
   };
 }
 
@@ -123,6 +144,9 @@ function matches(p){
   if(state.activeYears.size){
     if(!state.activeYears.has(String(p.year||(p.date||'').slice(0,4)))) return false;
   }
+  if(state.activeKinds.size){
+    if(!state.activeKinds.has(p.publicationKind || 'other')) return false;
+  }
   return true;
 }
 
@@ -130,8 +154,12 @@ function filtered(list){ return list.filter(matches); }
 
 // ---------- Render helpers ----------
 function sourceBadge(p){
-  if(p.source === 'hf') return '<span class="src src-hf">🧡 HF</span>';
-  if(p.source === 'arxiv') return '<span class="src src-arxiv">📄 arXiv</span>';
+  const kind = p.publicationKind || inferKindFromVenue(p.venue, p.source);
+  if(kind === 'conference') return '<span class="src src-hf">会议</span>';
+  if(kind === 'journal') return '<span class="src src-arxiv">期刊</span>';
+  if(kind === 'preprint') return '<span class="src src-arxiv">预印</span>';
+  if(p.source === 'hf') return '<span class="src src-hf">HF</span>';
+  if(!isClassic(p)) return '<span class="src src-classic">其他</span>';
   return '<span class="src src-classic">★ 经典</span>';
 }
 function bookmarkBtn(id){
@@ -150,7 +178,7 @@ function newCard(p, opts={}){
     ${bookmarkBtn(p.id)}
     <div class="venue">
       ${sourceBadge(p)}
-      <span style="margin-left:6px">${escapeHtml(p.date||'')} · ${isClassic(p)?p.venue:daysAgoStr(p.date)}${p.upvotes?(' · 👍 '+p.upvotes):''}</span>
+      <span style="margin-left:6px">${escapeHtml(p.date||'')} · ${escapeHtml(p.venue || daysAgoStr(p.date))}${p.citationCount?(' · 引用 '+p.citationCount):''}${p.upvotes?(' · 👍 '+p.upvotes):''}</span>
     </div>
     <h3>${isClassic(p)?escapeHtml(p.title):`<a href="${p.hfUrl||p.url||p.arxiv}" target="_blank" rel="noopener" style="color:var(--text)">${escapeHtml(p.title)}</a>`}</h3>
     <div class="authors">${escapeHtml(formatAuthors(p.authors))}</div>
@@ -183,11 +211,12 @@ function classicCard(p, opts={}){
 function isClassic(p){ return p.source === 'classic'; }
 
 function heroNew(p){
-  const srcClass = p.source==='hf'?'src-hf':(p.source==='arxiv'?'src-arxiv':'src-classic');
-  const srcLabel = p.source==='hf'?'HF Daily':(p.source==='arxiv'?'arXiv':'新文');
+  const kind = p.publicationKind || inferKindFromVenue(p.venue, p.source);
+  const srcClass = kind==='conference'?'src-hf':(kind==='journal' || kind==='preprint'?'src-arxiv':'src-classic');
+  const srcLabel = kindLabel(kind);
   return `
     <div>
-      <span class="badge hf-badge">🔥 今日最新 · <span class="src ${srcClass}" style="margin-left:6px">${srcLabel}</span> · ${escapeHtml(p.date||'')}${p.upvotes?(' · 👍 '+p.upvotes):''}</span>
+      <span class="badge hf-badge">🔥 今日最新 · <span class="src ${srcClass}" style="margin-left:6px">${srcLabel}</span> · ${escapeHtml(p.date||'')}${p.venue?(' · '+escapeHtml(p.venue)):''}${p.upvotes?(' · 👍 '+p.upvotes):''}</span>
       <h1><a href="${p.hfUrl||p.url||p.arxiv}" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">${escapeHtml(p.title)}</a></h1>
       <div class="meta">${escapeHtml(formatAuthors(p.authors))}</div>
       <div class="abstract">${escapeHtml(p.abstract||'')}</div>
@@ -227,6 +256,7 @@ function renderChips(){
   const classics = allClassics();
   const archivePs = allArchivePapers();
   const tagCounts = countBy([...newPs, ...classics, ...archivePs], p=>p.topics||[]);
+  const kindCounts = countBy([...newPs, ...classics, ...archivePs], p=>[p.publicationKind || 'other']);
   Object.entries(state.bundle?.topicCounts || state.archiveIndex?.topicCounts || {}).forEach(([name, count])=>{
     tagCounts.set(name, Math.max(tagCounts.get(name) || 0, Number(count) || 0));
   });
@@ -240,7 +270,8 @@ function renderChips(){
       if(!v) return;
       const b = document.createElement('button');
       b.className = 'chip' + (activeSet.has(v)?' active':'');
-      b.innerHTML = counts ? `${escapeHtml(v)} <span class="chip-count">${counts.get(v) || 0}</span>` : escapeHtml(v);
+      const label = hostId === 'kindChips' ? kindLabel(v) : v;
+      b.innerHTML = counts ? `${escapeHtml(label)} <span class="chip-count">${counts.get(v) || 0}</span>` : escapeHtml(label);
       b.onclick = ()=>{
         if(activeSet.has(v)) activeSet.delete(v); else activeSet.add(v);
         // when a tag is picked and we're on "today", stay on today; if on feed/latest, stay.
@@ -252,7 +283,7 @@ function renderChips(){
   fill('tagChips', tagSet.slice(0, 28), state.activeTags, tagCounts);
   byId('yearChips').innerHTML='';
   fill('yearChips', yearSet, state.activeYears);
-  // (Venue filter is intentionally removed; sources are now clear via badges.)
+  fill('kindChips', ['conference','journal','preprint','other'].filter(k=>kindCounts.has(k)), state.activeKinds, kindCounts);
 }
 
 // ---------- Selections ----------
@@ -556,7 +587,7 @@ byId('searchInput').addEventListener('input', (e)=>{
   render();
 });
 byId('resetFilters').addEventListener('click', ()=>{
-  state.activeTags.clear(); state.activeYears.clear();
+  state.activeTags.clear(); state.activeYears.clear(); state.activeKinds.clear();
   state.search=''; byId('searchInput').value='';
   state.tab='today';
   render();

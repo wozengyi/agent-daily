@@ -238,6 +238,10 @@ def load_history():
         except: pass
     return {'generatedAt': None, 'papers': {}}
 
+def save_history(hist):
+    DATA_DIR.mkdir(exist_ok=True)
+    HIST_PATH.write_text(json.dumps(hist, ensure_ascii=False, indent=2), encoding='utf-8')
+
 def merge_into_history(hist, papers):
     added = 0
     today = datetime.now(timezone.utc).isoformat()
@@ -264,7 +268,8 @@ def topic_counts(papers):
 def compact_search_paper(p):
     keep = {
         'id', 'title', 'authors', 'date', 'published', 'source', 'topics', 'tags',
-        'arxiv', 'pdf', 'url', 'hfUrl', 'upvotes',
+        'arxiv', 'pdf', 'url', 'hfUrl', 'upvotes', 'venue', 'publicationKind',
+        'publicationTypes', 'citationCount',
     }
     out = {k: p.get(k) for k in keep if p.get(k) not in (None, '', [])}
     abstract = ' '.join((p.get('abstract') or '').split())

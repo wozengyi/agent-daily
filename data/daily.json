@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-08-20T13:31:15.189452+00:00",
+  "generatedAt": "2026-08-20T12:48:02.591948+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
   "recentCutoff": "2026-08-13",
   "archiveCutoff": "2021-08-21",
   "addedToday": 0,
-  "historyTotal": 1114,
+  "historyTotal": 7051,
   "topicCounts": {
-    "Multi-Agent": 122,
-    "Evaluation": 631,
-    "Planning": 77,
-    "Memory": 31,
-    "Code Agent": 52,
-    "Interpretability": 28,
-    "Agentic Search": 96,
-    "RL for LLM": 66,
-    "Reasoning": 349,
-    "Hallucination": 56,
-    "Post-Training": 156,
-    "Alignment": 120,
-    "World Model": 32,
-    "Tool Use": 37,
-    "Agent Safety": 62,
-    "Computer Use": 13,
-    "Reflection": 47,
-    "VLM Training": 148,
-    "LLM Training": 144,
-    "Fine-tuning": 176,
-    "Multimodal Agent": 6,
-    "Agent Framework": 34,
-    "Error Attribution": 9,
-    "Data Engine": 17
+    "Multi-Agent": 1497,
+    "Evaluation": 3478,
+    "Planning": 681,
+    "Memory": 148,
+    "Code Agent": 429,
+    "Interpretability": 226,
+    "Agentic Search": 594,
+    "RL for LLM": 620,
+    "Reasoning": 2292,
+    "Hallucination": 421,
+    "Post-Training": 1168,
+    "Alignment": 939,
+    "World Model": 74,
+    "Tool Use": 958,
+    "Agent Safety": 1884,
+    "Computer Use": 191,
+    "Reflection": 329,
+    "VLM Training": 269,
+    "LLM Training": 769,
+    "Fine-tuning": 1042,
+    "Multimodal Agent": 36,
+    "Agent Framework": 566,
+    "Error Attribution": 62,
+    "Data Engine": 166
   },
   "count": 240,
-  "recentTotal": 905,
+  "recentTotal": 915,
   "archiveCount": 0,
-  "archiveTotal": 209,
+  "archiveTotal": 6136,
   "sources": {
     "hf": 51,
-    "arxiv": 189
+    "arxiv": 188
   },
   "archiveSources": {
     "hf": 0,
@@ -51,6 +51,32 @@
     "archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database"
   ],
   "papers": [
+    {
+      "id": "s2:115084858292f9df35a27f2f2aa6e906a7587751",
+      "title": "SRD: A model-agnostic semantic framework for jailbreak mitigation in large language models",
+      "abstract": "",
+      "authors": "Can Shi, Zhiyong Zhang, Gaoyuan Quan, Junyang Pan, Xinxin Yue",
+      "date": "2026-09-01",
+      "published": "2026-09-01",
+      "year": 2026,
+      "venue": "Knowledge-Based Systems",
+      "publicationKind": "journal",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "citationCount": 0,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/115084858292f9df35a27f2f2aa6e906a7587751",
+      "arxiv": null,
+      "pdf": null,
+      "upvotes": 0,
+      "topics": [
+        "Agent Safety"
+      ],
+      "tags": [
+        "Agent Safety"
+      ]
+    },
     {
       "id": "arxiv:2608.13558",
       "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
@@ -87,7 +113,7 @@
       ],
       "abstract": "Popular facts are memorised more deeply during pretraining and resist removal longer than rare ones, yet existing LLM unlearning methods apply uniform gradient pressure regardless of training-data frequency. We propose the AdaPop (Adaptive Popularity) method, which combines local token confidence with a per-fact popularity-dependent exponent derived from an external proxy (e.g., Wikidata sitelinks, LLM-as-Judge), and automates the forget-retain balance via a dual-ascent controller that adjusts the retain penalty each epoch. Across three model families and two benchmarks, AdaPop leaks ~5x less forgotten content than competing methods under paraphrased queries and ~1.6x less under adversarial reformulations. We support our analysis with internal metrics: under our method, forget-set hidden states move further from the pre-unlearning model's states than under other methods, while retain-set representations remain close.",
       "date": "2026-08-20",
-      "upvotes": 10,
+      "upvotes": 7,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14229",
       "pdf": "https://arxiv.org/pdf/2608.14229.pdf",
@@ -345,7 +371,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17528.pdf",
       "id": "arxiv:2608.17528",
       "source": "hf",
-      "upvotes": 21,
+      "upvotes": 20,
       "topics": [
         "Post-Training",
         "Code Agent"
@@ -456,7 +482,11 @@
         "Evaluation"
       ],
       "url": "https://arxiv.org/abs/2608.15008",
-      "hfUrl": "https://huggingface.co/papers/2608.15008"
+      "hfUrl": "https://huggingface.co/papers/2608.15008",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-15",
+      "year": 2026
     },
     {
       "id": "arxiv:2608.18076",
@@ -525,7 +555,11 @@
         "Evaluation"
       ],
       "url": "https://arxiv.org/abs/2608.17597",
-      "hfUrl": "https://huggingface.co/papers/2608.17597"
+      "hfUrl": "https://huggingface.co/papers/2608.17597",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-18",
+      "year": 2026
     },
     {
       "pid": "2608.17800",
@@ -735,7 +769,11 @@
         "Interpretability"
       ],
       "url": "https://arxiv.org/abs/2608.17975",
-      "hfUrl": "https://huggingface.co/papers/2608.17975"
+      "hfUrl": "https://huggingface.co/papers/2608.17975",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-18",
+      "year": 2026
     },
     {
       "pid": "2608.18580",
@@ -1006,7 +1044,11 @@
         "Evaluation"
       ],
       "url": "https://arxiv.org/abs/2608.18423",
-      "hfUrl": "https://huggingface.co/papers/2608.18423"
+      "hfUrl": "https://huggingface.co/papers/2608.18423",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-19",
+      "year": 2026
     },
     {
       "pid": "2608.18852",
@@ -1699,7 +1741,11 @@
         "Memory",
         "Evaluation"
       ],
-      "url": "https://arxiv.org/abs/2608.18578"
+      "url": "https://arxiv.org/abs/2608.18578",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-19",
+      "year": 2026
     },
     {
       "pid": "2607.20145",
@@ -1987,7 +2033,11 @@
         "Planning",
         "Evaluation"
       ],
-      "url": "https://arxiv.org/abs/2608.18490"
+      "url": "https://arxiv.org/abs/2608.18490",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-19",
+      "year": 2026
     },
     {
       "pid": "2608.18993",
@@ -2126,7 +2176,11 @@
         "Evaluation",
         "Alignment"
       ],
-      "url": "https://arxiv.org/abs/2608.19161"
+      "url": "https://arxiv.org/abs/2608.19161",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-19",
+      "year": 2026
     },
     {
       "pid": "2608.18682",
@@ -3561,7 +3615,11 @@
       "tags": [
         "Code Agent"
       ],
-      "url": "https://arxiv.org/abs/2608.18645"
+      "url": "https://arxiv.org/abs/2608.18645",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-19",
+      "year": 2026
     },
     {
       "pid": "2608.18622",
@@ -3720,7 +3778,14 @@
       "tags": [
         "Tool Use"
       ],
-      "url": "https://arxiv.org/abs/2608.18398"
+      "url": "https://arxiv.org/abs/2608.18398",
+      "venue": "arXiv",
+      "publicationKind": "journal",
+      "publicationTypes": [
+        "Review"
+      ],
+      "published": "2026-08-19",
+      "year": 2026
     },
     {
       "pid": "2608.09011",
@@ -4261,7 +4326,11 @@
       "tags": [
         "Evaluation"
       ],
-      "url": "https://arxiv.org/abs/2607.26643"
+      "url": "https://arxiv.org/abs/2607.26643",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-07-29",
+      "year": 2026
     },
     {
       "pid": "2608.16072",
@@ -5673,7 +5742,11 @@
         "Evaluation",
         "RL for LLM"
       ],
-      "url": "https://arxiv.org/abs/2608.17524"
+      "url": "https://arxiv.org/abs/2608.17524",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-18",
+      "year": 2026
     },
     {
       "pid": "2608.14825",
@@ -6020,7 +6093,11 @@
         "Planning",
         "RL for LLM"
       ],
-      "url": "https://arxiv.org/abs/2608.03502"
+      "url": "https://arxiv.org/abs/2608.03502",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-04",
+      "year": 2026
     },
     {
       "pid": "2608.18034",
@@ -6229,7 +6306,14 @@
         "Evaluation",
         "Fine-tuning"
       ],
-      "url": "https://arxiv.org/abs/2608.17237"
+      "url": "https://arxiv.org/abs/2608.17237",
+      "venue": "arXiv",
+      "publicationKind": "journal",
+      "publicationTypes": [
+        "Review"
+      ],
+      "published": "2026-08-18",
+      "year": 2026
     },
     {
       "pid": "2608.07994",
@@ -7181,7 +7265,11 @@
         "Multi-Agent",
         "Evaluation"
       ],
-      "url": "https://arxiv.org/abs/2608.17550"
+      "url": "https://arxiv.org/abs/2608.17550",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-18",
+      "year": 2026
     },
     {
       "pid": "2608.17535",
@@ -7209,30 +7297,6 @@
         "Reasoning"
       ],
       "url": "https://arxiv.org/abs/2608.17535"
-    },
-    {
-      "pid": "2608.17501",
-      "title": "SGHA: Evidence-Grounded Research Problem Discovery with Local Language Models",
-      "abstract": "Recent efforts toward fully automated AI scientists have demonstrated that language-model agents can generate hypotheses, execute experiments, and draft scientific manuscripts. However, during the early stages of research, when research problems are formulated, these AI scientists often rely heavily on proprietary frontier models. Their proposals are shaped by opaque parametric knowledge and by literature searches conditioned on the proposals themselves. Such knowledge is effectively a black box, and this dependence makes the evidential basis and validity of generated research problems difficult to audit and leaves the process vulnerable to model-specific hallucinations and biases. Furthermore, if proprietary research materials are transmitted to external APIs, the use of these models creates confidentiality, privacy, and data-governance concerns.   We introduce the Structural Gap Hypothesis Agent (SGHA), a fully automated, corpus-first research-problem discovery system that runs entirely on a local LLM. SGHA structures a scientific literature corpus into evidence-linked paper objects and a typed evidence graph, detects unresolved structural patterns across papers, screens candidate gaps before formulation, and produces traceable research-problem families. In particular, it is able to output assumptions, objectives, success criteria, and remaining ambiguities. All LLM-based components of SGHA are executed using a locally served open-weight 9B language model, without requiring proprietary frontier-model APIs. We compare SGHA with the AI Scientist-v2 idea formulation module in five machine-learning domains. Our results suggest that explicit corpus structure and evidence-constrained reasoning can support promising, inspectable research-problem formulation without relying on frontier models during generation or verification.",
-      "date": "2026-08-18",
-      "authors": [
-        "Sarvesh Gharat",
-        "Junpei Komiyama"
-      ],
-      "arxiv": "https://arxiv.org/abs/2608.17501",
-      "pdf": "https://arxiv.org/pdf/2608.17501.pdf",
-      "id": "arxiv:2608.17501",
-      "source": "arxiv",
-      "upvotes": 0,
-      "topics": [
-        "Reasoning",
-        "Hallucination"
-      ],
-      "tags": [
-        "Reasoning",
-        "Hallucination"
-      ],
-      "url": "https://arxiv.org/abs/2608.17501"
     }
   ],
   "archive": []

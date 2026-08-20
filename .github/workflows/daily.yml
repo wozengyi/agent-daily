@@ -19,7 +19,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -38,12 +38,12 @@ jobs:
         if: ${{ (github.event_name == 'workflow_dispatch' && github.event.inputs.backfill_years != '0') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[backfill-5y]')) }}
         uses: nick-fields/retry@v3
         with:
-          max_attempts: 2
-          timeout_minutes: 90
+          max_attempts: 1
+          timeout_minutes: 360
           retry_on: error
           command: |
             years="${{ github.event.inputs.backfill_years || '5' }}"
-            python build/backfill_years.py --years "$years" --max-per-month 120 --page-size 50 --sleep 1.2
+            python build/backfill_semantic_scholar.py --years "$years" --pages-per-query 0 --max-total 0 --max-per-year 0 --sleep 3
 
       - name: Generate daily data (with retry)
         uses: nick-fields/retry@v3
