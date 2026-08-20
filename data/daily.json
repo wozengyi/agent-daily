@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-20T10:26:15.714228+00:00",
+  "generatedAt": "2026-08-20T10:30:44.264138+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
   "recentCutoff": "2026-08-13",
   "archiveCutoff": "2021-08-21",
-  "addedToday": 6,
+  "addedToday": 0,
   "historyTotal": 1114,
   "topicCounts": {
     "Multi-Agent": 122,
@@ -44,7 +44,9 @@
     "hf": 0,
     "arxiv": 0
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "notes": [
     "archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database"
   ],
