@@ -67,7 +67,8 @@ function escapeHtml(s){
   return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 function formatAuthors(a){
-  const parts = (a||'').split(',').map(s=>s.trim()).filter(Boolean);
+  const raw = Array.isArray(a) ? a.join(', ') : (a || '');
+  const parts = String(raw).split(',').map(s=>s.trim()).filter(Boolean);
   if(parts.length <= 3) return parts.join(', ');
   return parts.slice(0,3).join(', ') + ', 等';
 }
@@ -356,9 +357,9 @@ function renderToday(){
   } else if(state.bundleError && !top){
     byId('todaySub').textContent = '抓取新文失败，显示经典精选：'+state.bundleError;
   } else if(state.bundle){
-    const hf = state.bundle.sources?.hf||0, arx = state.bundle.sources?.arxiv||0;
+    const hf = state.bundle.sources?.hf||0, arx = state.bundle.sources?.arxiv||0, s2 = state.bundle.sources?.semanticScholar||0;
     const total = state.bundle.recentTotal || state.bundle.count;
-    byId('todaySub').textContent = `${dateStr} · 最近 ${state.bundle.recentDays||7} 天展示 ${state.bundle.count}/${total} 篇新文（HF ${hf} / arXiv ${arx}）${activeTagLabel}`;
+    byId('todaySub').textContent = `${dateStr} · 最近 ${state.bundle.recentDays||7} 天展示 ${state.bundle.count}/${total} 篇新文（HF ${hf} / arXiv ${arx}${s2 ? ' / S2 '+s2 : ''}）${activeTagLabel}`;
   }
 
   if(top){

@@ -372,8 +372,10 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
                 1 if p.get('source')=='hf' else 0,
                 int(p.get('upvotes') or 0),
                 len(p.get('topics') or []))
-    recent = sorted([p for p in all_hist if (p.get('date') or '0000-00-00') >= recent_cutoff], key=keyf, reverse=True)
-    archive = sorted([p for p in all_hist
+    today_iso = today.isoformat()
+    visible_hist = [p for p in all_hist if (p.get('date') or '0000-00-00') <= today_iso]
+    recent = sorted([p for p in visible_hist if (p.get('date') or '0000-00-00') >= recent_cutoff], key=keyf, reverse=True)
+    archive = sorted([p for p in visible_hist
                        if archive_cutoff <= (p.get('date') or '0000-00-00') < recent_cutoff],
                       key=keyf, reverse=True)
     archive_total = len(archive)
@@ -401,10 +403,12 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
         'sources': {
             'hf': sum(1 for p in recent if p.get('source')=='hf'),
             'arxiv': sum(1 for p in recent if p.get('source')=='arxiv'),
+            'semanticScholar': sum(1 for p in recent if p.get('source')=='semantic-scholar'),
         },
         'archiveSources': {
             'hf': sum(1 for p in archive if p.get('source')=='hf'),
             'arxiv': sum(1 for p in archive if p.get('source')=='arxiv'),
+            'semanticScholar': sum(1 for p in archive if p.get('source')=='semantic-scholar'),
         },
         'warnings': warnings,
         'notes': ['archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database'],

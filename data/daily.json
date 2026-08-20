@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T13:45:18.261766+00:00",
+  "generatedAt": "2026-08-20T14:32:13.619197+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
   "recentCutoff": "2026-08-13",
@@ -33,16 +33,18 @@
     "Data Engine": 166
   },
   "count": 240,
-  "recentTotal": 915,
+  "recentTotal": 914,
   "archiveCount": 0,
   "archiveTotal": 6136,
   "sources": {
     "hf": 51,
-    "arxiv": 188
+    "arxiv": 189,
+    "semanticScholar": 0
   },
   "archiveSources": {
     "hf": 0,
-    "arxiv": 0
+    "arxiv": 0,
+    "semanticScholar": 0
   },
   "warnings": [
     "zero_new_today"
@@ -51,32 +53,6 @@
     "archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database"
   ],
   "papers": [
-    {
-      "id": "s2:115084858292f9df35a27f2f2aa6e906a7587751",
-      "title": "SRD: A model-agnostic semantic framework for jailbreak mitigation in large language models",
-      "abstract": "",
-      "authors": "Can Shi, Zhiyong Zhang, Gaoyuan Quan, Junyang Pan, Xinxin Yue",
-      "date": "2026-09-01",
-      "published": "2026-09-01",
-      "year": 2026,
-      "venue": "Knowledge-Based Systems",
-      "publicationKind": "journal",
-      "publicationTypes": [
-        "JournalArticle"
-      ],
-      "citationCount": 0,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/115084858292f9df35a27f2f2aa6e906a7587751",
-      "arxiv": null,
-      "pdf": null,
-      "upvotes": 0,
-      "topics": [
-        "Agent Safety"
-      ],
-      "tags": [
-        "Agent Safety"
-      ]
-    },
     {
       "id": "arxiv:2608.13558",
       "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
@@ -371,7 +347,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17528.pdf",
       "id": "arxiv:2608.17528",
       "source": "hf",
-      "upvotes": 21,
+      "upvotes": 22,
       "topics": [
         "Post-Training",
         "Code Agent"
@@ -894,7 +870,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18565.pdf",
       "id": "arxiv:2608.18565",
       "source": "arxiv",
-      "upvotes": 109,
+      "upvotes": 110,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -935,7 +911,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19197.pdf",
       "id": "arxiv:2608.19197",
       "source": "arxiv",
-      "upvotes": 32,
+      "upvotes": 33,
       "topics": [
         "LLM Training",
         "Tool Use",
@@ -972,7 +948,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18940.pdf",
       "id": "arxiv:2608.18940",
       "source": "arxiv",
-      "upvotes": 24,
+      "upvotes": 26,
       "topics": [
         "Planning",
         "Evaluation",
@@ -5287,7 +5263,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17426.pdf",
       "id": "arxiv:2608.17426",
       "source": "arxiv",
-      "upvotes": 124,
+      "upvotes": 151,
       "topics": [
         "VLM Training",
         "Evaluation"
@@ -7297,6 +7273,34 @@
         "Reasoning"
       ],
       "url": "https://arxiv.org/abs/2608.17535"
+    },
+    {
+      "pid": "2608.17501",
+      "title": "SGHA: Evidence-Grounded Research Problem Discovery with Local Language Models",
+      "abstract": "Recent efforts toward fully automated AI scientists have demonstrated that language-model agents can generate hypotheses, execute experiments, and draft scientific manuscripts. However, during the early stages of research, when research problems are formulated, these AI scientists often rely heavily on proprietary frontier models. Their proposals are shaped by opaque parametric knowledge and by literature searches conditioned on the proposals themselves. Such knowledge is effectively a black box, and this dependence makes the evidential basis and validity of generated research problems difficult to audit and leaves the process vulnerable to model-specific hallucinations and biases. Furthermore, if proprietary research materials are transmitted to external APIs, the use of these models creates confidentiality, privacy, and data-governance concerns.   We introduce the Structural Gap Hypothesis Agent (SGHA), a fully automated, corpus-first research-problem discovery system that runs entirely on a local LLM. SGHA structures a scientific literature corpus into evidence-linked paper objects and a typed evidence graph, detects unresolved structural patterns across papers, screens candidate gaps before formulation, and produces traceable research-problem families. In particular, it is able to output assumptions, objectives, success criteria, and remaining ambiguities. All LLM-based components of SGHA are executed using a locally served open-weight 9B language model, without requiring proprietary frontier-model APIs. We compare SGHA with the AI Scientist-v2 idea formulation module in five machine-learning domains. Our results suggest that explicit corpus structure and evidence-constrained reasoning can support promising, inspectable research-problem formulation without relying on frontier models during generation or verification.",
+      "date": "2026-08-18",
+      "authors": [
+        "Sarvesh Gharat",
+        "Junpei Komiyama"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.17501",
+      "pdf": "https://arxiv.org/pdf/2608.17501.pdf",
+      "id": "arxiv:2608.17501",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning",
+        "Hallucination"
+      ],
+      "tags": [
+        "Reasoning",
+        "Hallucination"
+      ],
+      "url": "https://arxiv.org/abs/2608.17501",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-18",
+      "year": 2026
     }
   ],
   "archive": []
