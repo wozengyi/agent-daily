@@ -14,6 +14,7 @@ const state = {
   latestBundle: null,
   latestLoading: false,
   latestError: null,
+  latestResultLimit: 120,
   archiveIndex: null,
   archiveIndexLoading: false,
   archiveIndexError: null,
@@ -400,9 +401,10 @@ function renderLatest(){
         ? `最近 ${days} 天，完整列表加载失败：${state.latestError}`
         : `最近 ${days} 天，展示 ${list.length}/${total} 篇`;
   byId('latestCount2').textContent = meta;
-  const visible = searching ? list.slice(0, state.searchResultLimit) : list;
-  const more = searching && list.length > visible.length
-    ? `<button class="btn small load-more" data-search-more>再显示 ${Math.min(120, list.length - visible.length)} 篇</button>`
+  const limit = searching ? state.searchResultLimit : state.latestResultLimit;
+  const visible = list.slice(0, limit);
+  const more = list.length > visible.length
+    ? `<button class="btn small load-more" data-${searching ? 'search' : 'latest'}-more>再显示 ${Math.min(120, list.length - visible.length)} 篇</button>`
     : '';
   const emptyText = searching && state.searchIndexLoading ? '正在加载全库搜索索引…' : '没有匹配的新论文，试试清除筛选或点「刷新最新」。';
   byId('latestGrid').innerHTML = visible.length ? visible.map(p=>newCard(p)).join('') + more : `<div class="empty">${emptyText}</div>`;
@@ -585,6 +587,10 @@ document.addEventListener('click', (e)=>{
     state.searchResultLimit += 120;
     renderLatest();
   }
+  if(t.dataset && t.dataset.latestMore!==undefined){
+    state.latestResultLimit += 120;
+    renderLatest();
+  }
 });
 document.addEventListener('keydown',(e)=>{ if(e.key==='Escape') closeDetail(); });
 document.querySelectorAll('.tab').forEach(tab=>{
@@ -593,6 +599,7 @@ document.querySelectorAll('.tab').forEach(tab=>{
 byId('searchInput').addEventListener('input', (e)=>{
   state.search = e.target.value;
   state.searchResultLimit = 120;
+  state.latestResultLimit = 120;
   // auto-switch to latest when typing new papers; classics tab still filters via state.
   if(state.search.trim() && state.tab === 'today') state.tab='latest';
   if(state.search.trim().length >= 2) loadSearchIndex();

@@ -51,7 +51,7 @@ jobs:
           max_attempts: 3
           timeout_minutes: 25
           retry_on: error
-          command: python build/build_daily.py --recent 7 --archive 1825 --limit 240 --archive-limit 0
+          command: python build/build_daily.py --recent 7 --archive 1825 --archive-limit 0
 
       - name: Warn on suspicious builds
         run: |
