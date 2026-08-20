@@ -1,5 +1,5 @@
 const STORAGE_KEY = 'agent-daily-bookmarks-v2';
-const DATA_VERSION = '20260820-data-day';
+const DATA_VERSION = '20260821-agent-facets-v1';
 const state = {
   tab: 'today',
   search: '',
@@ -45,6 +45,7 @@ function seededRandom(seed){
   };
 }
 function uniq(arr){ return Array.from(new Set(arr)); }
+function paperTopics(p){ return p.tags || p.topics || []; }
 function countBy(arr, pick){
   const counts = new Map();
   arr.forEach(item=>{
@@ -111,7 +112,7 @@ function curatedAsGeneric(p){
     year: p.year, venue: p.venue,
     upvotes: 0, source: 'classic',
     publicationKind: inferKindFromVenue(p.venue, 'classic'),
-    tags: p.tags || [], topics: p.tags || [],
+    tags: paperTopics(p), topics: paperTopics(p),
     why: p.why || ''
   };
 }
@@ -157,6 +158,31 @@ function matches(p){
 }
 
 function filtered(list){ return list.filter(matches); }
+
+function matchesFacetScope(p, ignoreFacet){
+  const q = state.search.trim().toLowerCase();
+  if(q){
+    const hay = (p.title+' '+(p.authors||'')+' '+(p.abstract||'')+' '+(p.tags||[]).join(' ')).toLowerCase();
+    if(!hay.includes(q)) return false;
+  }
+  if(ignoreFacet !== 'tags' && state.activeTags.size){
+    const tagset = new Set(p.tags||[]);
+    let ok = false;
+    for(const t of state.activeTags){ if(tagset.has(t)){ ok=true; break; } }
+    if(!ok) return false;
+  }
+  if(ignoreFacet !== 'years' && state.activeYears.size){
+    if(!state.activeYears.has(String(p.year||(p.date||'').slice(0,4)))) return false;
+  }
+  if(ignoreFacet !== 'kinds' && state.activeKinds.size){
+    if(!state.activeKinds.has(p.publicationKind || 'other')) return false;
+  }
+  return true;
+}
+function filteredForFacet(list, ignoreFacet){ return list.filter(p=>matchesFacetScope(p, ignoreFacet)); }
+function countMapFromObject(obj){
+  return new Map(Object.entries(obj || {}).map(([name, count])=>[name, Number(count) || 0]));
+}
 
 // ---------- Render helpers ----------
 function sourceBadge(p){
@@ -243,14 +269,14 @@ function heroCurated(sel){
       <span class="badge">今日主题 · ${escapeHtml(sel.theme.title)} · 经典重温</span>
       <h1>${escapeHtml(p.title)}</h1>
       <div class="meta">${escapeHtml(p.venue)} · ${p.year}</div>
-      <div class="authors">${escapeHtml(p.authors)}</div>
+      <div class="authors">${escapeHtml(formatAuthors(p.authors))}</div>
       <div class="abstract">${escapeHtml(p.abstract||'')}</div>
       <div class="actions">
         ${p.arxiv?`<a class="btn primary" href="${p.arxiv}" target="_blank" rel="noopener">📄 阅读论文</a>${zhLink(p.arxiv)}`:''}
         ${p.project?`<a class="btn" href="${p.project}" target="_blank" rel="noopener">🔗 项目页</a>`:''}
         ${bookmarkBtn('c:'+p.id)}
       </div>
-      <div class="hero-tags">${p.tags.map(t=>`<span class="tag-pill">${escapeHtml(t)}</span>`).join('')}</div>
+      <div class="hero-tags">${paperTopics(p).map(t=>`<span class="tag-pill">${escapeHtml(t)}</span>`).join('')}</div>
     </div>
     <div class="hero-art"><div><div class="emoji">${p.emoji||'🤖'}</div><div class="tag">${escapeHtml(sel.theme.hook)}</div></div></div>
   `;
@@ -258,17 +284,17 @@ function heroCurated(sel){
 
 // ---------- Sidebar chips ----------
 function renderChips(){
-  const newPs = allNewPapers();
-  const classics = allClassics();
-  const archivePs = allArchivePapers();
-  const tagCounts = countBy([...newPs, ...classics, ...archivePs], p=>p.topics||[]);
-  const kindCounts = countBy([...newPs, ...classics, ...archivePs], p=>[p.publicationKind || 'other']);
-  Object.entries(state.bundle?.topicCounts || state.archiveIndex?.topicCounts || {}).forEach(([name, count])=>{
-    tagCounts.set(name, Math.max(tagCounts.get(name) || 0, Number(count) || 0));
-  });
+  const viewPs = currentFacetPapers();
+  const useArchiveTopicIndex = state.tab === 'archive' && state.archiveIndex && !state.search.trim() && !state.activeYears.size && !state.activeKinds.size;
+  const tagCounts = useArchiveTopicIndex
+    ? countMapFromObject(state.archiveIndex.topicCounts)
+    : countBy(filteredForFacet(viewPs, 'tags'), p=>p.topics||p.tags||[]);
+  state.activeTags.forEach(name=>{ if(!tagCounts.has(name)) tagCounts.set(name, 0); });
+  const kindCounts = countBy(filteredForFacet(viewPs, 'kinds'), p=>[p.publicationKind || 'other']);
+  state.activeKinds.forEach(name=>{ if(!kindCounts.has(name)) kindCounts.set(name, 0); });
   const tagSet = Array.from(tagCounts.entries()).sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0])).map(([name])=>name);
-  const indexYears = (state.archiveIndex?.years || []).map(y=>String(y.year));
-  const yearSet = uniq([...newPs.map(p=>String((p.date||'').slice(0,4))), ...classics.map(p=>String(p.year)), ...archivePs.map(p=>String((p.date||'').slice(0,4))), ...indexYears]).sort((a,b)=>Number(b)-Number(a));
+  const indexYears = state.tab === 'archive' ? (state.archiveIndex?.years || []).map(y=>String(y.year)) : [];
+  const yearSet = uniq([...viewPs.map(p=>String(p.year||(p.date||'').slice(0,4))), ...indexYears]).filter(Boolean).sort((a,b)=>Number(b)-Number(a));
 
   const fill = (hostId, set, activeSet, counts=null)=>{
     const host = byId(hostId); host.innerHTML='';
@@ -300,12 +326,13 @@ function getCuratedSelection(){
   const rng = seededRandom(seed);
   let pool = PAPERS;
   if(state.activeTags.size){
-    pool = PAPERS.filter(p=>p.tags.some(t=>state.activeTags.has(t)));
+    pool = PAPERS.filter(p=>paperTopics(p).some(t=>state.activeTags.has(t)));
     if(!pool.length) pool = PAPERS;
   }
   const heroIdx = Math.floor(rng()*pool.length);
   const hero = pool[heroIdx];
-  let related = PAPERS.filter(p=>p.id!==hero.id && p.tags.some(t=>hero.tags.includes(t)))
+  const heroTopics = paperTopics(hero);
+  let related = PAPERS.filter(p=>p.id!==hero.id && paperTopics(p).some(t=>heroTopics.includes(t)))
                      .slice().sort(()=>rng()-0.5).slice(0,3);
   if(related.length<3){
     const rest = PAPERS.filter(p=>p.id!==hero.id && !related.find(r=>r.id===p.id)).slice().sort(()=>rng()-0.5);
@@ -336,6 +363,16 @@ function allArchivePapers(){
     seen.add(p.id);
     return true;
   }).map(newAsGeneric);
+}
+function allBookmarkPapers(){
+  return [...allLatestPapers(), ...allClassics(), ...allArchivePapers()].filter(p=>state.bookmarks.has(p.id));
+}
+function currentFacetPapers(){
+  if(state.tab === 'feed') return allClassics();
+  if(state.tab === 'archive') return allArchivePapers();
+  if(state.tab === 'bookmarks') return allBookmarkPapers();
+  if(state.tab === 'latest' && state.search.trim().length >= 2 && state.searchIndex) return allSearchPapers();
+  return allLatestPapers();
 }
 function renderToday(){
   const curated = getCuratedSelection();
@@ -545,8 +582,7 @@ function renderArchive(){
 }
 
 function renderBookmarks(){
-  const newPs = allNewPapers(), cls = allClassics(), arcPs = allArchivePapers();
-  const all = [...newPs, ...cls, ...arcPs].filter(p=>state.bookmarks.has(p.id));
+  const all = allBookmarkPapers();
   byId('bmEmpty').hidden = all.length>0;
   byId('bmGrid').innerHTML = all.length ? all.map(p=> isClassic(p)?classicCard(p):newCard(p)).join('')
                                         : '<div class="empty">还没有收藏，点卡片右上角 ☆ 收藏论文。</div>';
@@ -685,7 +721,7 @@ async function loadLatestBundle(){
     state.latestError = String(e.message || e);
   }finally{
     state.latestLoading = false;
-    if(state.tab === 'latest') renderLatest();
+    if(state.tab === 'latest') render();
     else renderCounts();
   }
 }
@@ -704,7 +740,7 @@ async function loadArchiveIndex(){
     state.archiveIndexError = String(e.message || e);
   }finally{
     state.archiveIndexLoading = false;
-    if(state.tab === 'archive') renderArchive();
+    if(state.tab === 'archive') render();
     else render();
   }
 }
@@ -723,7 +759,7 @@ async function loadArchiveYear(year){
     state.archiveYearErrors[year] = String(e.message || e);
   }finally{
     state.archiveLoadingYears.delete(year);
-    if(state.tab === 'archive') renderArchive();
+    if(state.tab === 'archive') render();
     else renderCounts();
   }
 }
@@ -742,7 +778,7 @@ async function loadSearchIndex(){
     state.searchIndexError = String(e.message || e);
   }finally{
     state.searchIndexLoading = false;
-    if(state.tab === 'latest') renderLatest();
+    if(state.tab === 'latest') render();
   }
 }
 function closeDetail(){ byId('detail').classList.add('hidden'); }
