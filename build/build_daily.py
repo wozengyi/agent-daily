@@ -15,6 +15,8 @@ LATEST_PATH = DATA_DIR / 'latest.json'
 SEARCH_INDEX_PATH = DATA_DIR / 'search-index.json'
 ARCHIVE_DIR = DATA_DIR / 'archive'
 CTX = ssl.create_default_context()
+BOOTSTRAP_START = '/* AGENT_DAILY_BOOTSTRAP_START */'
+BOOTSTRAP_END = '/* AGENT_DAILY_BOOTSTRAP_END */'
 
 # ---------- Relevance & topic rules ----------
 AGENT_HINTS = [
@@ -292,6 +294,19 @@ def write_latest_bundle(bundle):
     LATEST_PATH.write_text(json.dumps(latest, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     log(f'wrote {LATEST_PATH}: count={len(latest["papers"])}')
 
+def write_bootstrap_html(light_json):
+    index_path = ROOT / 'index.html'
+    if not index_path.exists():
+        return
+    html = index_path.read_text(encoding='utf-8')
+    start = html.find(BOOTSTRAP_START)
+    end = html.find(BOOTSTRAP_END)
+    if start < 0 or end < 0 or end < start:
+        return
+    replacement = BOOTSTRAP_START + '\nwindow.__BUNDLE__=' + light_json + ';\n'
+    html = html[:start] + replacement + html[end:]
+    index_path.write_text(html, encoding='utf-8')
+
 def write_search_index(hist):
     papers = sorted(
         hist.get('papers', {}).values(),
@@ -442,6 +457,7 @@ def save(hist, bundle):
     light_bundle['latestPath'] = 'data/latest.json'
     light_json = json.dumps(light_bundle, ensure_ascii=False, separators=(',', ':'))
     OUT_PATH.write_text(light_json, encoding='utf-8')
+    write_bootstrap_html(light_json)
     write_archive_shards(hist, bundle)
     write_search_index(hist)
     (DATA_DIR / 'data.js').write_text('window.__BUNDLE__=' + light_json + ';\n', encoding='utf-8')
