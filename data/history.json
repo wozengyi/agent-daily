@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T12:48:02.591948+00:00",
+  "generatedAt": "2026-08-20T13:45:18.261766+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -1151,7 +1151,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17528.pdf",
       "id": "arxiv:2608.17528",
       "source": "hf",
-      "upvotes": 20,
+      "upvotes": 21,
       "topics": [
         "Post-Training",
         "Code Agent"
@@ -1792,7 +1792,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17253.pdf",
       "id": "arxiv:2608.17253",
       "source": "arxiv",
-      "upvotes": 76,
+      "upvotes": 77,
       "topics": [
         "VLM Training",
         "Multi-Agent",
@@ -12616,7 +12616,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17426.pdf",
       "id": "arxiv:2608.17426",
       "source": "arxiv",
-      "upvotes": 112,
+      "upvotes": 124,
       "topics": [
         "VLM Training",
         "Evaluation"
@@ -23290,7 +23290,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16590.pdf",
       "id": "arxiv:2608.16590",
       "source": "arxiv",
-      "upvotes": 122,
+      "upvotes": 125,
       "topics": [
         "Reflection"
       ],
@@ -32813,7 +32813,7 @@
       ],
       "abstract": "Popular facts are memorised more deeply during pretraining and resist removal longer than rare ones, yet existing LLM unlearning methods apply uniform gradient pressure regardless of training-data frequency. We propose the AdaPop (Adaptive Popularity) method, which combines local token confidence with a per-fact popularity-dependent exponent derived from an external proxy (e.g., Wikidata sitelinks, LLM-as-Judge), and automates the forget-retain balance via a dual-ascent controller that adjusts the retain penalty each epoch. Across three model families and two benchmarks, AdaPop leaks ~5x less forgotten content than competing methods under paraphrased queries and ~1.6x less under adversarial reformulations. We support our analysis with internal metrics: under our method, forget-set hidden states move further from the pre-unlearning model's states than under other methods, while retain-set representations remain close.",
       "date": "2026-08-20",
-      "upvotes": 7,
+      "upvotes": 10,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14229",
       "pdf": "https://arxiv.org/pdf/2608.14229.pdf",
