@@ -35,13 +35,15 @@ jobs:
           python-version: "3.11"
 
       - name: (Optional) Backfill multi-year history
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.backfill_years != '0' }}
+        if: ${{ (github.event_name == 'workflow_dispatch' && github.event.inputs.backfill_years != '0') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[backfill-5y]')) }}
         uses: nick-fields/retry@v3
         with:
           max_attempts: 2
           timeout_minutes: 90
           retry_on: error
-          command: python build/backfill_years.py --years ${{ github.event.inputs.backfill_years }} --max-per-month 120 --page-size 50 --sleep 1.2
+          command: |
+            years="${{ github.event.inputs.backfill_years || '5' }}"
+            python build/backfill_years.py --years "$years" --max-per-month 120 --page-size 50 --sleep 1.2
 
       - name: Generate daily data (with retry)
         uses: nick-fields/retry@v3
