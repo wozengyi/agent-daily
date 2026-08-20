@@ -1,5 +1,5 @@
 const STORAGE_KEY = 'agent-daily-bookmarks-v2';
-const DATA_VERSION = '20260820-fast-latest';
+const DATA_VERSION = '20260820-data-day';
 const state = {
   tab: 'today',
   search: '',
@@ -351,10 +351,12 @@ function renderToday(){
   const hfSub = byId('hfSub');
 
   const d = new Date();
-  const dateStr = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  const localDateStr = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  const dataDate = (news[0]?.date || state.bundle?.papers?.[0]?.date || localDateStr || '').slice(0,10);
+  const dataDayCount = news.filter(p => (p.date || '').slice(0,10) === dataDate).length;
   const activeTagLabel = state.activeTags.size ? (' · 主题：'+Array.from(state.activeTags).join(' / ')) : '';
-  byId('datePill').textContent = `${dateStr}${activeTagLabel}`;
-  byId('todayTitle').textContent = top? '今日最新论文' : '今日精选';
+  byId('datePill').textContent = `${dataDate}${activeTagLabel}`;
+  byId('todayTitle').textContent = top? '最新论文推荐' : '今日精选';
   byId('todayMoreTitle').textContent = top? '更多最新' : '更多精选';
 
   if(state.loading && !state.bundle){
@@ -364,7 +366,7 @@ function renderToday(){
   } else if(state.bundle){
     const hf = state.bundle.sources?.hf||0, arx = state.bundle.sources?.arxiv||0, s2 = state.bundle.sources?.semanticScholar||0;
     const total = state.bundle.recentTotal || state.bundle.count;
-    byId('todaySub').textContent = `${dateStr} · 最近 ${state.bundle.recentDays||7} 天展示 ${state.bundle.count}/${total} 篇新文（HF ${hf} / arXiv ${arx}${s2 ? ' / S2 '+s2 : ''}）${activeTagLabel}`;
+    byId('todaySub').textContent = `最新数据日 ${dataDate} · 当日 ${dataDayCount} 篇 · 最近 ${state.bundle.recentDays||7} 天展示 ${state.bundle.count}/${total} 篇新文（HF ${hf} / arXiv ${arx}${s2 ? ' / S2 '+s2 : ''}）${activeTagLabel}`;
   }
 
   if(top){
