@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T16:36:24.743347+00:00",
+  "generatedAt": "2026-08-20T19:14:13.780154+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -1792,7 +1792,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17253.pdf",
       "id": "arxiv:2608.17253",
       "source": "arxiv",
-      "upvotes": 79,
+      "upvotes": 80,
       "topics": [
         "VLM Training",
         "Multi-Agent",
@@ -4212,7 +4212,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15888.pdf",
       "id": "arxiv:2608.15888",
       "source": "arxiv",
-      "upvotes": 0,
+      "upvotes": 2,
       "topics": [
         "Agent Safety",
         "Multi-Agent",
@@ -4223,7 +4223,8 @@
         "Multi-Agent",
         "Evaluation"
       ],
-      "url": "https://arxiv.org/abs/2608.15888"
+      "url": "https://arxiv.org/abs/2608.15888",
+      "hfUrl": "https://huggingface.co/papers/2608.15888"
     },
     "arxiv:2608.15844": {
       "pid": "2608.15844",
@@ -10991,7 +10992,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16798.pdf",
       "id": "arxiv:2608.16798",
       "source": "hf",
-      "upvotes": 36,
+      "upvotes": 37,
       "topics": [
         "Post-Training"
       ],
@@ -23290,7 +23291,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16590.pdf",
       "id": "arxiv:2608.16590",
       "source": "arxiv",
-      "upvotes": 128,
+      "upvotes": 129,
       "topics": [
         "Reflection"
       ],
@@ -26423,7 +26424,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15964.pdf",
       "id": "arxiv:2608.15964",
       "source": "arxiv",
-      "upvotes": 0,
+      "upvotes": 2,
       "topics": [
         "LLM Training",
         "Reasoning",
@@ -26436,7 +26437,8 @@
         "Alignment",
         "Fine-tuning"
       ],
-      "url": "https://arxiv.org/abs/2608.15964"
+      "url": "https://arxiv.org/abs/2608.15964",
+      "hfUrl": "https://huggingface.co/papers/2608.15964"
     },
     "arxiv:2608.15935": {
       "pid": "2608.15935",
@@ -29061,7 +29063,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19197.pdf",
       "id": "arxiv:2608.19197",
       "source": "arxiv",
-      "upvotes": 37,
+      "upvotes": 40,
       "topics": [
         "LLM Training",
         "Tool Use",
@@ -29291,7 +29293,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18940.pdf",
       "id": "arxiv:2608.18940",
       "source": "arxiv",
-      "upvotes": 28,
+      "upvotes": 29,
       "topics": [
         "Planning",
         "Evaluation",
@@ -30338,7 +30340,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18423.pdf",
       "id": "arxiv:2608.18423",
       "source": "arxiv",
-      "upvotes": 12,
+      "upvotes": 13,
       "topics": [
         "Evaluation"
       ],
@@ -31617,7 +31619,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18852.pdf",
       "id": "arxiv:2608.18852",
       "source": "arxiv",
-      "upvotes": 1,
+      "upvotes": 2,
       "topics": [
         "Evaluation",
         "Agent Framework"
@@ -32789,7 +32791,7 @@
       ],
       "abstract": "Recent advances in foundation models have enabled AI scientists to automate increasingly complete research workflows, from hypothesis generation and code execution to manuscript preparation. Yet workflow coverage alone does not provide access to the full evidence on which scientific discovery depends. Existing systems typically reason over text, code, labels, or precomputed summaries, leaving scientifically decisive spatial, temporal, cross-channel, and procedural relations unavailable to the agent. We introduce OmniScientist, an end-to-end, omni-modal AI scientist that conducts multidisciplinary research directly from heterogeneous raw evidence. A perception layer and 3 autonomous agents for ideation, experiment, and writeup operate within a deterministic pipeline, allowing observations to shape research questions, experimental decisions, and final claims throughout the research lifecycle. By running idea, rigour, and claim checks in code, the system enforces novelty screening, statistical validity, execution provenance, and numerical traceability. We evaluate OmniScientist on 36 real-data cases spanning 5 discipline families, 4 families of scientific evidence, and modalities including images, signals, audio, video, 3-D structures, trajectories, tables, formulae, and graphs. The system completes the full path from raw data to a compiled manuscript in all 36 cases and achieves a mean overall paper score of 6.3 with the reference reasoning backbone. In paired comparisons against a blind variant that receives only precomputed scalar features, direct perception improves all 7 evaluation dimensions and wins 85% of head-to-head judgments. These results show that lifecycle-wide perception is essential for evidence-grounded scientific discovery and provides a practical path toward broadly capable AI scientists.",
       "date": "2026-08-20",
-      "upvotes": 81,
+      "upvotes": 83,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13558",
       "pdf": "https://arxiv.org/pdf/2608.13558.pdf",
@@ -32813,7 +32815,7 @@
       ],
       "abstract": "Popular facts are memorised more deeply during pretraining and resist removal longer than rare ones, yet existing LLM unlearning methods apply uniform gradient pressure regardless of training-data frequency. We propose the AdaPop (Adaptive Popularity) method, which combines local token confidence with a per-fact popularity-dependent exponent derived from an external proxy (e.g., Wikidata sitelinks, LLM-as-Judge), and automates the forget-retain balance via a dual-ascent controller that adjusts the retain penalty each epoch. Across three model families and two benchmarks, AdaPop leaks ~5x less forgotten content than competing methods under paraphrased queries and ~1.6x less under adversarial reformulations. We support our analysis with internal metrics: under our method, forget-set hidden states move further from the pre-unlearning model's states than under other methods, while retain-set representations remain close.",
       "date": "2026-08-20",
-      "upvotes": 11,
+      "upvotes": 12,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14229",
       "pdf": "https://arxiv.org/pdf/2608.14229.pdf",
@@ -208015,6 +208017,32 @@
       "tags": [
         "Post-Training",
         "LLM Training"
+      ]
+    },
+    "arxiv:2608.19080": {
+      "id": "arxiv:2608.19080",
+      "title": "SPK: Eliciting Structured Prior Knowledge for Interpretable Out-of-Distribution Detection in Real-Time Object Detection",
+      "authors": [
+        "Changshun Wu",
+        "Weicheng He",
+        "Xiaowei Huang",
+        "Saddek Bensalem"
+      ],
+      "abstract": "Object detectors often produce over-confident predictions for objects outside their training categories, leading to so-called out-of-distribution (OoD) hallucinations. Existing approaches for detecting or mitigating such hallucinations typically either construct scoring functions directly over learned object detector representations or modify the object detector itself to suppress hallucination emergence. However, the latent priors implicitly encoded in these representations remain largely unexplored and have not been explicitly decoded for OoD detection. To uncover and exploit these latent priors, we propose Structured Prior Knowledge (SPK), a hallucination-oriented framework that explicitly elicits OoD-relevant priors from pretrained object detectors. Specifically, SPK leverages in-distribution data and hallucination-inducing samples as diagnostic supervision to elicit part-level semantic concepts underlying object detector decision-making, rather than using them merely for rejection or object detector adaptation. The elicited semantic priors are further integrated with geometric and contextual priors to form a compact five-dimensional SPK representation for OoD detection. Extensive experiments across diverse object detector architectures and multiple OoD benchmarks demonstrate that SPK achieves state-of-the-art OoD detection. Our findings reveal that pretrained object detectors already encode substantially richer latent knowledge than is typically exploited for OoD detection. More importantly, this knowledge can be explicitly elicited and organized into a compact, structured, and interpretable knowledge space for prediction reliability analysis. This suggests a promising proactive route for improving object detector reliability by explicitly uncovering and leveraging latent priors. Code and data are available at: https://gricad-gitlab.univ-grenoble-alpes.fr/dnn-safety/spk",
+      "date": "2026-08-20",
+      "upvotes": 0,
+      "source": "hf",
+      "arxiv": "https://arxiv.org/abs/2608.19080",
+      "pdf": "https://arxiv.org/pdf/2608.19080.pdf",
+      "hfUrl": "https://huggingface.co/papers/2608.19080",
+      "url": "https://arxiv.org/abs/2608.19080",
+      "topics": [
+        "Hallucination",
+        "Evaluation"
+      ],
+      "tags": [
+        "Hallucination",
+        "Evaluation"
       ]
     }
   }
