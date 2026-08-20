@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / 'data'
 HIST_PATH = DATA_DIR / 'history.json'
 OUT_PATH = DATA_DIR / 'daily.json'
+LATEST_PATH = DATA_DIR / 'latest.json'
 SEARCH_INDEX_PATH = DATA_DIR / 'search-index.json'
 ARCHIVE_DIR = DATA_DIR / 'archive'
 CTX = ssl.create_default_context()
@@ -277,6 +278,20 @@ def compact_search_paper(p):
         out['abstract'] = abstract[:360]
     return out
 
+def compact_display_paper(p, abstract_limit=720):
+    out = compact_search_paper(p)
+    abstract = ' '.join((p.get('abstract') or '').split())
+    if abstract:
+        out['abstract'] = abstract[:abstract_limit]
+    return out
+
+def write_latest_bundle(bundle):
+    latest = dict(bundle)
+    latest['papers'] = [compact_display_paper(p, abstract_limit=900) for p in bundle.get('papers', [])]
+    latest['archive'] = []
+    LATEST_PATH.write_text(json.dumps(latest, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    log(f'wrote {LATEST_PATH}: count={len(latest["papers"])}')
+
 def write_search_index(hist):
     papers = sorted(
         hist.get('papers', {}).values(),
@@ -419,7 +434,13 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
 def save(hist, bundle):
     DATA_DIR.mkdir(exist_ok=True)
     HIST_PATH.write_text(json.dumps(hist, ensure_ascii=False, indent=2), encoding='utf-8')
-    OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding='utf-8')
+    write_latest_bundle(bundle)
+    light_bundle = dict(bundle)
+    light_bundle['papers'] = [compact_display_paper(p, abstract_limit=900) for p in bundle.get('papers', [])[:36]]
+    light_bundle['archive'] = []
+    light_bundle['count'] = len(light_bundle['papers'])
+    light_bundle['latestPath'] = 'data/latest.json'
+    OUT_PATH.write_text(json.dumps(light_bundle, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     write_archive_shards(hist, bundle)
     write_search_index(hist)
     (DATA_DIR / 'data.js').write_text('window.__BUNDLE__ = null;\n', encoding='utf-8')

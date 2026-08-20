@@ -1,4 +1,5 @@
 const STORAGE_KEY = 'agent-daily-bookmarks-v2';
+const DATA_VERSION = '20260820-fast-latest';
 const state = {
   tab: 'today',
   search: '',
@@ -10,6 +11,9 @@ const state = {
   bundle: null,
   loading: false,
   bundleError: null,
+  latestBundle: null,
+  latestLoading: false,
+  latestError: null,
   archiveIndex: null,
   archiveIndexLoading: false,
   archiveIndexError: null,
@@ -126,7 +130,7 @@ function newAsGeneric(p){
   };
 }
 
-function allNewPapers(){ return (state.bundle && state.bundle.papers || []).map(newAsGeneric); }
+function allNewPapers(){ return ((state.latestBundle || state.bundle) && (state.latestBundle || state.bundle).papers || []).map(newAsGeneric); }
 function allClassics(){ return PAPERS.map(curatedAsGeneric); }
 
 // ---------- Filtering ----------
@@ -320,7 +324,7 @@ function pickNewHero(list){
 }
 
 // ---------- Panels ----------
-function allLatestPapers(){ return ((state.bundle && state.bundle.papers) || []).map(newAsGeneric); }
+function allLatestPapers(){ return (((state.latestBundle || state.bundle) && (state.latestBundle || state.bundle).papers) || []).map(newAsGeneric); }
 function allSearchPapers(){ return ((state.searchIndex && state.searchIndex.papers) || []).map(newAsGeneric); }
 function allArchivePapers(){
   const base = ((state.bundle && state.bundle.archive) || []);
@@ -379,6 +383,9 @@ function renderLatest(){
   if(searching && !state.searchIndex && !state.searchIndexLoading && !state.searchIndexError){
     loadSearchIndex();
   }
+  if(!searching && !state.latestBundle && !state.latestLoading && !state.latestError){
+    loadLatestBundle();
+  }
   const sourceList = searching && state.searchIndex ? allSearchPapers() : allLatestPapers();
   const list = filtered(sourceList).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
   const days = state.bundle?.recentDays || 7;
@@ -387,7 +394,11 @@ function renderLatest(){
     ? (state.searchIndex
         ? `全库搜索，共 ${list.length}/${state.searchIndex.count} 篇匹配`
         : state.searchIndexLoading ? '正在加载全库搜索索引…' : `全库搜索索引加载失败：${state.searchIndexError || '未知错误'}`)
-    : `最近 ${days} 天，展示 ${list.length}/${total} 篇`;
+    : state.latestLoading
+      ? `最近 ${days} 天，先展示 ${list.length}/${total} 篇，正在加载完整列表…`
+      : state.latestError
+        ? `最近 ${days} 天，完整列表加载失败：${state.latestError}`
+        : `最近 ${days} 天，展示 ${list.length}/${total} 篇`;
   byId('latestCount2').textContent = meta;
   const visible = searching ? list.slice(0, state.searchResultLimit) : list;
   const more = searching && list.length > visible.length
@@ -395,7 +406,7 @@ function renderLatest(){
     : '';
   const emptyText = searching && state.searchIndexLoading ? '正在加载全库搜索索引…' : '没有匹配的新论文，试试清除筛选或点「刷新最新」。';
   byId('latestGrid').innerHTML = visible.length ? visible.map(p=>newCard(p)).join('') + more : `<div class="empty">${emptyText}</div>`;
-  byId('latestCount').textContent = allNewPapers().length;
+  byId('latestCount').textContent = state.latestBundle?.count || state.bundle?.recentTotal || allNewPapers().length;
 }
 function renderClassics(){
   const list = filtered(allClassics());
@@ -555,7 +566,7 @@ function render(){
   else if(state.tab === 'bookmarks') renderBookmarks();
 }
 function renderCounts(){
-  byId('latestCount').textContent = allNewPapers().length;
+  byId('latestCount').textContent = state.latestBundle?.count || state.bundle?.recentTotal || allNewPapers().length;
   byId('classicsCount').textContent = allClassics().length;
   byId('archiveCountBadge').textContent = state.archiveIndex?.archiveTotal || state.bundle?.archiveTotal || allArchivePapers().length;
 }
@@ -622,7 +633,7 @@ function mountSearchExtras(){
 async function loadBundle(opts={}){
   state.loading = true; state.bundleError = null; render();
   try{
-    const suffix = opts.refresh ? `?v=${Date.now()}` : '';
+    const suffix = opts.refresh ? `?v=${Date.now()}` : `?v=${DATA_VERSION}`;
     const r = await fetch(`data/daily.json${suffix}`, {cache: opts.refresh ? 'no-store' : 'default'});
     if(r.ok){
       const d = await r.json();
@@ -640,12 +651,32 @@ async function loadBundle(opts={}){
     loadArchiveIndex();
   }
 }
+async function loadLatestBundle(){
+  if(state.latestBundle || state.latestLoading) return;
+  state.latestLoading = true;
+  state.latestError = null;
+  if(state.tab === 'latest') renderLatest();
+  try{
+    const path = state.bundle?.latestPath || 'data/latest.json';
+    const r = await fetch(`${path}?v=${DATA_VERSION}`, {cache:'default'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const data = await r.json();
+    if(!data || !Array.isArray(data.papers)) throw new Error('latest.json 格式异常');
+    state.latestBundle = data;
+  }catch(e){
+    state.latestError = String(e.message || e);
+  }finally{
+    state.latestLoading = false;
+    if(state.tab === 'latest') renderLatest();
+    else renderCounts();
+  }
+}
 async function loadArchiveIndex(){
   state.archiveIndexLoading = true;
   state.archiveIndexError = null;
   renderCounts();
   try{
-    const r = await fetch('data/archive-index.json', {cache:'default'});
+    const r = await fetch(`data/archive-index.json?v=${DATA_VERSION}`, {cache:'default'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const index = await r.json();
     if(!index || !Array.isArray(index.years)) throw new Error('archive-index.json 格式异常');
@@ -665,7 +696,7 @@ async function loadArchiveYear(year){
   delete state.archiveYearErrors[year];
   if(state.tab === 'archive') renderArchive();
   try{
-    const r = await fetch(`data/archive/${year}.json`, {cache:'default'});
+    const r = await fetch(`data/archive/${year}.json?v=${DATA_VERSION}`, {cache:'default'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const data = await r.json();
     if(!data || !Array.isArray(data.papers)) throw new Error(`${year}.json 格式异常`);
@@ -684,7 +715,7 @@ async function loadSearchIndex(){
   state.searchIndexError = null;
   if(state.tab === 'latest') renderLatest();
   try{
-    const r = await fetch('data/search-index.json', {cache:'default'});
+    const r = await fetch(`data/search-index.json?v=${DATA_VERSION}`, {cache:'default'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const data = await r.json();
     if(!data || !Array.isArray(data.papers)) throw new Error('search-index.json 格式异常');
