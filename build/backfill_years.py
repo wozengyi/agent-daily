@@ -88,25 +88,21 @@ def main():
     ap.add_argument('--years', type=int, default=5)
     ap.add_argument('--max-per-month', type=int, default=300, help='cap papers fetched per month to keep runtime reasonable')
     ap.add_argument('--page-size', type=int, default=100)
-    ap.add_argument('--sleep', type=float, default=3.2)
+    ap.add_argument('--sleep', type=float, default=1.5)
     args = ap.parse_args()
 
     cats = ['cs.AI','cs.CL','cs.LG','cs.CV','cs.SE','cs.IR','cs.HC','stat.ML']
     cat_query = ' OR '.join([f'cat:{c}' for c in set(cats)])
     # Broad agent/LLM query. This over-retrieves; is_relevant() filters down.
     kws = [
-        'agent','agentic','"llm agent"','"multi agent"','"multi-agent"',
-        '"tool use"','"function calling"','"tool learning"',
-        '"agentic search"','"web agent"','"browser agent"','"computer use"',
+        'agent','agentic','"llm agent"','"multi-agent"',
+        '"tool use"','"function calling"','"web agent"','"computer use"',
         '"agent safety"','"llm safety"','jailbreak','"prompt injection"',
-        '"error attribution"','"failure attribution"',
-        '"post training"','post-training','rlhf','dpo','grpo','"preference optimization"',
-        '"large language model training"','"llm training"','pretraining','"instruction tuning"',
-        '"vision language model"','vlm','"visual instruction tuning"',
-        'reasoning','"chain of thought"','"tree of thought"',
-        'planning','memory','reflection','"self correction"',
-        '"code agent"','"software engineering agent"',
-        'benchmark','evaluation','alignment','hallucination','interpretability',
+        '"post training"','rlhf','dpo','"instruction tuning"',
+        '"vision language model"','vlm',
+        'reasoning','planning','memory','reflection',
+        '"code agent"','benchmark','evaluation','alignment',
+        'hallucination','interpretability',
     ]
     def kw_expr(k):
         if k.startswith('"') and k.endswith('"'):
