@@ -9,6 +9,19 @@ const state = {
   bundle: null,
   loading: false,
   bundleError: null,
+  archiveIndex: null,
+  archiveIndexLoading: false,
+  archiveIndexError: null,
+  archiveYears: {},
+  archiveLoadingYears: new Set(),
+  archiveYearErrors: {},
+  archiveExpandedYears: new Set(),
+  archiveExpandedMonths: new Set(),
+  archiveMonthLimits: {},
+  searchIndex: null,
+  searchIndexLoading: false,
+  searchIndexError: null,
+  searchResultLimit: 120,
 };
 
 function byId(id){ return document.getElementById(id); }
@@ -26,6 +39,13 @@ function seededRandom(seed){
   };
 }
 function uniq(arr){ return Array.from(new Set(arr)); }
+function countBy(arr, pick){
+  const counts = new Map();
+  arr.forEach(item=>{
+    (pick(item) || []).forEach(v=>counts.set(v, (counts.get(v) || 0) + 1));
+  });
+  return counts;
+}
 function escapeHtml(s){
   return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
@@ -206,16 +226,21 @@ function renderChips(){
   const newPs = allNewPapers();
   const classics = allClassics();
   const archivePs = allArchivePapers();
-  const tagSet = uniq([...newPs.flatMap(p=>p.topics||[]), ...classics.flatMap(p=>p.topics||[]), ...archivePs.flatMap(p=>p.topics||[])]).sort();
-  const yearSet = uniq([...newPs.map(p=>String((p.date||'').slice(0,4))), ...classics.map(p=>String(p.year)), ...archivePs.map(p=>String((p.date||'').slice(0,4)))]).sort((a,b)=>Number(b)-Number(a));
+  const tagCounts = countBy([...newPs, ...classics, ...archivePs], p=>p.topics||[]);
+  Object.entries(state.bundle?.topicCounts || state.archiveIndex?.topicCounts || {}).forEach(([name, count])=>{
+    tagCounts.set(name, Math.max(tagCounts.get(name) || 0, Number(count) || 0));
+  });
+  const tagSet = Array.from(tagCounts.entries()).sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0])).map(([name])=>name);
+  const indexYears = (state.archiveIndex?.years || []).map(y=>String(y.year));
+  const yearSet = uniq([...newPs.map(p=>String((p.date||'').slice(0,4))), ...classics.map(p=>String(p.year)), ...archivePs.map(p=>String((p.date||'').slice(0,4))), ...indexYears]).sort((a,b)=>Number(b)-Number(a));
 
-  const fill = (hostId, set, activeSet)=>{
+  const fill = (hostId, set, activeSet, counts=null)=>{
     const host = byId(hostId); host.innerHTML='';
     set.forEach(v=>{
       if(!v) return;
       const b = document.createElement('button');
       b.className = 'chip' + (activeSet.has(v)?' active':'');
-      b.textContent = v;
+      b.innerHTML = counts ? `${escapeHtml(v)} <span class="chip-count">${counts.get(v) || 0}</span>` : escapeHtml(v);
       b.onclick = ()=>{
         if(activeSet.has(v)) activeSet.delete(v); else activeSet.add(v);
         // when a tag is picked and we're on "today", stay on today; if on feed/latest, stay.
@@ -224,7 +249,7 @@ function renderChips(){
       host.appendChild(b);
     });
   };
-  fill('tagChips', tagSet, state.activeTags);
+  fill('tagChips', tagSet.slice(0, 28), state.activeTags, tagCounts);
   byId('yearChips').innerHTML='';
   fill('yearChips', yearSet, state.activeYears);
   // (Venue filter is intentionally removed; sources are now clear via badges.)
@@ -264,7 +289,17 @@ function pickNewHero(list){
 
 // ---------- Panels ----------
 function allLatestPapers(){ return ((state.bundle && state.bundle.papers) || []).map(newAsGeneric); }
-function allArchivePapers(){ return ((state.bundle && state.bundle.archive) || []).map(newAsGeneric); }
+function allSearchPapers(){ return ((state.searchIndex && state.searchIndex.papers) || []).map(newAsGeneric); }
+function allArchivePapers(){
+  const base = ((state.bundle && state.bundle.archive) || []);
+  const loaded = Object.values(state.archiveYears).flat();
+  const seen = new Set();
+  return [...base, ...loaded].filter(p=>{
+    if(!p || seen.has(p.id)) return false;
+    seen.add(p.id);
+    return true;
+  }).map(newAsGeneric);
+}
 function renderToday(){
   const curated = getCuratedSelection();
   const news = filtered(allLatestPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
@@ -291,7 +326,8 @@ function renderToday(){
     byId('todaySub').textContent = '抓取新文失败，显示经典精选：'+state.bundleError;
   } else if(state.bundle){
     const hf = state.bundle.sources?.hf||0, arx = state.bundle.sources?.arxiv||0;
-    byId('todaySub').textContent = `${dateStr} · 最近 ${state.bundle.recentDays||7} 天共 ${state.bundle.count} 篇新文（HF ${hf} / arXiv ${arx}）${activeTagLabel}`;
+    const total = state.bundle.recentTotal || state.bundle.count;
+    byId('todaySub').textContent = `${dateStr} · 最近 ${state.bundle.recentDays||7} 天展示 ${state.bundle.count}/${total} 篇新文（HF ${hf} / arXiv ${arx}）${activeTagLabel}`;
   }
 
   if(top){
@@ -307,10 +343,26 @@ function renderToday(){
   moreHost.innerHTML = moreClassics.map(p=>classicCard(p, {why:'推荐理由：'+(p.why||'领域代表性工作')})).join('');
 }
 function renderLatest(){
-  const list = filtered(allLatestPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
+  const searching = state.search.trim().length >= 2;
+  if(searching && !state.searchIndex && !state.searchIndexLoading && !state.searchIndexError){
+    loadSearchIndex();
+  }
+  const sourceList = searching && state.searchIndex ? allSearchPapers() : allLatestPapers();
+  const list = filtered(sourceList).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
   const days = state.bundle?.recentDays || 7;
-  byId('latestCount2').textContent = `最近 ${days} 天，共 ${list.length} 篇`;
-  byId('latestGrid').innerHTML = list.length ? list.map(p=>newCard(p)).join('') : '<div class="empty">没有匹配的新论文，试试清除筛选或点「🔄 刷新最新」。</div>';
+  const total = state.bundle?.recentTotal || state.bundle?.count || list.length;
+  const meta = searching
+    ? (state.searchIndex
+        ? `全库搜索，共 ${list.length}/${state.searchIndex.count} 篇匹配`
+        : state.searchIndexLoading ? '正在加载全库搜索索引…' : `全库搜索索引加载失败：${state.searchIndexError || '未知错误'}`)
+    : `最近 ${days} 天，展示 ${list.length}/${total} 篇`;
+  byId('latestCount2').textContent = meta;
+  const visible = searching ? list.slice(0, state.searchResultLimit) : list;
+  const more = searching && list.length > visible.length
+    ? `<button class="btn small load-more" data-search-more>再显示 ${Math.min(120, list.length - visible.length)} 篇</button>`
+    : '';
+  const emptyText = searching && state.searchIndexLoading ? '正在加载全库搜索索引…' : '没有匹配的新论文，试试清除筛选或点「刷新最新」。';
+  byId('latestGrid').innerHTML = visible.length ? visible.map(p=>newCard(p)).join('') + more : `<div class="empty">${emptyText}</div>`;
   byId('latestCount').textContent = allNewPapers().length;
 }
 function renderClassics(){
@@ -322,13 +374,24 @@ function renderClassics(){
 function renderArchive(){
   const list = filtered(allArchivePapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
   const host = byId('archiveGrid');
-  const currentYear = new Date().getFullYear();
-  byId('archiveCount').textContent = `共 ${list.length} 篇（最近 ${Math.round((state.bundle?.archiveDays||3650)/365)} 年，不含最近 ${state.bundle?.recentDays||7} 天）`;
-  if (list.length === 0) {
+  const archiveTotal = state.bundle?.archiveTotal || state.bundle?.historyTotal || list.length;
+  const loadedTotal = allArchivePapers().length;
+  byId('archiveCount').textContent = `已加载 ${loadedTotal}/${archiveTotal} 篇（最近 ${Math.round((state.bundle?.archiveDays||3650)/365)} 年，不含最近 ${state.bundle?.recentDays||7} 天）`;
+  if(!state.archiveIndex && !state.archiveIndexLoading && !state.archiveIndexError){
+    loadArchiveIndex();
+  }
+  if(state.archiveIndexLoading && !state.archiveIndex){
+    host.innerHTML = '<div class="empty">正在加载往期索引…</div>';
+    return;
+  }
+  if(state.archiveIndexError && !list.length){
+    host.innerHTML = `<div class="empty">往期索引加载失败：${escapeHtml(state.archiveIndexError)}</div>`;
+    return;
+  }
+  if (list.length === 0 && !state.archiveIndex) {
     host.innerHTML = '<div class="empty">往期暂无匹配论文。历史回填进行中，每日自动更新积累。</div>';
     return;
   }
-  // Group by year then month for performance with large archives
   const years = new Map();
   list.forEach(p => {
     const y = (p.date||'').slice(0,4);
@@ -338,21 +401,59 @@ function renderArchive(){
     if (!months.has(ym)) months.set(ym, []);
     months.get(ym).push(p);
   });
+  if(state.archiveIndex){
+    state.archiveIndex.years.forEach(y=>{
+      if(!years.has(y.year)) years.set(y.year, new Map());
+    });
+  }
   const yearOrder = Array.from(years.keys()).sort().reverse();
+  if(!state.archiveExpandedYears.size && yearOrder.length){
+    state.archiveExpandedYears.add(yearOrder[0]);
+    if(state.archiveIndex && !state.archiveYears[yearOrder[0]] && !state.archiveLoadingYears.has(yearOrder[0])){
+      loadArchiveYear(yearOrder[0]);
+    }
+  }
   const html = yearOrder.map(y => {
     const months = years.get(y);
     const monthOrder = Array.from(months.keys()).sort().reverse();
-    const isRecent = Number(y) >= currentYear - 1;
-    const monthsHtml = monthOrder.map(ym => {
-      const cards = months.get(ym).map(p => newCard(p)).join('');
-      return `<div class="month-group"><h4 class="month-heading">${ym}</h4><div class="grid">${cards}</div></div>`;
-    }).join('');
+    const indexYear = state.archiveIndex?.years?.find(item=>item.year === y);
+    const total = indexYear?.count || Array.from(months.values()).reduce((sum, arr)=>sum + arr.length, 0);
+    const expanded = state.archiveExpandedYears.has(y);
+    const yearLoaded = Boolean(state.archiveYears[y]) || !indexYear;
+    const isLoading = state.archiveLoadingYears.has(y);
+    const loadError = state.archiveYearErrors[y];
+    const monthsHtml = expanded
+      ? (isLoading
+          ? '<div class="empty">正在加载这一年的论文…</div>'
+          : loadError
+            ? `<div class="empty">加载 ${y} 年失败：${escapeHtml(loadError)}</div>`
+            : yearLoaded
+              ? monthOrder.map((ym, idx) => {
+                  if(!Array.from(state.archiveExpandedMonths).some(v=>v.startsWith(y+'-')) && idx === 0){
+                    state.archiveExpandedMonths.add(ym);
+                  }
+                  const items = months.get(ym) || [];
+                  const monthExpanded = state.archiveExpandedMonths.has(ym);
+                  const limit = state.archiveMonthLimits[ym] || 60;
+                  const cards = monthExpanded ? items.slice(0, limit).map(p => newCard(p)).join('') : '';
+                  const more = monthExpanded && items.length > limit
+                    ? `<button class="btn small load-more" data-more-month="${ym}">再显示 ${Math.min(60, items.length - limit)} 篇</button>`
+                    : '';
+                  return `<div class="month-group">
+                    <h4 class="month-heading month-toggle" data-month="${ym}">
+                      <span class="year-toggle">${monthExpanded ? '▼' : '▶'}</span>${ym} <span class="muted">(${items.length}篇)</span>
+                    </h4>
+                    ${monthExpanded ? `<div class="grid">${cards}</div>${more}` : `<div class="year-summary">${items.length} 篇，点击月份展开</div>`}
+                  </div>`;
+                }).join('')
+              : `<div class="year-summary">${(indexYear?.months || []).slice(0,8).map(m=>`${m.month} (${m.count})`).join(' / ')}<br><button class="btn small" data-load-year="${y}">加载 ${y} 年全部 ${total} 篇</button></div>`)
+      : `<div class="year-summary">${(indexYear?.months || monthOrder.map(m=>({month:m,count:(months.get(m)||[]).length}))).slice(0,6).map(m=>`${m.month} (${m.count})`).join(' / ')}${(indexYear?.months?.length || monthOrder.length) > 6 ? ' …' : ''}</div>`;
     return `<div class="year-group">
       <h3 class="year-heading" data-year="${y}">
-        <span class="year-toggle">${isRecent ? '▼' : '▶'}</span>
-        ${y} 年 <span class="muted">(${months.size}个月, ${Array.from(months.values()).flat().length}篇)</span>
+        <span class="year-toggle">${expanded ? '▼' : '▶'}</span>
+        ${y} 年 <span class="muted">(${months.size || indexYear?.months?.length || 0}个月, ${total}篇)</span>
       </h3>
-      <div class="year-content" data-year-content="${y}" ${isRecent ? '' : 'hidden'}>
+      <div class="year-content" data-year-content="${y}">
         ${monthsHtml}
       </div>
     </div>`;
@@ -362,12 +463,37 @@ function renderArchive(){
   host.querySelectorAll('.year-heading').forEach(h => {
     h.addEventListener('click', () => {
       const y = h.dataset.year;
-      const content = host.querySelector(`[data-year-content="${y}"]`);
-      const toggle = h.querySelector('.year-toggle');
-      if(content.hidden) { content.hidden = false; toggle.textContent = '▼'; }
-      else { content.hidden = true; toggle.textContent = '▶'; }
+      if(state.archiveExpandedYears.has(y)) state.archiveExpandedYears.delete(y);
+      else {
+        state.archiveExpandedYears.add(y);
+        if(state.archiveIndex && !state.archiveYears[y] && !state.archiveLoadingYears.has(y)){
+          loadArchiveYear(y);
+        }
+      }
+      renderArchive();
     });
     h.style.cursor = 'pointer';
+  });
+  host.querySelectorAll('[data-load-year]').forEach(btn=>{
+    btn.addEventListener('click', e=>{
+      e.stopPropagation();
+      loadArchiveYear(btn.dataset.loadYear);
+    });
+  });
+  host.querySelectorAll('[data-month]').forEach(h=>{
+    h.addEventListener('click', ()=>{
+      const ym = h.dataset.month;
+      if(state.archiveExpandedMonths.has(ym)) state.archiveExpandedMonths.delete(ym);
+      else state.archiveExpandedMonths.add(ym);
+      renderArchive();
+    });
+  });
+  host.querySelectorAll('[data-more-month]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const ym = btn.dataset.moreMonth;
+      state.archiveMonthLimits[ym] = (state.archiveMonthLimits[ym] || 60) + 60;
+      renderArchive();
+    });
   });
 }
 
@@ -380,14 +506,7 @@ function renderBookmarks(){
 }
 function render(){
   renderChips();
-  renderToday();
-  renderLatest();
-  renderClassics();
-  renderArchive();
-  renderBookmarks();
-  // Update counts
-  const arc = allArchivePapers();
-  byId('archiveCountBadge').textContent = arc.length;
+  renderCounts();
   saveBookmarks();
   document.querySelectorAll('.tab').forEach(t=>{
     t.classList.toggle('active', t.dataset.tab===state.tab);
@@ -395,9 +514,18 @@ function render(){
   byId('todayPane').classList.toggle('hidden', state.tab!=='today');
   byId('latestPane').classList.toggle('hidden', state.tab!=='latest');
   byId('feedPane').classList.toggle('hidden', state.tab!=='feed');
-  byId('latestPane').classList.toggle('hidden', state.tab!=='latest');
   byId('archivePane').classList.toggle('hidden', state.tab!=='archive');
   byId('bookmarksPane').classList.toggle('hidden', state.tab!=='bookmarks');
+  if(state.tab === 'today') renderToday();
+  else if(state.tab === 'latest') renderLatest();
+  else if(state.tab === 'feed') renderClassics();
+  else if(state.tab === 'archive') renderArchive();
+  else if(state.tab === 'bookmarks') renderBookmarks();
+}
+function renderCounts(){
+  byId('latestCount').textContent = allNewPapers().length;
+  byId('classicsCount').textContent = allClassics().length;
+  byId('archiveCountBadge').textContent = state.archiveIndex?.archiveTotal || state.bundle?.archiveTotal || allArchivePapers().length;
 }
 
 // ---------- Interactions ----------
@@ -410,6 +538,10 @@ document.addEventListener('click', (e)=>{
     saveBookmarks(); render();
   }
   if(t.dataset && t.dataset.close!==undefined) closeDetail();
+  if(t.dataset && t.dataset.searchMore!==undefined){
+    state.searchResultLimit += 120;
+    renderLatest();
+  }
 });
 document.addEventListener('keydown',(e)=>{ if(e.key==='Escape') closeDetail(); });
 document.querySelectorAll('.tab').forEach(tab=>{
@@ -417,8 +549,10 @@ document.querySelectorAll('.tab').forEach(tab=>{
 });
 byId('searchInput').addEventListener('input', (e)=>{
   state.search = e.target.value;
+  state.searchResultLimit = 120;
   // auto-switch to latest when typing new papers; classics tab still filters via state.
   if(state.search.trim() && state.tab === 'today') state.tab='latest';
+  if(state.search.trim().length >= 2) loadSearchIndex();
   render();
 });
 byId('resetFilters').addEventListener('click', ()=>{
@@ -428,7 +562,7 @@ byId('resetFilters').addEventListener('click', ()=>{
   render();
 });
 byId('shuffleBtn').addEventListener('click', ()=>{ state.seedOffset += 1337; render(); });
-byId('refreshBtn').addEventListener('click', ()=>{ loadBundle({live:true}); });
+byId('refreshBtn').addEventListener('click', ()=>{ loadBundle({refresh:true}); });
 
 function mountSearchExtras(){
   const wrap = byId('searchInput').parentElement;
@@ -455,23 +589,80 @@ function mountSearchExtras(){
 // ---------- Data loading ----------
 async function loadBundle(opts={}){
   state.loading = true; state.bundleError = null; render();
-  // Use embedded data first (no fetch needed!)
-  if(window.__BUNDLE__ && Array.isArray(window.__BUNDLE__.papers)){
-    state.bundle = window.__BUNDLE__;
-  } else {
-    // Fallback to fetch
-    try{
-      const r = await fetch('./data/daily.json',{cache:'no-cache'});
-      if(r.ok){
-        const d = await r.json();
-        if(d && Array.isArray(d.papers)){ state.bundle = d; }
-      }
-    }catch(e){
-      state.bundleError = String(e.message||e);
+  try{
+    const suffix = opts.refresh ? `?v=${Date.now()}` : '';
+    const r = await fetch(`data/daily.json${suffix}`, {cache: opts.refresh ? 'no-store' : 'default'});
+    if(r.ok){
+      const d = await r.json();
+      if(d && Array.isArray(d.papers)){ state.bundle = d; }
+      else state.bundleError = 'daily.json 格式异常';
+    } else {
+      state.bundleError = '找不到 data/daily.json';
     }
+  }catch(e){
+    state.bundleError = String(e.message||e);
   }
   state.loading = false;
   render();
+  if(!state.archiveIndex && !state.archiveIndexLoading && !state.archiveIndexError){
+    loadArchiveIndex();
+  }
+}
+async function loadArchiveIndex(){
+  state.archiveIndexLoading = true;
+  state.archiveIndexError = null;
+  renderCounts();
+  try{
+    const r = await fetch('data/archive-index.json', {cache:'default'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const index = await r.json();
+    if(!index || !Array.isArray(index.years)) throw new Error('archive-index.json 格式异常');
+    state.archiveIndex = index;
+    if(state.bundle) state.bundle.archiveTotal = index.archiveTotal || state.bundle.archiveTotal;
+  }catch(e){
+    state.archiveIndexError = String(e.message || e);
+  }finally{
+    state.archiveIndexLoading = false;
+    if(state.tab === 'archive') renderArchive();
+    else render();
+  }
+}
+async function loadArchiveYear(year){
+  if(!year || state.archiveYears[year] || state.archiveLoadingYears.has(year)) return;
+  state.archiveLoadingYears.add(year);
+  delete state.archiveYearErrors[year];
+  if(state.tab === 'archive') renderArchive();
+  try{
+    const r = await fetch(`data/archive/${year}.json`, {cache:'default'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const data = await r.json();
+    if(!data || !Array.isArray(data.papers)) throw new Error(`${year}.json 格式异常`);
+    state.archiveYears[year] = data.papers;
+  }catch(e){
+    state.archiveYearErrors[year] = String(e.message || e);
+  }finally{
+    state.archiveLoadingYears.delete(year);
+    if(state.tab === 'archive') renderArchive();
+    else renderCounts();
+  }
+}
+async function loadSearchIndex(){
+  if(state.searchIndex || state.searchIndexLoading) return;
+  state.searchIndexLoading = true;
+  state.searchIndexError = null;
+  if(state.tab === 'latest') renderLatest();
+  try{
+    const r = await fetch('data/search-index.json', {cache:'default'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const data = await r.json();
+    if(!data || !Array.isArray(data.papers)) throw new Error('search-index.json 格式异常');
+    state.searchIndex = data;
+  }catch(e){
+    state.searchIndexError = String(e.message || e);
+  }finally{
+    state.searchIndexLoading = false;
+    if(state.tab === 'latest') renderLatest();
+  }
 }
 function closeDetail(){ byId('detail').classList.add('hidden'); }
 function openDetail(id){ /* details currently only for classics; keep simple for now */ }

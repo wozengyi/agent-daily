@@ -3,7 +3,7 @@
 Agent Daily: build daily bundle of LLM/VLM Agent papers from HF + arXiv.
 Pure stdlib, runs in GitHub Actions with no pip install.
 """
-import json, re, sys, time, urllib.request, urllib.parse, xml.etree.ElementTree as ET
+import json, re, sys, time, ssl, urllib.request, urllib.parse, xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -11,6 +11,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / 'data'
 HIST_PATH = DATA_DIR / 'history.json'
 OUT_PATH = DATA_DIR / 'daily.json'
+SEARCH_INDEX_PATH = DATA_DIR / 'search-index.json'
+ARCHIVE_DIR = DATA_DIR / 'archive'
+CTX = ssl.create_default_context()
 
 # ---------- Relevance & topic rules ----------
 AGENT_HINTS = [
@@ -82,7 +85,7 @@ def fetch(url, timeout=60, retries=5, backoff=8):
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0 AgentDaily/1.0'})
-            with urllib.request.urlopen(req, timeout=timeout) as r:
+            with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
                 return r.read().decode('utf-8', errors='replace')
         except Exception as e:
             if i == retries-1: 
@@ -251,8 +254,89 @@ def merge_into_history(hist, papers):
     hist['generatedAt'] = today
     return added
 
+def topic_counts(papers):
+    counts = {}
+    for p in papers:
+        for topic in p.get('topics') or p.get('tags') or []:
+            counts[topic] = counts.get(topic, 0) + 1
+    return counts
+
+def compact_search_paper(p):
+    keep = {
+        'id', 'title', 'authors', 'date', 'published', 'source', 'topics', 'tags',
+        'arxiv', 'pdf', 'url', 'hfUrl', 'upvotes',
+    }
+    out = {k: p.get(k) for k in keep if p.get(k) not in (None, '', [])}
+    abstract = ' '.join((p.get('abstract') or '').split())
+    if abstract:
+        out['abstract'] = abstract[:360]
+    return out
+
+def write_search_index(hist):
+    papers = sorted(
+        hist.get('papers', {}).values(),
+        key=lambda p: ((p.get('date') or '0000-00-00'), int(p.get('upvotes') or 0)),
+        reverse=True,
+    )
+    index = {
+        'generatedAt': hist.get('generatedAt'),
+        'count': len(papers),
+        'papers': [compact_search_paper(p) for p in papers],
+    }
+    SEARCH_INDEX_PATH.write_text(json.dumps(index, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    log(f'wrote {SEARCH_INDEX_PATH}: count={len(papers)}')
+
+def write_archive_shards(hist, bundle):
+    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    for old in ARCHIVE_DIR.glob('*.json'):
+        old.unlink()
+    recent_cutoff = bundle.get('recentCutoff') or '9999-99-99'
+    archive_cutoff = bundle.get('archiveCutoff') or '0000-00-00'
+    papers = [
+        p for p in hist.get('papers', {}).values()
+        if archive_cutoff <= (p.get('date') or '0000-00-00') < recent_cutoff
+    ]
+    def keyf(p):
+        return ((p.get('date') or '0000-00-00'),
+                1 if p.get('source')=='hf' else 0,
+                int(p.get('upvotes') or 0),
+                len(p.get('topics') or []))
+    papers = sorted(papers, key=keyf, reverse=True)
+    by_year = {}
+    for p in papers:
+        year = (p.get('date') or '0000')[:4]
+        if year.isdigit():
+            by_year.setdefault(year, []).append(p)
+    index = {
+        'generatedAt': hist.get('generatedAt'),
+        'archiveTotal': len(papers),
+        'topicCounts': topic_counts(papers),
+        'recentCutoff': recent_cutoff,
+        'archiveCutoff': archive_cutoff,
+        'years': [],
+    }
+    for year in sorted(by_year.keys(), reverse=True):
+        items = by_year[year]
+        months = {}
+        for p in items:
+            ym = (p.get('date') or '')[:7]
+            if ym:
+                months[ym] = months.get(ym, 0) + 1
+        (ARCHIVE_DIR / f'{year}.json').write_text(
+            json.dumps({'year': year, 'count': len(items), 'papers': items}, ensure_ascii=False, indent=2),
+            encoding='utf-8'
+        )
+        index['years'].append({
+            'year': year,
+            'count': len(items),
+            'months': [{'month': m, 'count': months[m]} for m in sorted(months.keys(), reverse=True)],
+            'path': f'data/archive/{year}.json',
+        })
+    (DATA_DIR / 'archive-index.json').write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding='utf-8')
+    log(f'wrote archive shards: years={len(index["years"])} total={index["archiveTotal"]}')
+
 # ---------- Bundle ----------
-def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limit=5000):
+def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limit=0):
     log('Fetching HF daily papers...')
     hf = fetch_hf_days(days=14)
     log(f'Got {len(hf)} HF papers')
@@ -287,6 +371,8 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
     archive = sorted([p for p in all_hist
                        if archive_cutoff <= (p.get('date') or '0000-00-00') < recent_cutoff],
                       key=keyf, reverse=True)
+    archive_total = len(archive)
+    recent_total = len(recent)
     if limit is not None:
         recent = recent[:limit]
     if archive_limit is not None:
@@ -302,8 +388,11 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
         'archiveCutoff': archive_cutoff,
         'addedToday': added,
         'historyTotal': len(hist.get('papers',{})),
+        'topicCounts': topic_counts(all_hist),
         'count': len(recent),
+        'recentTotal': recent_total,
         'archiveCount': len(archive),
+        'archiveTotal': archive_total,
         'sources': {
             'hf': sum(1 for p in recent if p.get('source')=='hf'),
             'arxiv': sum(1 for p in recent if p.get('source')=='arxiv'),
@@ -313,15 +402,18 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
             'arxiv': sum(1 for p in archive if p.get('source')=='arxiv'),
         },
         'warnings': warnings,
+        'notes': ['archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database'],
         'papers': recent,
         'archive': archive,
     }
 
 def save(hist, bundle):
     DATA_DIR.mkdir(exist_ok=True)
-    HIST_PATH.write_text(json.dumps(hist, ensure_ascii=False), encoding='utf-8')
-    OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False), encoding='utf-8')
-    (ROOT / 'data' / 'data.js').write_text(f'window.__BUNDLE__ = {json.dumps(bundle, ensure_ascii=False)};', encoding='utf-8')
+    HIST_PATH.write_text(json.dumps(hist, ensure_ascii=False, indent=2), encoding='utf-8')
+    OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding='utf-8')
+    write_archive_shards(hist, bundle)
+    write_search_index(hist)
+    (DATA_DIR / 'data.js').write_text('window.__BUNDLE__ = null;\n', encoding='utf-8')
 
 def main():
     import argparse
@@ -340,7 +432,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-

@@ -52,7 +52,7 @@ def parse(xml_bytes):
             if n: authors.append(n.strip())
         cats = [c.attrib.get('term','') for c in e.findall('a:category', ARXIV_NS)]
         entries.append({
-            'id': arxid,
+            'id': f'arxiv:{arxid}',
             'title': title,
             'abstract': summ,
             'authors': ', '.join(authors),
@@ -91,18 +91,27 @@ def main():
     ap.add_argument('--sleep', type=float, default=3.2)
     args = ap.parse_args()
 
-    cats = ['cs.RO','cs.AI','cs.CV','cs.LG','cs.MA','eess.SY','stat.ML','cs.HC','cs.SD','cs.RO']
+    cats = ['cs.AI','cs.CL','cs.LG','cs.CV','cs.SE','cs.IR','cs.HC','stat.ML']
     cat_query = ' OR '.join([f'cat:{c}' for c in set(cats)])
-    # Broad embodiment query. This will over-retrieve; is_relevant() filters down.
+    # Broad agent/LLM query. This over-retrieves; is_relevant() filters down.
     kws = [
-        'robot','robotic','robotics','embodied','humanoid','manipulation','manipulator',
-        'grasping','grasp','dexterous','dexterity','locomotion','legged','biped','quadruped',
-        'navigation','teleoperation','bimanual','sim2real','"vision language action"','vla',
-        '"imitation learning" robot','"reinforcement learning" robot', '"world model" robot',
-        'robotic arm','mobile manipulation',
+        'agent','agentic','"llm agent"','"multi agent"','"multi-agent"',
+        '"tool use"','"function calling"','"tool learning"',
+        '"agentic search"','"web agent"','"browser agent"','"computer use"',
+        '"agent safety"','"llm safety"','jailbreak','"prompt injection"',
+        '"error attribution"','"failure attribution"',
+        '"post training"','post-training','rlhf','dpo','grpo','"preference optimization"',
+        '"large language model training"','"llm training"','pretraining','"instruction tuning"',
+        '"vision language model"','vlm','"visual instruction tuning"',
+        'reasoning','"chain of thought"','"tree of thought"',
+        'planning','memory','reflection','"self correction"',
+        '"code agent"','"software engineering agent"',
+        'benchmark','evaluation','alignment','hallucination','interpretability',
     ]
-    kw_query = ' OR '.join([f'all:{k.replace(" ","+")}' if ' ' in k else f'all:{k}' for k in kws])
-    base_q = f'({cat_query}) AND ({kw_query})'
+    def kw_expr(k):
+        if k.startswith('"') and k.endswith('"'):
+            return 'all:' + k.replace(' ', '+')
+        return f'all:{k.replace(" ","+")}' if ' ' in k else f'all:{k}'
 
     hist = bd.load_history()
     papers = hist.setdefault('papers', {})
@@ -113,27 +122,36 @@ def main():
     print(f'Backfilling {len(months)} months, {args.years} years back (max {args.max_per_month} per month)')
 
     for i,(ms,me) in enumerate(months,1):
-        q = f'{base_q} AND submittedDate:[{ms.strftime("%Y%m%d")}0000 TO {me.strftime("%Y%m%d")}2359]'
         print(f'[{i}/{len(months)}] {ms}..{me}', flush=True)
-        start = 0
         month_added = 0
-        while True:
-            xml = fetch_page(q, start=start, max_results=args.page_size)
-            total, entries = parse(xml)
-            if not entries: break
+        seen_month = set()
+        for kw in kws:
+            if month_added >= args.max_per_month:
+                break
+            q = f'({cat_query}) AND {kw_expr(kw)} AND submittedDate:[{ms.strftime("%Y%m%d")}0000 TO {me.strftime("%Y%m%d")}2359]'
+            try:
+                xml = fetch_page(q, start=0, max_results=args.page_size)
+                total, entries = parse(xml)
+            except Exception as e:
+                print(f'  skip keyword {kw}: {e}', file=sys.stderr)
+                time.sleep(args.sleep)
+                continue
+            if not entries:
+                time.sleep(args.sleep)
+                continue
             for ent in entries:
-                if ent['id'] in papers: continue
+                if month_added >= args.max_per_month:
+                    break
+                if ent['id'] in papers or ent['id'] in seen_month: continue
+                seen_month.add(ent['id'])
                 text = f"{ent['title']} {ent['abstract']} {' '.join(ent.get('categories',[]))}"
-                topics = bd.classify_topics(text)
-                if not bd.is_relevant(text, topics):
+                topics = bd.classify_topics(ent['title'], ent['abstract'])
+                if not bd.is_relevant(text):
                     continue
                 ent['topics'] = topics
                 ent['tags'] = topics[:5]
                 papers[ent['id']] = ent
                 total_added += 1; month_added += 1
-            start += len(entries)
-            if start >= min(total, args.max_per_month) or start >= total or len(entries) < args.page_size:
-                break
             time.sleep(args.sleep)
         print(f'  +{month_added} new, total so far {len(papers)}', flush=True)
         time.sleep(args.sleep)
@@ -142,8 +160,10 @@ def main():
         bd.save_history(hist)
 
     # Regenerate bundle using the augmented history
-    bundle = bd.build_bundle(hist, recent_days=7, archive_days=args.years*365, limit=80, archive_limit=5000)
+    bundle = bd.build_bundle(hist, recent_days=7, archive_days=args.years*365, limit=80, archive_limit=0)
     bd.OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding='utf-8')
+    bd.write_archive_shards(hist, bundle)
+    bd.write_search_index(hist)
     print(f'Done. history: {before} -> {len(papers)} (+{total_added}), '
           f'latest={bundle["count"]}, archive={bundle["archiveCount"]}')
 

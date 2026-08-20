@@ -2,7 +2,7 @@ name: Agent Daily Build & Deploy
 
 on:
   schedule:
-    - cron: '25 0 * * *'
+    - cron: '35 */3 * * *'
   workflow_dispatch:
     inputs:
       backfill_years:
@@ -24,6 +24,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
 
@@ -47,7 +49,7 @@ jobs:
           max_attempts: 3
           timeout_minutes: 25
           retry_on: error
-          command: python build/build_daily.py --recent 7 --archive 1825
+          command: python build/build_daily.py --recent 7 --archive 1825 --limit 240 --archive-limit 0
 
       - name: Warn on suspicious builds
         run: |
@@ -101,38 +103,41 @@ jobs:
           PY
 
       - name: Commit daily update
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           date=$(date -u +"%Y-%m-%d")
           if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No new data to commit."
           else
             git commit -m "chore: update daily papers $date"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-
-      - name: Setup Pages
-        if: github.ref == 'refs/heads/main'
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        if: github.ref == 'refs/heads/main'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
 
   deploy:
     needs: build
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch' || needs.build.outputs.changed == 'true')
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Sync latest generated data
+        run: git pull --ff-only origin main
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-

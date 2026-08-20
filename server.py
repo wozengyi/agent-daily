@@ -1,5 +1,5 @@
 """
-Embodied Daily local dev server.
+Agent Daily local dev server.
 - Serves static files (index.html, JS/CSS, data/daily.json).
 - /api/hf/<path>   -> proxies to https://huggingface.co/api
 - /api/arxiv/<path>-> proxies to https://export.arxiv.org/api
@@ -36,7 +36,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def _live_daily(self):
         try:
-            bundle = build_daily.build_bundle(limit=60)
+            hist = build_daily.load_history()
+            bundle = build_daily.build_bundle(
+                hist,
+                recent_days=7,
+                archive_days=5*365,
+                limit=60,
+                archive_limit=0,
+            )
             data = json.dumps(bundle, ensure_ascii=False).encode('utf-8')
             self.send_response(200)
             self.send_header('Content-Type','application/json; charset=utf-8')
@@ -93,12 +100,11 @@ def main():
     args = ap.parse_args()
     os.chdir(ROOT)
     with socketserver.ThreadingTCPServer(('127.0.0.1', args.port), Handler) as httpd:
-        print(f"Embodied Daily running at http://localhost:{args.port}/")
+        print(f"Agent Daily running at http://localhost:{args.port}/")
         try: httpd.serve_forever()
         except KeyboardInterrupt: print("\nShutting down.")
 
 if __name__ == '__main__':
     main()
-
 
 
