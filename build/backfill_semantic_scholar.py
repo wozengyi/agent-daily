@@ -66,16 +66,19 @@ JOURNAL_HINTS = re.compile(
 )
 
 
-def fetch_json(params, timeout=60, retries=4):
+def fetch_json(params, timeout=60, retries=0):
     url = S2_URL + '?' + urllib.parse.urlencode(params)
-    for attempt in range(retries):
+    attempt = 0
+    while retries <= 0 or attempt < retries:
+        attempt += 1
         try:
             req = urllib.request.Request(url, headers={'User-Agent': 'AgentDaily/1.0'})
             with urllib.request.urlopen(req, timeout=timeout, context=bd.CTX) as r:
                 return json.loads(r.read().decode('utf-8'))
         except Exception as e:
-            wait = 8 * (attempt + 1)
-            print(f'  retry {attempt + 1}/{retries} in {wait}s: {e}', file=sys.stderr, flush=True)
+            wait = min(180, 8 * attempt)
+            budget = '∞' if retries <= 0 else str(retries)
+            print(f'  retry {attempt}/{budget} in {wait}s: {e}', file=sys.stderr, flush=True)
             time.sleep(wait)
     raise RuntimeError(f'failed Semantic Scholar request: {url[:140]}...')
 
@@ -190,6 +193,7 @@ def main():
     ap.add_argument('--sleep', type=float, default=3.0)
     ap.add_argument('--max-total', type=int, default=0, help='0 means no global cap')
     ap.add_argument('--max-per-year', type=int, default=0, help='0 means no yearly cap')
+    ap.add_argument('--max-retries', type=int, default=0, help='0 means retry Semantic Scholar requests until the workflow timeout')
     ap.add_argument('--oldest-first', action='store_true')
     ap.add_argument('--recent', type=int, default=7)
     ap.add_argument('--limit', type=int, default=240)
@@ -229,7 +233,7 @@ def main():
                 if token:
                     params['token'] = token
                 try:
-                    data = fetch_json(params)
+                    data = fetch_json(params, retries=args.max_retries)
                 except Exception as e:
                     print(f'[{year} {idx}/{len(QUERIES)}] {query}: skipped after retries: {e}', file=sys.stderr, flush=True)
                     break
