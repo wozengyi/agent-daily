@@ -632,6 +632,15 @@ function mountSearchExtras(){
 // ---------- Data loading ----------
 async function loadBundle(opts={}){
   state.loading = true; state.bundleError = null; render();
+  if(!opts.refresh && window.__BUNDLE__ && Array.isArray(window.__BUNDLE__.papers)){
+    state.bundle = window.__BUNDLE__;
+    state.loading = false;
+    render();
+    if(!state.archiveIndex && !state.archiveIndexLoading && !state.archiveIndexError){
+      loadArchiveIndex();
+    }
+    return;
+  }
   try{
     const suffix = opts.refresh ? `?v=${Date.now()}` : `?v=${DATA_VERSION}`;
     const r = await fetch(`data/daily.json${suffix}`, {cache: opts.refresh ? 'no-store' : 'default'});

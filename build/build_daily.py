@@ -440,10 +440,11 @@ def save(hist, bundle):
     light_bundle['archive'] = []
     light_bundle['count'] = len(light_bundle['papers'])
     light_bundle['latestPath'] = 'data/latest.json'
-    OUT_PATH.write_text(json.dumps(light_bundle, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    light_json = json.dumps(light_bundle, ensure_ascii=False, separators=(',', ':'))
+    OUT_PATH.write_text(light_json, encoding='utf-8')
     write_archive_shards(hist, bundle)
     write_search_index(hist)
-    (DATA_DIR / 'data.js').write_text('window.__BUNDLE__ = null;\n', encoding='utf-8')
+    (DATA_DIR / 'data.js').write_text('window.__BUNDLE__=' + light_json + ';\n', encoding='utf-8')
 
 def main():
     import argparse
