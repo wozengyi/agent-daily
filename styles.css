@@ -85,6 +85,15 @@ button{font-family:inherit}
   padding:0 5px;border-radius:999px;line-height:16px;margin-left:4px;
 }
 .chip.active .chip-count{color:#dff7ff;border-color:#3b82a0;background:#0e4a5f}
+.filter-mode{
+  display:flex;align-items:center;gap:6px;margin:-2px 0 8px;color:var(--muted);font-size:11px;
+}
+.mode-btn{
+  background:var(--chip);border:1px solid var(--border);color:var(--muted);
+  padding:4px 8px;border-radius:999px;font-size:11px;cursor:pointer;
+}
+.mode-btn:hover{border-color:var(--accent);color:var(--text)}
+.mode-btn.active{background:var(--chip-active);border-color:var(--accent);color:#e6f7ff}
 .ghost-btn{
   margin-top:8px;background:transparent;border:1px dashed var(--border);color:var(--muted);
   padding:8px 10px;border-radius:10px;cursor:pointer;font-size:12px;width:100%;

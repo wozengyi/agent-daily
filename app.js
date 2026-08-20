@@ -1,9 +1,10 @@
 const STORAGE_KEY = 'agent-daily-bookmarks-v2';
-const DATA_VERSION = '20260821-agent-facets-v1';
+const DATA_VERSION = '20260821-agent-tagmode-v1';
 const state = {
   tab: 'today',
   search: '',
   activeTags: new Set(),
+  tagMode: 'any',
   activeYears: new Set(),
   activeKinds: new Set(),
   bookmarks: new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')),
@@ -143,10 +144,7 @@ function matches(p){
     if(!hay.includes(q)) return false;
   }
   if(state.activeTags.size){
-    const tagset = new Set(p.tags||[]);
-    let ok = false;
-    for(const t of state.activeTags){ if(tagset.has(t)){ ok=true; break; } }
-    if(!ok) return false;
+    if(!tagFilterMatches(p)) return false;
   }
   if(state.activeYears.size){
     if(!state.activeYears.has(String(p.year||(p.date||'').slice(0,4)))) return false;
@@ -159,6 +157,15 @@ function matches(p){
 
 function filtered(list){ return list.filter(matches); }
 
+function tagFilterMatches(p){
+  if(!state.activeTags.size) return true;
+  const tagset = new Set(p.tags||p.topics||[]);
+  const selected = Array.from(state.activeTags);
+  return state.tagMode === 'all'
+    ? selected.every(t=>tagset.has(t))
+    : selected.some(t=>tagset.has(t));
+}
+
 function matchesFacetScope(p, ignoreFacet){
   const q = state.search.trim().toLowerCase();
   if(q){
@@ -166,10 +173,7 @@ function matchesFacetScope(p, ignoreFacet){
     if(!hay.includes(q)) return false;
   }
   if(ignoreFacet !== 'tags' && state.activeTags.size){
-    const tagset = new Set(p.tags||[]);
-    let ok = false;
-    for(const t of state.activeTags){ if(tagset.has(t)){ ok=true; break; } }
-    if(!ok) return false;
+    if(!tagFilterMatches(p)) return false;
   }
   if(ignoreFacet !== 'years' && state.activeYears.size){
     if(!state.activeYears.has(String(p.year||(p.date||'').slice(0,4)))) return false;
@@ -284,6 +288,14 @@ function heroCurated(sel){
 
 // ---------- Sidebar chips ----------
 function renderChips(){
+  const modeAny = byId('tagModeAny');
+  const modeAll = byId('tagModeAll');
+  if(modeAny && modeAll){
+    modeAny.classList.toggle('active', state.tagMode === 'any');
+    modeAll.classList.toggle('active', state.tagMode === 'all');
+    modeAny.setAttribute('aria-pressed', String(state.tagMode === 'any'));
+    modeAll.setAttribute('aria-pressed', String(state.tagMode === 'all'));
+  }
   const viewPs = currentFacetPapers();
   const useArchiveTopicIndex = state.tab === 'archive' && state.archiveIndex && !state.search.trim() && !state.activeYears.size && !state.activeKinds.size;
   const tagCounts = useArchiveTopicIndex
@@ -326,7 +338,7 @@ function getCuratedSelection(){
   const rng = seededRandom(seed);
   let pool = PAPERS;
   if(state.activeTags.size){
-    pool = PAPERS.filter(p=>paperTopics(p).some(t=>state.activeTags.has(t)));
+    pool = PAPERS.filter(tagFilterMatches);
     if(!pool.length) pool = PAPERS;
   }
   const heroIdx = Math.floor(rng()*pool.length);
@@ -345,7 +357,7 @@ function pickNewHero(list){
   // If active tags, pick first (newest/hottest) matching in tags; else first.
   let pool = list;
   if(state.activeTags.size){
-    const p = list.filter(x => (x.topics||[]).some(t=>state.activeTags.has(t)));
+    const p = list.filter(tagFilterMatches);
     if(p.length) pool = p;
   }
   return pool[0];
@@ -634,6 +646,14 @@ document.addEventListener('keydown',(e)=>{ if(e.key==='Escape') closeDetail(); }
 document.querySelectorAll('.tab').forEach(tab=>{
   tab.addEventListener('click', ()=>{ state.tab = tab.dataset.tab; render(); });
 });
+byId('tagModeAny').addEventListener('click', ()=>{
+  state.tagMode = 'any';
+  render();
+});
+byId('tagModeAll').addEventListener('click', ()=>{
+  state.tagMode = 'all';
+  render();
+});
 byId('searchInput').addEventListener('input', (e)=>{
   state.search = e.target.value;
   state.searchResultLimit = 120;
@@ -645,6 +665,7 @@ byId('searchInput').addEventListener('input', (e)=>{
 });
 byId('resetFilters').addEventListener('click', ()=>{
   state.activeTags.clear(); state.activeYears.clear(); state.activeKinds.clear();
+  state.tagMode='any';
   state.search=''; byId('searchInput').value='';
   state.tab='today';
   render();
