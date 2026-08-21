@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T16:03:45.608060+00:00",
+  "generatedAt": "2026-08-21T19:11:16.669402+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -1228,7 +1228,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17512.pdf",
       "id": "arxiv:2608.17512",
       "source": "hf",
-      "upvotes": 47,
+      "upvotes": 48,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -1570,7 +1570,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17310.pdf",
       "id": "arxiv:2608.17310",
       "source": "hf",
-      "upvotes": 98,
+      "upvotes": 101,
       "topics": [
         "Reasoning",
         "Fine-tuning",
@@ -1799,7 +1799,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17253.pdf",
       "id": "arxiv:2608.17253",
       "source": "arxiv",
-      "upvotes": 87,
+      "upvotes": 90,
       "topics": [
         "VLM Training",
         "Multi-Agent",
@@ -3283,7 +3283,7 @@
       "pdf": "https://arxiv.org/pdf/2608.14036.pdf",
       "id": "arxiv:2608.14036",
       "source": "hf",
-      "upvotes": 157,
+      "upvotes": 158,
       "topics": [
         "Agent Safety",
         "Evaluation"
@@ -9023,7 +9023,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16072.pdf",
       "id": "arxiv:2608.16072",
       "source": "hf",
-      "upvotes": 146,
+      "upvotes": 147,
       "topics": [
         "Post-Training",
         "Reasoning",
@@ -9413,7 +9413,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15265.pdf",
       "id": "arxiv:2608.15265",
       "source": "hf",
-      "upvotes": 58,
+      "upvotes": 59,
       "topics": [
         "Post-Training",
         "Evaluation",
@@ -9929,7 +9929,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13505.pdf",
       "id": "arxiv:2608.13505",
       "source": "hf",
-      "upvotes": 66,
+      "upvotes": 68,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -12075,7 +12075,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17744.pdf",
       "id": "arxiv:2608.17744",
       "source": "arxiv",
-      "upvotes": 4,
+      "upvotes": 7,
       "topics": [
         "LLM Training",
         "Reasoning",
@@ -12736,7 +12736,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17426.pdf",
       "id": "arxiv:2608.17426",
       "source": "arxiv",
-      "upvotes": 154,
+      "upvotes": 155,
       "topics": [
         "VLM Training",
         "Evaluation"
@@ -13257,7 +13257,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15045.pdf",
       "id": "arxiv:2608.15045",
       "source": "hf",
-      "upvotes": 44,
+      "upvotes": 45,
       "topics": [
         "VLM Training",
         "Reasoning",
@@ -16221,7 +16221,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13547.pdf",
       "id": "arxiv:2608.13547",
       "source": "arxiv",
-      "upvotes": 1,
+      "upvotes": 2,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -16772,7 +16772,7 @@
       ],
       "abstract": "A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollout requires understanding whether physics, causality, and world state evolve correctly. Humans spot such violations naturally, yet no existing benchmark automates this capability: metrics are computed brute-force, leaving no reasoning chain that can be examined or verified. We introduce HarnessEval-W, an agentified evaluation pipeline that brings the harness paradigm from the LLM ecosystem to world model benchmarking. Rather than applying a fixed rubric, HarnessEval-W interprets the context of each evaluation case, decomposes the evaluation question into measurable subproblems, and spawns specialized sub-agents, each equipped with tailored context and diagnostic tools to reason over its own subproblem. The parent agent then validates the gathered evidence and summarizes it into the final verdict. This hierarchical workflow turns every evaluation into a transparent evidence tree whose complete reasoning chain justifies the result. We apply HarnessEval-W to 18 representative world models over 330 evaluation cases. Its judgments closely align with human preferences while providing verifiable, fine-grained diagnoses of every generated rollout. We open-source the full pipeline as a live benchmark and invite the broad community to contribute to grow new skills and evaluation cases as world models evolve.",
       "date": "2026-08-18",
-      "upvotes": 122,
+      "upvotes": 123,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.16859",
       "pdf": "https://arxiv.org/pdf/2608.16859.pdf",
@@ -16857,7 +16857,7 @@
       ],
       "abstract": "Foundation GUI agents can automate complex digital tasks, but deployment is hindered by scarce and biased training data, ambiguous prompts, and unreliable execution. Routine workflows rely on user-specific tools and tacit conventions, so unstated instructions can produce arbitrary variations across runs. We present UI-Mate, a foundation GUI agent that integrates an environment-grounded training stack with in-context demonstration learning. UI-Mate makes three contributions: A Scalable Environment-Grounded Training Stack: A closed-loop data engine automates task generation, environment construction, rollout, filtering, capability balancing, SFT, and online RL across massively parallel environments via unified task-verifier bundles. In-Context Demonstration Learning: A mechanism that transforms multimodal demonstrations into flexible subtask-level workflows, follows relevant demonstrated steps, and re-plans from the live interface. OSWorkerBench Benchmark and Insights: A benchmark of 100 long-horizon office tasks across 41 applications that supports instruction-only and demonstration-guided evaluation. Its demonstration resources separate a 33-task self-demo setting, built from successful strong-agent rollouts of the same targets, from a 45-task variant-demo setting, built from human recordings of related but non-identical tasks. Experiments show that UI-Mate-27B sets a new open-weight state of the art on general computer-use benchmarks, scoring 77.0% on OSWorld-Verified and 66.2% on WindowsAgentArena. On OSWorkerBench, it reaches 41.0% strict success and 76.9% progress, outperforming its Qwen3.6-27B base by 17.7 and 24.5 points. On the 33-task self-demo subset, one demonstration raises strict success from 17.2% to 35.4% and progress from 67.9% to 81.1%, substantially improving long-horizon reliability. Project page: https://ui-mate.github.io.",
       "date": "2026-08-18",
-      "upvotes": 44,
+      "upvotes": 45,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.15930",
       "pdf": "https://arxiv.org/pdf/2608.15930.pdf",
@@ -17323,7 +17323,7 @@
       ],
       "abstract": "Recent video generators can fabricate realistic depictions of wars, disasters, public emergencies, and other real-world crises, creating substantial risks of misinformation. Existing benchmarks, however, provide limited evidence on detector and generator behavior in such settings, including how detectability varies with generation conditions, how people perceive generated videos, and whether detectors remain reliable during social dissemination. To address this gap, we introduce RA-Bench, a benchmark for AI-generated video detection that uses Real videos as Anchors. RA-Bench contains 17,886 videos, comprising 1,830 real-video anchors across 10 social-risk categories and 16,056 generated clips from four open-source and five closed-source generators. Based on RA-Bench, we organize our evaluation along three dimensions. We first assess detector generalization across seven traditional detectors, ten zero-shot multimodal models under three review settings, and two MLLMs specifically fine-tuned on AI-generated video detection. Across these methods, none of the three detector families generalizes consistently across RA-Bench instances. We then examine how detectability varies with generation quality, conditioning information, and sampling seeds. These analyses show that generation properties affect detector families differently, while source-level detection patterns remain stable across seeds. Finally, we study human authenticity judgments and detector reliability during social dissemination. We find that videos that mislead people are also difficult for current detectors, and that social dissemination makes detection harder. Together, these findings show that current methods struggle to detect realistic AI-generated videos, highlighting the need for detectors robust to evolving video generators.",
       "date": "2026-08-17",
-      "upvotes": 275,
+      "upvotes": 277,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14391",
       "pdf": "https://arxiv.org/pdf/2608.14391.pdf",
@@ -17514,7 +17514,7 @@
       ],
       "abstract": "Apollo did not reach the Moon merely because its engineers could solve difficult equations. It succeeded by turning a distant ambition into a mission architecture of explicit objectives, simulation, verification, and repeated correction. AI now faces a similar transition: frontier models can solve difficult tasks once the problem, tools, and success criteria are specified, yet consequential real-world challenges rarely arrive in an executable or verifiable form.   We introduce Apodex Discovery, a framework for building and evaluating discoverative AI through the heavy-duty solver, a system comprising a foundation model, harness, tools, and control policies that pursues extended, stateful, verifiable investigations. It has three core components. First, a problem-scouting process surveyed 561 industries across 16 sectors, assembled 423 high-value real-world problems, and selected 20 for the initial release. Second, a common environment-task-episode abstraction provides data, tools, constraints, feedback, trajectory recording, and verification of intermediate artifacts and final submissions. Third, HDS6 evaluates Tools, Repair, Alternatives, Coherence, Evidence, and Scope independently of final-task success.   In AAV capsid design, Apodex surpassed the published state of the art by 7% across viability, tropism, structure prediction, and generative design. In drug repurposing and reformulation, a task-specific biomedical environment improved the mean normalized prediction score of GPT-5.5 and GPT-5.6-sol by 2.5 and 7.6 points over the same closed-book backbone. Controlled ablations show that the fixed TRACES episode interface enables attribution of performance differences to specific solver components. Apodex Discovery moves AI evaluation beyond predefined benchmarks toward verifiable investigations aimed at genuine discovery.",
       "date": "2026-08-17",
-      "upvotes": 51,
+      "upvotes": 52,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.11341",
       "pdf": "https://arxiv.org/pdf/2608.11341.pdf",
@@ -17986,7 +17986,7 @@
       ],
       "abstract": "No single large language model (LLM) is optimal across all queries and budget constraints, making model routing essential for cost-effective deployment. Existing routers adopt diverse formulations and implementations, making fair comparison and extension difficult. We present a unified formulation of LLM routing as a sequential decision process characterized by five components: context encoders, model encoders, scoring functions, decision rules, and learning signals, covering single-turn, multi-turn, and personalized routing. Based on this formulation, we develop an automated pipeline for constructing routing supervision and evaluating routers jointly on response quality and inference cost. The resulting benchmark, xRouteBench, spans generic LLM, memory-augmented, vision, time-series, and personalized routing tasks. We further introduce LLMRouter, an open-source modular infrastructure with more than 16 representative routers. Our empirical study shows that learned routers outperform the strongest fixed-model baseline by 14.6% relatively, lightweight routers become more competitive under tight cost constraints, and user-conditioned routing consistently improves personalization.",
       "date": "2026-08-14",
-      "upvotes": 107,
+      "upvotes": 108,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.06867",
       "pdf": "https://arxiv.org/pdf/2608.06867.pdf",
@@ -18018,7 +18018,7 @@
       ],
       "abstract": "An LLM agent's capability depends not only on model weights but on its harness: prompts, tools, skills, and control flow. Self-improvement loops already edit harnesses, yet single-lineage search is path-dependent and local wins often regress other tasks. We introduce DarwinX, which treats self-evolution as selection over a population of harnesses with the model frozen: a preserve-and-extend contract admits only variants that extend coverage without regressing, an archive keeps alternative lineages for recombination, and failure-, teacher-, and self-derived evidence share one edit interface. Fitness comes from each benchmark's own verifier: no gold solutions, no hand-picked winners. Across four benchmarks that progressively separate the evolution signal from the test, one loop adds about 17 points on average: Terminal-Bench 2.1 rises +7.7 to 83.2% on a matched base and to the verified frontier at 84.7% on a stronger one; TerminalWorld's held-out split reaches 68.3%, ahead of every off-the-shelf agent; WebArena-Infinity real-task pass@1 rises from 43.5% to 93.0% audit-clean; and a Terminal-Bench 2.1 harness transfers unchanged to SWE-bench Verified. What evolves is general agent competence, not benchmark-specific patches, so it survives changes of task, verifier, and base model. A frozen model need not be a fixed agent: harness selection turns evaluation compute into durable capability.",
       "date": "2026-08-14",
-      "upvotes": 108,
+      "upvotes": 110,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.07545",
       "pdf": "https://arxiv.org/pdf/2608.07545.pdf",
@@ -18507,7 +18507,7 @@
       ],
       "abstract": "Turning a research idea into a complete paper requires more than text generation: the system must retrieve literature, design and execute experiments, revise claims according to evidence, produce publication-ready figures, and maintain consistency across a long generation process. We present Spark-to-Paper, an end-to-end research paper generation system implemented as thirteen composable skills inside an existing coding assistant, without requiring a separate agent platform or orchestration service. Spark-to-Paper separates model-based judgment from deterministic operations that can be directly executed and checked. It further separates experiment planning from reporting, so that required evidence is specified before results are observed and manuscript claims are revised according to measured outcomes. To improve reliability over long research trajectories, the system combines deterministic integrity checks with self-critique and bounds a failure mode we call the Self-Refutation Loop, in which repeated experiments continue to reject the original research objective. Spark-to-Paper also produces editable vector figures through programmatic plotting for experimental results and code-based reconstruction for generated method diagrams. Across eight controlled research topics, Spark-to-Paper achieves 99.5% citation validity and 96.4% figure editability. A controlled ablation increases fabrication detection from 14% for a single-pass draft to 92% with the full integrity and review stack, while adversarial review achieves 74% precision. The full system uses 11.9M tokens, costs $8.1 per manuscript, and requires 3.2 hours on average. These results show that end-to-end research paper generation can be implemented as a lightweight, composable workflow inside existing coding assistants while keeping experimental evidence central to how claims are accepted, revised, or abandoned.",
       "date": "2026-08-13",
-      "upvotes": 283,
+      "upvotes": 285,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.11924",
       "pdf": "https://arxiv.org/pdf/2608.11924.pdf",
@@ -18538,7 +18538,7 @@
       ],
       "abstract": "AI agents operate in persistent environments where early state changes can influence decisions far into the future. Unlike conventional language-model interactions, agent behavior is mediated through a shared state that is repeatedly modified and reused across long-horizon workflows. Current safety benchmarks often fail to capture these cumulative risks because they focus on short, static tasks. To address these limitations, we introduce OpenART, an open-ended arena for scalable agent red teaming through environment evolution. OpenART provides over 10,000 validated stateful scenarios across 50 domains, drawing from a pool of more than 500,000 tools and skills. These tasks require a median of 97 tool calls and enable unified evaluation across 75 different agent-model configurations. To systematically explore these evolving attack surfaces, we propose the Evolutionary Markov Hypergraph Attack (EMHA). EMHA is a black-box policy that performs feedback-driven environment evolution by coordinating authorized state transitions without requiring parameter updates. Throughout the evaluation, task objectives remain fixed while only the environment state changes. Across all configurations, EMHA achieves a pooled Attack Success Rate (ASR) of 85.0%. Its advantage over instruction-only evolution increases from approximately 2% on simple environments to over 17% on the most complex ones, demonstrating that environment evolution increasingly exposes safety failures as task complexity grows. Furthermore, our analysis shows that the specific runtime implementation of an agent explains a significant portion of safety variation beyond the underlying model's capabilities. These results establish OpenART as a scalable foundation for studying agent safety in complex, evolving environments.",
       "date": "2026-08-13",
-      "upvotes": 260,
+      "upvotes": 261,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.00677",
       "pdf": "https://arxiv.org/pdf/2608.00677.pdf",
@@ -18569,7 +18569,7 @@
       ],
       "abstract": "Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter's parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whether such transfer can instead occur at test time. We study strong-to-weak scaffolding: whether a stronger builder model can construct inference-time harnesses that help a weaker target model solve tasks more reliably without any parameter updates. Using four representative Theory-of-Mind benchmarks, each builder model uses 5% of the data as a validation set to iteratively refine its harness over multiple rounds, after which the finalized harness is evaluated on the full test set. Empirically, this form of test-time capability transfer is highly effective, nearly doubling average target-model performance from 0.49 to 0.91. Our analysis shows that the gains come primarily from offloading unstable model reasoning into deterministic code, benchmark-specific routing, and strict answer-format enforcement, rather than from encouraging the target model to reason more extensively or sample more broadly. We further find that builder-model reasoning effort improves harness quality monotonically, platform effects are modest relative to the builder model's own capability, and weaker target models receive the largest gains. These results suggest that inference-time harness design is an important complement to conventional training-time distillation, enabling strong models to transfer cognitive structure to weaker models without retraining.",
       "date": "2026-08-13",
-      "upvotes": 111,
+      "upvotes": 113,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.12307",
       "pdf": "https://arxiv.org/pdf/2608.12307.pdf",
@@ -18610,7 +18610,7 @@
       ],
       "abstract": "AI models have achieved remarkable success across diverse domains, yet the mechanisms underlying their capabilities and the risks they may pose remain poorly understood. As AI development becomes faster and increasingly automated, mechanistic exploration remains largely manual, widening the gap between what models can do and our ability to understand and control them. To bridge this gap, we introduce Mechanist, an agentic system that uses AI as a scientific instrument for the autonomous discovery of mechanisms underlying AI intelligence. To support autonomous mechanistic discovery, we construct an interpretability-focused knowledge graph of approximately 13,000 papers and integrate it with a multidisciplinary database of 43 million papers spanning 26 fields. We further curate a library of 32 foundational methods for mechanism analysis, causal intervention, and validation. Compared with Claude Code and existing AI-scientist systems, Mechanist generates more valuable mechanism hypotheses and executes experiments more reliably. Mechanist also demonstrates a progression from discovering model behaviors to explaining and controlling AI models. Specifically, Mechanist first uncovers a counterintuitive safety risk in scientific laboratories, showing that unsafe traits can transfer across modalities through apparently safe training data. Mechanist then develops a mechanism theory of belief, revealing how models represent world knowledge, form beliefs, infer the beliefs of others, and how these mechanisms emerge during pretraining. Finally, Mechanist translates these mechanistic insights into practical interventions that improve model performance across diverse scenarios and steer scientific foundation models toward generating DNA sequences with specified properties.",
       "date": "2026-08-13",
-      "upvotes": 84,
+      "upvotes": 86,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.12036",
       "pdf": "https://arxiv.org/pdf/2608.12036.pdf",
@@ -18639,7 +18639,7 @@
       ],
       "abstract": "Large Language Models (LLMs) increasingly act as agents whose procedural knowledge is stored in reusable skill packages and loaded at inference time. As skill libraries grow, a central challenge is to expose the smallest sufficient executable context under a limited context budget. Existing systems struggle to reuse routines below the whole-skill level, preserve procedural contracts during compression, keep compressed routines executable and expandable, and update the compressed library as skills evolve. These challenges reveal a unit mismatch: skills are retrieved as packages, compressed as text, and converted into execution graphs only after retrieval, whereas reliable reuse requires a contract-bearing procedural unit. We propose SkillZip, an execution-aware procedural abstraction framework that performs contract-preserving compression over section-level graphs. SkillZip rewrites recurring contract-valid motifs into reversible ported macros while preserving boundary signatures, dependency closure, verifier reachability, and source-level expansion. At inference time, it hydrates a compact, dependency-closed context and expands macros only when required. ReZip further integrates new skills and revises risky macros using execution evidence. Comprehensive experiments1 on technical and embodied agent benchmarks show SkillZip consistently outperforms the strongest baseline by up to 12.2 points, while achieving a 3.46x compression ratio with 99.2% dependency preservation and 98.7% verifier reachability. Scaling analyses further confirm robust retrieval across skill libraries ranging from 200 to 100K skills.",
       "date": "2026-08-13",
-      "upvotes": 75,
+      "upvotes": 77,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.05604",
       "pdf": "https://arxiv.org/pdf/2608.05604.pdf",
@@ -19083,7 +19083,7 @@
       ],
       "abstract": "After an older adult misses a medication dose, a software agent can send another reminder and an embodied agent can bring the medication. Yet neither explains whether the person forgot, is confused, has side effects, or deliberately refused, nor what support is appropriate. This reveals a structural gap in Agentic AI: Digital Agents primarily transform software states, while Embodied Agents transform physical states; neither makes a person's evolving state and agency the primary object of modeling, intervention, and evaluation. We introduce Combodied Agents, a human-centered paradigm that perceives, models, predicts, and supports individual human-state trajectories over time, using software tools, sensors, wearables, robots, and human services as action channels rather than end goals. We unify fragmented capabilities across personal assistants, health agents, AI companions, and adaptive human--AI systems into a closed loop: event-based multimodal perception reconstructs meaningful personal events; longitudinal, correctable memory provides temporal context; Personal World Models estimate future personal states and outcomes under alternative decisions and interventions; and an admissible intervention policy selects proportionate support under consent, uncertainty, safety, reversibility, and user control. Feedback from the person and environment updates the loop. Rather than requiring an exhaustive Human Digital Twin, the framework uses purpose-bounded, uncertainty-aware, user-correctable representations. We organize the design space by human-state targets, relational contexts, and agent roles, and propose scenario-centered evaluation, agency-preservation metrics, benchmark requirements, edge-native personal models, and governance directions. Combodied Agents shift Agentic AI from external task completion toward sustained human benefit.",
       "date": "2026-08-12",
-      "upvotes": 192,
+      "upvotes": 194,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.10915",
       "pdf": "https://arxiv.org/pdf/2608.10915.pdf",
@@ -19540,7 +19540,7 @@
       ],
       "abstract": "We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reasoning. Inputs presented at inference time continuously update the model's recurrent memory; the model then solves a query through iterative computation in a high-dimensional latent space, without verbalizing its intermediate reasoning. We evaluate the model on the public ARC-AGI-1 evaluation set and use controlled ARC-like interventions to study what it learns from demonstrations, how consistently it applies an inferred transformation, and which concepts remain difficult. A 150M-parameter configuration reaches 29.5% pass@2 at a computed inference cost of \\$0.0007 per task. This operating point breaks through the previously reported ARC-AGI-1 cost-accuracy Pareto frontier, establishing a new state of the art in benchmark cost efficiency.",
       "date": "2026-08-11",
-      "upvotes": 692,
+      "upvotes": 702,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.09888",
       "pdf": "https://arxiv.org/pdf/2608.09888.pdf",
@@ -19638,7 +19638,7 @@
       ],
       "abstract": "Macaron-V1 is an open agent-model family for experiential intelligence: learning from experience in real environments and continuing to learn after deployment. It is organized around two system goals. Adaptation is pursued through recursive improvement of versioned model-harness pairs, where experience from one configuration is evaluated under an external contract and used to construct its successor. Collaboration is pursued via the Mixture-of-LoRA (MoL) architecture that freezes a base model, composes specialist LoRA adapters, and selects one LoRA per user turn. The flagship Macaron-V1-Venti combines a 744B GLM-5.2 base with four LoRAs for chat, agent, coding, and GenUI; the Qwen3.6-based Macaron-V1-Tall (50B) uses the same design for local deployment. This report presents Macaron-V1 as a co-designed system spanning architecture, algorithms, and infrastructure. The MoL architecture supports continual learning through extensible LoRA specialists. The algorithm combines Model-Harness Co-design and recursive self-improvement loop, including the UI4A component-native GenUI harness, a stateful action substrate, versioned HCP contract, and the agentic RL framework MindForge. The supporting infrastructure includes the post-training platform MinT, the long-context RL method LongStraw, and stability techniques for sparse MoE and DSA base models. We evaluate Macaron-V1 on Personal Intelligence, GenUI, and general capability benchmarks against frontier baselines. Our results validate the current system, while compounding gains from continual learning and collective intelligence remain open questions.",
       "date": "2026-08-11",
-      "upvotes": 336,
+      "upvotes": 338,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.09819",
       "pdf": "https://arxiv.org/pdf/2608.09819.pdf",
@@ -19670,7 +19670,7 @@
       ],
       "abstract": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose unsupervised on-policy self-distillation (U-OPSD). U-OPSD first samples multiple rollouts and constructs a pseudo solution by majority vote under a self-consistency threshold. It then conditions the model's distribution on the pseudo-solution and distills itself on the disagreeing completions, allowing the model to correct itself precisely where it is confidently wrong. Across diverse benchmarks, base models, and training settings, U-OPSD consistently improves over the base models and matches or surpasses supervised methods with ground truth (GT) such as OPSD and GRPO. On five mathematical reasoning benchmarks, i.e., AIME24, AIME25, HMMT25, MATH500, and AMC23, U-OPSD improves over the base model by 8.5% and 10.7% on Qwen3 non-thinking mode at 4B and 8B scales, and outperforms OPSD by 3.2% and 2.3% on average, respectively. In thinking mode, U-OPSD stays on par with OPSD, ahead by 0.9% at 4B and level at 8B and surpassing GRPO by 0.7% and 1.1%, respectively. Code is available at [https://github.com/williamium3000/u-opsd](https://github.com/williamium3000/u-opsd).",
       "date": "2026-08-11",
-      "upvotes": 215,
+      "upvotes": 216,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.06296",
       "pdf": "https://arxiv.org/pdf/2608.06296.pdf",
@@ -19709,7 +19709,7 @@
       ],
       "abstract": "As AI coding agents take on increasingly complex, long-horizon software engineering tasks, existing benchmarks are rapidly saturating and their evaluation quality has come under serious scrutiny: a recent audit found that nearly 60% of unsolved SWE-bench Verified instances contain flawed tests -- either overly narrow tests that reject correct solutions or overly broad tests that check unstated requirements -- and that frontier models can verbatim reproduce gold patches from training data. Code refactoring, which requires coordinated, behavior-preserving changes across many files, offers a substantially harder and more realistic test of agent capability, yet remains underserved by current benchmarks. We introduce SWE-Bench ProMax, an expert-curated, multilingual code refactoring benchmark of 170 instances drawn from real commits across seven programming languages (Python, Java, TypeScript, Go, C, C++, and Rust). Every instance undergoes rigorous, multi-stage curation that directly addresses the quality problems identified in prior benchmarks: issue descriptions are rewritten from scratch to provide precise, unambiguous specifications, and test suites are manually reviewed to remove overly narrow and overly broad tests. Tasks with insufficient complexity or limited cross-file scope are filtered out, yielding a benchmark of challenging, large-scale refactoring tasks that average 11.4 modified files and 261.6 lines of code per instance, substantially exceeding the scale of existing benchmarks. Experiments with frontier models under two agent scaffolds show that the best model achieves only 41.2% resolve rate, confirming that SWE-Bench ProMax presents a meaningful and unsaturated challenge for current AI coding agents. Our benchmark is available at https://huggingface.co/datasets/swe-bench-promax/SWE-Bench-ProMax.",
       "date": "2026-08-11",
-      "upvotes": 131,
+      "upvotes": 133,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.09802",
       "pdf": "https://arxiv.org/pdf/2608.09802.pdf",
@@ -19741,7 +19741,7 @@
       ],
       "abstract": "Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with each subsequent request. Building on prior research, we identify an architectural vulnerability: these encrypted blocks are fully compatible and interchangeable across different sessions, users, and models within a provider's ecosystem. We exploit this compatibility to develop a scalable decryption jailbreak. By injecting an encrypted reasoning trace from a given model into a weaker, and less safeguarded model from the same provider, we force it to decode and output the trace verbatim in plaintext, without ever jailbreaking the more capable model directly. This vulnerability enables four distinct attack vectors. First, it circumvents anti-distillation mechanisms, allowing adversaries to extract a proprietary model's reasoning, as we demonstrate across Anthropic, OpenAI, and Google. Second, it allows for large-scale private data extraction. Developers frequently share session logs publicly, unaware of contents of the encrypted blocks. By decoding 315,320 reasoning blocks scraped from public repositories, we recovered 367 Personally Identifiable Information (PII) artifacts and 182 credentials. Third, it inadvertently reveals hazardous information hidden within the reasoning process, even in cases where the model's final, visible output safely rejects a malicious request. Fourth, attackers can leverage this flaw to execute invisible prompt injections, embedding malicious payloads entirely within encrypted blocks to poison public agentic rollouts. Following responsible disclosure, we propose concrete cryptographic and system-level mitigations to secure client-side reasoning.",
       "date": "2026-08-11",
-      "upvotes": 110,
+      "upvotes": 111,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.09867",
       "pdf": "https://arxiv.org/pdf/2608.09867.pdf",
@@ -19774,7 +19774,7 @@
       ],
       "abstract": "We present Ouroboros, a self-developing agent harness whose tools, prompts, context assembly, and core implementation improve through reviewed commits that become the runtime for later work. Core evolution proceeds in two modes. In recursive free evolution, improvement is itself a task, and completing one evolution cycle can schedule the next. In experience-driven core evolution, ordinary work and social interaction expose bugs, rough edges, and inefficient context construction that lead to reviewed structural changes.   On Terminal-Bench 2.1, an Opus 5 run scores 86.74%, the best result reported on the benchmark. On OSWorld-Verified, an Opus 5 run reaches 90.69%, exceeding the best previously reported score. A five-rollout CL-Bench campaign achieves a normalized reward of 0.2301, setting a new state of the art.   Hope is the longest-running publicly documented Ouroboros deployment. It is a 161-day living agent experiment in free evolution under governed human communication across seven surfaces. Human interaction surfaces faults and generates proposals, but the agent decides which changes to pursue. Because a self-developing agent may rewrite its own code and select new model APIs, operational safety becomes a primary design problem: guardrails must remain authoritative under evolutionary and public social pressure. Benchmark campaigns use frozen system snapshots, while Hope continues live evolution on a separate lineage.",
       "date": "2026-08-11",
-      "upvotes": 87,
+      "upvotes": 89,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.08311",
       "pdf": "https://arxiv.org/pdf/2608.08311.pdf",
@@ -23415,7 +23415,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16590.pdf",
       "id": "arxiv:2608.16590",
       "source": "arxiv",
-      "upvotes": 139,
+      "upvotes": 140,
       "topics": [
         "Reflection"
       ],
@@ -26550,7 +26550,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15964.pdf",
       "id": "arxiv:2608.15964",
       "source": "arxiv",
-      "upvotes": 3,
+      "upvotes": 4,
       "topics": [
         "LLM Training",
         "Reasoning",
@@ -30188,7 +30188,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18580.pdf",
       "id": "arxiv:2608.18580",
       "source": "hf",
-      "upvotes": 100,
+      "upvotes": 102,
       "topics": [
         "Alignment",
         "Fine-tuning"
@@ -32001,7 +32001,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18565.pdf",
       "id": "arxiv:2608.18565",
       "source": "arxiv",
-      "upvotes": 113,
+      "upvotes": 114,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -32932,7 +32932,7 @@
       ],
       "abstract": "Recent advances in foundation models have enabled AI scientists to automate increasingly complete research workflows, from hypothesis generation and code execution to manuscript preparation. Yet workflow coverage alone does not provide access to the full evidence on which scientific discovery depends. Existing systems typically reason over text, code, labels, or precomputed summaries, leaving scientifically decisive spatial, temporal, cross-channel, and procedural relations unavailable to the agent. We introduce OmniScientist, an end-to-end, omni-modal AI scientist that conducts multidisciplinary research directly from heterogeneous raw evidence. A perception layer and 3 autonomous agents for ideation, experiment, and writeup operate within a deterministic pipeline, allowing observations to shape research questions, experimental decisions, and final claims throughout the research lifecycle. By running idea, rigour, and claim checks in code, the system enforces novelty screening, statistical validity, execution provenance, and numerical traceability. We evaluate OmniScientist on 36 real-data cases spanning 5 discipline families, 4 families of scientific evidence, and modalities including images, signals, audio, video, 3-D structures, trajectories, tables, formulae, and graphs. The system completes the full path from raw data to a compiled manuscript in all 36 cases and achieves a mean overall paper score of 6.3 with the reference reasoning backbone. In paired comparisons against a blind variant that receives only precomputed scalar features, direct perception improves all 7 evaluation dimensions and wins 85% of head-to-head judgments. These results show that lifecycle-wide perception is essential for evidence-grounded scientific discovery and provides a practical path toward broadly capable AI scientists.",
       "date": "2026-08-20",
-      "upvotes": 86,
+      "upvotes": 87,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13558",
       "pdf": "https://arxiv.org/pdf/2608.13558.pdf",
@@ -208958,7 +208958,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19880.pdf",
       "id": "arxiv:2608.19880",
       "source": "hf",
-      "upvotes": 217,
+      "upvotes": 227,
       "topics": [
         "Evaluation"
       ],
@@ -209730,7 +209730,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19799.pdf",
       "id": "arxiv:2608.19799",
       "source": "arxiv",
-      "upvotes": 50,
+      "upvotes": 51,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -210537,7 +210537,7 @@
       "pdf": "https://arxiv.org/pdf/2608.20281.pdf",
       "id": "arxiv:2608.20281",
       "source": "arxiv",
-      "upvotes": 3,
+      "upvotes": 4,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -212911,7 +212911,7 @@
       ],
       "abstract": "Identity-preserving image generation becomes increasingly unreliable when a scene must contain many specified people. Beyond retaining each identity, the model must bind every reference to a distinct person and location, while training-time identity losses must establish correspondence among several noisy predicted faces. We introduce WithEveryone, a unified framework for generating group images up to ten reference identities. WithEveryone injects each selected identity as an addressed token, predicts a structured identity--layout plan, and renders the plan as a visual condition. Its key objective, Layout-Grounded ID Loss, uses annotated face regions to supervise the intended identities directly, avoiding unstable embedding-based face matching; ID Representation Forcing additionally trains a prediction for each identity before image synthesis. On an identity-disjoint benchmark, WithEveryone achieves the highest target-context identity similarity, improving face similarity from 0.462 for GPT-Image-2 to 0.499, while reducing copy-paste artifacts from 0.169 to 0.055. It further covers 97.3\\% of the requested identities with a duplicate rate of only 2.8\\%. These results show that explicit identity--layout grounding enables identity-preserving generation to scale to larger groups without relying on direct reference-face copying.",
       "date": "2026-08-21",
-      "upvotes": 33,
+      "upvotes": 34,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.20336",
       "pdf": "https://arxiv.org/pdf/2608.20336.pdf",
@@ -226822,7 +226822,7 @@
       ],
       "abstract": "Agent Skills are today either hand-authored or produced in a single LLM generation pass, and consequently possess no closed loop through which they might improve from the interaction failures they actually cause. Recent work does close this loop, but derives its feedback from single-turn question-answering evaluation. The consequence is a sharp asymmetry: once the first round has patched the gaps that a single exchange can reveal, the evolution gradient decays, the defects that surface only across multiple turns remain invisible, and evolution stalls. Governance in these systems is likewise driven by an end-to-end verification score, a scalar gate that can reject a degraded candidate but can neither localize nor repair its structural cause. We argue that the binding constraint on sustained skill evolution is neither editing capability nor the number of iterations, but whether the evaluation feedback keeps supplying trustworthy evolution gradients. We introduce SkillEvo, in which trustworthy feedback generates the gradient and controllable governance constrains its direction. The first component recasts multi-turn user simulation from an evaluation endpoint into a feedback generator: follow-up questions expose defects layer by layer, so that every round of revision both consumes feedback and produces new feedback. The second replaces the passive rejection of a scalar gate with an independent governance layer that actively repairs factual degradation and structural bloat, preventing the gradient from drifting as degradation accumulates. Across six categories of cloud services, 9 production Skills, and 98 skill-reference files, SkillEvo surpasses self-reflection-based evolution by 23.0 points and single- turn-QA-driven evolution by 15.4 points.",
       "date": "2026-08-21",
-      "upvotes": 20,
+      "upvotes": 21,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13120",
       "pdf": "https://arxiv.org/pdf/2608.13120.pdf",
@@ -226883,6 +226883,31 @@
       "pdf": "https://arxiv.org/pdf/2608.13210.pdf",
       "hfUrl": "https://huggingface.co/papers/2608.13210",
       "url": "https://arxiv.org/abs/2608.13210",
+      "topics": [
+        "Reasoning",
+        "Evaluation"
+      ],
+      "tags": [
+        "Reasoning",
+        "Evaluation"
+      ]
+    },
+    "arxiv:2608.12875": {
+      "id": "arxiv:2608.12875",
+      "title": "The Embedder's Dilemma: LLMs Are Better, but at What Cost?",
+      "authors": [
+        "Adnan El Assadi",
+        "Niklas Muennighoff",
+        "Jinhyuk Lee"
+      ],
+      "abstract": "Should you replace your text-embedding pipeline with a large language model? We answer this with a controlled, cost-aware comparison of ten LLMs across six families and 26 embedding models (118M to 14B parameters) on 37 tasks spanning classification, semantic textual similarity (STS), clustering, pair classification, and retrieval. In aggregate the two paradigms are effectively tied: the best LLM (Gemini 3.1 Pro, 77.6) and the best embedding model (77.2) differ by 0.4 points. Their strengths differ by task: LLMs lead on reasoning-heavy retrieval, embedding models lead on classification, and the two match on clustering, STS, and pair classification. Reaching that parity is expensive. An LLM costs up to 1,431x more than an embedding model of comparable quality (USD 154 vs. USD 0.11 per benchmark pass), and the open LLMs tested process tokens 2.5 to 736x more slowly on the same GPU. Reasoning tokens account for 28 to 81% of LLM inference cost; lower reasoning budgets preserve or improve retrieval quality for most models in our ablation. The Pareto frontier contains the leading embedding models and one LLM, Gemini 3.1 Pro. These results support a division of labour: use embedding models for similarity, classification, and clustering, and reserve LLMs for reasoning-intensive retrieval. Our code, datasets, and results are publicly available at https://github.com/embeddings-benchmark/embedders-dilemma.",
+      "date": "2026-08-21",
+      "upvotes": 1,
+      "source": "hf",
+      "arxiv": "https://arxiv.org/abs/2608.12875",
+      "pdf": "https://arxiv.org/pdf/2608.12875.pdf",
+      "hfUrl": "https://huggingface.co/papers/2608.12875",
+      "url": "https://arxiv.org/abs/2608.12875",
       "topics": [
         "Reasoning",
         "Evaluation"
