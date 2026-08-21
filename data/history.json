@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T19:11:16.669402+00:00",
+  "generatedAt": "2026-08-21T21:54:31.868698+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -16921,7 +16921,7 @@
       ],
       "abstract": "The rapid evolution of text-to-image (T2I) generation models has effectively solved the foundational challenge of raw pixel synthesis, shifting the community's focus toward fulfilling increasingly intricate user requests. While recent agentic image generation workflows enhance static inference with advanced capabilities like external knowledge retrieval and iterative reasoning, they mostly operate in isolated silos with fixed ``one-size-fits-all\" topologies. This inevitably leads to severe compute-mismatch, where simple queries are forced through computationally heavy pipelines. To bridge this gap, we present GenRouter, the first unified workflow routing framework for agentic image generation. We first formulate GenCanvas, standardizing diverse agentic pipelines into a universal set of foundational primitives and executable templates. Operating over this unified space, GenRouter adaptively routes heterogeneous prompts to their optimal workflows via (i) demand profiling, (ii) experience matching, and (iii) Pareto filtering. Extensive experiments across diverse benchmarks demonstrate that GenRouter achieves superior visual alignment while reducing execution costs by over 95% and latency by 65% compared to heavyweight static pipelines. Furthermore, the system continuously self-evolves via accumulated experience, enabling robust zero-shot generalization that boosts performance and halves computational overhead.",
       "date": "2026-08-18",
-      "upvotes": 21,
+      "upvotes": 22,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.16721",
       "pdf": "https://arxiv.org/pdf/2608.16721.pdf",
@@ -29204,7 +29204,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19197.pdf",
       "id": "arxiv:2608.19197",
       "source": "arxiv",
-      "upvotes": 43,
+      "upvotes": 44,
       "topics": [
         "LLM Training",
         "Tool Use",
@@ -208958,7 +208958,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19880.pdf",
       "id": "arxiv:2608.19880",
       "source": "hf",
-      "upvotes": 227,
+      "upvotes": 229,
       "topics": [
         "Evaluation"
       ],
@@ -226822,7 +226822,7 @@
       ],
       "abstract": "Agent Skills are today either hand-authored or produced in a single LLM generation pass, and consequently possess no closed loop through which they might improve from the interaction failures they actually cause. Recent work does close this loop, but derives its feedback from single-turn question-answering evaluation. The consequence is a sharp asymmetry: once the first round has patched the gaps that a single exchange can reveal, the evolution gradient decays, the defects that surface only across multiple turns remain invisible, and evolution stalls. Governance in these systems is likewise driven by an end-to-end verification score, a scalar gate that can reject a degraded candidate but can neither localize nor repair its structural cause. We argue that the binding constraint on sustained skill evolution is neither editing capability nor the number of iterations, but whether the evaluation feedback keeps supplying trustworthy evolution gradients. We introduce SkillEvo, in which trustworthy feedback generates the gradient and controllable governance constrains its direction. The first component recasts multi-turn user simulation from an evaluation endpoint into a feedback generator: follow-up questions expose defects layer by layer, so that every round of revision both consumes feedback and produces new feedback. The second replaces the passive rejection of a scalar gate with an independent governance layer that actively repairs factual degradation and structural bloat, preventing the gradient from drifting as degradation accumulates. Across six categories of cloud services, 9 production Skills, and 98 skill-reference files, SkillEvo surpasses self-reflection-based evolution by 23.0 points and single- turn-QA-driven evolution by 15.4 points.",
       "date": "2026-08-21",
-      "upvotes": 21,
+      "upvotes": 22,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13120",
       "pdf": "https://arxiv.org/pdf/2608.13120.pdf",
