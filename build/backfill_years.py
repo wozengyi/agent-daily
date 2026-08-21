@@ -96,6 +96,8 @@ def main():
     # Broad agent/LLM query. This over-retrieves; is_relevant() filters down.
     kws = [
         'agent','agentic','"llm agent"','"multi-agent"',
+        'rag','"agentic rag"','"agentic retrieval"',
+        '"retrieval augmented generation"','"retrieval-augmented generation"',
         '"tool use"','"function calling"','"web agent"','"computer use"',
         '"agent safety"','"llm safety"','jailbreak','"prompt injection"',
         '"post training"','rlhf','dpo','"instruction tuning"',

@@ -193,6 +193,8 @@ def fetch_arxiv(lookback_days=7, per_query=100, queries=None):
         queries = [
             'all:agent', 'all:"llm agent"', 'all:"multi-agent"', 'all:"tool use"',
             'all:"agentic"', 'all:RAG', 'all:"retrieval augmented"',
+            'all:"agentic RAG"', 'all:"agentic retrieval"', 'all:"retrieval-augmented generation"',
+            'all:"agentic retrieval-augmented generation"',
             'all:"agent safety"', 'all:"llm safety"', 'all:jailbreak', 'all:"prompt injection"',
             'all:"error attribution"', 'all:"post-training"', 'all:RLHF', 'all:DPO', 'all:GRPO',
             'all:"fine-tuning" llm', 'all:"vision language model"', 'all:VLM',

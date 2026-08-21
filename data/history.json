@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T03:16:42.491339+00:00",
+  "generatedAt": "2026-08-21T04:04:44.527282+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -212138,6 +212138,43 @@
         "Evaluation"
       ],
       "tags": [
+        "Planning",
+        "Evaluation"
+      ]
+    },
+    "arxiv:2604.00865": {
+      "id": "arxiv:2604.00865",
+      "title": "Doctor-RAG: A Failure-Aware Repair Framework for Agentic Retrieval-Augmented Generation",
+      "authors": [
+        "Shuguang Jiao",
+        "Chengkai Huang",
+        "Shuhan Qi",
+        "Xuan Wang",
+        "Yifan Li",
+        "Quanchi Weng",
+        "Lingchuan Liu",
+        "Xunliang Cai",
+        "Lina Yao"
+      ],
+      "abstract": "Agentic Retrieval-Augmented Generation interleaves retrieval and reasoning for multi-hop QA and complex knowledge tasks. As reasoning trajectories lengthen, failures become more frequent, while existing methods often either stop at diagnosis or rely on coarse replanning and rerun-style recovery, incurring high computational cost. We propose DoctorRAG (DR-RAG), a diagnose-and-repair framework that corrects failures via explicit error localization and prefix reuse. DR-RAG operates in two stages: (i) trajectory-level failure diagnosis, where a distilled diagnosis model jointly assesses evidence sufficiency, classifies the failure type, and localizes the earliest failure point; and (ii) tool-conditioned local repair that intervenes only at the diagnosed point while reusing conditionally valid prefixes and retrieved evidence. By separating error attribution from correction, DR-RAG avoids blind reruns in a post-hoc repair setting and enables targeted, efficient correction of known failed trajectories. Experiments on three multi-hop QA benchmarks across multiple agentic RAG baselines and backbone models show substantial improvements in answer accuracy.",
+      "date": "2026-06-12",
+      "published": "2026-06-12",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2604.00865",
+      "pdf": "https://arxiv.org/pdf/2604.00865.pdf",
+      "url": "https://arxiv.org/abs/2604.00865",
+      "upvotes": 0,
+      "topics": [
+        "Agentic Search",
+        "Error Attribution",
+        "Reasoning",
+        "Planning",
+        "Evaluation"
+      ],
+      "tags": [
+        "Agentic Search",
+        "Error Attribution",
+        "Reasoning",
         "Planning",
         "Evaluation"
       ]
