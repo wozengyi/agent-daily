@@ -55,6 +55,10 @@ NEGATIVE_HINTS = [
 ]
 
 TOPIC_RULES = [
+    ('Agentic RAG', [r'agentic rag', r'agentic retrieval', r'retrieval[- ]augmented generation',
+                     r'\brag\b.*\bagentic\b', r'\bagentic\b.*\brag\b',
+                     r'\brag\b.*\b(agent|agents|multi[- ]agent|repair|failure|evaluation|benchmark|planning|reasoning)\b',
+                     r'\b(agent|agents|multi[- ]agent|repair|failure|evaluation|benchmark|planning|reasoning)\b.*\brag\b']),
     ('Agentic Search', [r'agentic search', r'search agent', r'web browsing agent', r'browser agent', r'retrieval-augmented', r'\bRAG\b', r'retrieval augmented generation']),
     ('Agent Safety', [r'agent safety', r'llm safety', r'language model safety', r'ai safety', r'jailbreak', r'prompt injection', r'red team', r'adversarial attack', r'misuse', r'robustness.*agent']),
     ('Error Attribution', [r'error attribution', r'failure attribution', r'mistake attribution', r'fault localization.*agent', r'root cause.*agent', r'agent failure', r'error analysis.*agent']),

@@ -1,6 +1,6 @@
 {
   "year": "2024",
-  "count": 796,
+  "count": 807,
   "papers": [
     {
       "id": "arxiv:2501.00226",
@@ -238,11 +238,13 @@
       "pdf": null,
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Tool Use",
         "Evaluation"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Tool Use",
         "Evaluation"
@@ -268,6 +270,7 @@
       "pdf": null,
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Post-Training",
         "LLM Training",
@@ -275,11 +278,11 @@
         "Hallucination"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Post-Training",
         "LLM Training",
-        "Reasoning",
-        "Hallucination"
+        "Reasoning"
       ]
     },
     {
@@ -314,6 +317,38 @@
       ]
     },
     {
+      "id": "arxiv:2412.18093",
+      "title": "Molly: Making Large Language Model Agents Solve Python Problem More Logically",
+      "abstract": "Applying large language models (LLMs) as teaching assists has attracted much attention as an integral part of intelligent education, particularly in computing courses. To reduce the gap between the LLMs and the computer programming education expert, fine-tuning and retrieval augmented generation (RAG) are the two mainstream methods in existing researches. However, fine-tuning for specific tasks is resource-intensive and may diminish the model`s generalization capabilities. RAG can perform well on reducing the illusion of LLMs, but the generation of irrelevant factual content during reasoning can cause significant confusion for learners. To address these problems, we introduce the Molly agent, focusing on solving the proposed problem encountered by learners when learning Python programming language. Our agent automatically parse the learners' questioning intent through a scenario-based interaction, enabling precise retrieval of relevant documents from the constructed knowledge base. At generation stage, the agent reflect on the generated responses to ensure that they not only align with factual content but also effectively answer the user's queries. Extensive experimentation on a constructed Chinese Python QA dataset shows the effectiveness of the Molly agent, indicating an enhancement in its performance for providing useful responses to Python questions.",
+      "authors": "Rui Xiao, Jiong Wang, Lu Han, N. Zong, Han Wu",
+      "date": "2024-12-24",
+      "published": "2024-12-24",
+      "year": 2024,
+      "venue": "arXiv.org",
+      "publicationKind": "journal",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "citationCount": 0,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/387cdedc3925eca868d223179b717b85b48441e4",
+      "arxiv": "https://arxiv.org/abs/2412.18093",
+      "pdf": "https://arxiv.org/pdf/2412.18093.pdf",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Reasoning",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Reasoning",
+        "Fine-tuning"
+      ]
+    },
+    {
       "id": "arxiv:2412.18171",
       "title": "Token Highlighter: Inspecting and Mitigating Jailbreak Prompts for Large Language Models",
       "abstract": "Large Language Models (LLMs) are increasingly being integrated into services such as ChatGPT to provide responses to user queries. To mitigate potential harm and prevent misuse, there have been concerted efforts to align the LLMs with human values and legal compliance by incorporating various techniques, such as Reinforcement Learning from Human Feedback (RLHF), into the training of the LLMs. However, recent research has exposed that even aligned LLMs are susceptible to adversarial manipulations known as Jailbreak Attacks. To address this challenge, this paper proposes a method called Token Highlighter to inspect and mitigate the potential jailbreak threats in the user query. Token Highlighter introduced a concept called Affirmation Loss to measure the LLM's willingness to answer the user query. It then uses the gradient of Affirmation Loss for each token in the user query to locate the jailbreak-critical tokens. Further, Token Highlighter exploits our proposed Soft Removal technique to mitigate the jailbreak effects of critical tokens via shrinking their token embeddings. Experimental results on two aligned LLMs (LLaMA-2 and Vicuna-V1.5) demonstrate that the proposed method can effectively defend against a variety of Jailbreak Attacks while maintaining competent performance on benign questions of the AlpacaEval benchmark. In addition, Token Highlighter is a cost-effective and interpretable defense because it only needs to query the protected LLM once to compute the Affirmation Loss and can highlight the critical tokens upon refusal.",
@@ -344,36 +379,6 @@
         "Post-Training",
         "Evaluation",
         "RL for LLM"
-      ]
-    },
-    {
-      "id": "arxiv:2412.18093",
-      "title": "Molly: Making Large Language Model Agents Solve Python Problem More Logically",
-      "abstract": "Applying large language models (LLMs) as teaching assists has attracted much attention as an integral part of intelligent education, particularly in computing courses. To reduce the gap between the LLMs and the computer programming education expert, fine-tuning and retrieval augmented generation (RAG) are the two mainstream methods in existing researches. However, fine-tuning for specific tasks is resource-intensive and may diminish the model`s generalization capabilities. RAG can perform well on reducing the illusion of LLMs, but the generation of irrelevant factual content during reasoning can cause significant confusion for learners. To address these problems, we introduce the Molly agent, focusing on solving the proposed problem encountered by learners when learning Python programming language. Our agent automatically parse the learners' questioning intent through a scenario-based interaction, enabling precise retrieval of relevant documents from the constructed knowledge base. At generation stage, the agent reflect on the generated responses to ensure that they not only align with factual content but also effectively answer the user's queries. Extensive experimentation on a constructed Chinese Python QA dataset shows the effectiveness of the Molly agent, indicating an enhancement in its performance for providing useful responses to Python questions.",
-      "authors": "Rui Xiao, Jiong Wang, Lu Han, N. Zong, Han Wu",
-      "date": "2024-12-24",
-      "published": "2024-12-24",
-      "year": 2024,
-      "venue": "arXiv.org",
-      "publicationKind": "journal",
-      "publicationTypes": [
-        "JournalArticle"
-      ],
-      "citationCount": 0,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/387cdedc3925eca868d223179b717b85b48441e4",
-      "arxiv": "https://arxiv.org/abs/2412.18093",
-      "pdf": "https://arxiv.org/pdf/2412.18093.pdf",
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Reasoning",
-        "Fine-tuning"
-      ],
-      "tags": [
-        "Agentic Search",
-        "Reasoning",
-        "Fine-tuning"
       ]
     },
     {
@@ -529,6 +534,36 @@
       ]
     },
     {
+      "id": "arxiv:2412.17964",
+      "title": "Dynamic Multi-Agent Orchestration and Retrieval for Multi-Source Question-Answer Systems using Large Language Models",
+      "authors": [
+        "Antony Seabra",
+        "Claudio Cavalcante",
+        "Joao Nepomuceno",
+        "Lucas Lago",
+        "Nicolaas Ruberg",
+        "Sergio Lifschitz"
+      ],
+      "abstract": "We propose a methodology that combines several advanced techniques in Large Language Model (LLM) retrieval to support the development of robust, multi-source question-answer systems. This methodology is designed to integrate information from diverse data sources, including unstructured documents (PDFs) and structured databases, through a coordinated multi-agent orchestration and dynamic retrieval approach. Our methodology leverages specialized agents-such as SQL agents, Retrieval-Augmented Generation (RAG) agents, and router agents - that dynamically select the most appropriate retrieval strategy based on the nature of each query. To further improve accuracy and contextual relevance, we employ dynamic prompt engineering, which adapts in real time to query-specific contexts. The methodology's effectiveness is demonstrated within the domain of Contract Management, where complex queries often require seamless interaction between unstructured and structured data. Our results indicate that this approach enhances response accuracy and relevance, offering a versatile and scalable framework for developing question-answer systems that can operate across various domains and data sources.",
+      "date": "2024-12-23",
+      "published": "2024-12-23",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2412.17964",
+      "pdf": "https://arxiv.org/pdf/2412.17964.pdf",
+      "url": "https://arxiv.org/abs/2412.17964",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent"
+      ]
+    },
+    {
       "id": "arxiv:2412.17259",
       "title": "LegalAgentBench: Evaluating LLM Agents in Legal Domain",
       "abstract": "With the increasing intelligence and autonomy of LLM agents, their potential applications in the legal domain are becoming increasingly apparent. However, existing general-domain benchmarks cannot fully capture the complexity and subtle nuances of real-world judicial cognition and decision-making. Therefore, we propose LegalAgentBench, a comprehensive benchmark specifically designed to evaluate LLM Agents in the Chinese legal domain. LegalAgentBench includes 17 corpora from real-world legal scenarios and provides 37 tools for interacting with external knowledge. We designed a scalable task construction framework and carefully annotated 300 tasks. These tasks span various types, including multi-hop reasoning and writing, and range across different difficulty levels, effectively reflecting the complexity of real-world legal scenarios. Moreover, beyond evaluating final success, LegalAgentBench incorporates keyword analysis during intermediate processes to calculate progress rates, enabling more fine-grained evaluation. We evaluated eight popular LLMs, highlighting the strengths, limitations, and potential areas for improvement of existing models and methods. LegalAgentBench sets a new benchmark for the practical application of LLMs in the legal domain, with its code and data available at \\url{https://github.com/CSHaitao/LegalAgentBench}.",
@@ -640,10 +675,12 @@
       "pdf": "https://arxiv.org/pdf/2412.17146.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Evaluation"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Evaluation"
       ]
@@ -796,6 +833,39 @@
       ]
     },
     {
+      "id": "s2:a21d27b81956d99d76043490f16b0db09df5a245",
+      "title": "AdversLLM: A Practical Guide To Governance, Maturity and Risk Assessment For LLM-Based Applications",
+      "abstract": "AdversLLM is a comprehensive framework designed to help organizations tackle security threats associated with the use of Large Language Models (LLMs), such as prompt injections and data poisoning. As LLMs become integral to various industries, the framework aims to bolster organizational readiness and resilience by assessing governance, maturity, and risk mitigation strategies. AdversLLM includes an assessment form for reviewing practices, maturity levels, and auditing mitigation strategies, supplemented with real-world scenarios to demonstrate effective AI governance. Additionally, it features a prompt injection testing ground with a benchmark dataset to evaluate LLMs' robustness against malicious prompts. The framework also addresses ethical concerns by proposing a zero-shot learning defense mechanism and a RAG-based LLM safety tutor to educate on security risks and protection methods. AdversLLM provides a targeted, practical approach for organizations to ensure responsible AI adoption and strengthen their defenses against emerging LLM-related security challenges.",
+      "authors": "Othmane Belmoukadam, Jiri De Jonghe, Sofyan Ajridi, Amir Krifa, J. V. Damme, Maher Mkadem, Patrice Latinne",
+      "date": "2024-12-20",
+      "published": "2024-12-20",
+      "year": 2024,
+      "venue": "International Journal on Cybernetics &amp; Informatics",
+      "publicationKind": "journal",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "citationCount": 5,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/a21d27b81956d99d76043490f16b0db09df5a245",
+      "arxiv": null,
+      "pdf": "https://doi.org/10.5121/ijci.2024.130604",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Agent Safety",
+        "Evaluation"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Agent Safety",
+        "Evaluation"
+      ]
+    },
+    {
       "id": "arxiv:2412.15495",
       "title": "TL-Training: A Task-Feature-Based Framework for Training Large Language Models in Tool Use",
       "abstract": "Large language models (LLMs) achieve remarkable advancements by leveraging tools to interact with environments, a critical step toward generalized AI. However, the standard supervised fine-tuning (SFT) approach, which relies on large-scale datasets, often overlooks task-specific characteristics in tool use, leading to performance bottlenecks. To address this issue, we analyze three existing LLMs and uncover key insights: training data can inadvertently impede tool-use behavior, token importance is distributed unevenly, and errors in tool calls fall into a small set of categories. Building on these findings, we propose~\\emph{TL-Training}, a task-feature-based framework that mitigates the effects of suboptimal training data, dynamically adjusts token weights to prioritize key tokens during SFT, and incorporates a robust reward mechanism tailored to error categories, optimized through proximal policy optimization. We validate TL-Training by training CodeLLaMA-2-7B and evaluating it on four open-source test sets. Our results demonstrate that the LLM trained by our method matches or surpasses both open- and closed-source LLMs in tool-use performance using only 1,217 training data points. Additionally, our method enhances robustness in noisy environments and improves general task performance, offering a scalable and efficient paradigm for tool-use training in LLMs. Code and data are available at https://github.com/Junjie-Ye/TL-Training.",
@@ -824,37 +894,6 @@
         "LLM Training",
         "Tool Use",
         "Fine-tuning"
-      ]
-    },
-    {
-      "id": "s2:a21d27b81956d99d76043490f16b0db09df5a245",
-      "title": "AdversLLM: A Practical Guide To Governance, Maturity and Risk Assessment For LLM-Based Applications",
-      "abstract": "AdversLLM is a comprehensive framework designed to help organizations tackle security threats associated with the use of Large Language Models (LLMs), such as prompt injections and data poisoning. As LLMs become integral to various industries, the framework aims to bolster organizational readiness and resilience by assessing governance, maturity, and risk mitigation strategies. AdversLLM includes an assessment form for reviewing practices, maturity levels, and auditing mitigation strategies, supplemented with real-world scenarios to demonstrate effective AI governance. Additionally, it features a prompt injection testing ground with a benchmark dataset to evaluate LLMs' robustness against malicious prompts. The framework also addresses ethical concerns by proposing a zero-shot learning defense mechanism and a RAG-based LLM safety tutor to educate on security risks and protection methods. AdversLLM provides a targeted, practical approach for organizations to ensure responsible AI adoption and strengthen their defenses against emerging LLM-related security challenges.",
-      "authors": "Othmane Belmoukadam, Jiri De Jonghe, Sofyan Ajridi, Amir Krifa, J. V. Damme, Maher Mkadem, Patrice Latinne",
-      "date": "2024-12-20",
-      "published": "2024-12-20",
-      "year": 2024,
-      "venue": "International Journal on Cybernetics &amp; Informatics",
-      "publicationKind": "journal",
-      "publicationTypes": [
-        "JournalArticle",
-        "Review"
-      ],
-      "citationCount": 5,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/a21d27b81956d99d76043490f16b0db09df5a245",
-      "arxiv": null,
-      "pdf": "https://doi.org/10.5121/ijci.2024.130604",
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Agent Safety",
-        "Evaluation"
-      ],
-      "tags": [
-        "Agentic Search",
-        "Agent Safety",
-        "Evaluation"
       ]
     },
     {
@@ -1517,6 +1556,37 @@
       ]
     },
     {
+      "id": "s2:206f1843a92916bc8afc31b3102507296646a1ff",
+      "title": "Enhancing GPT-3.5's Proficiency in Netlogo Through Few-Shot Prompting and Retrieval-Augmented Generation",
+      "abstract": "Recognizing the limited research on Large Language Models (LLMs) capabilities with low-resource languages, this study evaluates and increases the proficiency of the LLM GPT-3.5 in generating interface and procedural code elements for NetLogo, a multi-agent programming language and modeling environment. To achieve this, we employed “few-shot” prompting and Retrieval-Augmented Generation (RAG) methodologies using two manually created datasets, NetLogoEvalCode and NetLogoEvalInterface. The results demonstrate that GPT-3.5 can generate NetLogo elements and code procedures more effectively when provided with additional examples to learn from, highlighting the potential of LLMs in aiding the development of agent-based models (ABMs). On the other hand, the RAG model obtained a poor performance. We listed possible reasons for this result, which were aligned with RAG's common challenges identified by the state-of-the-art. We propose future research directions for leveraging LLMs for simulation development and instructional purposes in the context of ABMs.",
+      "authors": "Joseph Martínez, Brian Llinás, Jhon G. Botello, Jose J. Padilla, Erika F. Frydenlund",
+      "date": "2024-12-15",
+      "published": "2024-12-15",
+      "year": 2024,
+      "venue": "Online World Conference on Soft Computing in Industrial Applications",
+      "publicationKind": "conference",
+      "publicationTypes": [
+        "JournalArticle",
+        "Conference"
+      ],
+      "citationCount": 6,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/206f1843a92916bc8afc31b3102507296646a1ff",
+      "arxiv": null,
+      "pdf": null,
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent"
+      ]
+    },
+    {
       "id": "s2:fb1bc7f717df24bef2a98d1dab26b0d86f069dd2",
       "title": "AutoRed: Automated Attack Scenario Generation Framework for Red Teaming of LLMs",
       "abstract": "Even though Large Language Models (LLMs) are highly beneficial, they pose significant security concerns, particularly in the realm of privacy protection. Sensitive information is often provided to LLMs during conversations and may be retained as in-context memory. This raises the risk of unintended data exposure. In the existing paradigm, a red team comprising human testers is tasked with generating input prompts (i.e., test cases) to provoke undesirable responses from LLMs. Yet, relying solely on human testers is both costly and time-intensive. This paper presents AutoRed, an innovative learning framework developed to automatically generate malicious attack scenarios for extracting sensitive information from LLMs. Our framework places particular emphasis on prompt injection—the process of injecting malicious prompts to extract conversation histories from LLMs to uncover private data. AutoRed comprises three key components: malicious prompt generator, sensitive information extractor, and stop point identifier. These components work together to enable prompt injection, ensuring a seamless process. Our extensive experimental evaluation, spanning diverse defense strategies and various LLMs, demonstrates the efficacy of AutoRed. This evaluation not only rigorously assesses the resilience of defense mechanisms but also measures the safety alignment of LLMs, thereby highlighting the potential of our automated framework as an efficient red teaming tool for identifying vulnerabilities and enhancing security within LLMs.",
@@ -1574,35 +1644,6 @@
       "tags": [
         "Multi-Agent",
         "Agent Framework"
-      ]
-    },
-    {
-      "id": "s2:206f1843a92916bc8afc31b3102507296646a1ff",
-      "title": "Enhancing GPT-3.5's Proficiency in Netlogo Through Few-Shot Prompting and Retrieval-Augmented Generation",
-      "abstract": "Recognizing the limited research on Large Language Models (LLMs) capabilities with low-resource languages, this study evaluates and increases the proficiency of the LLM GPT-3.5 in generating interface and procedural code elements for NetLogo, a multi-agent programming language and modeling environment. To achieve this, we employed “few-shot” prompting and Retrieval-Augmented Generation (RAG) methodologies using two manually created datasets, NetLogoEvalCode and NetLogoEvalInterface. The results demonstrate that GPT-3.5 can generate NetLogo elements and code procedures more effectively when provided with additional examples to learn from, highlighting the potential of LLMs in aiding the development of agent-based models (ABMs). On the other hand, the RAG model obtained a poor performance. We listed possible reasons for this result, which were aligned with RAG's common challenges identified by the state-of-the-art. We propose future research directions for leveraging LLMs for simulation development and instructional purposes in the context of ABMs.",
-      "authors": "Joseph Martínez, Brian Llinás, Jhon G. Botello, Jose J. Padilla, Erika F. Frydenlund",
-      "date": "2024-12-15",
-      "published": "2024-12-15",
-      "year": 2024,
-      "venue": "Online World Conference on Soft Computing in Industrial Applications",
-      "publicationKind": "conference",
-      "publicationTypes": [
-        "JournalArticle",
-        "Conference"
-      ],
-      "citationCount": 6,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/206f1843a92916bc8afc31b3102507296646a1ff",
-      "arxiv": null,
-      "pdf": null,
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Multi-Agent"
-      ],
-      "tags": [
-        "Agentic Search",
-        "Multi-Agent"
       ]
     },
     {
@@ -1678,12 +1719,14 @@
       "pdf": "https://arxiv.org/pdf/2412.10807.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Agent Safety",
         "Reasoning",
         "Planning"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Agent Safety",
         "Reasoning",
@@ -1711,11 +1754,13 @@
       "pdf": "https://dl.acm.org/doi/pdf/10.1145/3719384.3719446",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Reasoning",
         "Evaluation"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Reasoning",
         "Evaluation"
@@ -1773,6 +1818,38 @@
       ],
       "tags": [
         "Post-Training"
+      ]
+    },
+    {
+      "id": "arxiv:2412.08054",
+      "title": "Federated In-Context LLM Agent Learning",
+      "abstract": "Large Language Models (LLMs) have revolutionized intelligent services by enabling logical reasoning, tool use, and interaction with external systems as agents. The advancement of LLMs is frequently hindered by the scarcity of high-quality data, much of which is inherently sensitive. Federated learning (FL) offers a potential solution by facilitating the collaborative training of distributed LLMs while safeguarding private data. However, FL frameworks face significant bandwidth and computational demands, along with challenges from heterogeneous data distributions. The emerging in-context learning capability of LLMs offers a promising approach by aggregating natural language rather than bulky model parameters. Yet, this method risks privacy leakage, as it necessitates the collection and presentation of data samples from various clients during aggregation. In this paper, we propose a novel privacy-preserving Federated In-Context LLM Agent Learning (FICAL) algorithm, which to our best knowledge for the first work unleashes the power of in-context learning to train diverse LLM agents through FL. In our design, knowledge compendiums generated by a novel LLM-enhanced Knowledge Compendiums Generation (KCG) module are transmitted between clients and the server instead of model parameters in previous FL methods. Apart from that, an incredible Retrieval Augmented Generation (RAG) based Tool Learning and Utilizing (TLU) module is designed and we incorporate the aggregated global knowledge compendium as a teacher to teach LLM agents the usage of tools. We conducted extensive experiments and the results show that FICAL has competitive performance compared to other SOTA baselines with a significant communication cost decrease of $\\mathbf{3.33\\times10^5}$ times.",
+      "authors": "Panlong Wu, Kangshuo Li, Junbao Nan, Fangxin Wang",
+      "date": "2024-12-11",
+      "published": "2024-12-11",
+      "year": 2024,
+      "venue": "arXiv.org",
+      "publicationKind": "journal",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "citationCount": 6,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/024d578e8649ec4151507498329f21088218773e",
+      "arxiv": "https://arxiv.org/abs/2412.08054",
+      "pdf": "https://arxiv.org/pdf/2412.08054.pdf",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Tool Use",
+        "Reasoning"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Tool Use",
+        "Reasoning"
       ]
     },
     {
@@ -1837,36 +1914,6 @@
         "Tool Use",
         "Evaluation",
         "Fine-tuning"
-      ]
-    },
-    {
-      "id": "arxiv:2412.08054",
-      "title": "Federated In-Context LLM Agent Learning",
-      "abstract": "Large Language Models (LLMs) have revolutionized intelligent services by enabling logical reasoning, tool use, and interaction with external systems as agents. The advancement of LLMs is frequently hindered by the scarcity of high-quality data, much of which is inherently sensitive. Federated learning (FL) offers a potential solution by facilitating the collaborative training of distributed LLMs while safeguarding private data. However, FL frameworks face significant bandwidth and computational demands, along with challenges from heterogeneous data distributions. The emerging in-context learning capability of LLMs offers a promising approach by aggregating natural language rather than bulky model parameters. Yet, this method risks privacy leakage, as it necessitates the collection and presentation of data samples from various clients during aggregation. In this paper, we propose a novel privacy-preserving Federated In-Context LLM Agent Learning (FICAL) algorithm, which to our best knowledge for the first work unleashes the power of in-context learning to train diverse LLM agents through FL. In our design, knowledge compendiums generated by a novel LLM-enhanced Knowledge Compendiums Generation (KCG) module are transmitted between clients and the server instead of model parameters in previous FL methods. Apart from that, an incredible Retrieval Augmented Generation (RAG) based Tool Learning and Utilizing (TLU) module is designed and we incorporate the aggregated global knowledge compendium as a teacher to teach LLM agents the usage of tools. We conducted extensive experiments and the results show that FICAL has competitive performance compared to other SOTA baselines with a significant communication cost decrease of $\\mathbf{3.33\\times10^5}$ times.",
-      "authors": "Panlong Wu, Kangshuo Li, Junbao Nan, Fangxin Wang",
-      "date": "2024-12-11",
-      "published": "2024-12-11",
-      "year": 2024,
-      "venue": "arXiv.org",
-      "publicationKind": "journal",
-      "publicationTypes": [
-        "JournalArticle"
-      ],
-      "citationCount": 6,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/024d578e8649ec4151507498329f21088218773e",
-      "arxiv": "https://arxiv.org/abs/2412.08054",
-      "pdf": "https://arxiv.org/pdf/2412.08054.pdf",
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Tool Use",
-        "Reasoning"
-      ],
-      "tags": [
-        "Agentic Search",
-        "Tool Use",
-        "Reasoning"
       ]
     },
     {
@@ -2203,11 +2250,13 @@
       "pdf": "https://arxiv.org/pdf/2412.05838.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Multi-Agent",
         "Agent Framework"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Multi-Agent",
         "Agent Framework"
@@ -2262,9 +2311,11 @@
       "pdf": null,
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search"
       ]
     },
@@ -2347,11 +2398,13 @@
       "pdf": "https://arxiv.org/pdf/2412.06832.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Multi-Agent",
         "Reasoning"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Multi-Agent",
         "Reasoning"
@@ -3081,12 +3134,14 @@
       "pdf": null,
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Multi-Agent",
         "Reasoning",
         "Hallucination"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Multi-Agent",
         "Reasoning",
@@ -3150,6 +3205,34 @@
       ]
     },
     {
+      "id": "arxiv:2412.00431",
+      "title": "Multi-Agent System for Cosmological Parameter Analysis",
+      "abstract": "Multi-agent systems (MAS) utilizing multiple Large Language Model agents with Retrieval Augmented Generation and that can execute code locally may become beneficial in cosmological data analysis. Here, we illustrate a first small step towards AI-assisted analyses and a glimpse of the potential of MAS to automate and optimize scientific workflows in Cosmology. The system architecture of our example package, that builds upon the autogen/ag2 framework, can be applied to MAS in any area of quantitative scientific research. The particular task we apply our methods to is the cosmological parameter analysis of the Atacama Cosmology Telescope lensing power spectrum likelihood using Monte Carlo Markov Chains. Our work-in-progress code is open source and available at https://github.com/CMBAgents/cmbagent.",
+      "authors": "Andrew Laverick, K. Surrao, Í. Zubeldia, B. Bolliet, Miles Cranmer, Antony Lewis, B. Sherwin, J. Lesgourgues",
+      "date": "2024-11-30",
+      "published": "2024-11-30",
+      "year": 2024,
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "publicationTypes": [],
+      "citationCount": 5,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/1e54e041e91e2cd77fa20c8b195829e3bd46b3dd",
+      "arxiv": "https://arxiv.org/abs/2412.00431",
+      "pdf": "https://arxiv.org/pdf/2412.00431.pdf",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent"
+      ]
+    },
+    {
       "id": "arxiv:2412.00357",
       "title": "Safety Alignment Backfires: Preventing the Re-emergence of Suppressed Concepts in Fine-tuned Text-to-Image Diffusion Models",
       "abstract": "Fine-tuning text-to-image diffusion models is widely used for personalization and adaptation for new domains. In this paper, we identify a critical vulnerability of fine-tuning: safety alignment methods designed to filter harmful content (e.g., nudity) can break down during fine-tuning, allowing previously suppressed content to resurface, even when using benign datasets. While this\"fine-tuning jailbreaking\"issue is known in large language models, it remains largely unexplored in text-to-image diffusion models. Our investigation reveals that standard fine-tuning can inadvertently undo safety measures, causing models to relearn harmful concepts that were previously removed and even exacerbate harmful behaviors. To address this issue, we present a novel but immediate solution called Modular LoRA, which involves training Safety Low-Rank Adaptation (LoRA) modules separately from Fine-Tuning LoRA components and merging them during inference. This method effectively prevents the re-learning of harmful content without compromising the model's performance on new tasks. Our experiments demonstrate that Modular LoRA outperforms traditional fine-tuning methods in maintaining safety alignment, offering a practical approach for enhancing the security of text-to-image diffusion models against potential attacks.",
@@ -3177,32 +3260,6 @@
         "Agent Safety",
         "Alignment",
         "Fine-tuning"
-      ]
-    },
-    {
-      "id": "arxiv:2412.00431",
-      "title": "Multi-Agent System for Cosmological Parameter Analysis",
-      "abstract": "Multi-agent systems (MAS) utilizing multiple Large Language Model agents with Retrieval Augmented Generation and that can execute code locally may become beneficial in cosmological data analysis. Here, we illustrate a first small step towards AI-assisted analyses and a glimpse of the potential of MAS to automate and optimize scientific workflows in Cosmology. The system architecture of our example package, that builds upon the autogen/ag2 framework, can be applied to MAS in any area of quantitative scientific research. The particular task we apply our methods to is the cosmological parameter analysis of the Atacama Cosmology Telescope lensing power spectrum likelihood using Monte Carlo Markov Chains. Our work-in-progress code is open source and available at https://github.com/CMBAgents/cmbagent.",
-      "authors": "Andrew Laverick, K. Surrao, Í. Zubeldia, B. Bolliet, Miles Cranmer, Antony Lewis, B. Sherwin, J. Lesgourgues",
-      "date": "2024-11-30",
-      "published": "2024-11-30",
-      "year": 2024,
-      "venue": "arXiv",
-      "publicationKind": "preprint",
-      "publicationTypes": [],
-      "citationCount": 5,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/1e54e041e91e2cd77fa20c8b195829e3bd46b3dd",
-      "arxiv": "https://arxiv.org/abs/2412.00431",
-      "pdf": "https://arxiv.org/pdf/2412.00431.pdf",
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Multi-Agent"
-      ],
-      "tags": [
-        "Agentic Search",
-        "Multi-Agent"
       ]
     },
     {
@@ -4007,6 +4064,36 @@
       ]
     },
     {
+      "id": "arxiv:2405.03963",
+      "title": "ERATTA: Extreme RAG for Table To Answers with Large Language Models",
+      "authors": [
+        "Sohini Roychowdhury",
+        "Marko Krema",
+        "Anvar Mahammad",
+        "Brian Moore",
+        "Arijit Mukherjee",
+        "Punit Prakashchandra"
+      ],
+      "abstract": "Large language models (LLMs) with retrieval augmented-generation (RAG) have been the optimal choice for scalable generative AI solutions in the recent past. Although RAG implemented with AI agents (agentic-RAG) has been recently popularized, its suffers from unstable cost and unreliable performances for Enterprise-level data-practices. Most existing use-cases that incorporate RAG with LLMs have been either generic or extremely domain specific, thereby questioning the scalability and generalizability of RAG-LLM approaches. In this work, we propose a unique LLM-based system where multiple LLMs can be invoked to enable data authentication, user-query routing, data-retrieval and custom prompting for question-answering capabilities from Enterprise-data tables. The source tables here are highly fluctuating and large in size and the proposed framework enables structured responses in under 10 seconds per query. Additionally, we propose a five metric scoring module that detects and reports hallucinations in the LLM responses. Our proposed system and scoring metrics achieve >90% confidence scores across hundreds of user queries in the sustainability, financial health and social media domains. Extensions to the proposed extreme RAG architectures can enable heterogeneous source querying using LLMs.",
+      "date": "2024-11-17",
+      "published": "2024-11-17",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2405.03963",
+      "pdf": "https://arxiv.org/pdf/2405.03963.pdf",
+      "url": "https://arxiv.org/abs/2405.03963",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Hallucination"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Hallucination"
+      ]
+    },
+    {
       "id": "arxiv:2411.14461",
       "title": "Towards Next-Generation Medical Agent: How o1 is Reshaping Decision-Making in Medical Scenarios",
       "abstract": "Artificial Intelligence (AI) has become essential in modern healthcare, with large language models (LLMs) offering promising advances in clinical decision-making. Traditional model-based approaches, including those leveraging in-context demonstrations and those with specialized medical fine-tuning, have demonstrated strong performance in medical language processing but struggle with real-time adaptability, multi-step reasoning, and handling complex medical tasks. Agent-based AI systems address these limitations by incorporating reasoning traces, tool selection based on context, knowledge retrieval, and both short- and long-term memory. These additional features enable the medical AI agent to handle complex medical scenarios where decision-making should be built on real-time interaction with the environment. Therefore, unlike conventional model-based approaches that treat medical queries as isolated questions, medical AI agents approach them as complex tasks and behave more like human doctors. In this paper, we study the choice of the backbone LLM for medical AI agents, which is the foundation for the agent's overall reasoning and action generation. In particular, we consider the emergent o1 model and examine its impact on agents' reasoning, tool-use adaptability, and real-time information retrieval across diverse clinical scenarios, including high-stakes settings such as intensive care units (ICUs). Our findings demonstrate o1's ability to enhance diagnostic accuracy and consistency, paving the way for smarter, more responsive AI tools that support better patient outcomes and decision-making efficacy in clinical practice.",
@@ -4176,6 +4263,36 @@
       "tags": [
         "Agent Safety",
         "Evaluation"
+      ]
+    },
+    {
+      "id": "arxiv:2411.08148",
+      "title": "Adaptive Meta-Learning for Robust Deepfake Detection: A Multi-Agent Framework to Data Drift and Model Generalization",
+      "authors": [
+        "Dinesh Srivasthav P",
+        "Badri Narayan Subudhi"
+      ],
+      "abstract": "Pioneering advancements in artificial intelligence, especially in genAI, have enabled significant possibilities for content creation, but also led to widespread misinformation and false content. The growing sophistication and realism of deepfakes is raising concerns about privacy invasion, identity theft, and has societal, business impacts, including reputational damage and financial loss. Many deepfake detectors have been developed to tackle this problem. Nevertheless, as for every AI model, the deepfake detectors face the wrath of lack of considerable generalization to unseen scenarios and cross-domain deepfakes. Besides, adversarial robustness is another critical challenge, as detectors drastically underperform to the slightest imperceptible change. Most state-of-the-art detectors are trained on static datasets and lack the ability to adapt to emerging deepfake attack trends. These three crucial challenges though hold paramount importance for reliability in practise, particularly in the deepfake domain, are also the problems with any other AI application. This paper proposes an adversarial meta-learning algorithm using task-specific adaptive sample synthesis and consistency regularization, in a refinement phase. By focussing on the classifier's strengths and weaknesses, it boosts both robustness and generalization of the model. Additionally, the paper introduces a hierarchical multi-agent retrieval-augmented generation workflow with a sample synthesis module to dynamically adapt the model to new data trends by generating custom deepfake samples. The paper further presents a framework integrating the meta-learning algorithm with the hierarchical multi-agent workflow, offering a holistic solution for enhancing generalization, robustness, and adaptability. Experimental results demonstrate the model's consistent performance across various datasets, outperforming the models in comparison.",
+      "date": "2024-11-12",
+      "published": "2024-11-12",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2411.08148",
+      "pdf": "https://arxiv.org/pdf/2411.08148.pdf",
+      "url": "https://arxiv.org/abs/2411.08148",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Agent Safety",
+        "Multi-Agent",
+        "Agent Framework"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Agent Safety",
+        "Multi-Agent",
+        "Agent Framework"
       ]
     },
     {
@@ -5523,6 +5640,37 @@
       ]
     },
     {
+      "id": "s2:7e7cee87f13049e709794a9882cf632f9eb5265f",
+      "title": "LLM-Sentry: A Model-Agnostic Human-in-the-Loop Framework for Securing Large Language Models",
+      "abstract": "LLM-Sentry represents a novel black-box defense strategy to safeguard Large Language Models (LLMs) against jailbreaking attacks. A key advantage of our approach is its model-agnostic nature, as it does not rely on specific information about the model’s architecture or parameters, thereby enabling its application to any commercial or open-source language models. Additionally, LLM-Sentry does not require retraining when new jailbreak attacks are discovered; a simple update to the knowledge base equips LLM-Sentry to defend against new threats. The widespread adoption of LLMs is attributed to their high-quality responses and user-friendly nature. However, these models are susceptible to manipulation by malicious actors exploiting vulnerabilities to generate harmful or compromised content. Recent research has identified various jailbreaking methods that exploit vulnerabilities in LLM security measures. Given the increasing complexity of jailbreaking techniques and the ambiguous nature of LLM safeguards, it is imperative to develop unique defense strategies that can seamlessly integrate into existing security frameworks and make them robust.Our work comprehensively analyzes various commercial LLMs to assess their vulnerability to sophisticated, multilingual jailbreaking prompts. We propose a defensive approach that combines a Zero-shot language classifier with the Retrieval Augmented Generation (RAG) technique to screen and filter potentially harmful input prompts before they are processed by the language model for response generation. We adopt a human-in-the-loop approach to gather a dataset comprising harmful and safe prompts, which serves as a knowledge base for the RAG retriever module to extract relevant context. Our investigation includes successful jailbreaking attempts on prominent commercial LLMs like Gemini, Mistral 7B, and ChatGPT, wherein we successfully bypass existing security measures and elicit compromised responses. We conduct a thorough evaluation of our approach against various baseline methods to validate its resilience and superiority against such attacks empirically. Our approach achieves an attack detection accuracy of 97%, surpassing all other methods in our comparative analysis.",
+      "authors": "Saquib Irtiza, Khandakar Ashrafi Akbar, Arowa Yasmeen, Latifur Khan, O. Daescu, B. Thuraisingham",
+      "date": "2024-10-28",
+      "published": "2024-10-28",
+      "year": 2024,
+      "venue": "International Conference on Trust, Privacy and Security in Intelligent Systems and Applications",
+      "publicationKind": "conference",
+      "publicationTypes": [
+        "JournalArticle",
+        "Conference"
+      ],
+      "citationCount": 9,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/7e7cee87f13049e709794a9882cf632f9eb5265f",
+      "arxiv": null,
+      "pdf": null,
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Agent Safety"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Agent Safety"
+      ]
+    },
+    {
       "id": "s2:7b6faa82200f5d96eeea85afda8b4b2f8929d45c",
       "title": "Capability of ChatGPT to support the screening process of scoping reviews: A feasibility study",
       "abstract": "Abstract Background The time-consuming screening phase in health-related evidence syntheses is increasingly supported by artificial intelligence (AI). However, scoping reviews have not benefited as much as systematic reviews from such AI tools as they utilize conceptual rather than keyword-specific search strategies to address broad research questions. Context-understanding chatbots based on large language models could potentially enhance the efficiency of scoping review screenings. This study evaluates the performance of ChatGPT against an open-access AI tool used for abstract screening in systematic reviews and the costs involved. Methods Leveraging data from a prior scoping review, we compared the performance of ChatGPT 4.0 and 3.5 against Rayyan, using human researchers’ decisions as a benchmark. A random set of 50 included and 50 excluded abstracts was used to train Rayyan’s algorithm and to develop ChatGPT’s prompt. ChatGPT 4.0’s evaluation was repeated after 5-7 days to assess response consistency. We computed performance metrics including sensitivity, specificity, and accuracy. Results ChatGPT 4.0 and 3.5 achieved 68% accuracy, 11% precision, 99% negative predictive value, and 67% specificity. Sensitivity was high at 88-89% for ChatGPT 4.0 and 84% for ChatGPT 3.5. ChatGPT 4.0 showed a substantial interrater reliability between the two evaluations and moderate reliability compared to ChatGPT 3.5. The cost of deployment varied, with Rayyan being free, ChatGPT 3.5 costing $9.06 and ChatGPT 4.0 $505.72. Conclusions Given the exponential increase in publications, effective mechanisms to support the screening phase of scoping reviews are needed. Our feasibility study using ChatGPT to decide on abstracts’ inclusion or exclusion achieved good performance metrics. Given further positive evaluation, such chatbots might be incorporated in the standard screening process, possibly replacing a second screener, saving time and costs, and accelerating evidence synthesis. Key messages • ChatGPT performs well in supporting screening for scoping reviews, outperforming a traditional AI tool at reasonable costs. • Employing chatbots like ChatGPT could potentially cut costs and time in scoping reviews.",
@@ -5636,35 +5784,6 @@
       "tags": [
         "Agent Safety",
         "Alignment"
-      ]
-    },
-    {
-      "id": "s2:7e7cee87f13049e709794a9882cf632f9eb5265f",
-      "title": "LLM-Sentry: A Model-Agnostic Human-in-the-Loop Framework for Securing Large Language Models",
-      "abstract": "LLM-Sentry represents a novel black-box defense strategy to safeguard Large Language Models (LLMs) against jailbreaking attacks. A key advantage of our approach is its model-agnostic nature, as it does not rely on specific information about the model’s architecture or parameters, thereby enabling its application to any commercial or open-source language models. Additionally, LLM-Sentry does not require retraining when new jailbreak attacks are discovered; a simple update to the knowledge base equips LLM-Sentry to defend against new threats. The widespread adoption of LLMs is attributed to their high-quality responses and user-friendly nature. However, these models are susceptible to manipulation by malicious actors exploiting vulnerabilities to generate harmful or compromised content. Recent research has identified various jailbreaking methods that exploit vulnerabilities in LLM security measures. Given the increasing complexity of jailbreaking techniques and the ambiguous nature of LLM safeguards, it is imperative to develop unique defense strategies that can seamlessly integrate into existing security frameworks and make them robust.Our work comprehensively analyzes various commercial LLMs to assess their vulnerability to sophisticated, multilingual jailbreaking prompts. We propose a defensive approach that combines a Zero-shot language classifier with the Retrieval Augmented Generation (RAG) technique to screen and filter potentially harmful input prompts before they are processed by the language model for response generation. We adopt a human-in-the-loop approach to gather a dataset comprising harmful and safe prompts, which serves as a knowledge base for the RAG retriever module to extract relevant context. Our investigation includes successful jailbreaking attempts on prominent commercial LLMs like Gemini, Mistral 7B, and ChatGPT, wherein we successfully bypass existing security measures and elicit compromised responses. We conduct a thorough evaluation of our approach against various baseline methods to validate its resilience and superiority against such attacks empirically. Our approach achieves an attack detection accuracy of 97%, surpassing all other methods in our comparative analysis.",
-      "authors": "Saquib Irtiza, Khandakar Ashrafi Akbar, Arowa Yasmeen, Latifur Khan, O. Daescu, B. Thuraisingham",
-      "date": "2024-10-28",
-      "published": "2024-10-28",
-      "year": 2024,
-      "venue": "International Conference on Trust, Privacy and Security in Intelligent Systems and Applications",
-      "publicationKind": "conference",
-      "publicationTypes": [
-        "JournalArticle",
-        "Conference"
-      ],
-      "citationCount": 9,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/7e7cee87f13049e709794a9882cf632f9eb5265f",
-      "arxiv": null,
-      "pdf": null,
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Agent Safety"
-      ],
-      "tags": [
-        "Agentic Search",
-        "Agent Safety"
       ]
     },
     {
@@ -5843,11 +5962,13 @@
       "pdf": "https://arxiv.org/pdf/2410.21330.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Agent Safety",
         "Evaluation"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Agent Safety",
         "Evaluation"
@@ -7915,6 +8036,41 @@
       ]
     },
     {
+      "id": "arxiv:2410.06440",
+      "title": "Checker Bug Detection and Repair in Deep Learning Libraries",
+      "authors": [
+        "Nima Shiri Harzevili",
+        "Mohammad Mahdi Mohajer",
+        "Jiho Shin",
+        "Moshi Wei",
+        "Gias Uddin",
+        "Jinqiu Yang",
+        "Junjie Wang",
+        "Song Wang",
+        "Zhen Ming",
+        "Jiang",
+        "Nachiappan Nagappan"
+      ],
+      "abstract": "Checker bugs in Deep Learning (DL) libraries are critical yet not well-explored. These bugs are often concealed in the input validation and error-checking code of DL libraries and can lead to silent failures, incorrect results, or unexpected program behavior in DL applications. Despite their potential to significantly impact the reliability and performance of DL-enabled systems built with these libraries, checker bugs have received limited attention.   We present the first comprehensive study of DL checker bugs in two widely-used DL libraries, i.e., TensorFlow and PyTorch. Initially, we automatically collected a dataset of 2,418 commits from TensorFlow and PyTorch repositories on GitHub from Sept. 2016 to Dec. 2023 using specific keywords related to checker bugs. Through manual inspection, we identified 527 DL checker bugs. Subsequently, we analyzed these bugs from three perspectives, i.e., root causes, symptoms, and fixing patterns. Using the knowledge gained via root cause analysis of checker bugs, we further propose TensorGuard, a proof-of-concept RAG-based LLM-based tool to detect and fix checker bugs in DL libraries via prompt engineering a series of ChatGPT prompts. We evaluated TensorGuard's performance on a test dataset that includes 92 buggy and 135 clean checker-related changes in TensorFlow and PyTorch from January 2024 to July 2024. Our results demonstrate that TensorGuard has high average recall (94.51\\%) using Chain of Thought prompting, a balanced performance between precision and recall using Zero-Shot prompting and Few-Shot prompting strategies. In terms of patch generation, TensorGuard achieves an accuracy of 11.1\\%, which outperforms the state-of-the-art bug repair baseline by 2\\%. We have also applied TensorGuard on the latest six months' checker-related changes (493 changes) of the JAX library from Google, which resulted in the detection of 64 new checker bugs.",
+      "date": "2024-10-09",
+      "published": "2024-10-09",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2410.06440",
+      "pdf": "https://arxiv.org/pdf/2410.06440.pdf",
+      "url": "https://arxiv.org/abs/2410.06440",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Reasoning"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Reasoning"
+      ]
+    },
+    {
       "id": "arxiv:2410.07283",
       "title": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems",
       "abstract": "As Large Language Models (LLMs) grow increasingly powerful, multi-agent systems are becoming more prevalent in modern AI applications. Most safety research, however, has focused on vulnerabilities in single-agent LLMs. These include prompt injection attacks, where malicious prompts embedded in external content trick the LLM into executing unintended or harmful actions, compromising the victim's application. In this paper, we reveal a more dangerous vector: LLM-to-LLM prompt injection within multi-agent systems. We introduce Prompt Infection, a novel attack where malicious prompts self-replicate across interconnected agents, behaving much like a computer virus. This attack poses severe threats, including data theft, scams, misinformation, and system-wide disruption, all while propagating silently through the system. Our extensive experiments demonstrate that multi-agent systems are highly susceptible, even when agents do not publicly share all communications. To address this, we propose LLM Tagging, a defense mechanism that, when combined with existing safeguards, significantly mitigates infection spread. This work underscores the urgent need for advanced security measures as multi-agent LLM systems become more widely adopted.",
@@ -8253,12 +8409,14 @@
       "pdf": "https://arxiv.org/pdf/2410.02742.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Reasoning",
         "Evaluation",
         "World Model"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Reasoning",
         "Evaluation",
@@ -9349,12 +9507,14 @@
       "pdf": "https://arxiv.org/pdf/2409.09916.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Reasoning",
         "Hallucination",
         "Evaluation"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Reasoning",
         "Hallucination",
@@ -9417,6 +9577,29 @@
       "tags": [
         "Agent Safety",
         "Reflection"
+      ]
+    },
+    {
+      "id": "arxiv:2410.01818",
+      "title": "Integrating AI's Carbon Footprint into Risk Management Frameworks: Strategies and Tools for Sustainable Compliance in Banking Sector",
+      "authors": [
+        "Nataliya Tkachenko"
+      ],
+      "abstract": "This paper examines the integration of AI's carbon footprint into the risk management frameworks (RMFs) of the banking sector, emphasising its importance in aligning with sustainability goals and regulatory requirements. As AI becomes increasingly central to banking operations, its energy-intensive processes contribute significantly to carbon emissions, posing environmental, regulatory, and reputational risks. Regulatory frameworks such as the EU AI Act, Corporate Sustainability Reporting Directive (CSRD), Corporate Sustainability Due Diligence Directive (CSDDD), and the Prudential Regulation Authority's SS1/23 are driving banks to incorporate environmental considerations into their AI model governance. Recent advancements in AI research, like the Open Mixture-of-Experts (OLMoE) framework and the Agentic RAG framework, offer more efficient and dynamic AI models, reducing their carbon footprint without compromising performance. Using these technological examples, the paper outlines a structured approach for banks to identify, assess, and mitigate AI's carbon footprint within their RMFs, including adopting energy-efficient models, utilising green cloud computing, and implementing lifecycle management.",
+      "date": "2024-09-15",
+      "published": "2024-09-15",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2410.01818",
+      "pdf": "https://arxiv.org/pdf/2410.01818.pdf",
+      "url": "https://arxiv.org/abs/2410.01818",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search"
       ]
     },
     {
@@ -9534,6 +9717,37 @@
       ]
     },
     {
+      "id": "s2:282d499f97460e32efae0b0107480d75872bbc5d",
+      "title": "Enhancing E-Government Services through State-of-the-Art, Modular, and Reproducible Architecture over Large Language Models",
+      "abstract": "Integrating Large Language Models (LLMs) into e-government applications has the potential to improve public service delivery through advanced data processing and automation. This paper explores critical aspects of a modular and reproducible architecture based on Retrieval-Augmented Generation (RAG) for deploying LLM-based assistants within e-government systems. By examining current practices and challenges, we propose a framework ensuring that Artificial Intelligence (AI) systems are modular and reproducible, essential for maintaining scalability, transparency, and ethical standards. Our approach utilizing Haystack demonstrates a complete multi-agent Generative AI (GAI) virtual assistant that facilitates scalability and reproducibility by allowing individual components to be independently scaled. This research focuses on a comprehensive review of the existing literature and presents case study examples to demonstrate how such an architecture can enhance public service operations. This framework provides a valuable case study for researchers, policymakers, and practitioners interested in exploring the integration of advanced computational linguistics and LLMs into e-government services, although it could benefit from further empirical validation.",
+      "authors": "George Papageorgiou, Vangelis Sarlis, Manolis Maragoudakis, Christos Tjortjis",
+      "date": "2024-09-13",
+      "published": "2024-09-13",
+      "year": 2024,
+      "venue": "Applied Sciences",
+      "publicationKind": "journal",
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "citationCount": 20,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/282d499f97460e32efae0b0107480d75872bbc5d",
+      "arxiv": null,
+      "pdf": "https://www.mdpi.com/2076-3417/14/18/8259/pdf?version=1726220193",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent"
+      ]
+    },
+    {
       "id": "arxiv:2409.09191",
       "title": "ProcessTBench: An LLM Plan Generation Dataset for Process Mining",
       "abstract": "Large Language Models (LLMs) have shown significant promise in plan generation. Yet, existing datasets often lack the complexity needed for advanced tool use scenarios - such as handling paraphrased query statements, supporting multiple languages, and managing actions that can be done in parallel. These scenarios are crucial for evaluating the evolving capabilities of LLMs in real-world applications. Moreover, current datasets don't enable the study of LLMs from a process perspective, particularly in scenarios where understanding typical behaviors and challenges in executing the same process under different conditions or formulations is crucial. To address these gaps, we present the ProcessTBench synthetic dataset, an extension of the TaskBench dataset specifically designed to evaluate LLMs within a process mining framework.",
@@ -9561,35 +9775,6 @@
         "Tool Use",
         "Planning",
         "Data Engine"
-      ]
-    },
-    {
-      "id": "s2:282d499f97460e32efae0b0107480d75872bbc5d",
-      "title": "Enhancing E-Government Services through State-of-the-Art, Modular, and Reproducible Architecture over Large Language Models",
-      "abstract": "Integrating Large Language Models (LLMs) into e-government applications has the potential to improve public service delivery through advanced data processing and automation. This paper explores critical aspects of a modular and reproducible architecture based on Retrieval-Augmented Generation (RAG) for deploying LLM-based assistants within e-government systems. By examining current practices and challenges, we propose a framework ensuring that Artificial Intelligence (AI) systems are modular and reproducible, essential for maintaining scalability, transparency, and ethical standards. Our approach utilizing Haystack demonstrates a complete multi-agent Generative AI (GAI) virtual assistant that facilitates scalability and reproducibility by allowing individual components to be independently scaled. This research focuses on a comprehensive review of the existing literature and presents case study examples to demonstrate how such an architecture can enhance public service operations. This framework provides a valuable case study for researchers, policymakers, and practitioners interested in exploring the integration of advanced computational linguistics and LLMs into e-government services, although it could benefit from further empirical validation.",
-      "authors": "George Papageorgiou, Vangelis Sarlis, Manolis Maragoudakis, Christos Tjortjis",
-      "date": "2024-09-13",
-      "published": "2024-09-13",
-      "year": 2024,
-      "venue": "Applied Sciences",
-      "publicationKind": "journal",
-      "publicationTypes": [
-        "JournalArticle",
-        "Review"
-      ],
-      "citationCount": 20,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/282d499f97460e32efae0b0107480d75872bbc5d",
-      "arxiv": null,
-      "pdf": "https://www.mdpi.com/2076-3417/14/18/8259/pdf?version=1726220193",
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Multi-Agent"
-      ],
-      "tags": [
-        "Agentic Search",
-        "Multi-Agent"
       ]
     },
     {
@@ -10213,10 +10398,12 @@
       "pdf": "http://www.stemmpress.com/uploadfile/202411/6ecd9f3f73f9940.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Fine-tuning"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Fine-tuning"
       ]
@@ -10512,6 +10699,35 @@
       ]
     },
     {
+      "id": "arxiv:2408.15232",
+      "title": "Into the Unknown Unknowns: Engaged Human Learning through Participation in Language Model Agent Conversations",
+      "abstract": "While language model (LM)-powered chatbots and generative search engines excel at answering concrete queries, discovering information in the terrain of unknown unknowns remains challenging for users. To emulate the common educational scenario where children/students learn by listening to and participating in conversations of their parents/teachers, we create Collaborative STORM (Co-STORM). Unlike QA systems that require users to ask all the questions, Co-STORM lets users observe and occasionally steer the discourse among several LM agents. The agents ask questions on the user’s behalf, allowing the user to discover unknown unknowns serendipitously. To facilitate user interaction, Co-STORM assists users in tracking the discourse by organizing the uncovered information into a dynamic mind map, ultimately generating a comprehensive report as takeaways. For automatic evaluation, we construct the WildSeek dataset by collecting real information-seeking records with user goals. Co-STORM outperforms baseline methods on both discourse trace and report quality. In a further human evaluation, 70% of participants prefer Co-STORM over a search engine, and 78% favor it over a RAG chatbot.",
+      "authors": "Yucheng Jiang, Yijia Shao, Dekun Ma, Sina J. Semnani, Monica S. Lam",
+      "date": "2024-08-27",
+      "published": "2024-08-27",
+      "year": 2024,
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "publicationKind": "conference",
+      "publicationTypes": [
+        "JournalArticle",
+        "Conference"
+      ],
+      "citationCount": 57,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/a1bd59c18c5be05af721400393ae34f52e12ff99",
+      "arxiv": "https://arxiv.org/abs/2408.15232",
+      "pdf": "https://arxiv.org/pdf/2408.15232.pdf",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search"
+      ]
+    },
+    {
       "id": "arxiv:2408.15301",
       "title": "The Uniqueness of LLaMA3-70B Series with Per-Channel Quantization",
       "abstract": "We have observed a distinctive quantization-related behavior in the LLaMA3/3.1-70B models that is absent in both the LLaMA2-70B and LLaMA3/3.1/3.2-1B/3B/8B/405B models. Quantization is a crucial technique for deploying large language models (LLMs) efficiently. The impact of W8A8 post-training quantization on model accuracy, especially on the recently released LLaMA3/3.1 model series, remains contentious. In this paper, we explore three key questions: What makes the LLaMA3-70B model series uniquely vulnerable to quantization? Why is this the case? And how can the issue be addressed? We empirically investigate multiple LLMs featured on an open LLM leaderboard, discovering that the LLaMA3-70B model series have a unique accuracy degradation behavior with W8A8 per-channel post-training quantization. In contrast, other model series such as LLaMA2, LLaMA3/3.1-8B, LLaMA3.2, Qwen, Mixtral, Mistral, Phi-3, and Falcon demonstrate robust performance with W8A8. Contrary to previous assertions attributing degradation to the large dynamic range of activations, our findings indicate that the weight distribution of the LLaMA3-70B is the primary factor behind the vulnerability. By meticulously analyzing the distinct characteristics of weight distributions across Transformer blocks, we propose two solutions that make different tradeoffs in hardware/software overhead. First, we propose a mixed strategy where less than 3\\% of the layers employ finer per-group W8A8 quantization granularity. Second, we introduce a bi-smoothing strategy that balances quantization errors between weights and activations while maintaining per-channel quantization throughout. Experimental results demonstrate that both strategies effectively preserve the accuracy of the entire LLaMA3-70B model series under W8A8 quantization, achieving performance on par with their FP16 counterparts.",
@@ -10535,33 +10751,6 @@
       "tags": [
         "Post-Training",
         "Evaluation"
-      ]
-    },
-    {
-      "id": "arxiv:2408.15232",
-      "title": "Into the Unknown Unknowns: Engaged Human Learning through Participation in Language Model Agent Conversations",
-      "abstract": "While language model (LM)-powered chatbots and generative search engines excel at answering concrete queries, discovering information in the terrain of unknown unknowns remains challenging for users. To emulate the common educational scenario where children/students learn by listening to and participating in conversations of their parents/teachers, we create Collaborative STORM (Co-STORM). Unlike QA systems that require users to ask all the questions, Co-STORM lets users observe and occasionally steer the discourse among several LM agents. The agents ask questions on the user’s behalf, allowing the user to discover unknown unknowns serendipitously. To facilitate user interaction, Co-STORM assists users in tracking the discourse by organizing the uncovered information into a dynamic mind map, ultimately generating a comprehensive report as takeaways. For automatic evaluation, we construct the WildSeek dataset by collecting real information-seeking records with user goals. Co-STORM outperforms baseline methods on both discourse trace and report quality. In a further human evaluation, 70% of participants prefer Co-STORM over a search engine, and 78% favor it over a RAG chatbot.",
-      "authors": "Yucheng Jiang, Yijia Shao, Dekun Ma, Sina J. Semnani, Monica S. Lam",
-      "date": "2024-08-27",
-      "published": "2024-08-27",
-      "year": 2024,
-      "venue": "Conference on Empirical Methods in Natural Language Processing",
-      "publicationKind": "conference",
-      "publicationTypes": [
-        "JournalArticle",
-        "Conference"
-      ],
-      "citationCount": 57,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/a1bd59c18c5be05af721400393ae34f52e12ff99",
-      "arxiv": "https://arxiv.org/abs/2408.15232",
-      "pdf": "https://arxiv.org/pdf/2408.15232.pdf",
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search"
-      ],
-      "tags": [
-        "Agentic Search"
       ]
     },
     {
@@ -10641,6 +10830,37 @@
       ],
       "tags": [
         "Reasoning"
+      ]
+    },
+    {
+      "id": "arxiv:2409.00082",
+      "title": "Towards Human-Level Understanding of Complex Process Engineering Schematics: A Pedagogical, Introspective Multi-Agent Framework for Open-Domain Question Answering",
+      "authors": [
+        "Sagar Srinivas Sakhinana",
+        "Geethan Sannidhi",
+        "Venkataramana Runkana"
+      ],
+      "abstract": "In the chemical and process industries, Process Flow Diagrams (PFDs) and Piping and Instrumentation Diagrams (P&IDs) are critical for design, construction, and maintenance. Recent advancements in Generative AI, such as Large Multimodal Models (LMMs) like GPT4 (Omni), have shown promise in understanding and interpreting process diagrams for Visual Question Answering (VQA). However, proprietary models pose data privacy risks, and their computational complexity prevents knowledge editing for domain-specific customization on consumer hardware. To overcome these challenges, we propose a secure, on-premises enterprise solution using a hierarchical, multi-agent Retrieval Augmented Generation (RAG) framework for open-domain question answering (ODQA) tasks, offering enhanced data privacy, explainability, and cost-effectiveness. Our novel multi-agent framework employs introspective and specialized sub-agents using open-source, small-scale multimodal models with the ReAct (Reason+Act) prompting technique for PFD and P&ID analysis, integrating multiple information sources to provide accurate and contextually relevant answers. Our approach, supported by iterative self-correction, aims to deliver superior performance in ODQA tasks. We conducted rigorous experimental studies, and the empirical results validated the proposed approach effectiveness.",
+      "date": "2024-08-24",
+      "published": "2024-08-24",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2409.00082",
+      "pdf": "https://arxiv.org/pdf/2409.00082.pdf",
+      "url": "https://arxiv.org/abs/2409.00082",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent",
+        "Reflection",
+        "Agent Framework"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent",
+        "Reflection",
+        "Agent Framework"
       ]
     },
     {
@@ -10924,6 +11144,39 @@
       ],
       "tags": [
         "Planning",
+        "Evaluation"
+      ]
+    },
+    {
+      "id": "arxiv:2408.14484",
+      "title": "Agentic Retrieval-Augmented Generation for Time Series Analysis",
+      "authors": [
+        "Chidaksh Ravuru",
+        "Sagar Srinivas Sakhinana",
+        "Venkataramana Runkana"
+      ],
+      "abstract": "Time series modeling is crucial for many applications, however, it faces challenges such as complex spatio-temporal dependencies and distribution shifts in learning from historical context to predict task-specific outcomes. To address these challenges, we propose a novel approach using an agentic Retrieval-Augmented Generation (RAG) framework for time series analysis. The framework leverages a hierarchical, multi-agent architecture where the master agent orchestrates specialized sub-agents and delegates the end-user request to the relevant sub-agent. The sub-agents utilize smaller, pre-trained language models (SLMs) customized for specific time series tasks through fine-tuning using instruction tuning and direct preference optimization, and retrieve relevant prompts from a shared repository of prompt pools containing distilled knowledge about historical patterns and trends to improve predictions on new data. Our proposed modular, multi-agent RAG approach offers flexibility and achieves state-of-the-art performance across major time series tasks by tackling complex challenges more effectively than task-specific customized methods across benchmark datasets.",
+      "date": "2024-08-18",
+      "published": "2024-08-18",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2408.14484",
+      "pdf": "https://arxiv.org/pdf/2408.14484.pdf",
+      "url": "https://arxiv.org/abs/2408.14484",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Post-Training",
+        "Multi-Agent",
+        "Evaluation",
+        "Fine-tuning",
+        "Agent Framework"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Post-Training",
+        "Multi-Agent",
         "Evaluation"
       ]
     },
@@ -11270,11 +11523,13 @@
       "pdf": "https://arxiv.org/pdf/2408.04342.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Tool Use",
         "Evaluation"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Tool Use",
         "Evaluation"
@@ -11586,10 +11841,12 @@
       "pdf": null,
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Hallucination"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Hallucination"
       ]
@@ -12037,6 +12294,40 @@
       ]
     },
     {
+      "id": "arxiv:2408.00798",
+      "title": "Golden-Retriever: High-Fidelity Agentic Retrieval Augmented Generation for Industrial Knowledge Base",
+      "authors": [
+        "Zhiyu An",
+        "Xianzhong Ding",
+        "Yen-Chun Fu",
+        "Cheng-Chung Chu",
+        "Yan Li",
+        "Wan Du"
+      ],
+      "abstract": "This paper introduces Golden-Retriever, designed to efficiently navigate vast industrial knowledge bases, overcoming challenges in traditional LLM fine-tuning and RAG frameworks with domain-specific jargon and context interpretation. Golden-Retriever incorporates a reflection-based question augmentation step before document retrieval, which involves identifying jargon, clarifying its meaning based on context, and augmenting the question accordingly. Specifically, our method extracts and lists all jargon and abbreviations in the input question, determines the context against a pre-defined list, and queries a jargon dictionary for extended definitions and descriptions. This comprehensive augmentation ensures the RAG framework retrieves the most relevant documents by providing clear context and resolving ambiguities, significantly improving retrieval accuracy. Evaluations using three open-source LLMs on a domain-specific question-answer dataset demonstrate Golden-Retriever's superior performance, providing a robust solution for efficiently integrating and querying industrial knowledge bases.",
+      "date": "2024-07-20",
+      "published": "2024-07-20",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2408.00798",
+      "pdf": "https://arxiv.org/pdf/2408.00798.pdf",
+      "url": "https://arxiv.org/abs/2408.00798",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Evaluation",
+        "Fine-tuning",
+        "Reflection"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Evaluation",
+        "Fine-tuning",
+        "Reflection"
+      ]
+    },
+    {
       "id": "arxiv:2407.14239",
       "title": "KoMA: Knowledge-Driven Multi-Agent Framework for Autonomous Driving With Large Language Models",
       "abstract": "Large language models (LLMs) as autonomous agents offer a novel avenue for tackling real-world challenges through a knowledge-driven manner. These LLM-enhanced methodologies excel in generalization and interpretability. However, the complexity of driving tasks often necessitates the collaboration of multiple, heterogeneous agents, underscoring the need for such LLM-driven agents to engage in cooperative knowledge sharing and cognitive synergy. Despite the promise of LLMs, current applications predominantly center around single-agent scenarios. To broaden the horizons of knowledge-driven strategies and bolster the generalization capabilities of autonomous agents, we propose the KoMA framework consisting of multi-agent interaction, multi-step planning, shared-memory, and ranking-based reflection modules to enhance multi-agents' decision-making in complex driving scenarios. Based on the framework's generated text descriptions of driving scenarios, the multi-agent interaction module enables LLM agents to analyze and infer the intentions of surrounding vehicles based on scene information, akin to human cognition. The multi-step planning module enables LLM agents to analyze and obtain final action decisions layer by layer to ensure consistent goals for short-term action decisions. The shared memory module can accumulate collective experience to make superior decisions, and the ranking-based reflection module can evaluate and improve agent behavior with the aim of enhancing driving safety and efficiency. The KoMA framework not only enhances the robustness and adaptability of autonomous driving agents but also significantly elevates their generalization capabilities across diverse scenarios. Empirical results demonstrate the superiority of our approach over traditional methods, particularly in its ability to handle complex, unpredictable driving environments without extensive retraining.",
@@ -12105,6 +12396,41 @@
         "Planning",
         "Evaluation",
         "Interpretability"
+      ]
+    },
+    {
+      "id": "arxiv:2407.12784",
+      "title": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+      "authors": [
+        "Zhaorun Chen",
+        "Zhen Xiang",
+        "Chaowei Xiao",
+        "Dawn Song",
+        "Bo Li"
+      ],
+      "abstract": "LLM agents have demonstrated remarkable performance across various applications, primarily due to their advanced capabilities in reasoning, utilizing external knowledge and tools, calling APIs, and executing actions to interact with environments. Current agents typically utilize a memory module or a retrieval-augmented generation (RAG) mechanism, retrieving past knowledge and instances with similar embeddings from knowledge bases to inform task planning and execution. However, the reliance on unverified knowledge bases raises significant concerns about their safety and trustworthiness. To uncover such vulnerabilities, we propose a novel red teaming approach AgentPoison, the first backdoor attack targeting generic and RAG-based LLM agents by poisoning their long-term memory or RAG knowledge base. In particular, we form the trigger generation process as a constrained optimization to optimize backdoor triggers by mapping the triggered instances to a unique embedding space, so as to ensure that whenever a user instruction contains the optimized backdoor trigger, the malicious demonstrations are retrieved from the poisoned memory or knowledge base with high probability. In the meantime, benign instructions without the trigger will still maintain normal performance. Unlike conventional backdoor attacks, AgentPoison requires no additional model training or fine-tuning, and the optimized backdoor trigger exhibits superior transferability, in-context coherence, and stealthiness. Extensive experiments demonstrate AgentPoison's effectiveness in attacking three types of real-world LLM agents: RAG-based autonomous driving agent, knowledge-intensive QA agent, and healthcare EHRAgent. On each agent, AgentPoison achieves an average attack success rate higher than 80% with minimal impact on benign performance (less than 1%) with a poison rate less than 0.1%.",
+      "date": "2024-07-17",
+      "published": "2024-07-17",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2407.12784",
+      "pdf": "https://arxiv.org/pdf/2407.12784.pdf",
+      "url": "https://arxiv.org/abs/2407.12784",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Agent Safety",
+        "Reasoning",
+        "Planning",
+        "Memory",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Agent Safety",
+        "Reasoning",
+        "Planning"
       ]
     },
     {
@@ -12458,11 +12784,13 @@
       "pdf": "https://arxiv.org/pdf/2407.09164.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Agent Safety",
         "Reasoning"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Agent Safety",
         "Reasoning"
@@ -12772,6 +13100,36 @@
         "Post-Training",
         "Planning",
         "RL for LLM"
+      ]
+    },
+    {
+      "id": "arxiv:2407.03889",
+      "title": "Automated C/C++ Program Repair for High-Level Synthesis via Large Language Models",
+      "authors": [
+        "Kangwei Xu",
+        "Grace Li Zhang",
+        "Xunzhao Yin",
+        "Cheng Zhuo",
+        "Ulf Schlichtmann",
+        "Bing Li"
+      ],
+      "abstract": "In High-Level Synthesis (HLS), converting a regular C/C++ program into its HLS-compatible counterpart (HLS-C) still requires tremendous manual effort. Various program scripts have been introduced to automate this process. But the resulting codes usually contain many issues that should be manually repaired by developers. Since Large Language Models (LLMs) have the ability to automate code generation, they can also be used for automated program repair in HLS. However, due to the limited training of LLMs considering hardware and software simultaneously, hallucinations may occur during program repair using LLMs, leading to compilation failures. Besides, using LLMs for iterative repair also incurs a high cost. To address these challenges, we propose an LLM-driven program repair framework that takes regular C/C++ code as input and automatically generates its corresponding HLS-C code for synthesis while minimizing human repair effort. To mitigate the hallucinations in LLMs and enhance the prompt quality, a Retrieval-Augmented Generation (RAG) paradigm is introduced to guide the LLMs toward correct repair. In addition, we use LLMs to create a static bit width optimization program to identify the optimized bit widths for variables. Moreover, LLM-driven HLS optimization strategies are introduced to add/tune pragmas in HLS-C programs for circuit optimization. Experimental results demonstrate that the proposed LLM-driven automated framework can achieve much higher repair pass rates in 24 real-world applications compared with the traditional scripts and the direct application of LLMs for program repair.",
+      "date": "2024-07-04",
+      "published": "2024-07-04",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2407.03889",
+      "pdf": "https://arxiv.org/pdf/2407.03889.pdf",
+      "url": "https://arxiv.org/abs/2407.03889",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Hallucination"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Hallucination"
       ]
     },
     {
@@ -13208,6 +13566,37 @@
       ]
     },
     {
+      "id": "s2:40776e2aba7dd99d2dadc993e370a0592a750cb3",
+      "title": "From Prediction to Prescription: Large Language Model Agent for Context-Aware Maintenance Decision Support",
+      "abstract": "Predictive analytics with machine learning approaches has widely penetrated and shown great success in system health management over the decade. However, how to convert the prediction to an actionable plan for maintenance is still far from mature. This study investigates how to narrow the gapbetween predictive outcomes and prescriptive descriptions for system maintenance using an agentic approach based on the large language model (LLM). Additionally, with the retrieval-augmented generation (RAG) technique and tool usage capability, the LLM can be context-aware when making decisions in maintenance strategy proposals considering predictions from machine learning. In this way, the proposed method can push forward the boundary of current machine-learning methods from a predictor to an advisor for decision-making workload offload. For verification, a case study on linear actuator fault diagnosis is conducted with the GPT-4 model. The result demonstrates that the proposed method can perform fault detection without extra training or fine-tuning with comparable performance to baseline methods and deliver more informatic diagnosis analysis and suggestions. This research can shed light on the application of large language models in the construction of versatile and flexible artificial intelligence agents for maintenance tasks.",
+      "authors": "Haoxuan Deng, Bernadin Namoano, Bohao Zheng, Samir Khan, John Ahmet Erkoyuncu",
+      "date": "2024-06-27",
+      "published": "2024-06-27",
+      "year": 2024,
+      "venue": "PHM Society European Conference",
+      "publicationKind": "conference",
+      "publicationTypes": [
+        "JournalArticle",
+        "Conference"
+      ],
+      "citationCount": 11,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/40776e2aba7dd99d2dadc993e370a0592a750cb3",
+      "arxiv": null,
+      "pdf": "https://papers.phmsociety.org/index.php/phme/article/download/4114/2428",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Fine-tuning"
+      ]
+    },
+    {
       "id": "arxiv:2406.19112",
       "title": "A Teacher Is Worth A Million Instructions",
       "abstract": "Large Language Models(LLMs) have shown exceptional abilities, yet training these models can be quite challenging. There is a strong dependence on the quality of data and finding the best instruction tuning set. Further, the inherent limitations in training methods create substantial difficulties to train relatively smaller models with 7B and 13B parameters. In our research, we suggest an improved training method for these models by utilising knowledge from larger models, such as a mixture of experts (8x7B) architectures. The scale of these larger models allows them to capture a wide range of variations from data alone, making them effective teachers for smaller models. Moreover, we implement a novel post-training domain alignment phase that employs domain-specific expert models to boost domain-specific knowledge during training while preserving the model's ability to generalise. Fine-tuning Mistral 7B and 2x7B with our method surpasses the performance of state-of-the-art language models with more than 7B and 13B parameters: achieving up to $7.9$ in MT-Bench and $93.04\\%$ on AlpacaEval.",
@@ -13234,35 +13623,6 @@
       "tags": [
         "Post-Training",
         "Alignment",
-        "Fine-tuning"
-      ]
-    },
-    {
-      "id": "s2:40776e2aba7dd99d2dadc993e370a0592a750cb3",
-      "title": "From Prediction to Prescription: Large Language Model Agent for Context-Aware Maintenance Decision Support",
-      "abstract": "Predictive analytics with machine learning approaches has widely penetrated and shown great success in system health management over the decade. However, how to convert the prediction to an actionable plan for maintenance is still far from mature. This study investigates how to narrow the gapbetween predictive outcomes and prescriptive descriptions for system maintenance using an agentic approach based on the large language model (LLM). Additionally, with the retrieval-augmented generation (RAG) technique and tool usage capability, the LLM can be context-aware when making decisions in maintenance strategy proposals considering predictions from machine learning. In this way, the proposed method can push forward the boundary of current machine-learning methods from a predictor to an advisor for decision-making workload offload. For verification, a case study on linear actuator fault diagnosis is conducted with the GPT-4 model. The result demonstrates that the proposed method can perform fault detection without extra training or fine-tuning with comparable performance to baseline methods and deliver more informatic diagnosis analysis and suggestions. This research can shed light on the application of large language models in the construction of versatile and flexible artificial intelligence agents for maintenance tasks.",
-      "authors": "Haoxuan Deng, Bernadin Namoano, Bohao Zheng, Samir Khan, John Ahmet Erkoyuncu",
-      "date": "2024-06-27",
-      "published": "2024-06-27",
-      "year": 2024,
-      "venue": "PHM Society European Conference",
-      "publicationKind": "conference",
-      "publicationTypes": [
-        "JournalArticle",
-        "Conference"
-      ],
-      "citationCount": 11,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/40776e2aba7dd99d2dadc993e370a0592a750cb3",
-      "arxiv": null,
-      "pdf": "https://papers.phmsociety.org/index.php/phme/article/download/4114/2428",
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Fine-tuning"
-      ],
-      "tags": [
-        "Agentic Search",
         "Fine-tuning"
       ]
     },
@@ -13783,6 +14143,36 @@
       ]
     },
     {
+      "id": "arxiv:2406.12806",
+      "title": "Identifying Performance-Sensitive Configurations in Software Systems through Code Analysis with LLM Agents",
+      "abstract": "Configuration settings are essential for tailoring software behavior to meet specific performance requirements. However, incorrect configurations are widespread, and identifying those that impact system performance is challenging due to the vast number and complexity of possible settings. In this work, we present PerfSense, a lightweight framework that leverages Large Language Models (LLMs) to efficiently identify performance-sensitive configurations with minimal overhead. PerfSense employs LLM agents to simulate interactions between developers and performance engineers using advanced prompting techniques such as prompt chaining and retrieval-augmented generation (RAG). Our evaluation of seven open-source Java systems demonstrates that PerfSense achieves an average accuracy of 64.77% in classifying performance-sensitive configurations, outperforming both our LLM baseline (50.36%) and the previous state-of-the-art method (61.75%). Notably, our prompt chaining technique improves recall by 10% to 30% while maintaining similar precision levels. Additionally, a manual analysis of 362 misclassifications reveals common issues, including LLMs' misunderstandings of requirements (26.8%). In summary, PerfSense significantly reduces manual effort in classifying performance-sensitive configurations and offers valuable insights for future LLM-based code analysis research.",
+      "authors": "Zehao Wang, Dong Jae Kim, T. Chen",
+      "date": "2024-06-18",
+      "published": "2024-06-18",
+      "year": 2024,
+      "venue": "arXiv.org",
+      "publicationKind": "journal",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "citationCount": 6,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/152189b130345cd8491272b8d128d954adfbb47a",
+      "arxiv": "https://arxiv.org/abs/2406.12806",
+      "pdf": "https://arxiv.org/pdf/2406.12806.pdf",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Evaluation"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Evaluation"
+      ]
+    },
+    {
       "id": "arxiv:2406.12628",
       "title": "Large Language Models based Multi-Agent Framework for Objective Oriented Control Design in Power Electronics",
       "abstract": "Power electronics, a critical component in modern power systems, face several challenges in control design, including model uncertainties, and lengthy and costly design cycles. This paper is aiming to propose a Large Language Models (LLMs) based multi-agent framework for objective-oriented control design in power electronics. The framework leverages the reasoning capabilities of LLMs and a multi-agent workflow to develop an efficient and autonomous controller design process. The LLM agent is able to understand and respond to high-level instructions in natural language, adapting its behavior based on the task's specific requirements and constraints from a practical implementation point of view. This novel and efficient approach promises a more flexible and adaptable controller design process in power electronics that will largely facilitate the practitioners.",
@@ -13839,34 +14229,6 @@
       "tags": [
         "Tool Use",
         "Reasoning",
-        "Evaluation"
-      ]
-    },
-    {
-      "id": "arxiv:2406.12806",
-      "title": "Identifying Performance-Sensitive Configurations in Software Systems through Code Analysis with LLM Agents",
-      "abstract": "Configuration settings are essential for tailoring software behavior to meet specific performance requirements. However, incorrect configurations are widespread, and identifying those that impact system performance is challenging due to the vast number and complexity of possible settings. In this work, we present PerfSense, a lightweight framework that leverages Large Language Models (LLMs) to efficiently identify performance-sensitive configurations with minimal overhead. PerfSense employs LLM agents to simulate interactions between developers and performance engineers using advanced prompting techniques such as prompt chaining and retrieval-augmented generation (RAG). Our evaluation of seven open-source Java systems demonstrates that PerfSense achieves an average accuracy of 64.77% in classifying performance-sensitive configurations, outperforming both our LLM baseline (50.36%) and the previous state-of-the-art method (61.75%). Notably, our prompt chaining technique improves recall by 10% to 30% while maintaining similar precision levels. Additionally, a manual analysis of 362 misclassifications reveals common issues, including LLMs' misunderstandings of requirements (26.8%). In summary, PerfSense significantly reduces manual effort in classifying performance-sensitive configurations and offers valuable insights for future LLM-based code analysis research.",
-      "authors": "Zehao Wang, Dong Jae Kim, T. Chen",
-      "date": "2024-06-18",
-      "published": "2024-06-18",
-      "year": 2024,
-      "venue": "arXiv.org",
-      "publicationKind": "journal",
-      "publicationTypes": [
-        "JournalArticle"
-      ],
-      "citationCount": 6,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/152189b130345cd8491272b8d128d954adfbb47a",
-      "arxiv": "https://arxiv.org/abs/2406.12806",
-      "pdf": "https://arxiv.org/pdf/2406.12806.pdf",
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Evaluation"
-      ],
-      "tags": [
-        "Agentic Search",
         "Evaluation"
       ]
     },
@@ -14575,12 +14937,14 @@
       "pdf": "https://arxiv.org/pdf/2406.10251.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Post-Training",
         "Reasoning",
         "Evaluation"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Post-Training",
         "Reasoning",
@@ -14697,11 +15061,13 @@
       "pdf": "https://arxiv.org/pdf/2406.05804.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Tool Use",
         "Planning"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Tool Use",
         "Planning"
@@ -14986,12 +15352,14 @@
       "pdf": "https://arxiv.org/pdf/2406.02818.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Multi-Agent",
         "Reasoning",
         "Evaluation"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Multi-Agent",
         "Reasoning",
@@ -15314,6 +15682,39 @@
       ]
     },
     {
+      "id": "arxiv:2405.20455",
+      "title": "DepsRAG: Towards Agentic Reasoning and Planning for Software Dependency Management",
+      "abstract": "In the era of Large Language Models (LLMs) with their advanced capabilities, a unique opportunity arises to develop LLM-based digital assistant tools that can support software developers by facilitating comprehensive reasoning about software dependencies and open-source libraries before importing them. This reasoning process is daunting, mandating multiple specialized tools and dedicated expertise, each focusing on distinct aspects (e.g., security analysis tools may overlook design flaws such as circular dependencies, which hinder software maintainability). Creating a significant bottleneck in the software development lifecycle. In this paper, we introduce DepsRAG, a multi-agent framework designed to assist developers in reasoning about software dependencies. DepsRAG first constructs a comprehensive Knowledge Graph (KG) that includes both direct and transitive dependencies. Developers can interact with DepsRAG through a conversational interface, posing queries about the dependencies. DepsRAG employs Retrieval-Augmented Generation (RAG) to enhance these queries by retrieving relevant information from the KG as well as external sources, such as the Web and vulnerability databases, thus demonstrating its adaptability to novel scenarios. DepsRAG incorporates a Critic-Agent feedback loop to ensure the accuracy and clarity of LLM-generated responses. We evaluated DepsRAG using GPT-4-Turbo and Llama-3 on three multi-step reasoning tasks, observing a threefold increase in accuracy with the integration of the Critic-Agent mechanism. DepsRAG demo and implementation are available: https://github.com/Mohannadcse/DepsRAG.",
+      "authors": "Mohannad J. Alhanahnah, Yazan Boshmaf",
+      "date": "2024-05-30",
+      "published": "2024-05-30",
+      "year": 2024,
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "publicationTypes": [],
+      "citationCount": 8,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/29d235169d7cccf47ee68bd935b9570d380338e7",
+      "arxiv": "https://arxiv.org/abs/2405.20455",
+      "pdf": "https://arxiv.org/pdf/2405.20455.pdf",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent",
+        "Reasoning",
+        "Planning",
+        "Agent Framework"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent",
+        "Reasoning",
+        "Planning"
+      ]
+    },
+    {
       "id": "arxiv:2405.20309",
       "title": "Large Language Models Can Self-Improve At Web Agent Tasks",
       "abstract": "Training models to act as agents that can effectively navigate and perform actions in a complex environment, such as a web browser, has typically been challenging due to lack of training data. Large language models (LLMs) have recently demonstrated some capability to navigate novel environments as agents in a zero-shot or few-shot fashion, purely guided by natural language instructions as prompts. Recent research has also demonstrated LLMs have the capability to exceed their base performance through self-improvement, i.e. fine-tuning on data generated by the model itself. In this work, we explore the extent to which LLMs can self-improve their performance as agents in long-horizon tasks in a complex environment using the WebArena benchmark. In WebArena, an agent must autonomously navigate and perform actions on web pages to achieve a specified objective. We explore fine-tuning on three distinct synthetic training data mixtures and achieve a 31\\% improvement in task completion rate over the base model on the WebArena benchmark through a self-improvement procedure. We additionally contribute novel evaluation metrics for assessing the performance, robustness, capabilities, and quality of trajectories of our fine-tuned agent models to a greater degree than simple, aggregate-level benchmark scores currently used to measure self-improvement.",
@@ -15346,38 +15747,6 @@
         "Computer Use",
         "Evaluation",
         "Fine-tuning"
-      ]
-    },
-    {
-      "id": "arxiv:2405.20455",
-      "title": "DepsRAG: Towards Agentic Reasoning and Planning for Software Dependency Management",
-      "abstract": "In the era of Large Language Models (LLMs) with their advanced capabilities, a unique opportunity arises to develop LLM-based digital assistant tools that can support software developers by facilitating comprehensive reasoning about software dependencies and open-source libraries before importing them. This reasoning process is daunting, mandating multiple specialized tools and dedicated expertise, each focusing on distinct aspects (e.g., security analysis tools may overlook design flaws such as circular dependencies, which hinder software maintainability). Creating a significant bottleneck in the software development lifecycle. In this paper, we introduce DepsRAG, a multi-agent framework designed to assist developers in reasoning about software dependencies. DepsRAG first constructs a comprehensive Knowledge Graph (KG) that includes both direct and transitive dependencies. Developers can interact with DepsRAG through a conversational interface, posing queries about the dependencies. DepsRAG employs Retrieval-Augmented Generation (RAG) to enhance these queries by retrieving relevant information from the KG as well as external sources, such as the Web and vulnerability databases, thus demonstrating its adaptability to novel scenarios. DepsRAG incorporates a Critic-Agent feedback loop to ensure the accuracy and clarity of LLM-generated responses. We evaluated DepsRAG using GPT-4-Turbo and Llama-3 on three multi-step reasoning tasks, observing a threefold increase in accuracy with the integration of the Critic-Agent mechanism. DepsRAG demo and implementation are available: https://github.com/Mohannadcse/DepsRAG.",
-      "authors": "Mohannad J. Alhanahnah, Yazan Boshmaf",
-      "date": "2024-05-30",
-      "published": "2024-05-30",
-      "year": 2024,
-      "venue": "arXiv",
-      "publicationKind": "preprint",
-      "publicationTypes": [],
-      "citationCount": 8,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/29d235169d7cccf47ee68bd935b9570d380338e7",
-      "arxiv": "https://arxiv.org/abs/2405.20455",
-      "pdf": "https://arxiv.org/pdf/2405.20455.pdf",
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Multi-Agent",
-        "Reasoning",
-        "Planning",
-        "Agent Framework"
-      ],
-      "tags": [
-        "Agentic Search",
-        "Multi-Agent",
-        "Reasoning",
-        "Planning",
-        "Agent Framework"
       ]
     },
     {
@@ -15568,6 +15937,7 @@
       "pdf": "https://arxiv.org/pdf/2405.19456.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Multi-Agent",
         "Reasoning",
@@ -15575,11 +15945,11 @@
         "Agent Framework"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Multi-Agent",
         "Reasoning",
-        "Evaluation",
-        "Agent Framework"
+        "Evaluation"
       ]
     },
     {
@@ -15665,6 +16035,39 @@
       ]
     },
     {
+      "id": "arxiv:2405.18111",
+      "title": "ATM: Adversarial Tuning Multi-agent System Makes a Robust Retrieval-Augmented Generator",
+      "abstract": "Large language models (LLMs) are proven to benefit a lot from retrieval-augmented generation (RAG) in alleviating hallucinations confronted with knowledge-intensive questions. RAG adopts information retrieval techniques to inject external knowledge from semantic-relevant documents as input contexts. However, due to today’s Internet being flooded with numerous noisy and fabricating content, it is inevitable that RAG systems are vulnerable to these noises and prone to respond incorrectly. To this end, we propose to optimize the retrieval-augmented Generator with a Adversarial Tuning Multi-agent system **(ATM)**. The ATM steers the Generator to have a robust perspective of useful documents for question answering with the help of an auxiliary Attacker agent. The Generator and the Attacker are tuned adversarially for several iterations. After rounds of multi-agent iterative tuning, the Generator can eventually better discriminate useful documents amongst fabrications. The experimental results verify the effectiveness of ATM and we also observe that the Generator can achieve better performance compared to state-of-the-art baselines.",
+      "authors": "Junda Zhu, Lingyong Yan, Haibo Shi, Dawei Yin, Lei Sha",
+      "date": "2024-05-28",
+      "published": "2024-05-28",
+      "year": 2024,
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "publicationKind": "conference",
+      "publicationTypes": [
+        "JournalArticle",
+        "Conference"
+      ],
+      "citationCount": 29,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/14b588f38a3af6ef1b0186e2bb98c77d3b650093",
+      "arxiv": "https://arxiv.org/abs/2405.18111",
+      "pdf": "https://arxiv.org/pdf/2405.18111.pdf",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent",
+        "Hallucination"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent",
+        "Hallucination"
+      ]
+    },
+    {
       "id": "arxiv:2405.18634",
       "title": "A Theoretical Understanding of Self-Correction through In-context Alignment",
       "abstract": "Going beyond mimicking limited human experiences, recent studies show initial evidence that, like humans, large language models (LLMs) are capable of improving their abilities purely by self-correction, i.e., correcting previous responses through self-examination, in certain circumstances. Nevertheless, little is known about how such capabilities arise. In this work, based on a simplified setup akin to an alignment task, we theoretically analyze self-correction from an in-context learning perspective, showing that when LLMs give relatively accurate self-examinations as rewards, they are capable of refining responses in an in-context way. Notably, going beyond previous theories on over-simplified linear transformers, our theoretical construction underpins the roles of several key designs of realistic transformers for self-correction: softmax attention, multi-head attention, and the MLP block. We validate these findings extensively on synthetic datasets. Inspired by these findings, we also illustrate novel applications of self-correction, such as defending against LLM jailbreaks, where a simple self-correction step does make a large difference. We believe that these findings will inspire further research on understanding, exploiting, and enhancing self-correction for building better foundation models.",
@@ -15694,37 +16097,6 @@
         "Alignment",
         "Reflection",
         "Data Engine"
-      ]
-    },
-    {
-      "id": "arxiv:2405.18111",
-      "title": "ATM: Adversarial Tuning Multi-agent System Makes a Robust Retrieval-Augmented Generator",
-      "abstract": "Large language models (LLMs) are proven to benefit a lot from retrieval-augmented generation (RAG) in alleviating hallucinations confronted with knowledge-intensive questions. RAG adopts information retrieval techniques to inject external knowledge from semantic-relevant documents as input contexts. However, due to today’s Internet being flooded with numerous noisy and fabricating content, it is inevitable that RAG systems are vulnerable to these noises and prone to respond incorrectly. To this end, we propose to optimize the retrieval-augmented Generator with a Adversarial Tuning Multi-agent system **(ATM)**. The ATM steers the Generator to have a robust perspective of useful documents for question answering with the help of an auxiliary Attacker agent. The Generator and the Attacker are tuned adversarially for several iterations. After rounds of multi-agent iterative tuning, the Generator can eventually better discriminate useful documents amongst fabrications. The experimental results verify the effectiveness of ATM and we also observe that the Generator can achieve better performance compared to state-of-the-art baselines.",
-      "authors": "Junda Zhu, Lingyong Yan, Haibo Shi, Dawei Yin, Lei Sha",
-      "date": "2024-05-28",
-      "published": "2024-05-28",
-      "year": 2024,
-      "venue": "Conference on Empirical Methods in Natural Language Processing",
-      "publicationKind": "conference",
-      "publicationTypes": [
-        "JournalArticle",
-        "Conference"
-      ],
-      "citationCount": 29,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/14b588f38a3af6ef1b0186e2bb98c77d3b650093",
-      "arxiv": "https://arxiv.org/abs/2405.18111",
-      "pdf": "https://arxiv.org/pdf/2405.18111.pdf",
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Multi-Agent",
-        "Hallucination"
-      ],
-      "tags": [
-        "Agentic Search",
-        "Multi-Agent",
-        "Hallucination"
       ]
     },
     {
@@ -16295,11 +16667,13 @@
       "pdf": "https://arxiv.org/pdf/2405.12035.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Reasoning",
         "Hallucination"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Reasoning",
         "Hallucination"
@@ -16989,6 +17363,38 @@
       ]
     },
     {
+      "id": "s2:06eb9a9a3c7455fe7631e20037e8667acb1967a1",
+      "title": "LLM-Based Framework for Administrative Task Automation in Healthcare",
+      "abstract": "Artificial Intelligence (AI) has been transformative in the healthcare sector, leading to enhanced precision in medical diagnosis, more effective treatment options, and a significant improvement in patient safety. However, computer-based administrative tasks, such as retrieval of medical and health records, patient registration, medical billing, filing and documentation, and appointment scheduling, still impose a heavy burden on healthcare professionals, causing a reduced quality of care and efficiency. In light of these challenges, this paper proposes a large language model (LLM)-based multi-agent framework designed to automate some of the administrative work in clinical settings. In our proposed solution, these LLM agents coordinate to parse instructions, breakdown tasks, and execute a sequence of actions in a workflow. They are equipped to not only execute documentation process at the database level but also operate directly on web-based electronic medical record (EMR) platforms. Moreover, the framework integrates data sources through a retrieval-augmented generation (RAG) system to allow streamlined interaction with patient information and medical records, mediated through an agent interface. The framework is designed with security in mind to defend against malicious prompts. We demonstrate the practicality of our solution by testing on various complex tasks that require the use of multiple tools and an EMR website. The result show the framework's effectiveness in handling diverse healthcare administrative tasks.",
+      "authors": "S. Gebreab, K. Salah, R. Jayaraman, Muhammad Habib ur Rehman, Samer Ellaham",
+      "date": "2024-04-29",
+      "published": "2024-04-29",
+      "year": 2024,
+      "venue": "International Symposium on Digital Forensics and Security",
+      "publicationKind": "conference",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "citationCount": 63,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/06eb9a9a3c7455fe7631e20037e8667acb1967a1",
+      "arxiv": null,
+      "pdf": null,
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent",
+        "Agent Framework"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Multi-Agent",
+        "Agent Framework"
+      ]
+    },
+    {
       "id": "arxiv:2404.18410",
       "title": "Mixture-of-Instructions: Aligning Large Language Models via Mixture Prompting",
       "abstract": "With the proliferation of large language models (LLMs), the comprehensive alignment of such models across multiple tasks has emerged as a critical area of research. Existing alignment methodologies primarily address single task, such as multi-turn dialogue, coding, mathematical problem-solving, and tool usage. Although there is a large amount of high-quality data available for those tasks, most of them provide only questions and answers without including the system prompt. Though a detailed analysis of the Qwen language model, we found that the system prompt has a significant impact on both training and inference processes of LLM. We attributes this phenomenon to overfitting to the system prompt. In address this issue, we introduce a novel technique termed Mixture-of-Instructions (MoI), which employs a strategy of instruction packing combined with diverse system prompts to boost the alignment efficiency of language models. We have also compiled a diverse set of seven benchmark datasets to rigorously evaluate the alignment efficacy of the MoI-enhanced language model. Our methodology was applied to the open-source Qwen-7B-chat model, culminating in the development of Qwen-SFT-MoI. This enhanced model demonstrates significant advancements in generative capabilities across coding, mathematics, and tool use tasks.",
@@ -17049,36 +17455,6 @@
         "LLM Training",
         "Evaluation",
         "Alignment"
-      ]
-    },
-    {
-      "id": "s2:06eb9a9a3c7455fe7631e20037e8667acb1967a1",
-      "title": "LLM-Based Framework for Administrative Task Automation in Healthcare",
-      "abstract": "Artificial Intelligence (AI) has been transformative in the healthcare sector, leading to enhanced precision in medical diagnosis, more effective treatment options, and a significant improvement in patient safety. However, computer-based administrative tasks, such as retrieval of medical and health records, patient registration, medical billing, filing and documentation, and appointment scheduling, still impose a heavy burden on healthcare professionals, causing a reduced quality of care and efficiency. In light of these challenges, this paper proposes a large language model (LLM)-based multi-agent framework designed to automate some of the administrative work in clinical settings. In our proposed solution, these LLM agents coordinate to parse instructions, breakdown tasks, and execute a sequence of actions in a workflow. They are equipped to not only execute documentation process at the database level but also operate directly on web-based electronic medical record (EMR) platforms. Moreover, the framework integrates data sources through a retrieval-augmented generation (RAG) system to allow streamlined interaction with patient information and medical records, mediated through an agent interface. The framework is designed with security in mind to defend against malicious prompts. We demonstrate the practicality of our solution by testing on various complex tasks that require the use of multiple tools and an EMR website. The result show the framework's effectiveness in handling diverse healthcare administrative tasks.",
-      "authors": "S. Gebreab, K. Salah, R. Jayaraman, Muhammad Habib ur Rehman, Samer Ellaham",
-      "date": "2024-04-29",
-      "published": "2024-04-29",
-      "year": 2024,
-      "venue": "International Symposium on Digital Forensics and Security",
-      "publicationKind": "conference",
-      "publicationTypes": [
-        "JournalArticle"
-      ],
-      "citationCount": 63,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/06eb9a9a3c7455fe7631e20037e8667acb1967a1",
-      "arxiv": null,
-      "pdf": null,
-      "upvotes": 0,
-      "topics": [
-        "Agentic Search",
-        "Multi-Agent",
-        "Agent Framework"
-      ],
-      "tags": [
-        "Agentic Search",
-        "Multi-Agent",
-        "Agent Framework"
       ]
     },
     {
@@ -18190,10 +18566,12 @@
       "pdf": "https://doi.org/10.1109/access.2024.3415470",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Evaluation"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Evaluation"
       ]
@@ -18938,10 +19316,12 @@
       "pdf": "https://arxiv.org/pdf/2403.03888.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Evaluation"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Evaluation"
       ]
@@ -19269,12 +19649,14 @@
       "pdf": "https://arxiv.org/pdf/2402.17753.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "Memory",
         "Evaluation",
         "Agent Framework"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "Memory",
         "Evaluation",
@@ -19335,6 +19717,33 @@
       ],
       "tags": [
         "Computer Use",
+        "Evaluation"
+      ]
+    },
+    {
+      "id": "arxiv:2403.00820",
+      "title": "Retrieval Augmented Generation Systems: Automatic Dataset Creation, Evaluation and Boolean Agent Setup",
+      "authors": [
+        "Tristan Kenneweg",
+        "Philip Kenneweg",
+        "Barbara Hammer"
+      ],
+      "abstract": "Retrieval Augmented Generation (RAG) systems have seen huge popularity in augmenting Large-Language Model (LLM) outputs with domain specific and time sensitive data. Very recently a shift is happening from simple RAG setups that query a vector database for additional information with every user input to more sophisticated forms of RAG. However, different concrete approaches compete on mostly anecdotal evidence at the moment. In this paper we present a rigorous dataset creation and evaluation workflow to quantitatively compare different RAG strategies. We use a dataset created this way for the development and evaluation of a boolean agent RAG setup: A system in which a LLM can decide whether to query a vector database or not, thus saving tokens on questions that can be answered with internal knowledge. We publish our code and generated dataset online.",
+      "date": "2024-02-26",
+      "published": "2024-02-26",
+      "source": "arxiv",
+      "arxiv": "https://arxiv.org/abs/2403.00820",
+      "pdf": "https://arxiv.org/pdf/2403.00820.pdf",
+      "url": "https://arxiv.org/abs/2403.00820",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search",
+        "Evaluation"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search",
         "Evaluation"
       ]
     },
@@ -20908,6 +21317,7 @@
       "pdf": "https://arxiv.org/pdf/2401.17268.pdf",
       "upvotes": 0,
       "topics": [
+        "Agentic RAG",
         "Agentic Search",
         "LLM Training",
         "Tool Use",
@@ -20917,11 +21327,11 @@
         "Data Engine"
       ],
       "tags": [
+        "Agentic RAG",
         "Agentic Search",
         "LLM Training",
         "Tool Use",
-        "Evaluation",
-        "Alignment"
+        "Evaluation"
       ]
     },
     {
