@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T10:05:21.992120+00:00",
+  "generatedAt": "2026-08-21T13:31:14.307294+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -1158,7 +1158,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17528.pdf",
       "id": "arxiv:2608.17528",
       "source": "hf",
-      "upvotes": 24,
+      "upvotes": 26,
       "topics": [
         "Post-Training",
         "Code Agent"
@@ -1228,7 +1228,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17512.pdf",
       "id": "arxiv:2608.17512",
       "source": "hf",
-      "upvotes": 46,
+      "upvotes": 47,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -1570,7 +1570,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17310.pdf",
       "id": "arxiv:2608.17310",
       "source": "hf",
-      "upvotes": 97,
+      "upvotes": 98,
       "topics": [
         "Reasoning",
         "Fine-tuning",
@@ -3283,7 +3283,7 @@
       "pdf": "https://arxiv.org/pdf/2608.14036.pdf",
       "id": "arxiv:2608.14036",
       "source": "hf",
-      "upvotes": 156,
+      "upvotes": 157,
       "topics": [
         "Agent Safety",
         "Evaluation"
@@ -9023,7 +9023,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16072.pdf",
       "id": "arxiv:2608.16072",
       "source": "hf",
-      "upvotes": 145,
+      "upvotes": 146,
       "topics": [
         "Post-Training",
         "Reasoning",
@@ -10097,7 +10097,7 @@
       "pdf": "https://arxiv.org/pdf/2608.12743.pdf",
       "id": "arxiv:2608.12743",
       "source": "hf",
-      "upvotes": 42,
+      "upvotes": 43,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -12075,7 +12075,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17744.pdf",
       "id": "arxiv:2608.17744",
       "source": "arxiv",
-      "upvotes": 0,
+      "upvotes": 3,
       "topics": [
         "LLM Training",
         "Reasoning",
@@ -12090,7 +12090,8 @@
         "Fine-tuning",
         "RL for LLM"
       ],
-      "url": "https://arxiv.org/abs/2608.17744"
+      "url": "https://arxiv.org/abs/2608.17744",
+      "hfUrl": "https://huggingface.co/papers/2608.17744"
     },
     "arxiv:2608.17723": {
       "pid": "2608.17723",
@@ -12735,7 +12736,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17426.pdf",
       "id": "arxiv:2608.17426",
       "source": "arxiv",
-      "upvotes": 153,
+      "upvotes": 154,
       "topics": [
         "VLM Training",
         "Evaluation"
@@ -16191,7 +16192,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13560.pdf",
       "id": "arxiv:2608.13560",
       "source": "hf",
-      "upvotes": 52,
+      "upvotes": 53,
       "topics": [
         "Code Agent",
         "Evaluation",
@@ -16614,7 +16615,7 @@
       ],
       "abstract": "Large-scale image generation has benefited from advances in data scale, quality, rebalancing, and recaptioning, yet conventional pipelines typically optimize task-specific datasets in isolation. A central challenge is not only how to curate each task-specific corpus, but also how to organize heterogeneous supervision according to the dependencies among generative capabilities. We present a capability-driven data infrastructure that couples capability-specific supervision construction with capability-aligned curriculum scheduling. Its three specialized yet interoperable data engines build complementary relational supervision for text-image grounding, inter-image transformation, and image-knowledge association, while caption experts align T2I and editing supervision across tasks and granularities. A multi-stage curriculum jointly evolves task composition, visual-concept distribution, data quality, and image resolution along the dependency order of capability acquisition, with capability-aware evaluation closing the loop through targeted retrieval, expert construction, and gap-aware resampling. At scale, the framework curates a 440M-image T2I corpus, 120M editing pairs, and over 27M image-entity pairs. With this infrastructure, we train multimodal diffusion models at two scales from scratch, with 3B and 6B sizes respectively. We conduct quantitative evaluation on CPI-Bench, along with qualitative evaluations across diverse text-to-image and editing scenarios. Experimental results present broad visual coverage, versatile rendering, and effective transfer across generative capabilities.",
       "date": "2026-08-19",
-      "upvotes": 11,
+      "upvotes": 12,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.18076",
       "pdf": "https://arxiv.org/pdf/2608.18076.pdf",
@@ -16770,7 +16771,7 @@
       ],
       "abstract": "A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollout requires understanding whether physics, causality, and world state evolve correctly. Humans spot such violations naturally, yet no existing benchmark automates this capability: metrics are computed brute-force, leaving no reasoning chain that can be examined or verified. We introduce HarnessEval-W, an agentified evaluation pipeline that brings the harness paradigm from the LLM ecosystem to world model benchmarking. Rather than applying a fixed rubric, HarnessEval-W interprets the context of each evaluation case, decomposes the evaluation question into measurable subproblems, and spawns specialized sub-agents, each equipped with tailored context and diagnostic tools to reason over its own subproblem. The parent agent then validates the gathered evidence and summarizes it into the final verdict. This hierarchical workflow turns every evaluation into a transparent evidence tree whose complete reasoning chain justifies the result. We apply HarnessEval-W to 18 representative world models over 330 evaluation cases. Its judgments closely align with human preferences while providing verifiable, fine-grained diagnoses of every generated rollout. We open-source the full pipeline as a live benchmark and invite the broad community to contribute to grow new skills and evaluation cases as world models evolve.",
       "date": "2026-08-18",
-      "upvotes": 121,
+      "upvotes": 122,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.16859",
       "pdf": "https://arxiv.org/pdf/2608.16859.pdf",
@@ -16855,7 +16856,7 @@
       ],
       "abstract": "Foundation GUI agents can automate complex digital tasks, but deployment is hindered by scarce and biased training data, ambiguous prompts, and unreliable execution. Routine workflows rely on user-specific tools and tacit conventions, so unstated instructions can produce arbitrary variations across runs. We present UI-Mate, a foundation GUI agent that integrates an environment-grounded training stack with in-context demonstration learning. UI-Mate makes three contributions: A Scalable Environment-Grounded Training Stack: A closed-loop data engine automates task generation, environment construction, rollout, filtering, capability balancing, SFT, and online RL across massively parallel environments via unified task-verifier bundles. In-Context Demonstration Learning: A mechanism that transforms multimodal demonstrations into flexible subtask-level workflows, follows relevant demonstrated steps, and re-plans from the live interface. OSWorkerBench Benchmark and Insights: A benchmark of 100 long-horizon office tasks across 41 applications that supports instruction-only and demonstration-guided evaluation. Its demonstration resources separate a 33-task self-demo setting, built from successful strong-agent rollouts of the same targets, from a 45-task variant-demo setting, built from human recordings of related but non-identical tasks. Experiments show that UI-Mate-27B sets a new open-weight state of the art on general computer-use benchmarks, scoring 77.0% on OSWorld-Verified and 66.2% on WindowsAgentArena. On OSWorkerBench, it reaches 41.0% strict success and 76.9% progress, outperforming its Qwen3.6-27B base by 17.7 and 24.5 points. On the 33-task self-demo subset, one demonstration raises strict success from 17.2% to 35.4% and progress from 67.9% to 81.1%, substantially improving long-horizon reliability. Project page: https://ui-mate.github.io.",
       "date": "2026-08-18",
-      "upvotes": 43,
+      "upvotes": 44,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.15930",
       "pdf": "https://arxiv.org/pdf/2608.15930.pdf",
@@ -17512,7 +17513,7 @@
       ],
       "abstract": "Apollo did not reach the Moon merely because its engineers could solve difficult equations. It succeeded by turning a distant ambition into a mission architecture of explicit objectives, simulation, verification, and repeated correction. AI now faces a similar transition: frontier models can solve difficult tasks once the problem, tools, and success criteria are specified, yet consequential real-world challenges rarely arrive in an executable or verifiable form.   We introduce Apodex Discovery, a framework for building and evaluating discoverative AI through the heavy-duty solver, a system comprising a foundation model, harness, tools, and control policies that pursues extended, stateful, verifiable investigations. It has three core components. First, a problem-scouting process surveyed 561 industries across 16 sectors, assembled 423 high-value real-world problems, and selected 20 for the initial release. Second, a common environment-task-episode abstraction provides data, tools, constraints, feedback, trajectory recording, and verification of intermediate artifacts and final submissions. Third, HDS6 evaluates Tools, Repair, Alternatives, Coherence, Evidence, and Scope independently of final-task success.   In AAV capsid design, Apodex surpassed the published state of the art by 7% across viability, tropism, structure prediction, and generative design. In drug repurposing and reformulation, a task-specific biomedical environment improved the mean normalized prediction score of GPT-5.5 and GPT-5.6-sol by 2.5 and 7.6 points over the same closed-book backbone. Controlled ablations show that the fixed TRACES episode interface enables attribution of performance differences to specific solver components. Apodex Discovery moves AI evaluation beyond predefined benchmarks toward verifiable investigations aimed at genuine discovery.",
       "date": "2026-08-17",
-      "upvotes": 43,
+      "upvotes": 47,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.11341",
       "pdf": "https://arxiv.org/pdf/2608.11341.pdf",
@@ -18016,7 +18017,7 @@
       ],
       "abstract": "An LLM agent's capability depends not only on model weights but on its harness: prompts, tools, skills, and control flow. Self-improvement loops already edit harnesses, yet single-lineage search is path-dependent and local wins often regress other tasks. We introduce DarwinX, which treats self-evolution as selection over a population of harnesses with the model frozen: a preserve-and-extend contract admits only variants that extend coverage without regressing, an archive keeps alternative lineages for recombination, and failure-, teacher-, and self-derived evidence share one edit interface. Fitness comes from each benchmark's own verifier: no gold solutions, no hand-picked winners. Across four benchmarks that progressively separate the evolution signal from the test, one loop adds about 17 points on average: Terminal-Bench 2.1 rises +7.7 to 83.2% on a matched base and to the verified frontier at 84.7% on a stronger one; TerminalWorld's held-out split reaches 68.3%, ahead of every off-the-shelf agent; WebArena-Infinity real-task pass@1 rises from 43.5% to 93.0% audit-clean; and a Terminal-Bench 2.1 harness transfers unchanged to SWE-bench Verified. What evolves is general agent competence, not benchmark-specific patches, so it survives changes of task, verifier, and base model. A frozen model need not be a fixed agent: harness selection turns evaluation compute into durable capability.",
       "date": "2026-08-14",
-      "upvotes": 107,
+      "upvotes": 108,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.07545",
       "pdf": "https://arxiv.org/pdf/2608.07545.pdf",
@@ -18078,7 +18079,7 @@
       ],
       "abstract": "Video world models simulate future states conditioned on current observations and user actions. Recent systems have demonstrated impressive video consistency and action controllability over long sequences. However, fairly comparing these interactive models remains challenging. In practice, a human player typically evaluates a world model by pursuing long-horizon objectives through interaction. For example, a user may turn around 360 degrees to see whether the environment remains consistent, or walk into the water and inspect whether realistic water ripples are generated. The action sequence required to achieve the same objective may vary substantially between models, making fixed action-conditioned evaluation unsuitable for cross-model comparison. To address this, we employ multi-modal Agent Players to interact with world models toward specified long-horizon objectives. Building on this paradigm, we introduce PlayWorld, a benchmark providing 171 scenarios, each with a specified objective. To evaluate performance thoroughly, we assess models along four core dimensions: geometry consistency, interaction fidelity, out-of-sight evolution, and insight evolution. In addition, we incorporate basic ability metrics for video quality and controllability. Experiments across nine state-of-the-art world models reveal that current models remain unreliable on long-horizon interactive objectives, particularly in maintaining spatial consistency and persistent state evolution. Code and data are available at https://github.com/kxding/PlayWorld.",
       "date": "2026-08-14",
-      "upvotes": 44,
+      "upvotes": 45,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13552",
       "pdf": "https://arxiv.org/pdf/2608.13552.pdf",
@@ -19538,7 +19539,7 @@
       ],
       "abstract": "We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reasoning. Inputs presented at inference time continuously update the model's recurrent memory; the model then solves a query through iterative computation in a high-dimensional latent space, without verbalizing its intermediate reasoning. We evaluate the model on the public ARC-AGI-1 evaluation set and use controlled ARC-like interventions to study what it learns from demonstrations, how consistently it applies an inferred transformation, and which concepts remain difficult. A 150M-parameter configuration reaches 29.5% pass@2 at a computed inference cost of \\$0.0007 per task. This operating point breaks through the previously reported ARC-AGI-1 cost-accuracy Pareto frontier, establishing a new state of the art in benchmark cost efficiency.",
       "date": "2026-08-11",
-      "upvotes": 691,
+      "upvotes": 692,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.09888",
       "pdf": "https://arxiv.org/pdf/2608.09888.pdf",
@@ -20766,7 +20767,7 @@
       ],
       "abstract": "Recent works train agents by constructing large-scale multimodal environment pools. However, we find that simply increasing the number of multimodal environments does not always benefit. We further analyze the limitations in current multimodal environment distributions through a series of experiments. Based on these findings, we study how to build more effective training environment distributions from two dimensions: **diversity** and **difficulty structure**. For diversity, we propose **Ability-aware Environment Selection (AES)** to obtain diverse environment sets. For difficulty structure, we propose **Hierarchical Difficulty Curriculum (HDC)**, which organizes curriculum learning through two difficulty levels: harness weakening and state-scale progression. Experiments show that AES and HDC effectively improve multimodal agent training.",
       "date": "2026-08-10",
-      "upvotes": 43,
+      "upvotes": 44,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.03571",
       "pdf": "https://arxiv.org/pdf/2608.03571.pdf",
@@ -23413,7 +23414,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16590.pdf",
       "id": "arxiv:2608.16590",
       "source": "arxiv",
-      "upvotes": 136,
+      "upvotes": 139,
       "topics": [
         "Reflection"
       ],
@@ -30186,7 +30187,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18580.pdf",
       "id": "arxiv:2608.18580",
       "source": "hf",
-      "upvotes": 74,
+      "upvotes": 89,
       "topics": [
         "Alignment",
         "Fine-tuning"
@@ -31999,7 +32000,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18565.pdf",
       "id": "arxiv:2608.18565",
       "source": "arxiv",
-      "upvotes": 112,
+      "upvotes": 113,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -32930,7 +32931,7 @@
       ],
       "abstract": "Recent advances in foundation models have enabled AI scientists to automate increasingly complete research workflows, from hypothesis generation and code execution to manuscript preparation. Yet workflow coverage alone does not provide access to the full evidence on which scientific discovery depends. Existing systems typically reason over text, code, labels, or precomputed summaries, leaving scientifically decisive spatial, temporal, cross-channel, and procedural relations unavailable to the agent. We introduce OmniScientist, an end-to-end, omni-modal AI scientist that conducts multidisciplinary research directly from heterogeneous raw evidence. A perception layer and 3 autonomous agents for ideation, experiment, and writeup operate within a deterministic pipeline, allowing observations to shape research questions, experimental decisions, and final claims throughout the research lifecycle. By running idea, rigour, and claim checks in code, the system enforces novelty screening, statistical validity, execution provenance, and numerical traceability. We evaluate OmniScientist on 36 real-data cases spanning 5 discipline families, 4 families of scientific evidence, and modalities including images, signals, audio, video, 3-D structures, trajectories, tables, formulae, and graphs. The system completes the full path from raw data to a compiled manuscript in all 36 cases and achieves a mean overall paper score of 6.3 with the reference reasoning backbone. In paired comparisons against a blind variant that receives only precomputed scalar features, direct perception improves all 7 evaluation dimensions and wins 85% of head-to-head judgments. These results show that lifecycle-wide perception is essential for evidence-grounded scientific discovery and provides a practical path toward broadly capable AI scientists.",
       "date": "2026-08-20",
-      "upvotes": 84,
+      "upvotes": 85,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13558",
       "pdf": "https://arxiv.org/pdf/2608.13558.pdf",
@@ -32954,7 +32955,7 @@
       ],
       "abstract": "Popular facts are memorised more deeply during pretraining and resist removal longer than rare ones, yet existing LLM unlearning methods apply uniform gradient pressure regardless of training-data frequency. We propose the AdaPop (Adaptive Popularity) method, which combines local token confidence with a per-fact popularity-dependent exponent derived from an external proxy (e.g., Wikidata sitelinks, LLM-as-Judge), and automates the forget-retain balance via a dual-ascent controller that adjusts the retain penalty each epoch. Across three model families and two benchmarks, AdaPop leaks ~5x less forgotten content than competing methods under paraphrased queries and ~1.6x less under adversarial reformulations. We support our analysis with internal metrics: under our method, forget-set hidden states move further from the pre-unlearning model's states than under other methods, while retain-set representations remain close.",
       "date": "2026-08-20",
-      "upvotes": 15,
+      "upvotes": 16,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14229",
       "pdf": "https://arxiv.org/pdf/2608.14229.pdf",
@@ -208955,7 +208956,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19880.pdf",
       "id": "arxiv:2608.19880",
       "source": "hf",
-      "upvotes": 186,
+      "upvotes": 214,
       "topics": [
         "Evaluation"
       ],
@@ -209614,7 +209615,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19854.pdf",
       "id": "arxiv:2608.19854",
       "source": "arxiv",
-      "upvotes": 5,
+      "upvotes": 9,
       "topics": [
         "Planning",
         "Code Agent",
@@ -209727,7 +209728,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19799.pdf",
       "id": "arxiv:2608.19799",
       "source": "arxiv",
-      "upvotes": 44,
+      "upvotes": 47,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -212908,7 +212909,7 @@
       ],
       "abstract": "Identity-preserving image generation becomes increasingly unreliable when a scene must contain many specified people. Beyond retaining each identity, the model must bind every reference to a distinct person and location, while training-time identity losses must establish correspondence among several noisy predicted faces. We introduce WithEveryone, a unified framework for generating group images up to ten reference identities. WithEveryone injects each selected identity as an addressed token, predicts a structured identity--layout plan, and renders the plan as a visual condition. Its key objective, Layout-Grounded ID Loss, uses annotated face regions to supervise the intended identities directly, avoiding unstable embedding-based face matching; ID Representation Forcing additionally trains a prediction for each identity before image synthesis. On an identity-disjoint benchmark, WithEveryone achieves the highest target-context identity similarity, improving face similarity from 0.462 for GPT-Image-2 to 0.499, while reducing copy-paste artifacts from 0.169 to 0.055. It further covers 97.3\\% of the requested identities with a duplicate rate of only 2.8\\%. These results show that explicit identity--layout grounding enables identity-preserving generation to scale to larger groups without relying on direct reference-face copying.",
       "date": "2026-08-21",
-      "upvotes": 31,
+      "upvotes": 33,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.20336",
       "pdf": "https://arxiv.org/pdf/2608.20336.pdf",
@@ -226819,7 +226820,7 @@
       ],
       "abstract": "Agent Skills are today either hand-authored or produced in a single LLM generation pass, and consequently possess no closed loop through which they might improve from the interaction failures they actually cause. Recent work does close this loop, but derives its feedback from single-turn question-answering evaluation. The consequence is a sharp asymmetry: once the first round has patched the gaps that a single exchange can reveal, the evolution gradient decays, the defects that surface only across multiple turns remain invisible, and evolution stalls. Governance in these systems is likewise driven by an end-to-end verification score, a scalar gate that can reject a degraded candidate but can neither localize nor repair its structural cause. We argue that the binding constraint on sustained skill evolution is neither editing capability nor the number of iterations, but whether the evaluation feedback keeps supplying trustworthy evolution gradients. We introduce SkillEvo, in which trustworthy feedback generates the gradient and controllable governance constrains its direction. The first component recasts multi-turn user simulation from an evaluation endpoint into a feedback generator: follow-up questions expose defects layer by layer, so that every round of revision both consumes feedback and produces new feedback. The second replaces the passive rejection of a scalar gate with an independent governance layer that actively repairs factual degradation and structural bloat, preventing the gradient from drifting as degradation accumulates. Across six categories of cloud services, 9 production Skills, and 98 skill-reference files, SkillEvo surpasses self-reflection-based evolution by 23.0 points and single- turn-QA-driven evolution by 15.4 points.",
       "date": "2026-08-21",
-      "upvotes": 19,
+      "upvotes": 20,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13120",
       "pdf": "https://arxiv.org/pdf/2608.13120.pdf",
