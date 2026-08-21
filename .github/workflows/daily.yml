@@ -11,15 +11,22 @@ on:
         default: '0'
   push:
     branches: [main]
+    paths:
+      - '**.py'
+      - '**.js'
+      - '**.html'
+      - '**.css'
+      - '.github/workflows/*.yml'
 
 permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -61,14 +68,15 @@ jobs:
           p = Path('data/daily.json')
           data = json.loads(p.read_text(encoding='utf-8'))
           warns = list(data.get('warnings') or [])
-          if (data.get('count') or 0) < 15:
+          recent_count = data.get('recentTotal') or data.get('count') or 0
+          if recent_count < 15:
               warns.append('low_paper_count')
           if warns:
               print('Warnings:', warns)
               body = (
                 f"## Agent Daily build warnings\n\n"
                 f"- Generated at: `{data.get('generatedAt')}`\n"
-                f"- Latest (7 days): {data.get('count')} (HF={data.get('sources',{}).get('hf')}, arXiv={data.get('sources',{}).get('arxiv')})\n"
+                f"- Latest (7 days): {recent_count} (HF={data.get('sources',{}).get('hf')}, arXiv={data.get('sources',{}).get('arxiv')})\n"
                 f"- Archive: {data.get('archiveCount')}\n"
                 f"- History total: {data.get('historyTotal')}\n"
                 f"- Added today: {data.get('addedToday')}\n\n"

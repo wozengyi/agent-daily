@@ -415,8 +415,6 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
     if archive_limit is not None:
         archive = archive[:archive_limit]
     warnings = []
-    if added == 0:
-        warnings.append('zero_new_today')
     return {
         'generatedAt': hist.get('generatedAt'),
         'recentDays': recent_days,

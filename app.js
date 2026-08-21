@@ -1,5 +1,5 @@
 const STORAGE_KEY = 'agent-daily-bookmarks-v2';
-const DATA_VERSION = '20260821-agent-tagmode-v1';
+const DATA_VERSION = '20260821-agent-workflow-health-v1';
 const state = {
   tab: 'today',
   search: '',
