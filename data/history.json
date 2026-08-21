@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T04:17:55.439209+00:00",
+  "generatedAt": "2026-08-21T07:29:32.612419+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -1158,7 +1158,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17528.pdf",
       "id": "arxiv:2608.17528",
       "source": "hf",
-      "upvotes": 23,
+      "upvotes": 24,
       "topics": [
         "Post-Training",
         "Code Agent"
@@ -1386,7 +1386,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17393.pdf",
       "id": "arxiv:2608.17393",
       "source": "arxiv",
-      "upvotes": 19,
+      "upvotes": 20,
       "topics": [
         "Code Agent",
         "Alignment",
@@ -3283,7 +3283,7 @@
       "pdf": "https://arxiv.org/pdf/2608.14036.pdf",
       "id": "arxiv:2608.14036",
       "source": "hf",
-      "upvotes": 155,
+      "upvotes": 156,
       "topics": [
         "Agent Safety",
         "Evaluation"
@@ -9413,7 +9413,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15265.pdf",
       "id": "arxiv:2608.15265",
       "source": "hf",
-      "upvotes": 56,
+      "upvotes": 58,
       "topics": [
         "Post-Training",
         "Evaluation",
@@ -11110,7 +11110,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16798.pdf",
       "id": "arxiv:2608.16798",
       "source": "hf",
-      "upvotes": 37,
+      "upvotes": 38,
       "topics": [
         "Post-Training"
       ],
@@ -13256,7 +13256,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15045.pdf",
       "id": "arxiv:2608.15045",
       "source": "hf",
-      "upvotes": 43,
+      "upvotes": 44,
       "topics": [
         "VLM Training",
         "Reasoning",
@@ -16770,7 +16770,7 @@
       ],
       "abstract": "A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollout requires understanding whether physics, causality, and world state evolve correctly. Humans spot such violations naturally, yet no existing benchmark automates this capability: metrics are computed brute-force, leaving no reasoning chain that can be examined or verified. We introduce HarnessEval-W, an agentified evaluation pipeline that brings the harness paradigm from the LLM ecosystem to world model benchmarking. Rather than applying a fixed rubric, HarnessEval-W interprets the context of each evaluation case, decomposes the evaluation question into measurable subproblems, and spawns specialized sub-agents, each equipped with tailored context and diagnostic tools to reason over its own subproblem. The parent agent then validates the gathered evidence and summarizes it into the final verdict. This hierarchical workflow turns every evaluation into a transparent evidence tree whose complete reasoning chain justifies the result. We apply HarnessEval-W to 18 representative world models over 330 evaluation cases. Its judgments closely align with human preferences while providing verifiable, fine-grained diagnoses of every generated rollout. We open-source the full pipeline as a live benchmark and invite the broad community to contribute to grow new skills and evaluation cases as world models evolve.",
       "date": "2026-08-18",
-      "upvotes": 119,
+      "upvotes": 121,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.16859",
       "pdf": "https://arxiv.org/pdf/2608.16859.pdf",
@@ -17356,7 +17356,7 @@
       ],
       "abstract": "Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however, evaluation must go beyond final scores, which neither reveal where progress is gained or lost nor indicate whether accumulated experience improves later decisions. We therefore present a systematic evaluation of seven frontier models on 36 long-horizon tasks based on a new framework that uses rule-based metrics to characterize within-run behavior through Solution Framing, Execution, and Feedback Control and controlled comparisons to assess experience reuse within and across tasks. The results show that current agents operate more like engineering optimizers than fully autonomous researchers: they can formulate and implement practical solutions, but their performance varies substantially across runs, their strongest solutions mainly adapt or combine established techniques, and genuine methodological novelty remains rare. Detailed analysis reveals that observed performance is shaped by multiple factors, including distinct process bottlenecks behind similar final outcomes, experience reuse that can help or mislead subsequent decisions, and harness designs that affect performance stability. These findings suggest concrete directions for improving model training, inference-time strategies, experience management, and harness design.",
       "date": "2026-08-17",
-      "upvotes": 51,
+      "upvotes": 52,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13417",
       "pdf": "https://arxiv.org/pdf/2608.13417.pdf",
@@ -17549,7 +17549,7 @@
       ],
       "abstract": "The next generation of AI agents is increasingly moving beyond systems that answer isolated questions toward persistent personal assistants that can understand, remember, and continuously learn from users' experiences. Such assistants require long-term memory to accumulate and leverage user-specific experiences over time, yet existing benchmarks remain inadequate for realistic mobile settings, where experiences are heterogeneous, multimodal, evolving, and deeply personal. We introduce MobileMem, a benchmark and framework for studying on-device long-term memory, grounded in a year-scale collection of mobile experiences. MobileMem employs a knowledge-grounded synthesis pipeline to construct coherent and temporally consistent long-horizon trajectories from user-app sessions. It provides complementary text and multimodal settings covering multi-hop and temporal reasoning, knowledge updating, and implicit preference inference. Specifically, MobileMem enables agents to remember the past, understand the present, and adapt to the future. By modeling experiences rather than isolated facts, MobileMem moves memory beyond information retrieval toward experiential intelligence for continuous personal learning.",
       "date": "2026-08-17",
-      "upvotes": 23,
+      "upvotes": 24,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13606",
       "pdf": "https://arxiv.org/pdf/2608.13606.pdf",
@@ -18230,7 +18230,7 @@
       ],
       "abstract": "Interactive autoregressive video generation demands both low-latency rollouts and precise online control. Few-step distillation accelerates generation by reducing denoising steps, while online control imposes a causal constraint: frames and blocks should depend on history and controls available during generation. Existing video distribution matching distillation (DMD) pipelines, however, often supervise causal few-step students using bidirectional teachers that score complete clips. The score for a target can therefore depend on future frames and controls that were unavailable when the student generated it, misaligning teacher supervision with the student's causal information set. We introduce Context-Matched Distillation (CMD), a causal DMD framework that aligns teacher supervision with the information available when each target is generated. CMD replaces bidirectional full-clip scoring with a causal teacher that evaluates each target without access to future frames or controls. The same causal teacher initializes the few-step student, establishing a consistent causal formulation across teacher training, student distillation, and inference. Beyond aligning the temporal information boundary, Prefix Scoring matches supervision to the student's realized rollout context by evaluating each target under the cached student-generated prefix that produced it. Prefix Corruption further stabilizes training by perturbing unreliable prefixes produced early in training while preserving this target-context alignment. With a simple causal formulation, CMD naturally extends to frame-wise and chunk-wise generation, long video distillation, and camera-conditioned distillation. Experiments demonstrate state-of-the-art aggregate performance among autoregressive methods on both short- and long-video benchmarks, together with substantially improved adherence to time-varying camera controls.",
       "date": "2026-08-14",
-      "upvotes": 17,
+      "upvotes": 18,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13391",
       "pdf": "https://arxiv.org/pdf/2608.13391.pdf",
@@ -19465,7 +19465,7 @@
       ],
       "abstract": "Recent optimization studies on Retrieval-Augmented Generation (RAG) have exploited chunk-level KV cache reuse to avoid processing long retrieved contexts for higher efficiency, while significant information redundancy and noise still remain in the coarse-grained chunks. This paper optimizes the Pareto frontier under low prefill latency constraints while maximizing accuracy by proposing CoinRAG (Contextualized Information Nugget KV Cache Reuse for Long-Context RAG). The name metaphorically reflects our core mechanism: much like assembling small tokens (or \"coins\") to accumulate a larger value, CoinRAG compositionally reuses offline-computed, fine-grained nugget caches to form a learned contextual representation efficiently in a more semantically relevant but compact manner. Specifically, instead of full-chunk encoding, CoinRAG identifies query-relevant semantic units within retrieved chunks through two-stage retrieval and seamlessly assembles their sliced KV representations with a chunk-level context. Extensive evaluations on LongBench multi-hop question answering tasks demonstrate that CoinRAG significantly reduces operational costs and outperforms the other baselines with a new Pareto frontier and an average 5.3% relative improvement in answer quality (F1) under a standard fast prefill latency budget.",
       "date": "2026-08-12",
-      "upvotes": 9,
+      "upvotes": 10,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.07458",
       "pdf": "https://arxiv.org/pdf/2608.07458.pdf",
@@ -19538,7 +19538,7 @@
       ],
       "abstract": "We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reasoning. Inputs presented at inference time continuously update the model's recurrent memory; the model then solves a query through iterative computation in a high-dimensional latent space, without verbalizing its intermediate reasoning. We evaluate the model on the public ARC-AGI-1 evaluation set and use controlled ARC-like interventions to study what it learns from demonstrations, how consistently it applies an inferred transformation, and which concepts remain difficult. A 150M-parameter configuration reaches 29.5% pass@2 at a computed inference cost of \\$0.0007 per task. This operating point breaks through the previously reported ARC-AGI-1 cost-accuracy Pareto frontier, establishing a new state of the art in benchmark cost efficiency.",
       "date": "2026-08-11",
-      "upvotes": 690,
+      "upvotes": 691,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.09888",
       "pdf": "https://arxiv.org/pdf/2608.09888.pdf",
@@ -20739,7 +20739,7 @@
       ],
       "abstract": "Human evaluation of AI systems and digital products is costly, slow, and difficult to scale. Offline evaluations are more scalable but often abstract away human diversity and interactive behavior. We therefore introduce MatrAIx, a population-scale simulated-user evaluation infrastructure for testing AI systems and digital products with heterogeneous users. MatrAIx has three core components: First, Persona 8B contains 8.3 billion persona records represented by 1,290 categorical dimensions. Records are either sampled from a dependency graph that preserves correlated attributes or derived from human-authored profiles. We release a quality-filtered coreset of approximately 1 million personas, comprising 599,847 human-grounded and 400,000 synthetic records. Second, the MatrAIx Playground provides four environments in which diverse users evaluate and interact with digital products: Survey, AI Chatbot, Web, and App. Third, MatrAIx provides 1,010 application tasks spanning more than 25 domains, including Commerce, Software, Finance, and Healthcare. We conducted 18,189 evaluation trials across eight representative tasks. Persona agents were powered by three LLMs: Claude Opus 4.8, GPT 5.5, and Claude Haiku 4.5. The resulting feedback captures how decisions and preferences vary across persona backgrounds, including hesitation after a price increase, willingness to continue after an AI assistant fails, and latency tolerance. We conducted two main validation studies: First, a 400-trial controlled study evaluated persona adherence across ten behavioral attributes and all four environments. The declared behavior was expressed or correctly suppressed in 366 trials (91.5%). Second, human and LLM judges evaluated the extraction quality of human-grounded personas. Overall, MatrAIx provides an end-to-end infrastructure for evaluating AI systems and digital products with diverse simulated human users.",
       "date": "2026-08-10",
-      "upvotes": 47,
+      "upvotes": 48,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.04205",
       "pdf": "https://arxiv.org/pdf/2608.04205.pdf",
@@ -20941,7 +20941,7 @@
       ],
       "abstract": "Small language models are often the only option for deployment under tight latency, cost, and on-premises constraints, but they are rarely trained from scratch: a compressed model is usually recovered through knowledge distillation (KD). This recovery step largely decides the final quality, yet it is expensive. We present a practitioner's study of how to make distillation training efficient, organised around two systems contributions. First, we show that offline KD (caching the teacher's top-K logits once and training the student against the cache) matches online distillation at near-identical training loss while removing the teacher from memory, running about 29\\% faster per iteration, and reaching up to 41\\% higher throughput on a single H200 GPU. Second, we introduce a fused, chunked KL loss that never materialises the full vocabulary-sized logit tensor, making peak memory linear in the sequence length. This removes the memory spike that otherwise caps context length and lets us train at four times the context (32{,}768 tokens) on a single GPU. A separate output-head-only toy benchmark isolates the loss kernel and confirms its memory and iteration-rate scaling from 4K to 256K tokens. Together these make large-scale healing and hundreds of ablations affordable. We also report supporting ablations on loss design and sequence packing. We release our chunked-loss implementation: https://github.com/CompactifAI/Full-Chunked-KL-Loss.",
       "date": "2026-08-10",
-      "upvotes": 14,
+      "upvotes": 15,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.03796",
       "pdf": "https://arxiv.org/pdf/2608.03796.pdf",
@@ -23413,7 +23413,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16590.pdf",
       "id": "arxiv:2608.16590",
       "source": "arxiv",
-      "upvotes": 133,
+      "upvotes": 135,
       "topics": [
         "Reflection"
       ],
@@ -28834,7 +28834,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18607.pdf",
       "id": "arxiv:2608.18607",
       "source": "arxiv",
-      "upvotes": 8,
+      "upvotes": 9,
       "topics": [
         "Post-Training",
         "Reasoning",
@@ -29202,7 +29202,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19197.pdf",
       "id": "arxiv:2608.19197",
       "source": "arxiv",
-      "upvotes": 42,
+      "upvotes": 43,
       "topics": [
         "LLM Training",
         "Tool Use",
@@ -30186,7 +30186,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18580.pdf",
       "id": "arxiv:2608.18580",
       "source": "hf",
-      "upvotes": 28,
+      "upvotes": 41,
       "topics": [
         "Alignment",
         "Fine-tuning"
@@ -31758,7 +31758,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18852.pdf",
       "id": "arxiv:2608.18852",
       "source": "arxiv",
-      "upvotes": 2,
+      "upvotes": 3,
       "topics": [
         "Evaluation",
         "Agent Framework"
@@ -31999,7 +31999,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18565.pdf",
       "id": "arxiv:2608.18565",
       "source": "arxiv",
-      "upvotes": 111,
+      "upvotes": 112,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -32930,7 +32930,7 @@
       ],
       "abstract": "Recent advances in foundation models have enabled AI scientists to automate increasingly complete research workflows, from hypothesis generation and code execution to manuscript preparation. Yet workflow coverage alone does not provide access to the full evidence on which scientific discovery depends. Existing systems typically reason over text, code, labels, or precomputed summaries, leaving scientifically decisive spatial, temporal, cross-channel, and procedural relations unavailable to the agent. We introduce OmniScientist, an end-to-end, omni-modal AI scientist that conducts multidisciplinary research directly from heterogeneous raw evidence. A perception layer and 3 autonomous agents for ideation, experiment, and writeup operate within a deterministic pipeline, allowing observations to shape research questions, experimental decisions, and final claims throughout the research lifecycle. By running idea, rigour, and claim checks in code, the system enforces novelty screening, statistical validity, execution provenance, and numerical traceability. We evaluate OmniScientist on 36 real-data cases spanning 5 discipline families, 4 families of scientific evidence, and modalities including images, signals, audio, video, 3-D structures, trajectories, tables, formulae, and graphs. The system completes the full path from raw data to a compiled manuscript in all 36 cases and achieves a mean overall paper score of 6.3 with the reference reasoning backbone. In paired comparisons against a blind variant that receives only precomputed scalar features, direct perception improves all 7 evaluation dimensions and wins 85% of head-to-head judgments. These results show that lifecycle-wide perception is essential for evidence-grounded scientific discovery and provides a practical path toward broadly capable AI scientists.",
       "date": "2026-08-20",
-      "upvotes": 83,
+      "upvotes": 84,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13558",
       "pdf": "https://arxiv.org/pdf/2608.13558.pdf",
@@ -32954,7 +32954,7 @@
       ],
       "abstract": "Popular facts are memorised more deeply during pretraining and resist removal longer than rare ones, yet existing LLM unlearning methods apply uniform gradient pressure regardless of training-data frequency. We propose the AdaPop (Adaptive Popularity) method, which combines local token confidence with a per-fact popularity-dependent exponent derived from an external proxy (e.g., Wikidata sitelinks, LLM-as-Judge), and automates the forget-retain balance via a dual-ascent controller that adjusts the retain penalty each epoch. Across three model families and two benchmarks, AdaPop leaks ~5x less forgotten content than competing methods under paraphrased queries and ~1.6x less under adversarial reformulations. We support our analysis with internal metrics: under our method, forget-set hidden states move further from the pre-unlearning model's states than under other methods, while retain-set representations remain close.",
       "date": "2026-08-20",
-      "upvotes": 13,
+      "upvotes": 15,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14229",
       "pdf": "https://arxiv.org/pdf/2608.14229.pdf",
@@ -208799,7 +208799,7 @@
       ],
       "abstract": "Object detectors often produce over-confident predictions for objects outside their training categories, leading to so-called out-of-distribution (OoD) hallucinations. Existing approaches for detecting or mitigating such hallucinations typically either construct scoring functions directly over learned object detector representations or modify the object detector itself to suppress hallucination emergence. However, the latent priors implicitly encoded in these representations remain largely unexplored and have not been explicitly decoded for OoD detection. To uncover and exploit these latent priors, we propose Structured Prior Knowledge (SPK), a hallucination-oriented framework that explicitly elicits OoD-relevant priors from pretrained object detectors. Specifically, SPK leverages in-distribution data and hallucination-inducing samples as diagnostic supervision to elicit part-level semantic concepts underlying object detector decision-making, rather than using them merely for rejection or object detector adaptation. The elicited semantic priors are further integrated with geometric and contextual priors to form a compact five-dimensional SPK representation for OoD detection. Extensive experiments across diverse object detector architectures and multiple OoD benchmarks demonstrate that SPK achieves state-of-the-art OoD detection. Our findings reveal that pretrained object detectors already encode substantially richer latent knowledge than is typically exploited for OoD detection. More importantly, this knowledge can be explicitly elicited and organized into a compact, structured, and interpretable knowledge space for prediction reliability analysis. This suggests a promising proactive route for improving object detector reliability by explicitly uncovering and leveraging latent priors. Code and data are available at: https://gricad-gitlab.univ-grenoble-alpes.fr/dnn-safety/spk",
       "date": "2026-08-20",
-      "upvotes": 0,
+      "upvotes": 1,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.19080",
       "pdf": "https://arxiv.org/pdf/2608.19080.pdf",
@@ -208955,7 +208955,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19880.pdf",
       "id": "arxiv:2608.19880",
       "source": "hf",
-      "upvotes": 72,
+      "upvotes": 137,
       "topics": [
         "Evaluation"
       ],
@@ -209614,7 +209614,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19854.pdf",
       "id": "arxiv:2608.19854",
       "source": "arxiv",
-      "upvotes": 4,
+      "upvotes": 5,
       "topics": [
         "Planning",
         "Code Agent",
@@ -209727,7 +209727,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19799.pdf",
       "id": "arxiv:2608.19799",
       "source": "arxiv",
-      "upvotes": 0,
+      "upvotes": 26,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -209736,7 +209736,8 @@
         "Code Agent",
         "Evaluation"
       ],
-      "url": "https://arxiv.org/abs/2608.19799"
+      "url": "https://arxiv.org/abs/2608.19799",
+      "hfUrl": "https://huggingface.co/papers/2608.19799"
     },
     "arxiv:2608.19794": {
       "pid": "2608.19794",
@@ -210533,7 +210534,7 @@
       "pdf": "https://arxiv.org/pdf/2608.20281.pdf",
       "id": "arxiv:2608.20281",
       "source": "arxiv",
-      "upvotes": 2,
+      "upvotes": 3,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -210913,7 +210914,7 @@
       "pdf": "https://arxiv.org/pdf/2608.20202.pdf",
       "id": "arxiv:2608.20202",
       "source": "arxiv",
-      "upvotes": 12,
+      "upvotes": 23,
       "topics": [
         "Reasoning",
         "Evaluation"
@@ -212906,7 +212907,7 @@
       ],
       "abstract": "Identity-preserving image generation becomes increasingly unreliable when a scene must contain many specified people. Beyond retaining each identity, the model must bind every reference to a distinct person and location, while training-time identity losses must establish correspondence among several noisy predicted faces. We introduce WithEveryone, a unified framework for generating group images up to ten reference identities. WithEveryone injects each selected identity as an addressed token, predicts a structured identity--layout plan, and renders the plan as a visual condition. Its key objective, Layout-Grounded ID Loss, uses annotated face regions to supervise the intended identities directly, avoiding unstable embedding-based face matching; ID Representation Forcing additionally trains a prediction for each identity before image synthesis. On an identity-disjoint benchmark, WithEveryone achieves the highest target-context identity similarity, improving face similarity from 0.462 for GPT-Image-2 to 0.499, while reducing copy-paste artifacts from 0.169 to 0.055. It further covers 97.3\\% of the requested identities with a duplicate rate of only 2.8\\%. These results show that explicit identity--layout grounding enables identity-preserving generation to scale to larger groups without relying on direct reference-face copying.",
       "date": "2026-08-21",
-      "upvotes": 14,
+      "upvotes": 28,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.20336",
       "pdf": "https://arxiv.org/pdf/2608.20336.pdf",
@@ -226817,7 +226818,7 @@
       ],
       "abstract": "Agent Skills are today either hand-authored or produced in a single LLM generation pass, and consequently possess no closed loop through which they might improve from the interaction failures they actually cause. Recent work does close this loop, but derives its feedback from single-turn question-answering evaluation. The consequence is a sharp asymmetry: once the first round has patched the gaps that a single exchange can reveal, the evolution gradient decays, the defects that surface only across multiple turns remain invisible, and evolution stalls. Governance in these systems is likewise driven by an end-to-end verification score, a scalar gate that can reject a degraded candidate but can neither localize nor repair its structural cause. We argue that the binding constraint on sustained skill evolution is neither editing capability nor the number of iterations, but whether the evaluation feedback keeps supplying trustworthy evolution gradients. We introduce SkillEvo, in which trustworthy feedback generates the gradient and controllable governance constrains its direction. The first component recasts multi-turn user simulation from an evaluation endpoint into a feedback generator: follow-up questions expose defects layer by layer, so that every round of revision both consumes feedback and produces new feedback. The second replaces the passive rejection of a scalar gate with an independent governance layer that actively repairs factual degradation and structural bloat, preventing the gradient from drifting as degradation accumulates. Across six categories of cloud services, 9 production Skills, and 98 skill-reference files, SkillEvo surpasses self-reflection-based evolution by 23.0 points and single- turn-QA-driven evolution by 15.4 points.",
       "date": "2026-08-21",
-      "upvotes": 3,
+      "upvotes": 6,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13120",
       "pdf": "https://arxiv.org/pdf/2608.13120.pdf",
@@ -226828,6 +226829,32 @@
       ],
       "tags": [
         "Reflection"
+      ]
+    },
+    "arxiv:2608.19936": {
+      "id": "arxiv:2608.19936",
+      "title": "Towards Quantifying Benchmark Optimization in ASR Models",
+      "authors": [
+        "Theo Lebryk",
+        "David Ayllon",
+        "Alice Baird",
+        "Jakub Piotr Cłapa",
+        "Jens Madsen",
+        "Panagiotis Tzirakis"
+      ],
+      "abstract": "Public benchmarks are important measures of Automatic Speech Recognition (ASR) model capabilities. However, by nature of being public, there is risk of models being optimized for these benchmarks in ways that do not generalize well to real-world data. We present a methodology for quantifying benchmark optimization, focusing on cases where the audio underdetermines the reference transcript. We identify three families of behavioral probes that reveal models' capabilities of reproducing benchmark reference spans despite underdetermined audio: reference disagreement, masked-number recovery, and orthographic switching. We find that the highest-scoring open source models output verbatim reference transcript spans even when the relevant audio is contradictory, masked, or ambiguous. Using a variety of mechanistic probes, we show that models respond to narrow acoustic cues to override the faithful representation of the audio in favor of a benchmark-optimized policy. We show the benchmark-optimized behavior can be causally manipulated via low-rank linear steering or simply appending audio to the end of a segment in some cases. Overall, our results indicate that high-performing models exhibit benchmark-conditioned behaviors that can inflate benchmark performance without reflecting improved general-purpose transcription ability.",
+      "date": "2026-08-21",
+      "upvotes": 2,
+      "source": "hf",
+      "arxiv": "https://arxiv.org/abs/2608.19936",
+      "pdf": "https://arxiv.org/pdf/2608.19936.pdf",
+      "hfUrl": "https://huggingface.co/papers/2608.19936",
+      "url": "https://arxiv.org/abs/2608.19936",
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
       ]
     }
   }
