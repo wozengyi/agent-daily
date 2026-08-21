@@ -666,6 +666,33 @@
       ]
     },
     {
+      "pid": "2608.13547",
+      "title": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+      "abstract": "LLM coding agents issue Bash commands through interfaces that may serialize, wrap, and reparse model output. Matched execution scores alone cannot distinguish command-generation errors from failures introduced after generation. QuoteBench measures this boundary with exact final-state validation on 56 one-shot tasks from 14 incident-derived families, crossing the generation contract with the execution transport around one deliberately unescaped added parser. Escaping at the interpolation point reproduces each replayed reply's raw-path outcome, so any recovery under a disclosed boundary must come from the model changing its generation. Across eight same-window configurations, replaying the same reply through the added parser lowers success by 55.4 to 73.2 percentage points; disclosure recovers 30.4 to 60.7 points for six configurations, and zero or slightly negative for the other two. Raw generation is nearly saturated at the frontier; boundary adaptation is what still separates models. GPT-5.6-sol's matched gap of -3.6 points hides -64.3 points of damage and +60.7 points of compensation. The deployment configuration reorders models: one reversal among 26 comparable pairs is unambiguous and four more sit on single-task margins. Evaluations of command-issuing agents should report the model configuration, generation contract, execution path, operating point, and final-state validator rather than treat a matched score as an intrinsic model property.",
+      "date": "2026-08-13",
+      "authors": [
+        "Shangao Li",
+        "Yao Zhang",
+        "Volker Tresp",
+        "Yuanyuan Yang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.13547",
+      "pdf": "https://arxiv.org/pdf/2608.13547.pdf",
+      "id": "arxiv:2608.13547",
+      "source": "arxiv",
+      "upvotes": 1,
+      "topics": [
+        "Code Agent",
+        "Evaluation"
+      ],
+      "tags": [
+        "Code Agent",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.13547",
+      "hfUrl": "https://huggingface.co/papers/2608.13547"
+    },
+    {
       "pid": "2605.03799",
       "title": "Natural Language Processing: A Comprehensive Practical Guide from Tokenisation to RLHF",
       "abstract": "This preprint presents a systematic, research-oriented practicum that guides the reader through the entire modern NLP pipeline --- from tokenisation and vectorisation to fine tuning of large language models, retrieval augmented generation, reinforcement learning from human feedback, prompt engineering, model compression, and multimodal systems. Seventeen hands-on sessions combine concise theory with detailed implementation plans, formalised evaluation metrics, and transparent assessment criteria. The work is not a conventional textbook: it is designed as a reproducible research artefact where every session requires publishing code, models, and reports in public repositories. All experiments are conducted on a single evolving corpus, and the work advocates open weight models over commercial APIs, with special attention to the Hugging Face ecosystem. The material is enriched by original research on low resource languages, incorporating linguistic resources for Tajik and Tatar --- subword tokenisers, embeddings, lexical databases, and transliteration benchmarks --- demonstrating how modern NLP can be adapted to data scarce environments. The practicum also covers advanced topics including AI agents, multi-agent systems, LLMOps, and efficient inference, preparing students for both research and industrial deployment. Designed for senior undergraduates, graduate students, and practising developers seeking to implement, compare, and deploy methods from classical ML to state of the art multimodal and agent-based systems.",
@@ -2500,32 +2527,6 @@
         "Code Agent"
       ],
       "url": "https://arxiv.org/abs/2608.13662"
-    },
-    {
-      "pid": "2608.13547",
-      "title": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
-      "abstract": "LLM coding agents issue Bash commands through interfaces that may serialize, wrap, and reparse model output. Matched execution scores alone cannot distinguish command-generation errors from failures introduced after generation. QuoteBench measures this boundary with exact final-state validation on 56 one-shot tasks from 14 incident-derived families, crossing the generation contract with the execution transport around one deliberately unescaped added parser. Escaping at the interpolation point reproduces each replayed reply's raw-path outcome, so any recovery under a disclosed boundary must come from the model changing its generation. Across eight same-window configurations, replaying the same reply through the added parser lowers success by 55.4 to 73.2 percentage points; disclosure recovers 30.4 to 60.7 points for six configurations, and zero or slightly negative for the other two. Raw generation is nearly saturated at the frontier; boundary adaptation is what still separates models. GPT-5.6-sol's matched gap of -3.6 points hides -64.3 points of damage and +60.7 points of compensation. The deployment configuration reorders models: one reversal among 26 comparable pairs is unambiguous and four more sit on single-task margins. Evaluations of command-issuing agents should report the model configuration, generation contract, execution path, operating point, and final-state validator rather than treat a matched score as an intrinsic model property.",
-      "date": "2026-08-13",
-      "authors": [
-        "Shangao Li",
-        "Yao Zhang",
-        "Volker Tresp",
-        "Yuanyuan Yang"
-      ],
-      "arxiv": "https://arxiv.org/abs/2608.13547",
-      "pdf": "https://arxiv.org/pdf/2608.13547.pdf",
-      "id": "arxiv:2608.13547",
-      "source": "arxiv",
-      "upvotes": 0,
-      "topics": [
-        "Code Agent",
-        "Evaluation"
-      ],
-      "tags": [
-        "Code Agent",
-        "Evaluation"
-      ],
-      "url": "https://arxiv.org/abs/2608.13547"
     },
     {
       "pid": "2608.13522",
@@ -9138,6 +9139,35 @@
       ]
     },
     {
+      "id": "arxiv:2608.08466",
+      "title": "Hierarchical Self-Improvement: A Framework for Task-Specific Evolvable Agent Harnesses",
+      "abstract": "Modern LLM agents are often improved by modifying prompts, tools, or workflows manually, while the executable scaffold surrounding the model---the \\emph{harness}---is typically treated as a fixed artifact after deployment. This work studies an alternative where the harness is \\emph{task-specific and continuously evolvable}: each task family maintains its own harness, which is hot-swapped across iterations through a fixed task-injection seam and rewritten using environment feedback. We introduce \\textbf{Hierarchical Self-Improvement (HSI)}, a framework in which a single frozen LLM $M$ operates across three hierarchical scopes: a task harness $H$ that executes tasks, an evolver that rewrites $H$, and a meta-evolver that rewrites the evolver's strategy code under a frozen outer anchor. A thinking-on/off design isolates the contribution of harness evolution by disabling reasoning during task execution while enabling it during self-modification. HSI is bounded by two factors: a \\emph{feedback-fidelity bound}, since evolution requires informative reward signals to guide selection, and a \\emph{backbone capability bound}, since harness redesign cannot overcome limitations of the frozen model. On BALROG with DeepSeek-V4-Flash-Preview as the frozen backbone, HSI achieves consistent gains over the initial harness on moderate-difficulty tasks ($+39.3$ on BabyAI, $+33.0$ on Crafter, $+25.0$ on TextWorld, and $+15.0$ on MiniHack, all in raw \\% Progress), while obtaining strong held-out generalization on BabaIsAI sub-suites ($0.98$ best-test on BreakStop and $1.00$ on GoTo from a $20\\%$ unseen split). On tasks beyond the backbone's capability (NLE), harness evolution provides no improvement. These results demonstrate task-specific harness evolution as a viable axis for improving frozen LLM agents under clear empirical limits. Code is available at https://github.com/TailinZhou/hsi.",
+      "authors": "Tailin Zhou",
+      "date": "2026-08-09",
+      "published": "2026-08-09",
+      "year": 2026,
+      "venue": "arXiv",
+      "publicationKind": "journal",
+      "publicationTypes": [
+        "Review"
+      ],
+      "citationCount": 0,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/16d011e5ad963e6c24e62cf7935b26235525f26c",
+      "arxiv": "https://arxiv.org/abs/2608.08466",
+      "pdf": "https://arxiv.org/pdf/2608.08466.pdf",
+      "upvotes": 2,
+      "topics": [
+        "Reasoning",
+        "Reflection"
+      ],
+      "tags": [
+        "Reasoning",
+        "Reflection"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2608.08466"
+    },
+    {
       "id": "arxiv:2608.08640",
       "title": "SkillReason: Reasoning-Enhanced Agent Skill Retrieval for Implicit User Requests",
       "abstract": "Large language model agents increasingly rely on reusable skills to extend their capabilities beyond parametric knowl- edge. However, retrieving the appropriate skill from a large- scale library remains challenging because realistic user re- quests are often concise and underspecified, stating only the task goal while leaving the required capabilities and execu- tion steps implicit. Existing benchmarks provide limited cov- erage of such requests. To address this gap, we introduce SkillReason-Bench, a large-scale cross-domain benchmark containing 3,729 queries and a retrieval corpus of 61,228 skills spanning nine domains. We further propose SkillRea- son, a two-stage framework that uses chain-of-thought rea- soning as training-time supervision for skill retrieval. In Stage I, capability reasoning traces generated by a stronger teacher provide explicit supervision through contrastive learning, re- trieval distribution alignment, and language modeling, en- couraging the retriever to internalize capability reasoning in its query representation. In Stage II, a retrieval-guided GRPO objective encourages the model to explore reasoning trajecto- ries better suited to its own capabilities and more effective for retrieval. At inference, SkillReason directly encodes the orig- inal query without autoregressive CoT generation, preserv- ing efficient query-only retrieval. Extensive experiments on SkillReason-Bench, SkillRet, and SRA-Bench show that Skill- Reason achieves state-of-the-art performance across all three benchmarks, demonstrating that reasoning-enhanced training better bridges the semantic gap between high-level task goals and skill capabilities.",
@@ -9334,34 +9364,6 @@
         "Agentic RAG",
         "Agentic Search",
         "Evaluation"
-      ]
-    },
-    {
-      "id": "arxiv:2608.08466",
-      "title": "Hierarchical Self-Improvement: A Framework for Task-Specific Evolvable Agent Harnesses",
-      "abstract": "Modern LLM agents are often improved by modifying prompts, tools, or workflows manually, while the executable scaffold surrounding the model---the \\emph{harness}---is typically treated as a fixed artifact after deployment. This work studies an alternative where the harness is \\emph{task-specific and continuously evolvable}: each task family maintains its own harness, which is hot-swapped across iterations through a fixed task-injection seam and rewritten using environment feedback. We introduce \\textbf{Hierarchical Self-Improvement (HSI)}, a framework in which a single frozen LLM $M$ operates across three hierarchical scopes: a task harness $H$ that executes tasks, an evolver that rewrites $H$, and a meta-evolver that rewrites the evolver's strategy code under a frozen outer anchor. A thinking-on/off design isolates the contribution of harness evolution by disabling reasoning during task execution while enabling it during self-modification. HSI is bounded by two factors: a \\emph{feedback-fidelity bound}, since evolution requires informative reward signals to guide selection, and a \\emph{backbone capability bound}, since harness redesign cannot overcome limitations of the frozen model. On BALROG with DeepSeek-V4-Flash-Preview as the frozen backbone, HSI achieves consistent gains over the initial harness on moderate-difficulty tasks ($+39.3$ on BabyAI, $+33.0$ on Crafter, $+25.0$ on TextWorld, and $+15.0$ on MiniHack, all in raw \\% Progress), while obtaining strong held-out generalization on BabaIsAI sub-suites ($0.98$ best-test on BreakStop and $1.00$ on GoTo from a $20\\%$ unseen split). On tasks beyond the backbone's capability (NLE), harness evolution provides no improvement. These results demonstrate task-specific harness evolution as a viable axis for improving frozen LLM agents under clear empirical limits. Code is available at https://github.com/TailinZhou/hsi.",
-      "authors": "Tailin Zhou",
-      "date": "2026-08-09",
-      "published": "2026-08-09",
-      "year": 2026,
-      "venue": "arXiv",
-      "publicationKind": "journal",
-      "publicationTypes": [
-        "Review"
-      ],
-      "citationCount": 0,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/16d011e5ad963e6c24e62cf7935b26235525f26c",
-      "arxiv": "https://arxiv.org/abs/2608.08466",
-      "pdf": "https://arxiv.org/pdf/2608.08466.pdf",
-      "upvotes": 0,
-      "topics": [
-        "Reasoning",
-        "Reflection"
-      ],
-      "tags": [
-        "Reasoning",
-        "Reflection"
       ]
     },
     {

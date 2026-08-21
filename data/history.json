@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T13:31:14.307294+00:00",
+  "generatedAt": "2026-08-21T16:03:45.608060+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -1158,7 +1158,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17528.pdf",
       "id": "arxiv:2608.17528",
       "source": "hf",
-      "upvotes": 26,
+      "upvotes": 27,
       "topics": [
         "Post-Training",
         "Code Agent"
@@ -1799,7 +1799,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17253.pdf",
       "id": "arxiv:2608.17253",
       "source": "arxiv",
-      "upvotes": 86,
+      "upvotes": 87,
       "topics": [
         "VLM Training",
         "Multi-Agent",
@@ -12075,7 +12075,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17744.pdf",
       "id": "arxiv:2608.17744",
       "source": "arxiv",
-      "upvotes": 3,
+      "upvotes": 4,
       "topics": [
         "LLM Training",
         "Reasoning",
@@ -16221,7 +16221,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13547.pdf",
       "id": "arxiv:2608.13547",
       "source": "arxiv",
-      "upvotes": 0,
+      "upvotes": 1,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -16230,7 +16230,8 @@
         "Code Agent",
         "Evaluation"
       ],
-      "url": "https://arxiv.org/abs/2608.13547"
+      "url": "https://arxiv.org/abs/2608.13547",
+      "hfUrl": "https://huggingface.co/papers/2608.13547"
     },
     "arxiv:2608.13522": {
       "pid": "2608.13522",
@@ -17513,7 +17514,7 @@
       ],
       "abstract": "Apollo did not reach the Moon merely because its engineers could solve difficult equations. It succeeded by turning a distant ambition into a mission architecture of explicit objectives, simulation, verification, and repeated correction. AI now faces a similar transition: frontier models can solve difficult tasks once the problem, tools, and success criteria are specified, yet consequential real-world challenges rarely arrive in an executable or verifiable form.   We introduce Apodex Discovery, a framework for building and evaluating discoverative AI through the heavy-duty solver, a system comprising a foundation model, harness, tools, and control policies that pursues extended, stateful, verifiable investigations. It has three core components. First, a problem-scouting process surveyed 561 industries across 16 sectors, assembled 423 high-value real-world problems, and selected 20 for the initial release. Second, a common environment-task-episode abstraction provides data, tools, constraints, feedback, trajectory recording, and verification of intermediate artifacts and final submissions. Third, HDS6 evaluates Tools, Repair, Alternatives, Coherence, Evidence, and Scope independently of final-task success.   In AAV capsid design, Apodex surpassed the published state of the art by 7% across viability, tropism, structure prediction, and generative design. In drug repurposing and reformulation, a task-specific biomedical environment improved the mean normalized prediction score of GPT-5.5 and GPT-5.6-sol by 2.5 and 7.6 points over the same closed-book backbone. Controlled ablations show that the fixed TRACES episode interface enables attribution of performance differences to specific solver components. Apodex Discovery moves AI evaluation beyond predefined benchmarks toward verifiable investigations aimed at genuine discovery.",
       "date": "2026-08-17",
-      "upvotes": 47,
+      "upvotes": 51,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.11341",
       "pdf": "https://arxiv.org/pdf/2608.11341.pdf",
@@ -30187,7 +30188,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18580.pdf",
       "id": "arxiv:2608.18580",
       "source": "hf",
-      "upvotes": 89,
+      "upvotes": 100,
       "topics": [
         "Alignment",
         "Fine-tuning"
@@ -32931,7 +32932,7 @@
       ],
       "abstract": "Recent advances in foundation models have enabled AI scientists to automate increasingly complete research workflows, from hypothesis generation and code execution to manuscript preparation. Yet workflow coverage alone does not provide access to the full evidence on which scientific discovery depends. Existing systems typically reason over text, code, labels, or precomputed summaries, leaving scientifically decisive spatial, temporal, cross-channel, and procedural relations unavailable to the agent. We introduce OmniScientist, an end-to-end, omni-modal AI scientist that conducts multidisciplinary research directly from heterogeneous raw evidence. A perception layer and 3 autonomous agents for ideation, experiment, and writeup operate within a deterministic pipeline, allowing observations to shape research questions, experimental decisions, and final claims throughout the research lifecycle. By running idea, rigour, and claim checks in code, the system enforces novelty screening, statistical validity, execution provenance, and numerical traceability. We evaluate OmniScientist on 36 real-data cases spanning 5 discipline families, 4 families of scientific evidence, and modalities including images, signals, audio, video, 3-D structures, trajectories, tables, formulae, and graphs. The system completes the full path from raw data to a compiled manuscript in all 36 cases and achieves a mean overall paper score of 6.3 with the reference reasoning backbone. In paired comparisons against a blind variant that receives only precomputed scalar features, direct perception improves all 7 evaluation dimensions and wins 85% of head-to-head judgments. These results show that lifecycle-wide perception is essential for evidence-grounded scientific discovery and provides a practical path toward broadly capable AI scientists.",
       "date": "2026-08-20",
-      "upvotes": 85,
+      "upvotes": 86,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13558",
       "pdf": "https://arxiv.org/pdf/2608.13558.pdf",
@@ -45959,7 +45960,7 @@
       "url": "https://www.semanticscholar.org/paper/16d011e5ad963e6c24e62cf7935b26235525f26c",
       "arxiv": "https://arxiv.org/abs/2608.08466",
       "pdf": "https://arxiv.org/pdf/2608.08466.pdf",
-      "upvotes": 0,
+      "upvotes": 2,
       "topics": [
         "Reasoning",
         "Reflection"
@@ -45967,7 +45968,8 @@
       "tags": [
         "Reasoning",
         "Reflection"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2608.08466"
     },
     "arxiv:2505.19489": {
       "id": "arxiv:2505.19489",
@@ -208956,7 +208958,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19880.pdf",
       "id": "arxiv:2608.19880",
       "source": "hf",
-      "upvotes": 214,
+      "upvotes": 217,
       "topics": [
         "Evaluation"
       ],
@@ -209615,7 +209617,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19854.pdf",
       "id": "arxiv:2608.19854",
       "source": "arxiv",
-      "upvotes": 9,
+      "upvotes": 10,
       "topics": [
         "Planning",
         "Code Agent",
@@ -209728,7 +209730,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19799.pdf",
       "id": "arxiv:2608.19799",
       "source": "arxiv",
-      "upvotes": 47,
+      "upvotes": 50,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -212210,7 +212212,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19891.pdf",
       "id": "arxiv:2608.19891",
       "source": "hf",
-      "upvotes": 3,
+      "upvotes": 4,
       "topics": [
         "VLM Training",
         "RL for LLM"
@@ -226846,7 +226848,7 @@
       ],
       "abstract": "Public benchmarks are important measures of Automatic Speech Recognition (ASR) model capabilities. However, by nature of being public, there is risk of models being optimized for these benchmarks in ways that do not generalize well to real-world data. We present a methodology for quantifying benchmark optimization, focusing on cases where the audio underdetermines the reference transcript. We identify three families of behavioral probes that reveal models' capabilities of reproducing benchmark reference spans despite underdetermined audio: reference disagreement, masked-number recovery, and orthographic switching. We find that the highest-scoring open source models output verbatim reference transcript spans even when the relevant audio is contradictory, masked, or ambiguous. Using a variety of mechanistic probes, we show that models respond to narrow acoustic cues to override the faithful representation of the audio in favor of a benchmark-optimized policy. We show the benchmark-optimized behavior can be causally manipulated via low-rank linear steering or simply appending audio to the end of a segment in some cases. Overall, our results indicate that high-performing models exhibit benchmark-conditioned behaviors that can inflate benchmark performance without reflecting improved general-purpose transcription ability.",
       "date": "2026-08-21",
-      "upvotes": 2,
+      "upvotes": 4,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.19936",
       "pdf": "https://arxiv.org/pdf/2608.19936.pdf",
