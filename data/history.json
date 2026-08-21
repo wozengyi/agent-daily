@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T04:10:52.795078+00:00",
+  "generatedAt": "2026-08-21T04:17:55.439209+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -416,7 +416,8 @@
       "source": "arxiv",
       "upvotes": 0,
       "topics": [
-        "Evaluation"
+        "Evaluation",
+        "Agentic RAG"
       ],
       "tags": [
         "Evaluation"
@@ -3061,7 +3062,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15008.pdf",
       "id": "arxiv:2608.15008",
       "source": "hf",
-      "upvotes": 13,
+      "upvotes": 14,
       "topics": [
         "Memory",
         "Evaluation"
@@ -6611,7 +6612,8 @@
       "source": "arxiv",
       "upvotes": 0,
       "topics": [
-        "Agentic Search"
+        "Agentic Search",
+        "Agentic RAG"
       ],
       "tags": [
         "Agentic Search"
@@ -6845,7 +6847,8 @@
       "source": "arxiv",
       "upvotes": 0,
       "topics": [
-        "Agentic Search"
+        "Agentic Search",
+        "Agentic RAG"
       ],
       "tags": [
         "Agentic Search"
@@ -6893,7 +6896,8 @@
       "source": "arxiv",
       "upvotes": 0,
       "topics": [
-        "Agentic Search"
+        "Agentic Search",
+        "Agentic RAG"
       ],
       "tags": [
         "Agentic Search"
@@ -6944,7 +6948,8 @@
       "source": "arxiv",
       "upvotes": 0,
       "topics": [
-        "Agentic Search"
+        "Agentic Search",
+        "Agentic RAG"
       ],
       "tags": [
         "Agentic Search"
@@ -7756,7 +7761,8 @@
       "source": "arxiv",
       "upvotes": 0,
       "topics": [
-        "Agentic Search"
+        "Agentic Search",
+        "Agentic RAG"
       ],
       "tags": [
         "Agentic Search"
@@ -7781,7 +7787,8 @@
       "source": "arxiv",
       "upvotes": 0,
       "topics": [
-        "Agentic Search"
+        "Agentic Search",
+        "Agentic RAG"
       ],
       "tags": [
         "Agentic Search"
@@ -23825,7 +23832,8 @@
       "source": "arxiv",
       "upvotes": 0,
       "topics": [
-        "Evaluation"
+        "Evaluation",
+        "Agentic RAG"
       ],
       "tags": [
         "Evaluation"
@@ -28511,7 +28519,8 @@
       "topics": [
         "Agentic Search",
         "VLM Training",
-        "Interpretability"
+        "Interpretability",
+        "Agentic RAG"
       ],
       "tags": [
         "Agentic Search",
@@ -28539,7 +28548,8 @@
       "upvotes": 0,
       "topics": [
         "Agentic Search",
-        "Fine-tuning"
+        "Fine-tuning",
+        "Agentic RAG"
       ],
       "tags": [
         "Agentic Search",
@@ -30176,7 +30186,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18580.pdf",
       "id": "arxiv:2608.18580",
       "source": "hf",
-      "upvotes": 14,
+      "upvotes": 28,
       "topics": [
         "Alignment",
         "Fine-tuning"
@@ -208945,7 +208955,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19880.pdf",
       "id": "arxiv:2608.19880",
       "source": "hf",
-      "upvotes": 34,
+      "upvotes": 72,
       "topics": [
         "Evaluation"
       ],
@@ -209604,7 +209614,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19854.pdf",
       "id": "arxiv:2608.19854",
       "source": "arxiv",
-      "upvotes": 3,
+      "upvotes": 4,
       "topics": [
         "Planning",
         "Code Agent",
@@ -210148,7 +210158,8 @@
       "source": "arxiv",
       "upvotes": 0,
       "topics": [
-        "Agentic Search"
+        "Agentic Search",
+        "Agentic RAG"
       ],
       "tags": [
         "Agentic Search"
@@ -210172,7 +210183,8 @@
       "source": "arxiv",
       "upvotes": 0,
       "topics": [
-        "Agentic Search"
+        "Agentic Search",
+        "Agentic RAG"
       ],
       "tags": [
         "Agentic Search"
@@ -210521,7 +210533,7 @@
       "pdf": "https://arxiv.org/pdf/2608.20281.pdf",
       "id": "arxiv:2608.20281",
       "source": "arxiv",
-      "upvotes": 1,
+      "upvotes": 2,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -210901,7 +210913,7 @@
       "pdf": "https://arxiv.org/pdf/2608.20202.pdf",
       "id": "arxiv:2608.20202",
       "source": "arxiv",
-      "upvotes": 10,
+      "upvotes": 12,
       "topics": [
         "Reasoning",
         "Evaluation"
@@ -212195,7 +212207,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19891.pdf",
       "id": "arxiv:2608.19891",
       "source": "hf",
-      "upvotes": 1,
+      "upvotes": 2,
       "topics": [
         "VLM Training",
         "RL for LLM"
@@ -212894,7 +212906,7 @@
       ],
       "abstract": "Identity-preserving image generation becomes increasingly unreliable when a scene must contain many specified people. Beyond retaining each identity, the model must bind every reference to a distinct person and location, while training-time identity losses must establish correspondence among several noisy predicted faces. We introduce WithEveryone, a unified framework for generating group images up to ten reference identities. WithEveryone injects each selected identity as an addressed token, predicts a structured identity--layout plan, and renders the plan as a visual condition. Its key objective, Layout-Grounded ID Loss, uses annotated face regions to supervise the intended identities directly, avoiding unstable embedding-based face matching; ID Representation Forcing additionally trains a prediction for each identity before image synthesis. On an identity-disjoint benchmark, WithEveryone achieves the highest target-context identity similarity, improving face similarity from 0.462 for GPT-Image-2 to 0.499, while reducing copy-paste artifacts from 0.169 to 0.055. It further covers 97.3\\% of the requested identities with a duplicate rate of only 2.8\\%. These results show that explicit identity--layout grounding enables identity-preserving generation to scale to larger groups without relying on direct reference-face copying.",
       "date": "2026-08-21",
-      "upvotes": 12,
+      "upvotes": 14,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.20336",
       "pdf": "https://arxiv.org/pdf/2608.20336.pdf",
@@ -226790,6 +226802,32 @@
         "Error Attribution",
         "Reasoning",
         "Alignment"
+      ]
+    },
+    "arxiv:2608.13120": {
+      "id": "arxiv:2608.13120",
+      "title": "SkillEvo: Self-Renewing Evolution Gradients from Multi-Turn Interaction Feedback",
+      "authors": [
+        "Qianxi Yan",
+        "Chunrong Chen",
+        "Jiuzhou Zhao",
+        "Min Zhang",
+        "Yongzhou Xu",
+        "Xiaochuan Xu"
+      ],
+      "abstract": "Agent Skills are today either hand-authored or produced in a single LLM generation pass, and consequently possess no closed loop through which they might improve from the interaction failures they actually cause. Recent work does close this loop, but derives its feedback from single-turn question-answering evaluation. The consequence is a sharp asymmetry: once the first round has patched the gaps that a single exchange can reveal, the evolution gradient decays, the defects that surface only across multiple turns remain invisible, and evolution stalls. Governance in these systems is likewise driven by an end-to-end verification score, a scalar gate that can reject a degraded candidate but can neither localize nor repair its structural cause. We argue that the binding constraint on sustained skill evolution is neither editing capability nor the number of iterations, but whether the evaluation feedback keeps supplying trustworthy evolution gradients. We introduce SkillEvo, in which trustworthy feedback generates the gradient and controllable governance constrains its direction. The first component recasts multi-turn user simulation from an evaluation endpoint into a feedback generator: follow-up questions expose defects layer by layer, so that every round of revision both consumes feedback and produces new feedback. The second replaces the passive rejection of a scalar gate with an independent governance layer that actively repairs factual degradation and structural bloat, preventing the gradient from drifting as degradation accumulates. Across six categories of cloud services, 9 production Skills, and 98 skill-reference files, SkillEvo surpasses self-reflection-based evolution by 23.0 points and single- turn-QA-driven evolution by 15.4 points.",
+      "date": "2026-08-21",
+      "upvotes": 3,
+      "source": "hf",
+      "arxiv": "https://arxiv.org/abs/2608.13120",
+      "pdf": "https://arxiv.org/pdf/2608.13120.pdf",
+      "hfUrl": "https://huggingface.co/papers/2608.13120",
+      "url": "https://arxiv.org/abs/2608.13120",
+      "topics": [
+        "Reflection"
+      ],
+      "tags": [
+        "Reflection"
       ]
     }
   }
