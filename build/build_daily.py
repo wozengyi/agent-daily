@@ -168,6 +168,23 @@ def fetch_page(url):
         raw = fetch(url, timeout=60, retries=2, backoff=5)
     return raw
 
+def fetch_arxiv_id_list(ids, batch_size=100):
+    out = []
+    ids = list(dict.fromkeys(ids))
+    for i in range(0, len(ids), batch_size):
+        batch = ids[i:i+batch_size]
+        url = 'http://export.arxiv.org/api/query?' + urllib.parse.urlencode({
+            'id_list': ','.join(batch),
+            'max_results': len(batch),
+        })
+        raw = fetch_page(url)
+        if raw:
+            out.extend(parse_arxiv_xml(raw))
+        else:
+            log(f'arxiv id_list empty response for {len(batch)} ids')
+        time.sleep(6.5)
+    return out
+
 def fetch_arxiv_announce_dates(categories, show=500):
     """Map arXiv ids to the date shown on arxiv.org/list/<cat>/recent."""
     out = {}
@@ -235,6 +252,45 @@ def fetch_arxiv(lookback_days=7, per_query=100, queries=None):
     seen = set()
     end = datetime.now(timezone.utc).date()
     start = end - timedelta(days=lookback_days)
+
+    def keep_paper(p):
+        key = norm_paper_id(p['pid'])
+        if key in seen:
+            return False
+        announced = announce_dates.get(key)
+        effective_date = announced or p.get('date') or '0000-00-00'
+        try:
+            if datetime.fromisoformat(effective_date).date() < start:
+                return False
+        except Exception:
+            pass
+        if not is_relevant(p['title'] + ' ' + p['abstract']):
+            return False
+        topics = classify_topics(p['title'], p['abstract'])
+        if not topics:
+            return False
+        seen.add(key)
+        if announced:
+            p['submittedDate'] = p.get('date')
+            p['announceDate'] = announced
+            p['date'] = announced
+        p['id'] = f'arxiv:{key}'
+        p['source'] = 'arxiv'
+        p['upvotes'] = 0
+        p['topics'] = topics
+        p['tags'] = topics[:5]
+        p['url'] = p['arxiv']
+        out.append(p)
+        return True
+
+    recent_ids = [aid for aid, date in announce_dates.items() if datetime.fromisoformat(date).date() >= start]
+    if recent_ids:
+        kept = 0
+        for p in fetch_arxiv_id_list(recent_ids):
+            if keep_paper(p):
+                kept += 1
+        log(f'arxiv recent pages kept {kept} entries from {len(recent_ids)} ids')
+
     for q in queries:
         url = (f'http://export.arxiv.org/api/query?search_query={urllib.parse.quote(q)}'
                f'&start=0&max_results={per_query}&sortBy=submittedDate&sortOrder=descending')
@@ -243,28 +299,7 @@ def fetch_arxiv(lookback_days=7, per_query=100, queries=None):
             if not raw:
                 log(f'arxiv query {q[:30]}... empty response, skipping'); time.sleep(6.5); continue
             for p in parse_arxiv_xml(raw):
-                d = p['date']
-                try:
-                    if datetime.fromisoformat(d).date() < start: continue
-                except: pass
-                if not is_relevant(p['title'] + ' ' + p['abstract']): continue
-                topics = classify_topics(p['title'], p['abstract'])
-                if not topics: continue
-                key = norm_paper_id(p['pid'])
-                if key in seen: continue
-                seen.add(key)
-                announced = announce_dates.get(key)
-                if announced:
-                    p['submittedDate'] = p.get('date')
-                    p['announceDate'] = announced
-                    p['date'] = announced
-                p['id'] = f'arxiv:{key}'
-                p['source'] = 'arxiv'
-                p['upvotes'] = 0
-                p['topics'] = topics
-                p['tags'] = topics[:5]
-                p['url'] = p['arxiv']
-                out.append(p)
+                keep_paper(p)
             log(f'arxiv query {q[:30]}... kept {len(out)} total so far')
         except Exception as e:
             log(f'arxiv query {q[:30]}... error: {e}')
