@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T03:06:15.259839+00:00",
+  "generatedAt": "2026-08-22T04:10:42.032162+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -17514,7 +17514,7 @@
       ],
       "abstract": "Apollo did not reach the Moon merely because its engineers could solve difficult equations. It succeeded by turning a distant ambition into a mission architecture of explicit objectives, simulation, verification, and repeated correction. AI now faces a similar transition: frontier models can solve difficult tasks once the problem, tools, and success criteria are specified, yet consequential real-world challenges rarely arrive in an executable or verifiable form.   We introduce Apodex Discovery, a framework for building and evaluating discoverative AI through the heavy-duty solver, a system comprising a foundation model, harness, tools, and control policies that pursues extended, stateful, verifiable investigations. It has three core components. First, a problem-scouting process surveyed 561 industries across 16 sectors, assembled 423 high-value real-world problems, and selected 20 for the initial release. Second, a common environment-task-episode abstraction provides data, tools, constraints, feedback, trajectory recording, and verification of intermediate artifacts and final submissions. Third, HDS6 evaluates Tools, Repair, Alternatives, Coherence, Evidence, and Scope independently of final-task success.   In AAV capsid design, Apodex surpassed the published state of the art by 7% across viability, tropism, structure prediction, and generative design. In drug repurposing and reformulation, a task-specific biomedical environment improved the mean normalized prediction score of GPT-5.5 and GPT-5.6-sol by 2.5 and 7.6 points over the same closed-book backbone. Controlled ablations show that the fixed TRACES episode interface enables attribution of performance differences to specific solver components. Apodex Discovery moves AI evaluation beyond predefined benchmarks toward verifiable investigations aimed at genuine discovery.",
       "date": "2026-08-17",
-      "upvotes": 53,
+      "upvotes": 54,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.11341",
       "pdf": "https://arxiv.org/pdf/2608.11341.pdf",
@@ -17986,7 +17986,7 @@
       ],
       "abstract": "No single large language model (LLM) is optimal across all queries and budget constraints, making model routing essential for cost-effective deployment. Existing routers adopt diverse formulations and implementations, making fair comparison and extension difficult. We present a unified formulation of LLM routing as a sequential decision process characterized by five components: context encoders, model encoders, scoring functions, decision rules, and learning signals, covering single-turn, multi-turn, and personalized routing. Based on this formulation, we develop an automated pipeline for constructing routing supervision and evaluating routers jointly on response quality and inference cost. The resulting benchmark, xRouteBench, spans generic LLM, memory-augmented, vision, time-series, and personalized routing tasks. We further introduce LLMRouter, an open-source modular infrastructure with more than 16 representative routers. Our empirical study shows that learned routers outperform the strongest fixed-model baseline by 14.6% relatively, lightweight routers become more competitive under tight cost constraints, and user-conditioned routing consistently improves personalization.",
       "date": "2026-08-14",
-      "upvotes": 108,
+      "upvotes": 109,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.06867",
       "pdf": "https://arxiv.org/pdf/2608.06867.pdf",
@@ -30188,7 +30188,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18580.pdf",
       "id": "arxiv:2608.18580",
       "source": "hf",
-      "upvotes": 108,
+      "upvotes": 109,
       "topics": [
         "Alignment",
         "Fine-tuning"
@@ -31760,7 +31760,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18852.pdf",
       "id": "arxiv:2608.18852",
       "source": "arxiv",
-      "upvotes": 4,
+      "upvotes": 5,
       "topics": [
         "Evaluation",
         "Agent Framework"
@@ -208958,7 +208958,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19880.pdf",
       "id": "arxiv:2608.19880",
       "source": "hf",
-      "upvotes": 237,
+      "upvotes": 238,
       "topics": [
         "Evaluation"
       ],
