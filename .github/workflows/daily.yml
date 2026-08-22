@@ -60,6 +60,9 @@ jobs:
           retry_on: error
           command: python build/build_daily.py --recent 7 --archive 1825 --archive-limit 0
 
+      - name: Validate generated data
+        run: python build/validate_data.py
+
       - name: Warn on suspicious builds
         run: |
           python - <<'PY'
@@ -69,14 +72,19 @@ jobs:
           data = json.loads(p.read_text(encoding='utf-8'))
           warns = list(data.get('warnings') or [])
           recent_count = data.get('recentTotal') or data.get('count') or 0
+          fetch_stats = data.get('fetchStats') or {}
+          arxiv_fetch_count = fetch_stats.get('arxiv') or 0
           if recent_count < 15:
               warns.append('low_paper_count')
+          if arxiv_fetch_count and arxiv_fetch_count < 100:
+              warns.append('low_arxiv_fetch_count')
           if warns:
               print('Warnings:', warns)
               body = (
                 f"## Agent Daily build warnings\n\n"
                 f"- Generated at: `{data.get('generatedAt')}`\n"
                 f"- Latest (7 days): {recent_count} (HF={data.get('sources',{}).get('hf')}, arXiv={data.get('sources',{}).get('arxiv')})\n"
+                f"- Current fetch: HF={fetch_stats.get('hf')}, arXiv={fetch_stats.get('arxiv')}, total={fetch_stats.get('total')}\n"
                 f"- Archive: {data.get('archiveCount')}\n"
                 f"- History total: {data.get('historyTotal')}\n"
                 f"- Added today: {data.get('addedToday')}\n\n"

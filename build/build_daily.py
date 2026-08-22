@@ -384,6 +384,16 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
     log('Fetching arXiv papers...')
     arx = fetch_arxiv(lookback_days=7, per_query=300)
     log(f'Got {len(arx)} arXiv papers')
+    fetch_stats = {
+        'hf': len(hf),
+        'arxiv': len(arx),
+        'total': len(hf) + len(arx),
+    }
+    if fetch_stats['arxiv'] < 100:
+        raise RuntimeError(
+            f'arXiv fetch returned too few papers ({fetch_stats["arxiv"]}); '
+            'treating this as a transient source failure so Actions can retry without committing stale data.'
+        )
     by_id = {p['id']: dict(p) for p in arx}
     for p in hf:
         cur = by_id.get(p['id'])
@@ -428,6 +438,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
         'recentCutoff': recent_cutoff,
         'archiveCutoff': archive_cutoff,
         'addedToday': added,
+        'fetchStats': fetch_stats,
         'historyTotal': len(hist.get('papers',{})),
         'topicCounts': topic_counts(all_hist),
         'count': len(recent),
