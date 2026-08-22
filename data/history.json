@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T04:10:42.032162+00:00",
+  "generatedAt": "2026-08-22T07:13:55.922948+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -17653,7 +17653,7 @@
       ],
       "abstract": "As large language models scale, their training-token budgets must also increase to maintain an appropriate tokens-per-parameter ratio (\\(TPP\\)). However, high-quality domain data is much harder to scale than general web data. As model size and the training-token budget increase, its fraction in the training mixture tends to decrease. Repeating the available high-quality data provides an effective way to counteract this dilution, but excessive repetition may lead to overfitting. We study this trade-off under practical LLM scaling, where the training-token budget grows proportionally with model size. For a fixed domain, we first find that, surprisingly at a fixed \\(TPP\\), the optimal repetition count mildly increases with model size. Across different domains, we find that the optimal repetition count is strongly negatively correlated with the final validation loss of a domain: domains with lower loss can generally benefit from more repetitions. In contrast, the amount of unique domain data is only weakly related to the optimal repetition count. These findings suggest that repetition counts tuned on smaller proxy models with the same \\(TPP\\) can provide a practical estimate for larger models.",
       "date": "2026-08-17",
-      "upvotes": 13,
+      "upvotes": 14,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14071",
       "pdf": "https://arxiv.org/pdf/2608.14071.pdf",
@@ -18478,7 +18478,7 @@
       ],
       "abstract": "Extreme events in air transport, such as severe arrival delays and abnormal air times, cause cascading network disruptions with substantial operational, economic, and safety costs. Such events are rare in historical records, leaving insufficient training signal for machine learning models. Synthetic data augmentation offers a principled solution, but conventional generative models under-represent distributional tails and give no guarantee against operationally infeasible instances, such as a short air time paired with a long flight distance. No existing approach addresses both limitations for mixed-type tabular records. We propose TailBooster, a dual-layer generative framework combining generative modelling with two anomaly detection layers. A statistical layer extracts extremes via the interquartile range, supplying tail-concentrated training signal to dedicated generative models, here a Tabular Variational Autoencoder. A deep learning layer then applies autoencoder-based cleaning, discarding synthetic records that violate the operational envelope learned from historical data. The framework was evaluated on US flight records across five dimensions: diversity, statistical similarity, fidelity, operational validity, and utility, the latter two being the primary improvement targets. Data-driven cleaning markedly improved operational validity, while targeted augmentation enhanced utility for extreme-event prediction. Across six regression algorithms, training on the framework's records reduced Mean Absolute Error by 47-49% on extreme air time and 29-57% on extreme arrival delay prediction relative to conventional synthetic data, with comparable gains when real records were enriched with synthetic extremes. Being fully data-driven and model-agnostic, TailBooster extends to domains where extreme-event prediction is critical and domain-specific rules are unavailable.",
       "date": "2026-08-14",
-      "upvotes": 8,
+      "upvotes": 9,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.11951",
       "pdf": "https://arxiv.org/pdf/2608.11951.pdf",
@@ -21352,7 +21352,7 @@
       ],
       "abstract": "Foundation models are used to extract transferable representations from large amounts of unlabeled data, typically via self-supervised learning (SSL). However, many of these models rely on architectures that offer limited interpretability, a critical issue in high-stakes domains such as medical imaging. We propose DualIFM, a foundation model that is interpretable-by-design via a BagNet backbone whose small receptive fields generate class evidence maps that are faithful to the model's decision-making process. Additionally, DualIFM incorporates a 2D projection layer during pretraining that enables direct visualization of the representation space, providing a dataset-level view of the learned structure including meaningful clinical clusters as well as potential spurious correlations. We trained DualIFM on over 800,000 color fundus photographs from various sources to learn generalizable representations for different downstream tasks. Our model achieves performance comparable to RETFound, which has 16times more parameters, while providing interpretable predictions on out-of-distribution data. These results suggest that large-scale SSL pretraining paired with inherent interpretability can lead to robust representations for retinal imaging. Code and pretrained models are available at github.com/berenslab/interpretable_FM.",
       "date": "2026-08-10",
-      "upvotes": 3,
+      "upvotes": 4,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2603.18846",
       "pdf": "https://arxiv.org/pdf/2603.18846.pdf",
@@ -28836,7 +28836,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18607.pdf",
       "id": "arxiv:2608.18607",
       "source": "arxiv",
-      "upvotes": 9,
+      "upvotes": 10,
       "topics": [
         "Post-Training",
         "Reasoning",
@@ -29204,7 +29204,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19197.pdf",
       "id": "arxiv:2608.19197",
       "source": "arxiv",
-      "upvotes": 45,
+      "upvotes": 46,
       "topics": [
         "LLM Training",
         "Tool Use",
@@ -29434,7 +29434,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18940.pdf",
       "id": "arxiv:2608.18940",
       "source": "arxiv",
-      "upvotes": 30,
+      "upvotes": 32,
       "topics": [
         "Planning",
         "Evaluation",
@@ -30188,7 +30188,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18580.pdf",
       "id": "arxiv:2608.18580",
       "source": "hf",
-      "upvotes": 109,
+      "upvotes": 111,
       "topics": [
         "Alignment",
         "Fine-tuning"
@@ -45960,7 +45960,7 @@
       "url": "https://www.semanticscholar.org/paper/16d011e5ad963e6c24e62cf7935b26235525f26c",
       "arxiv": "https://arxiv.org/abs/2608.08466",
       "pdf": "https://arxiv.org/pdf/2608.08466.pdf",
-      "upvotes": 7,
+      "upvotes": 8,
       "topics": [
         "Reasoning",
         "Reflection"
@@ -208958,7 +208958,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19880.pdf",
       "id": "arxiv:2608.19880",
       "source": "hf",
-      "upvotes": 238,
+      "upvotes": 241,
       "topics": [
         "Evaluation"
       ],
@@ -210917,7 +210917,7 @@
       "pdf": "https://arxiv.org/pdf/2608.20202.pdf",
       "id": "arxiv:2608.20202",
       "source": "arxiv",
-      "upvotes": 30,
+      "upvotes": 31,
       "topics": [
         "Reasoning",
         "Evaluation"
