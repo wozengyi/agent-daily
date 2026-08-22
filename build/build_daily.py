@@ -168,6 +168,31 @@ def fetch_page(url):
         raw = fetch(url, timeout=60, retries=2, backoff=5)
     return raw
 
+def fetch_arxiv_announce_dates(categories, show=500):
+    """Map arXiv ids to the date shown on arxiv.org/list/<cat>/recent."""
+    out = {}
+    for cat in categories:
+        url = f'https://arxiv.org/list/{urllib.parse.quote(cat)}/recent?show={show}'
+        raw = fetch(url, timeout=45, retries=3, backoff=5)
+        if not raw:
+            log(f'arxiv announce-date page empty: {cat}')
+            continue
+        current = None
+        for line in raw.splitlines():
+            m = re.search(r'<h3[^>]*>\s*([A-Z][a-z]{2},\s+\d{1,2}\s+[A-Z][a-z]{2}\s+\d{4})', line)
+            if m:
+                try:
+                    current = datetime.strptime(m.group(1), '%a, %d %b %Y').date().isoformat()
+                except Exception:
+                    current = None
+                continue
+            if not current:
+                continue
+            for aid in re.findall(r'arXiv:(\d{4}\.\d{4,5})', line):
+                out.setdefault(aid, current)
+        time.sleep(0.5)
+    return out
+
 def parse_arxiv_xml(raw):
     ns = {'a':'http://www.w3.org/2005/Atom'}
     try: root = ET.fromstring(raw)
@@ -193,6 +218,7 @@ def parse_arxiv_xml(raw):
     return out
 
 def fetch_arxiv(lookback_days=7, per_query=100, queries=None):
+    announce_dates = fetch_arxiv_announce_dates(['cs.AI', 'cs.CL', 'cs.IR', 'cs.LG', 'cs.SE', 'cs.CV'])
     if queries is None:
         queries = [
             'all:agent', 'all:"llm agent"', 'all:"multi-agent"', 'all:"tool use"',
@@ -227,6 +253,11 @@ def fetch_arxiv(lookback_days=7, per_query=100, queries=None):
                 key = norm_paper_id(p['pid'])
                 if key in seen: continue
                 seen.add(key)
+                announced = announce_dates.get(key)
+                if announced:
+                    p['submittedDate'] = p.get('date')
+                    p['announceDate'] = announced
+                    p['date'] = announced
                 p['id'] = f'arxiv:{key}'
                 p['source'] = 'arxiv'
                 p['upvotes'] = 0
@@ -273,6 +304,10 @@ def merge_into_history(hist, papers):
             cur['upvotes'] = max(int(cur.get('upvotes',0)), int(p.get('upvotes',0)))
             cur['topics'] = list(dict.fromkeys(list(cur.get('topics') or []) + list(p.get('topics') or [])))[:8]
             if p.get('hfUrl'): cur['hfUrl'] = p['hfUrl']
+            if p.get('submittedDate'): cur['submittedDate'] = p['submittedDate']
+            if p.get('announceDate'):
+                cur['announceDate'] = p['announceDate']
+                cur['date'] = p['announceDate']
     hist['generatedAt'] = today
     return added
 
@@ -307,7 +342,7 @@ def freshness_stats(papers, now):
 
 def compact_search_paper(p):
     keep = {
-        'id', 'title', 'authors', 'date', 'published', 'source', 'topics', 'tags',
+        'id', 'title', 'authors', 'date', 'published', 'announceDate', 'submittedDate', 'source', 'topics', 'tags',
         'arxiv', 'pdf', 'url', 'hfUrl', 'upvotes', 'venue', 'publicationKind',
         'publicationTypes', 'citationCount',
     }
