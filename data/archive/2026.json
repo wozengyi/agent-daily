@@ -34,7 +34,10 @@
       "tags": [
         "Evaluation",
         "Reflection"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06867",
@@ -66,7 +69,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.13505",
@@ -220,7 +226,10 @@
         "Fine-tuning"
       ],
       "url": "https://arxiv.org/abs/2608.13505",
-      "hfUrl": "https://huggingface.co/papers/2608.13505"
+      "hfUrl": "https://huggingface.co/papers/2608.13505",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.13560",
@@ -259,7 +268,10 @@
         "Reflection"
       ],
       "url": "https://arxiv.org/abs/2608.13560",
-      "hfUrl": "https://huggingface.co/papers/2608.13560"
+      "hfUrl": "https://huggingface.co/papers/2608.13560",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08975",
@@ -287,7 +299,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.13552",
@@ -321,7 +336,10 @@
       "tags": [
         "Evaluation",
         "World Model"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.12743",
@@ -361,7 +379,10 @@
         "Planning"
       ],
       "url": "https://arxiv.org/abs/2608.12743",
-      "hfUrl": "https://huggingface.co/papers/2608.12743"
+      "hfUrl": "https://huggingface.co/papers/2608.12743",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.12149",
@@ -392,7 +413,10 @@
       ],
       "tags": [
         "LLM Training"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11745",
@@ -421,7 +445,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11752",
@@ -451,7 +478,10 @@
       "tags": [
         "LLM Training",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08888",
@@ -481,7 +511,10 @@
       "tags": [
         "LLM Training",
         "Reasoning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.13391",
@@ -513,7 +546,10 @@
       "tags": [
         "Evaluation",
         "Alignment"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07193",
@@ -541,7 +577,10 @@
       "tags": [
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.10538",
@@ -567,7 +606,10 @@
       "tags": [
         "Evaluation",
         "RL for LLM"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08020",
@@ -594,7 +636,10 @@
       "tags": [
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.12990",
@@ -625,7 +670,10 @@
         "Memory"
       ],
       "url": "https://arxiv.org/abs/2608.12990",
-      "hfUrl": "https://huggingface.co/papers/2608.12990"
+      "hfUrl": "https://huggingface.co/papers/2608.12990",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.02870",
@@ -649,7 +697,10 @@
       "tags": [
         "LLM Training",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2607.29211",
@@ -679,7 +730,10 @@
       "tags": [
         "Reasoning",
         "RL for LLM"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.13430",
@@ -704,7 +758,10 @@
       "tags": [
         "Evaluation",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11660",
@@ -735,7 +792,10 @@
       ],
       "tags": [
         "Reasoning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.12440",
@@ -757,7 +817,10 @@
         "Code Agent"
       ],
       "url": "https://arxiv.org/abs/2608.12440",
-      "hfUrl": "https://huggingface.co/papers/2608.12440"
+      "hfUrl": "https://huggingface.co/papers/2608.12440",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09158",
@@ -787,7 +850,10 @@
       ],
       "tags": [
         "Agent Safety"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11951",
@@ -810,7 +876,10 @@
       ],
       "tags": [
         "Data Engine"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.13883",
@@ -3150,7 +3219,10 @@
       "tags": [
         "Planning",
         "Reflection"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.00677",
@@ -3181,7 +3253,10 @@
       "tags": [
         "Agent Safety",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.12307",
@@ -3212,7 +3287,10 @@
       "tags": [
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.12036",
@@ -3253,7 +3331,10 @@
       "tags": [
         "LLM Training",
         "Interpretability"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.05604",
@@ -3280,7 +3361,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08160",
@@ -3309,7 +3393,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.12314",
@@ -3346,7 +3433,10 @@
         "Reflection"
       ],
       "url": "https://arxiv.org/abs/2608.12314",
-      "hfUrl": "https://huggingface.co/papers/2608.12314"
+      "hfUrl": "https://huggingface.co/papers/2608.12314",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.10708",
@@ -3374,7 +3464,10 @@
         "LLM Training",
         "Evaluation",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11216",
@@ -3403,7 +3496,10 @@
         "Code Agent",
         "Evaluation",
         "World Model"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11350",
@@ -3433,7 +3529,10 @@
       "tags": [
         "LLM Training",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09926",
@@ -3467,7 +3566,10 @@
         "Reasoning",
         "Evaluation",
         "World Model"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.11878",
@@ -3505,7 +3607,10 @@
       "venue": "arXiv",
       "publicationKind": "preprint",
       "published": "2026-08-12",
-      "year": 2026
+      "year": 2026,
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11562",
@@ -3533,7 +3638,10 @@
       "tags": [
         "Evaluation",
         "Reflection"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11616",
@@ -3563,7 +3671,10 @@
         "LLM Training",
         "Evaluation",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09805",
@@ -3590,7 +3701,10 @@
         "Post-Training",
         "Reasoning",
         "RL for LLM"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.10450",
@@ -3615,7 +3729,10 @@
         "Code Agent"
       ],
       "url": "https://arxiv.org/abs/2608.10450",
-      "hfUrl": "https://huggingface.co/papers/2608.10450"
+      "hfUrl": "https://huggingface.co/papers/2608.10450",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11367",
@@ -3645,7 +3762,10 @@
       "tags": [
         "Evaluation",
         "Data Engine"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11274",
@@ -3673,7 +3793,10 @@
         "Agent Safety",
         "Post-Training",
         "Alignment"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08107",
@@ -3704,7 +3827,10 @@
         "Evaluation",
         "Interpretability",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11045",
@@ -3726,7 +3852,10 @@
       ],
       "tags": [
         "Post-Training"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.12836",
@@ -3750,7 +3879,10 @@
       "tags": [
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06729",
@@ -3782,7 +3914,10 @@
       "tags": [
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.13547",
@@ -3809,7 +3944,10 @@
         "Evaluation"
       ],
       "url": "https://arxiv.org/abs/2608.13547",
-      "hfUrl": "https://huggingface.co/papers/2608.13547"
+      "hfUrl": "https://huggingface.co/papers/2608.13547",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2605.03799",
@@ -4628,7 +4766,10 @@
         "Planning",
         "World Model"
       ],
-      "url": "https://arxiv.org/abs/2608.12854"
+      "url": "https://arxiv.org/abs/2608.12854",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.12843",
@@ -6397,7 +6538,10 @@
       "tags": [
         "Evaluation",
         "World Model"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11205",
@@ -6424,7 +6568,10 @@
       "tags": [
         "Post-Training",
         "Alignment"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07645",
@@ -6449,7 +6596,10 @@
       ],
       "tags": [
         "Code Agent"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.10875",
@@ -6476,7 +6626,10 @@
       "venue": "arXiv",
       "publicationKind": "preprint",
       "published": "2026-08-11",
-      "year": 2026
+      "year": 2026,
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.11079",
@@ -6503,7 +6656,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.10812",
@@ -6532,7 +6688,10 @@
         "Fine-tuning"
       ],
       "url": "https://arxiv.org/abs/2608.10812",
-      "hfUrl": "https://huggingface.co/papers/2608.10812"
+      "hfUrl": "https://huggingface.co/papers/2608.10812",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08627",
@@ -6564,7 +6723,10 @@
       ],
       "tags": [
         "Post-Training"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09900",
@@ -6599,7 +6761,10 @@
       "venue": "arXiv",
       "publicationKind": "preprint",
       "published": "2026-08-10",
-      "year": 2026
+      "year": 2026,
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.10692",
@@ -6636,7 +6801,10 @@
       "tags": [
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08389",
@@ -6666,7 +6834,10 @@
       ],
       "tags": [
         "Agentic Search"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.10628",
@@ -6699,7 +6870,10 @@
         "Reasoning",
         "Hallucination",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.10636",
@@ -6727,7 +6901,10 @@
         "VLM Training",
         "Evaluation",
         "Alignment"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08119",
@@ -6753,7 +6930,10 @@
       "tags": [
         "Evaluation",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.10366",
@@ -6783,7 +6963,10 @@
         "Tool Use",
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08814",
@@ -6812,7 +6995,10 @@
         "Reasoning",
         "Planning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07458",
@@ -6837,7 +7023,10 @@
       "tags": [
         "Agentic RAG",
         "Agentic Search"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2607.27670",
@@ -6879,7 +7068,10 @@
         "Reasoning",
         "Evaluation",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.11967",
@@ -8091,7 +8283,10 @@
         "Reasoning",
         "Evaluation"
       ],
-      "url": "https://arxiv.org/abs/2608.11907"
+      "url": "https://arxiv.org/abs/2608.11907",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.11816",
@@ -8777,7 +8972,10 @@
         "VLM Training",
         "Evaluation"
       ],
-      "url": "https://arxiv.org/abs/2608.12127"
+      "url": "https://arxiv.org/abs/2608.12127",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "pid": "2608.12122",
@@ -9537,7 +9735,7 @@
       ],
       "abstract": "We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reasoning. Inputs presented at inference time continuously update the model's recurrent memory; the model then solves a query through iterative computation in a high-dimensional latent space, without verbalizing its intermediate reasoning. We evaluate the model on the public ARC-AGI-1 evaluation set and use controlled ARC-like interventions to study what it learns from demonstrations, how consistently it applies an inferred transformation, and which concepts remain difficult. A 150M-parameter configuration reaches 29.5% pass@2 at a computed inference cost of \\$0.0007 per task. This operating point breaks through the previously reported ARC-AGI-1 cost-accuracy Pareto frontier, establishing a new state of the art in benchmark cost efficiency.",
       "date": "2026-08-11",
-      "upvotes": 702,
+      "upvotes": 703,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.09888",
       "pdf": "https://arxiv.org/pdf/2608.09888.pdf",
@@ -9550,7 +9748,10 @@
       "tags": [
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09819",
@@ -9652,7 +9853,10 @@
         "Evaluation",
         "Fine-tuning",
         "Reflection"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06296",
@@ -9667,7 +9871,7 @@
       ],
       "abstract": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose unsupervised on-policy self-distillation (U-OPSD). U-OPSD first samples multiple rollouts and constructs a pseudo solution by majority vote under a self-consistency threshold. It then conditions the model's distribution on the pseudo-solution and distills itself on the disagreeing completions, allowing the model to correct itself precisely where it is confidently wrong. Across diverse benchmarks, base models, and training settings, U-OPSD consistently improves over the base models and matches or surpasses supervised methods with ground truth (GT) such as OPSD and GRPO. On five mathematical reasoning benchmarks, i.e., AIME24, AIME25, HMMT25, MATH500, and AMC23, U-OPSD improves over the base model by 8.5% and 10.7% on Qwen3 non-thinking mode at 4B and 8B scales, and outperforms OPSD by 3.2% and 2.3% on average, respectively. In thinking mode, U-OPSD stays on par with OPSD, ahead by 0.9% at 4B and level at 8B and surpassing GRPO by 0.7% and 1.1%, respectively. Code is available at [https://github.com/williamium3000/u-opsd](https://github.com/williamium3000/u-opsd).",
       "date": "2026-08-11",
-      "upvotes": 216,
+      "upvotes": 217,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.06296",
       "pdf": "https://arxiv.org/pdf/2608.06296.pdf",
@@ -9682,7 +9886,10 @@
         "Post-Training",
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09802",
@@ -9721,7 +9928,10 @@
         "LLM Training",
         "Code Agent",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09867",
@@ -9756,7 +9966,10 @@
       "publicationKind": "preprint",
       "citationCount": 1,
       "published": "2026-08-10",
-      "year": 2026
+      "year": 2026,
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08311",
@@ -9784,7 +9997,10 @@
       "tags": [
         "Code Agent",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07169",
@@ -9811,7 +10027,10 @@
         "Tool Use",
         "Memory",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09119",
@@ -9869,7 +10088,10 @@
         "Tool Use",
         "Reasoning",
         "Hallucination"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09873",
@@ -9896,7 +10118,10 @@
       "tags": [
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06751",
@@ -9929,7 +10154,10 @@
         "Planning",
         "Hallucination",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.04419",
@@ -9958,7 +10186,10 @@
       "tags": [
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07565",
@@ -9989,7 +10220,10 @@
       "tags": [
         "LLM Training",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08097",
@@ -10019,7 +10253,10 @@
       ],
       "tags": [
         "Reasoning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07594",
@@ -10051,7 +10288,10 @@
       "tags": [
         "LLM Training",
         "Interpretability"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08621",
@@ -10079,7 +10319,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09096",
@@ -10110,7 +10353,10 @@
       "tags": [
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08021",
@@ -10145,7 +10391,10 @@
         "VLM Training",
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07346",
@@ -10180,7 +10429,10 @@
       "venue": "arXiv",
       "publicationKind": "preprint",
       "published": "2026-08-07",
-      "year": 2026
+      "year": 2026,
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.02508",
@@ -10210,7 +10462,10 @@
       "tags": [
         "Memory",
         "RL for LLM"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06065",
@@ -10241,7 +10496,10 @@
         "VLM Training",
         "Reasoning",
         "Computer Use"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.03499",
@@ -10273,7 +10531,10 @@
         "Tool Use",
         "Evaluation",
         "Agent Framework"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09420",
@@ -10304,7 +10565,10 @@
         "LLM Training",
         "Alignment",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08477",
@@ -10331,7 +10595,10 @@
         "VLM Training",
         "Tool Use",
         "Reasoning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07886",
@@ -10357,7 +10624,10 @@
       "tags": [
         "VLM Training",
         "Alignment"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.03887",
@@ -10380,7 +10650,10 @@
       "tags": [
         "Alignment",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09043",
@@ -10402,7 +10675,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08722",
@@ -10423,7 +10699,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2607.27637",
@@ -10453,7 +10732,10 @@
         "VLM Training",
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07463",
@@ -10481,7 +10763,10 @@
         "Evaluation",
         "Alignment",
         "Reflection"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08786",
@@ -10512,7 +10797,10 @@
       "tags": [
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06111",
@@ -10537,7 +10825,10 @@
       "tags": [
         "LLM Training",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09766",
@@ -10580,7 +10871,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09848",
@@ -10602,7 +10896,10 @@
       ],
       "tags": [
         "Reasoning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.14707",
@@ -11125,7 +11422,10 @@
         "Reasoning",
         "Fine-tuning",
         "RL for LLM"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.04205",
@@ -11238,7 +11538,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.03571",
@@ -11265,7 +11568,10 @@
       ],
       "tags": [
         "Multimodal Agent"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07051",
@@ -11296,7 +11602,10 @@
         "LLM Training",
         "Planning",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06113",
@@ -11325,7 +11634,10 @@
         "Planning",
         "Evaluation",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2607.23379",
@@ -11351,7 +11663,10 @@
         "LLM Training",
         "Interpretability",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.05703",
@@ -11382,7 +11697,10 @@
       "tags": [
         "Evaluation",
         "Multimodal Agent"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07408",
@@ -11412,7 +11730,10 @@
       "tags": [
         "Evaluation",
         "World Model"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.03796",
@@ -11440,7 +11761,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.02148",
@@ -11469,7 +11793,10 @@
       "tags": [
         "LLM Training",
         "Reasoning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.02831",
@@ -11502,7 +11829,10 @@
         "Reasoning",
         "Evaluation",
         "RL for LLM"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06865",
@@ -11537,7 +11867,10 @@
         "Multi-Agent",
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.00675",
@@ -11558,7 +11891,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06714",
@@ -11586,7 +11922,10 @@
       ],
       "tags": [
         "Reasoning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07110",
@@ -11612,7 +11951,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06013",
@@ -11644,7 +11986,10 @@
         "Reasoning",
         "Evaluation",
         "Fine-tuning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06756",
@@ -11678,7 +12023,10 @@
         "VLM Training",
         "Reasoning",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.04314",
@@ -11717,7 +12065,10 @@
       "tags": [
         "Agent Safety",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.01310",
@@ -11744,7 +12095,10 @@
       ],
       "tags": [
         "Alignment"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.07341",
@@ -11770,7 +12124,10 @@
       "tags": [
         "LLM Training",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2603.18846",
@@ -11796,7 +12153,10 @@
       "tags": [
         "LLM Training",
         "Interpretability"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.06485",
@@ -11823,7 +12183,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2606.00152",
@@ -11851,7 +12214,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.04302",
@@ -11875,7 +12241,10 @@
       ],
       "tags": [
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.09142",
@@ -12275,7 +12644,7 @@
       "url": "https://www.semanticscholar.org/paper/16d011e5ad963e6c24e62cf7935b26235525f26c",
       "arxiv": "https://arxiv.org/abs/2608.08466",
       "pdf": "https://arxiv.org/pdf/2608.08466.pdf",
-      "upvotes": 8,
+      "upvotes": 9,
       "topics": [
         "Reasoning",
         "Reflection"
@@ -12284,7 +12653,10 @@
         "Reasoning",
         "Reflection"
       ],
-      "hfUrl": "https://huggingface.co/papers/2608.08466"
+      "hfUrl": "https://huggingface.co/papers/2608.08466",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.08640",
@@ -15646,7 +16018,10 @@
         "Review"
       ],
       "published": "2026-08-04",
-      "year": 2026
+      "year": 2026,
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-22T08:27:34.580573+00:00"
     },
     {
       "id": "arxiv:2608.04926",
