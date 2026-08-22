@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T21:54:31.868698+00:00",
+  "generatedAt": "2026-08-22T02:16:13.478859+00:00",
   "papers": {
     "arxiv:2608.18072": {
       "pid": "2608.18072",
@@ -500,7 +500,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17800.pdf",
       "id": "arxiv:2608.17800",
       "source": "hf",
-      "upvotes": 8,
+      "upvotes": 9,
       "topics": [
         "Evaluation"
       ],
@@ -901,7 +901,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17597.pdf",
       "id": "arxiv:2608.17597",
       "source": "hf",
-      "upvotes": 8,
+      "upvotes": 9,
       "topics": [
         "Agent Safety",
         "Evaluation"
@@ -1158,7 +1158,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17528.pdf",
       "id": "arxiv:2608.17528",
       "source": "hf",
-      "upvotes": 27,
+      "upvotes": 28,
       "topics": [
         "Post-Training",
         "Code Agent"
@@ -1386,7 +1386,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17393.pdf",
       "id": "arxiv:2608.17393",
       "source": "arxiv",
-      "upvotes": 22,
+      "upvotes": 24,
       "topics": [
         "Code Agent",
         "Alignment",
@@ -1570,7 +1570,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17310.pdf",
       "id": "arxiv:2608.17310",
       "source": "hf",
-      "upvotes": 101,
+      "upvotes": 102,
       "topics": [
         "Reasoning",
         "Fine-tuning",
@@ -1747,7 +1747,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17271.pdf",
       "id": "arxiv:2608.17271",
       "source": "hf",
-      "upvotes": 56,
+      "upvotes": 57,
       "topics": [
         "Evaluation"
       ],
@@ -1799,7 +1799,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17253.pdf",
       "id": "arxiv:2608.17253",
       "source": "arxiv",
-      "upvotes": 90,
+      "upvotes": 91,
       "topics": [
         "VLM Training",
         "Multi-Agent",
@@ -2611,7 +2611,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16002.pdf",
       "id": "arxiv:2608.16002",
       "source": "hf",
-      "upvotes": 6,
+      "upvotes": 7,
       "topics": [
         "Error Attribution",
         "Reasoning",
@@ -3062,7 +3062,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15008.pdf",
       "id": "arxiv:2608.15008",
       "source": "hf",
-      "upvotes": 14,
+      "upvotes": 15,
       "topics": [
         "Memory",
         "Evaluation"
@@ -3283,7 +3283,7 @@
       "pdf": "https://arxiv.org/pdf/2608.14036.pdf",
       "id": "arxiv:2608.14036",
       "source": "hf",
-      "upvotes": 158,
+      "upvotes": 160,
       "topics": [
         "Agent Safety",
         "Evaluation"
@@ -3338,7 +3338,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13900.pdf",
       "id": "arxiv:2608.13900",
       "source": "hf",
-      "upvotes": 26,
+      "upvotes": 27,
       "topics": [
         "Tool Use",
         "Reasoning",
@@ -3370,7 +3370,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13667.pdf",
       "id": "arxiv:2608.13667",
       "source": "hf",
-      "upvotes": 14,
+      "upvotes": 16,
       "topics": [
         "Reasoning",
         "Evaluation"
@@ -4230,7 +4230,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15888.pdf",
       "id": "arxiv:2608.15888",
       "source": "arxiv",
-      "upvotes": 2,
+      "upvotes": 3,
       "topics": [
         "Agent Safety",
         "Multi-Agent",
@@ -6300,7 +6300,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13040.pdf",
       "id": "arxiv:2608.13040",
       "source": "hf",
-      "upvotes": 22,
+      "upvotes": 23,
       "topics": [
         "Post-Training",
         "Tool Use",
@@ -8522,7 +8522,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16393.pdf",
       "id": "arxiv:2608.16393",
       "source": "hf",
-      "upvotes": 5,
+      "upvotes": 6,
       "topics": [
         "Agent Safety"
       ],
@@ -9023,7 +9023,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16072.pdf",
       "id": "arxiv:2608.16072",
       "source": "hf",
-      "upvotes": 147,
+      "upvotes": 148,
       "topics": [
         "Post-Training",
         "Reasoning",
@@ -9743,7 +9743,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13545.pdf",
       "id": "arxiv:2608.13545",
       "source": "hf",
-      "upvotes": 6,
+      "upvotes": 7,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -9773,7 +9773,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13517.pdf",
       "id": "arxiv:2608.13517",
       "source": "hf",
-      "upvotes": 29,
+      "upvotes": 30,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -11110,7 +11110,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16798.pdf",
       "id": "arxiv:2608.16798",
       "source": "hf",
-      "upvotes": 38,
+      "upvotes": 39,
       "topics": [
         "Post-Training"
       ],
@@ -12075,7 +12075,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17744.pdf",
       "id": "arxiv:2608.17744",
       "source": "arxiv",
-      "upvotes": 7,
+      "upvotes": 13,
       "topics": [
         "LLM Training",
         "Reasoning",
@@ -12482,7 +12482,7 @@
       "pdf": "https://arxiv.org/pdf/2608.17379.pdf",
       "id": "arxiv:2608.17379",
       "source": "arxiv",
-      "upvotes": 2,
+      "upvotes": 3,
       "topics": [
         "LLM Training",
         "Reasoning",
@@ -13257,7 +13257,7 @@
       "pdf": "https://arxiv.org/pdf/2608.15045.pdf",
       "id": "arxiv:2608.15045",
       "source": "hf",
-      "upvotes": 45,
+      "upvotes": 46,
       "topics": [
         "VLM Training",
         "Reasoning",
@@ -14600,7 +14600,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13760.pdf",
       "id": "arxiv:2608.13760",
       "source": "hf",
-      "upvotes": 2,
+      "upvotes": 3,
       "topics": [
         "VLM Training",
         "Reasoning",
@@ -16221,7 +16221,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13547.pdf",
       "id": "arxiv:2608.13547",
       "source": "arxiv",
-      "upvotes": 2,
+      "upvotes": 6,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -16648,7 +16648,7 @@
       ],
       "abstract": "Autoformalization is commonly framed as translating natural-language mathematical statements into machine-verifiable formal languages such as Lean 4. However, faithful formalization requires more than translation. Models must map mathematical concepts to the complex hierarchy of types and definitions in formal libraries such as Mathlib, while ensuring that generated statements preserve the meaning of the source propositions. Existing approaches struggle because they rely heavily on the model's parametric memory for library-specific knowledge, while common data construction pipelines often resort to filtering single-pass outputs and lack mechanisms for feedback-driven revision. To address these challenges, we introduce MathForm, an autoformalization framework for constructing verified training data through Mathlib knowledge retrieval and verification-guided iterative refinement. Before generation, a retrieval planner gathers relevant definitions and existing formalizations from Mathlib to guide the formalization generator. Generated statements are then revised using compiler diagnostics and semantic-consistency feedback. Using this framework, we construct FormalVerse, a Lean 4 dataset containing approximately 367K verified examples across diverse mathematical domains and sources. We then train MathForm-8B through supervised fine-tuning followed by reinforcement learning. Across six benchmarks, MathForm-8B achieves average Pass@8 rates of 88.06% under Syntax Check (SC) and 72.37% under Consistency Check (CC), outperforming multiple specialized 32B autoformalizers. On the challenging FATE-H and FATE-X subsets, it attains CC pass rates of 63% and 37%, exceeding the strongest specialized baselines in both cases.",
       "date": "2026-08-19",
-      "upvotes": 7,
+      "upvotes": 8,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14221",
       "pdf": "https://arxiv.org/pdf/2608.14221.pdf",
@@ -16678,7 +16678,7 @@
       ],
       "abstract": "Methods for improving knowledge use in large language models typically fall into two regimes. Non-parametric retrieval offers flexible access to external knowledge, but adds retrieval latency, context overhead, and only shallow integration with the backbone. Parametric adaptation is efficient at inference time, but entangles knowledge with model weights and can be hard to update, audit, or transfer. Engram-style hashed memory occupies a middle regime: it stores learned information in an external, addressable table, yet consumes that table through a small learned reader. This raises a basic question: when such a memory is moved across backbones, what matters more, the frozen memory itself or the target-side reader? We study this question through cross-model frozen-memory extraction, in which a memory trained on a source model is frozen and attached to a different target model, with only a lightweight reader trained. Ablations show that learned memory content and correct addressing both matter, but the transferred table becomes useful only through a reader aligned to the target model. In downstream question answering tasks, a dual-layer, four-branch reader nearly closes the gap between same-model and cross-model reuse, achieving an average score of 38.8 under our controlled evaluation protocol. Moreover, when the provider reader is directly compatible with the target interface, the frozen artifact can provide substantial utility without target-side training, while optional reader adaptation yields further improvement. These results suggest that Engram can serve as a reusable external knowledge artifact, provided that the target has access to a compatible reader interface; target-side adaptation can further improve alignment when direct reader reuse is insufficient.",
       "date": "2026-08-19",
-      "upvotes": 4,
+      "upvotes": 5,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.17050",
       "pdf": "https://arxiv.org/pdf/2608.17050.pdf",
@@ -16808,7 +16808,7 @@
       ],
       "abstract": "Scientific discovery often involves optimising expensive-to-evaluate objectives over vast, structured, and open-ended hypothesis spaces, such as molecules, protein sequences, and computer programs. Generative models such as large language models (LLMs) provide expressive priors over such spaces, but their likelihoods and self-assessments are unreliable proxies for the objectives and calibrated epistemic uncertainty, especially for novel candidates outside the observed data distribution. We introduce the Large Discovery Model (LDM), an empirically grounded recurrent architecture that couples a generative model with a Bayesian non-parametric reward surrogate model. The generative model proposes and refines candidate designs, while the surrogate predicts their performance and quantifies uncertainty, yielding an uncertainty-aware value that guides candidate generation, refinement, and selection. The discovery memory and the surrogate model are continually updated as each new experimental observation arrives. We evaluate LDM on three scenarios spanning different design modalities and objectives, including neural-network training, antibody design, and molecular optimisation. Compared to LLM-only reflection or traditional statistical search across these domains, LDM achieves a 2.4times greater reduction in validation BPB, an 18.2% relative decrease in binding energy, and more than 60% relative gains in molecular multi-objective performance. These results suggests that LDM could serve as a general-purpose discovery engine for effective search over open-ended hypothesis spaces.",
       "date": "2026-08-18",
-      "upvotes": 61,
+      "upvotes": 62,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.15669",
       "pdf": "https://arxiv.org/pdf/2608.15669.pdf",
@@ -16857,7 +16857,7 @@
       ],
       "abstract": "Foundation GUI agents can automate complex digital tasks, but deployment is hindered by scarce and biased training data, ambiguous prompts, and unreliable execution. Routine workflows rely on user-specific tools and tacit conventions, so unstated instructions can produce arbitrary variations across runs. We present UI-Mate, a foundation GUI agent that integrates an environment-grounded training stack with in-context demonstration learning. UI-Mate makes three contributions: A Scalable Environment-Grounded Training Stack: A closed-loop data engine automates task generation, environment construction, rollout, filtering, capability balancing, SFT, and online RL across massively parallel environments via unified task-verifier bundles. In-Context Demonstration Learning: A mechanism that transforms multimodal demonstrations into flexible subtask-level workflows, follows relevant demonstrated steps, and re-plans from the live interface. OSWorkerBench Benchmark and Insights: A benchmark of 100 long-horizon office tasks across 41 applications that supports instruction-only and demonstration-guided evaluation. Its demonstration resources separate a 33-task self-demo setting, built from successful strong-agent rollouts of the same targets, from a 45-task variant-demo setting, built from human recordings of related but non-identical tasks. Experiments show that UI-Mate-27B sets a new open-weight state of the art on general computer-use benchmarks, scoring 77.0% on OSWorld-Verified and 66.2% on WindowsAgentArena. On OSWorkerBench, it reaches 41.0% strict success and 76.9% progress, outperforming its Qwen3.6-27B base by 17.7 and 24.5 points. On the 33-task self-demo subset, one demonstration raises strict success from 17.2% to 35.4% and progress from 67.9% to 81.1%, substantially improving long-horizon reliability. Project page: https://ui-mate.github.io.",
       "date": "2026-08-18",
-      "upvotes": 45,
+      "upvotes": 46,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.15930",
       "pdf": "https://arxiv.org/pdf/2608.15930.pdf",
@@ -16892,7 +16892,7 @@
       ],
       "abstract": "AI has long assisted scientific research, but the rapid advance of LLMs and agentic scaffolds is reshaping the landscape; a single system can now carry whole-stage research from an initial hypothesis all the way to final published paper, which is a paradigm now referred to as AutoResearch. Existing evaluations reveal little about how these agents operate or where they break down. Tasks are narrowly-scoped, evaluation measures performance but not process, and failure diagnoses lack systematic coverage or artifact-level visibility. To address this gap, we introduce AutoResearchEval, featuring 100 tasks grounded in published frontier science across 7 scientific domains and the full research lifecycle, including ideation, retrieval, execution, analysis, writing, and review. Evaluating 8 harness-model combinations yields 800 autoresearch agent trajectories, with process-level annotation. We organize these insights into AutoResearch Failure Taxonomy or ARFT, a framework of 45 empirically-grounded failure patterns. To enable scalable fine-grained attribution, we leverage a human-calibrated agent-as-a-judge pipeline to inspect complete trajectories and intermediate artifacts. Failure patterns converge on a single overarching limitation, namely that current agents lack a metacognitive loop, which entails the ability to check what they produced against what they found, revise when it does not hold up, and question whether the path they took was sound. The same patterns recur across all 8 harness-model combinations, including the strongest models tested, locating the deficit at the model level rather than in any particular scaffold; whether orchestration-level interventions can close it is an open question this work does not test. We publicly release AutoResearchEval and ARFT to facilitate continued research and development in autonomous scientific discovery.",
       "date": "2026-08-18",
-      "upvotes": 28,
+      "upvotes": 29,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14905",
       "pdf": "https://arxiv.org/pdf/2608.14905.pdf",
@@ -16921,7 +16921,7 @@
       ],
       "abstract": "The rapid evolution of text-to-image (T2I) generation models has effectively solved the foundational challenge of raw pixel synthesis, shifting the community's focus toward fulfilling increasingly intricate user requests. While recent agentic image generation workflows enhance static inference with advanced capabilities like external knowledge retrieval and iterative reasoning, they mostly operate in isolated silos with fixed ``one-size-fits-all\" topologies. This inevitably leads to severe compute-mismatch, where simple queries are forced through computationally heavy pipelines. To bridge this gap, we present GenRouter, the first unified workflow routing framework for agentic image generation. We first formulate GenCanvas, standardizing diverse agentic pipelines into a universal set of foundational primitives and executable templates. Operating over this unified space, GenRouter adaptively routes heterogeneous prompts to their optimal workflows via (i) demand profiling, (ii) experience matching, and (iii) Pareto filtering. Extensive experiments across diverse benchmarks demonstrate that GenRouter achieves superior visual alignment while reducing execution costs by over 95% and latency by 65% compared to heavyweight static pipelines. Furthermore, the system continuously self-evolves via accumulated experience, enabling robust zero-shot generalization that boosts performance and halves computational overhead.",
       "date": "2026-08-18",
-      "upvotes": 22,
+      "upvotes": 23,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.16721",
       "pdf": "https://arxiv.org/pdf/2608.16721.pdf",
@@ -16954,7 +16954,7 @@
       ],
       "abstract": "Frontier large language models (LLMs) safety evaluation has largely treated harmful generation as an attack outcome rather than as an object of analysis. Consequently, little is known about the harmful outputs produced during model misbehavior, partly because large-scale, high-quality collections of frontier-LLM misbehavior are difficult to obtain. To address this gap, we introduce HarmProfile, a content-centric benchmark dataset that collects model misbehavior across diverse harm categories and model families, and defines the resulting harmful-output distribution as a model-level risk profile. The premise is that, just as linguistic behavior can be characterized from an utterance corpus, model risk can be characterized from the content, severity, and variation of its safety failures. HarmProfile contains over 80,000 validated artifacts from 23 frontier LLMs across 13 model families, organized into 15 harm categories and 57 subcategories. Using this corpus, we find that frontier LLMs reliably produce harmful content at scale, yet exhibit distinct risk profiles; both harmfulness and diversity grow with model capability, suggesting that frontier LLMs may appear safe yet harbor increasingly dangerous knowledge beneath the alignment surface. Our source code is available at https://github.com/fresh-ma/HarmProfile .",
       "date": "2026-08-18",
-      "upvotes": 19,
+      "upvotes": 20,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14577",
       "pdf": "https://arxiv.org/pdf/2608.14577.pdf",
@@ -17015,7 +17015,7 @@
       ],
       "abstract": "In cognitive science, resource rationality asks how an agent should allocate limited computation to maximize expected value. Most reasoning and agent benchmarks use independent per-task budgets; existing shared-budget studies do not calibrate suite performance against the same model's demonstrated single-problem competence. We introduce R^3-Bench, which evaluates six-problem suites under shared budgets across mathematics, competitive programming, and abstract reasoning in tool-free and agentic settings. Matched single-problem response curves define an offline empirical oracle over observed successes. Across 72 main-table cells for six models, the oracle mean matches or exceeds the contest mean in all cells and is strictly higher in 71. Under moderate tool-free pressure, equal-allocation replay also exceeds contest performance for four of six models. Trajectory diagnostics reveal limited strategy updating and pressure-dependent failure patterns. In a three-model diagnostic under strong agentic pressure, at least one fixed scheduler exceeds the contest mean in six of nine cells, but no policy dominates across domains. These results expose a persistent gap between demonstrated competence and shared-budget realization.",
       "date": "2026-08-18",
-      "upvotes": 11,
+      "upvotes": 12,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.16033",
       "pdf": "https://arxiv.org/pdf/2608.16033.pdf",
@@ -17041,7 +17041,7 @@
       ],
       "abstract": "Self-evolving agents improve future behavior from interaction experience, yet existing evaluations typically optimize under fixed execution conditions and do not test recovery after those conditions change. To address this gap, we introduce PACE-Bench (Physics Adaptation via Code Evolution), a simulator-grounded benchmark of 144 source-to-target adaptation pairs across six physics domains. Each pair links a source environment to a mutated target environment with the same goal and interface. A code-driven design that succeeds in the source fails in the target, where agents must iteratively adapt it into a working target design using diagnostic sandbox feedback within a limited attempt budget. We compare ten self-evolving methods from four paradigms. The benchmark remains far from saturated: Reflexion + Qwen3-14B succeeds on only 35.9\\% of full-benchmark pairs, while GPT-5.5 solves 66.7\\% of the Statics subset under the full budget. Together, these results show that simulator-grounded reflection is more reliable than unverified self-revision, while memory anchors agents to early designs and broad tree search explores without converging. Even revealing exact physical changes does not raise the performance ceiling, pointing to mechanism redesign rather than parameter inference as the central bottleneck. Data and code are available at https://github.com/thunlp/PACE-Bench.",
       "date": "2026-08-18",
-      "upvotes": 26,
+      "upvotes": 27,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14441",
       "pdf": "https://arxiv.org/pdf/2608.14441.pdf",
@@ -17147,7 +17147,7 @@
       ],
       "abstract": "Enterprise question answering is framed as retrieving internal documents and generating grounded answers. Routine enterprise records, however, are work by-products in which required organizational relations remain implicit across heterogeneous sources. Existing benchmarks provide realistic multi-source evidence, but often materialize a predefined answer path and therefore test the composition of stated facts rather than recovery of a target relation absent from the corpus. We call the latter capability latent organizational reasoning.   We introduce ENTLORE, a graph-grounded benchmark construction framework that reconstructs an audited enterprise world from routine documents, authoritative organizational tables, and operational records. Versioned organizational conventions certify derived relations in a truth graph, enabling complete golden answers and proof certificates. The aligned anonymized release exposes only the document corpus while withholding private structure and target relations. ENTLORE contains 2,341 documents from three source types and 907 questions spanning explicit lookup, cross-source composition, and latent organizational reasoning, evaluated across 56 model and access configurations. Structuring the released world as an induced entity graph or navigable knowledge base gives the strongest deployable results. Yet supplying gold documents still leaves 30.4% of latent questions unanswered, versus 12.6% and 6.2% for explicit and compositional questions. Enterprise QA therefore depends not only on document recall, but also on whether implicit organizational relations become usable. The benchmark, data, and code are publicly available at ENTLORE.",
       "date": "2026-08-18",
-      "upvotes": 4,
+      "upvotes": 5,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.10679",
       "pdf": "https://arxiv.org/pdf/2608.10679.pdf",
@@ -17171,7 +17171,7 @@
       ],
       "abstract": "Automated checking pipelines increasingly place one language model as the checker and another (or the same one) as the fixer. We ask whether that wiring changes what the checker reports. Measuring false alarms on human-verified-correct ProcessBench traces with the present task held byte-identical, we find that a completed audit -> repair episode already in the model's context lowers false alarms in 15 of 15 model x wording combinations, by 2.8 to 11.5 percentage points against a length-matched non-audit control, a 9 to 25% reduction relative to that control. The direction contradicts what the accumulated-message literature predicts: an episode whose audit reported an error lowers false alarms further still, at all five wordings on the model where that manipulation lands cleanly, though a negativity asymmetry predicts more flagging. Decomposing the episode finds repair content and audit verdict complementary: different components carry the effect on different model families. Signal-detection analysis locates the change in the threshold rather than in discrimination -- the criterion moves in 15 of 15 combinations and survives correction in 13 while d' survives in none, though the d' test is half as sensitive by construction -- and a hand audit of 50 false alarms finds 82% simply wrong, so at this operating point the shift need not be harmful. With reasoning enabled the effect keeps its relative size on both models tested, and the threshold reading holds there too.",
       "date": "2026-08-18",
-      "upvotes": 3,
+      "upvotes": 4,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.16003",
       "pdf": "https://arxiv.org/pdf/2608.16003.pdf",
@@ -17192,7 +17192,7 @@
       ],
       "abstract": "Language models hold latent quantities in a form they can report on, and more of a quantity is present in that form when the task requires reusing it flexibly. What causes a representation to enter that form is open, and the word workspace invites an admission story: a gate that decides what gets in. Testing it on open-weight models with Jacobian lenses, over a benchmark whose five arms share an identical context, we find no gate where it predicts one. Demand raises a concept's lens visibility beyond what applying an operator to a supplied value produces: +0.050 [+0.045, +0.057] in percentile rank on our primary checkpoint, positive on all four we measure, though that arm answers at ceiling and the accuracymatched contrast is stronger under that readout. At the same time one shared linear map decodes the variable from every arm, the control included, at 6.4-9.0x its selection-corrected floor. What produces the later readable form at the queried position is attention-mediated gathering inside a mid-depth window: separating patch depth from readout depth puts transport there at least 17x above anywhere shallower under non-saturating readouts, with no tested MLP output contributing positively inside it. Under the saturating percentile rank the same grid does not localise the window, which is a fact about that measure. An arm that needs the variable for nothing concentrates sevenfold less, so the window is demand-specific. That window has two measured edges, a survival failure below and destruction above, and it falls at the same fractional depth in a 64-layer hybrid and a 62-layer dense model from another family. We localise where the variable is installed and read, not the route from the passage, which transports nothing. But the readout is not a calibrated measure of use: three components move it to within 12% of one another and differ 7.4x in what they do to the answer.",
       "date": "2026-08-18",
-      "upvotes": 3,
+      "upvotes": 4,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.15022",
       "pdf": "https://arxiv.org/pdf/2608.15022.pdf",
@@ -17214,7 +17214,7 @@
       ],
       "abstract": "Large language models (LLMs) are increasingly used as synthetic survey respondents, but existing evaluations ask whether answers look plausible at the individual level. We argue the right question is psychometric: do LLMs preserve the joint distribution, latent structure, reliability, mediation pathways, and demographic effects of real human survey data? We introduce a Lithuanian organisational-psychology dataset (n=263 employees; Dunham Attitudes Toward Change, UWES-17, Koopmans IWPQ; 68 items, 12 subscales) and condition a 37-model lineup spanning OpenAI, Anthropic, Google, and twelve open-weight families on real respondent profiles under a five-level persona-disclosure ladder, presentation and reasoning-effort ablations, counterfactual demographic swaps (gender, role, education), a cross-language check, and a verbatim-recall memorization probe. The resulting Psychometric Similarity Score (PSS) is anchored against five non-LLM statistical baselines and a held-out human-vs-human ceiling, with respondent-bootstrap confidence intervals and an item-permutation null for Tucker's phi. LLMs reproduce the qualitative direction of human psychometric relationships, but a Gaussian-copula baseline beats every LLM on the sample-driven PSS components; the LLM \"crowd\" is more similar to itself (mean inter-LLM PSS 0.73) than to humans; and memorization does not drive the leaderboard (recall-PSS rank correlation 0.00). Counterfactual swaps reveal education-driven effects (mean |d|=0.56) that dwarf gender (0.12) and role (0.18); Tucker's phi on UWES falls inside the permutation null for 8 of 37 models. Downstream, every LLM shows a strong acquiescence shift (+0.84 SD), synthetic-trained regressors lose predictive validity on held-out humans (mean R^2 -0.18 vs 0.28), and models fabricate indirect effects on 3 of 10 placebo mediation paths. LLM samples are not a drop-in replacement for human survey data.",
       "date": "2026-08-18",
-      "upvotes": 2,
+      "upvotes": 3,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14606",
       "pdf": "https://arxiv.org/pdf/2608.14606.pdf",
@@ -17264,7 +17264,7 @@
       ],
       "abstract": "Retrieval-augmented generation (RAG) is indispensable for enhancing large language models. However, RAGs are increasingly susceptible to poisoning attacks, in which adversarial documents are injected to manipulate generator outputs. Previous methods rely on output-side signals such as perplexity and consistency checks to detect such attacks. Nevertheless, our analysis reveals that deliberate attacks often induce false confidence, where poisoned outputs exhibit even lower perplexity than benign ones, rendering uncertainty-based detection ineffective. To address this challenge, we explore the internal dynamics of the generator and identify a distinctive signature termed Attention Collapse. Unlike the dispersed attention in benign generations, attacked generations exhibit a decrease in entropy as attention concentrates on poisoned documents. Building on these findings, we propose D-SCAN (Document-level Signal Collapse Analysis), a lightweight detection framework that monitors attention dynamics to identify attacked generations. Extensive experiments on multiple attack benchmarks demonstrate the effectiveness of our method. Moreover, D-SCAN can detect attacks even when they fail to alter the final answer. Code is available at https://github.com/yingtaoren/D-Scan.git.",
       "date": "2026-08-18",
-      "upvotes": 1,
+      "upvotes": 2,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.06947",
       "pdf": "https://arxiv.org/pdf/2608.06947.pdf",
@@ -17358,7 +17358,7 @@
       ],
       "abstract": "Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however, evaluation must go beyond final scores, which neither reveal where progress is gained or lost nor indicate whether accumulated experience improves later decisions. We therefore present a systematic evaluation of seven frontier models on 36 long-horizon tasks based on a new framework that uses rule-based metrics to characterize within-run behavior through Solution Framing, Execution, and Feedback Control and controlled comparisons to assess experience reuse within and across tasks. The results show that current agents operate more like engineering optimizers than fully autonomous researchers: they can formulate and implement practical solutions, but their performance varies substantially across runs, their strongest solutions mainly adapt or combine established techniques, and genuine methodological novelty remains rare. Detailed analysis reveals that observed performance is shaped by multiple factors, including distinct process bottlenecks behind similar final outcomes, experience reuse that can help or mislead subsequent decisions, and harness designs that affect performance stability. These findings suggest concrete directions for improving model training, inference-time strategies, experience management, and harness design.",
       "date": "2026-08-17",
-      "upvotes": 52,
+      "upvotes": 53,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13417",
       "pdf": "https://arxiv.org/pdf/2608.13417.pdf",
@@ -17394,7 +17394,7 @@
       ],
       "abstract": "On-policy distillation (OPD) offers a promising way to transfer reasoning capabilities from stronger teacher models, but applying it to long-context reasoning teachers and short-context students introduces practical challenges, including tokenizer mismatch, teacher-student distribution mismatch, response length explosion, and training instability. In this work, we study this setting by transferring proof-reasoning capabilities from the long-context reasoning model SU-01 to short-context student models. To handle tokenizer differences, we perform OPD in a shared text space and align only tokens that occupy identical text spans under the student and teacher tokenizers. To mitigate the problem of excessive generation length and frequent truncation, we introduce a student reference KL loss and mask the advantages of special termination tokens such as </think> and <|im_end|>. This strategy constrains the student from drifting excessively from its initial policy, thereby mitigating the teacher-student distribution mismatch problem and fostering steady length growth. Experiments on both same-family and different-family student models, including Qwen3, Qwen3.5, Intern-S2, GLM-4.7, Gemma-4, show consistent gains in mathematical reasoning, especially natural-language math proving. Notably, Intern-S2-Preview improves by 21.2 points on ProofBench, reaching 55.2 and surpassing Gemini-2.5-Pro. It also improves on science benchmarks such as HLE and HiPhO, suggesting that OPD transfers reasoning capabilities that generalize beyond the mathematical training domain.",
       "date": "2026-08-17",
-      "upvotes": 32,
+      "upvotes": 33,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14277",
       "pdf": "https://arxiv.org/pdf/2608.14277.pdf",
@@ -17463,7 +17463,7 @@
       ],
       "abstract": "We introduce Mobius-v0, an architecture that comprises a globally shared Memory (FFN) that stores knowledge vectors and multiple Reasoners (Self-Attn) that iteratively achieve compositional reasoning. Using hidden states as cache and carrier, reasoners repeatedly query memory for required knowledge-vectors, while the knowledge is transmitted back to reasoning operators. Through this knowledge-reasoning-separation architecture, Mobius achieves better knowledge compression and reasoning efficiency. Built upon Mobius-v0 architecture: 1) Our 7B model trained-from-scratch achieves similar downstream score as a 7B Transformer baseline with 62.6% of baseline's training data. 2) Our Intern-S2-Mobius, continually-pretrained from Qwen3.5-35B, achieves similar downstream score while delivering nearly 4x end-to-end inference speedup.",
       "date": "2026-08-17",
-      "upvotes": 31,
+      "upvotes": 32,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14290",
       "pdf": "https://arxiv.org/pdf/2608.14290.pdf",
@@ -17514,7 +17514,7 @@
       ],
       "abstract": "Apollo did not reach the Moon merely because its engineers could solve difficult equations. It succeeded by turning a distant ambition into a mission architecture of explicit objectives, simulation, verification, and repeated correction. AI now faces a similar transition: frontier models can solve difficult tasks once the problem, tools, and success criteria are specified, yet consequential real-world challenges rarely arrive in an executable or verifiable form.   We introduce Apodex Discovery, a framework for building and evaluating discoverative AI through the heavy-duty solver, a system comprising a foundation model, harness, tools, and control policies that pursues extended, stateful, verifiable investigations. It has three core components. First, a problem-scouting process surveyed 561 industries across 16 sectors, assembled 423 high-value real-world problems, and selected 20 for the initial release. Second, a common environment-task-episode abstraction provides data, tools, constraints, feedback, trajectory recording, and verification of intermediate artifacts and final submissions. Third, HDS6 evaluates Tools, Repair, Alternatives, Coherence, Evidence, and Scope independently of final-task success.   In AAV capsid design, Apodex surpassed the published state of the art by 7% across viability, tropism, structure prediction, and generative design. In drug repurposing and reformulation, a task-specific biomedical environment improved the mean normalized prediction score of GPT-5.5 and GPT-5.6-sol by 2.5 and 7.6 points over the same closed-book backbone. Controlled ablations show that the fixed TRACES episode interface enables attribution of performance differences to specific solver components. Apodex Discovery moves AI evaluation beyond predefined benchmarks toward verifiable investigations aimed at genuine discovery.",
       "date": "2026-08-17",
-      "upvotes": 52,
+      "upvotes": 53,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.11341",
       "pdf": "https://arxiv.org/pdf/2608.11341.pdf",
@@ -17551,7 +17551,7 @@
       ],
       "abstract": "The next generation of AI agents is increasingly moving beyond systems that answer isolated questions toward persistent personal assistants that can understand, remember, and continuously learn from users' experiences. Such assistants require long-term memory to accumulate and leverage user-specific experiences over time, yet existing benchmarks remain inadequate for realistic mobile settings, where experiences are heterogeneous, multimodal, evolving, and deeply personal. We introduce MobileMem, a benchmark and framework for studying on-device long-term memory, grounded in a year-scale collection of mobile experiences. MobileMem employs a knowledge-grounded synthesis pipeline to construct coherent and temporally consistent long-horizon trajectories from user-app sessions. It provides complementary text and multimodal settings covering multi-hop and temporal reasoning, knowledge updating, and implicit preference inference. Specifically, MobileMem enables agents to remember the past, understand the present, and adapt to the future. By modeling experiences rather than isolated facts, MobileMem moves memory beyond information retrieval toward experiential intelligence for continuous personal learning.",
       "date": "2026-08-17",
-      "upvotes": 24,
+      "upvotes": 25,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13606",
       "pdf": "https://arxiv.org/pdf/2608.13606.pdf",
@@ -17623,7 +17623,7 @@
       ],
       "abstract": "The human brain exhibits a striking degree of functional specialization, with distinct networks supporting language, formal reasoning, reasoning about other minds, and reasoning about the physical world. Is this modular organization a fundamental principle of how intelligent systems must be built, or an evolutionary accident specific to biological brains? Here, we test whether a similar organization emerges in Large Language Models--another class of intelligent systems created through a very different optimization process. Using circuit analyses across N=46 tasks spanning four cognitive domains (language, formal reasoning, social reasoning, physical reasoning), we find that LLMs develop a modular architecture that mirrors the human brain: tasks drawing on the same network in humans recruit overlapping neurons in LLMs, whereas tasks drawing on different networks recruit distinct neurons. The convergent emergence of modularity in brains and neural networks suggests that it may be a fundamental property of intelligent systems.",
       "date": "2026-08-17",
-      "upvotes": 14,
+      "upvotes": 15,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13567",
       "pdf": "https://arxiv.org/pdf/2608.13567.pdf",
@@ -17653,7 +17653,7 @@
       ],
       "abstract": "As large language models scale, their training-token budgets must also increase to maintain an appropriate tokens-per-parameter ratio (\\(TPP\\)). However, high-quality domain data is much harder to scale than general web data. As model size and the training-token budget increase, its fraction in the training mixture tends to decrease. Repeating the available high-quality data provides an effective way to counteract this dilution, but excessive repetition may lead to overfitting. We study this trade-off under practical LLM scaling, where the training-token budget grows proportionally with model size. For a fixed domain, we first find that, surprisingly at a fixed \\(TPP\\), the optimal repetition count mildly increases with model size. Across different domains, we find that the optimal repetition count is strongly negatively correlated with the final validation loss of a domain: domains with lower loss can generally benefit from more repetitions. In contrast, the amount of unique domain data is only weakly related to the optimal repetition count. These findings suggest that repetition counts tuned on smaller proxy models with the same \\(TPP\\) can provide a practical estimate for larger models.",
       "date": "2026-08-17",
-      "upvotes": 12,
+      "upvotes": 13,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14071",
       "pdf": "https://arxiv.org/pdf/2608.14071.pdf",
@@ -17681,7 +17681,7 @@
       ],
       "abstract": "We propose claim-level falsification as a principle for test-time scaling and instantiate it through Claim-Level Reliability Assessment (CLR), a training-free framework that reallocates test-time compute from additional solution sampling to targeted verification. Since whole-trace evaluation often obscures decisive errors due to signal dilution from routine tokens, CLR condenses each reasoning trace into a compact set of decision-critical claims, thereby isolating its logical anchors. Furthermore, recognizing the inherent difficulty of generating entirely correct solutions under fixed model capabilities, CLR shifts the focus to semantic falsification. This approach exploits a fundamental asymmetry between solution construction and claim refutation. Constructing a valid solution requires a flawless reasoning path, whereas refuting an incorrect claim requires identifying only a single decisive flaw. This targeted search for negative evidence systematically compresses the survival space of high-confidence incorrect traces, effectively suppressing erroneous consensus via nonlinear reliability scoring. Across four LLMs and four reasoning benchmarks under matched budgets, CLR generally improves upon pass@1 and self-consistency. On GPT-OSS-20B/CMIMC25, for instance, CLR exceeds pass@1 by 27.15 percentage-points and raises self-consistency accuracy from 77.50\\% to 82.19\\% with 37.0\\% fewer tokens.",
       "date": "2026-08-17",
-      "upvotes": 11,
+      "upvotes": 12,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.11994",
       "pdf": "https://arxiv.org/pdf/2608.11994.pdf",
@@ -17710,7 +17710,7 @@
       ],
       "abstract": "Multimodal Large Language Models (MLLMs) exhibit strong visual understanding, yet the internal features that cause these behaviors remain difficult to identify, audit, or control. While applicable to post-hoc inspection, hidden states that are decomposed into interpretable feature directions using sparse autoencoders (SAEs) neither readily isolate which features are changed by multimodal training, nor are they directly useful for targeted control. We introduce MMDiff, a multimodal model-diffing framework that trains multimodal SAEs and turns them into feature-level interfaces for discovering and controlling multimodal behavior. MMDiff supports three uses: (i) feature isolation, by diffing a base-LM SAE against its multimodal-adapted counterpart to identify features altered by multimodal training; (ii) task-specific feature detection, via per-token contrastive firing analysis that isolates causal features; and (iii) feature-level control, by causally removing or steering the discovered feature directions. We train multimodal SAEs for three MLLM families, LLaVA-MORE, PaliGemma 2, and InternVL3.5, and evaluate on visual-spatial understanding, multimodal safety, and OCR. MMDiff discovers sparse, causally specific features whose removal selectively degrades target behaviors by an average of 12% on spatial tasks and 17% on OCR, and reduces attack success rate by 24% on multimodal safety attacks, with no impact on VQA performance. Steering these features improves spatial and OCR accuracy by +3.6% and +1.8% on average over a standard single-layer steering baseline. These results show that multimodal SAEs can serve not only as interpretability tools, but as mechanisms for auditing, steering, and controlling MLLMs behavior toward safer and more capable generations.",
       "date": "2026-08-17",
-      "upvotes": 9,
+      "upvotes": 10,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.09928",
       "pdf": "https://arxiv.org/pdf/2608.09928.pdf",
@@ -17748,7 +17748,7 @@
       ],
       "abstract": "Clinical decision support is moving toward committees of language-model agents deliberating on a shared workspace. We ask whether such committees can be gamed by shortcuts, cues a benchmark rewards but a clinician would ignore. Across seven cohorts on six public datasets spanning text (MedQA-USMLE, MedMCQA, MIMIC-CXR reports), imaging (NIH ChestX-ray14, MIMIC-CXR-JPG, CheXpert) and tabular ICU records (SUPPORT2), Gemini committees resist these cues in isolation (flip 5-16%), yet a socially plausible shortcut spreads: when two peers assert the same wrong answer, the holdout under test adopts it in 38% of cases, as does a false \"pre-screen\" system flag, on both capability tiers. Of three oversight agents, a gate cannot separate adoption from honest agreement (false-positive rate 100%); a same-lineage judge reading only the transcript flags adoption on text (precision 100%, recall 93%) but collapses onto the gate in imaging; a referee that privately re-queries the holdout transfers to imaging (77-88% precision, 13-21% false-positive rate). Tripling a cue's visual salience does not move contagion, whereas a second peer voice raises it by half again. Gaming a hidden rubric is near-silent: only 1/10 text and 1/134 imaging drifters name the rubric they moved toward. What games a committee is social plausibility, and only a referee independent of self-report catches it. Code: https://github.com/criticaldata/benchmaxxing",
       "date": "2026-08-17",
-      "upvotes": 5,
+      "upvotes": 6,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.03744",
       "pdf": "https://arxiv.org/pdf/2608.03744.pdf",
@@ -17814,7 +17814,7 @@
       ],
       "abstract": "We show that on-policy reinforcement learning with verifiable rewards (RLVR) can improve the current objective while making successful behaviors for later objectives too rare to sample and reinforce. We call this verifier-induced support reshaping and define effective rewardable support as successful trajectories reachable within a fixed rollout budget. Across two model families, we study this effect through repeated verifier-scored sampling and bidirectional training on mathematical reasoning and constrained instruction following, including sequential training with the opposite verifier. Math-RLVR raises average instruction-following success but reduces the number of prompts with any successful response under repeated sampling. On IFEval with Qwen3-8B-Base, pass@1 rises by 6.5 percentage points while best@32 falls by 9.8 percentage points, and the same divergence appears across both models and IF benchmarks. Conversely, IF-RLVR shifts math responses from step-by-step openings toward direct answers, lowers best@k across sampling budgets, and reduces reward variation for later Math-RLVR. Token-distribution analyses and controlled opening interventions show that these changes concentrate in the first few response tokens. RLVR mainly reranks openings already available in the base policy, and the selected opening causally affects math searchability. The tested reference-policy constraints, routing priors, and on-policy distillation preserve cross-task support only partially; MathIF and ReasonIF show that marginal gains translate only partly into responses that are both correct and constraint-following. Therefore, endpoint improvements do not guarantee future trainability or joint capability under on-policy optimization. Code is available at https://github.com/sylvain-wei/verifier-induced-support-reshaping",
       "date": "2026-08-17",
-      "upvotes": 4,
+      "upvotes": 5,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.00220",
       "pdf": "https://arxiv.org/pdf/2608.00220.pdf",
@@ -17839,7 +17839,7 @@
       ],
       "abstract": "Nanbeige4.2-3B is a 3B-parameter agentic model built around a Looped Transformer (LT) that reuses one stack of layers for a second forward pass, adding effective depth without additional parameters. Evaluated on Apple Silicon (MPS), we identify five independent bugs which prevent the released checkpoint from running via Hugging Face transformers out of the box (including a silently-zeroed RoPE buffer and calls to removed transformers cache APIs). Furthermore, we show that fixing these bugs is still not sufficient for agentic tasks, due to the LT's layer-reuse strategy (which effectively doubles peak attention memory) used to achieve parameter efficiency. We thus introduce a chunked-prefill strategy which alleviates the incurred memory-capacity penalty, extending allowable context width by 2.7 times on 32~GiB shared memory. However, even with the reduced memory overhead, we show that patches are required to render Nanbeige4.2-3B usable; resolving both system prompt and MPS-native memory bugs finally allows reliable evaluation on standard MCP and tool-calling benchmarks. On a subset of MCPMark, the debugged model completes up to 30\\% of real agentic tasks (up from the original's 0\\%), while, on BFCL, it is near-perfect at single tool calls (yet fails the majority of multi-tool tests). We release the patched checkpoint, system prompt optimizer, and evaluation harnesses at https://github.com/johnhalloran321/Nanbeige4.2-3B-mps-fix.",
       "date": "2026-08-17",
-      "upvotes": 3,
+      "upvotes": 4,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13987",
       "pdf": "https://arxiv.org/pdf/2608.13987.pdf",
@@ -17871,7 +17871,7 @@
       ],
       "abstract": "Scientific figures and tables encode essential experimental evidence, yet remain difficult for digital libraries and multimodal AI systems to retrieve and interpret. The ALD/E-ImageMiner benchmark and ICDAR 2026 Competition on Information Extraction from Atomic Layer Deposition/Etching Scientific Figures provide 1,951 figures from 205 publications, expert-annotated for classification, data table extraction, summarization, and visual question answering. In these companion proceedings, we present a forward-looking perspective on how the benchmark can guide future scientific-image challenges. We examine how its tasks probe capabilities from visual and quantitative reading to domain-grounded reasoning and evidential justification, and how Bloom-informed question design can support deeper scientific understanding. We propose \"scientific conceptual understanding from images\" as a long-term benchmark objective, with future directions including broader domains and figure types, contextual and cross-document synthesis, hypothesis evaluation, provenance, uncertainty, counterfactual grounding, and open-ended multimodal research. This perspective connects the ICDAR 2026 challenge to a broader agenda for machine-actionable scientific visual knowledge and verifiable multimodal scientific AI.",
       "date": "2026-08-17",
-      "upvotes": 3,
+      "upvotes": 4,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14075",
       "pdf": "https://arxiv.org/pdf/2608.14075.pdf",
@@ -17894,7 +17894,7 @@
       ],
       "abstract": "In 2023, a New York judge sanctioned two attorneys in Mata v. Avianca for filing a brief with hallucinated citations generated by ChatGPT. Such failures are largely caught by database lookups; the harder problem is detecting citations that point to real cases but do not support the propositions for which they are offered -- a failure mode that existing evaluations of LLMs for legal use cases largely overlook. In this paper, we study proposition-level citation support verification through controlled perturbations of real legal citations obtained from two legal corpora, either replacing the cited case or changing only the pinpoint page within the same case. We evaluate fourteen model configurations on the resulting examples. Models catch 93-100% of wrong-case corruptions. They catch only 37-61% of wrong-pinpoint corruptions on court opinions and 52-83% on legal briefs. When models fail to catch wrong-pinpoint corruptions, they accept the citation based on topical overlap rather than page-level support. Scale and extended reasoning narrow the gap but do not close it: GPT-5.4 with high reasoning effort still misses 40% of pinpoint mismatches on court opinions and 18% on briefs. Prompting the model to verify support at the cited page improves recall, but it also raises the false positive rate. Recognizing the right legal topic and verifying support for the cited proposition are distinct capabilities, and current models conflate them.",
       "date": "2026-08-17",
-      "upvotes": 2,
+      "upvotes": 3,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.12571",
       "pdf": "https://arxiv.org/pdf/2608.12571.pdf",
@@ -18018,7 +18018,7 @@
       ],
       "abstract": "An LLM agent's capability depends not only on model weights but on its harness: prompts, tools, skills, and control flow. Self-improvement loops already edit harnesses, yet single-lineage search is path-dependent and local wins often regress other tasks. We introduce DarwinX, which treats self-evolution as selection over a population of harnesses with the model frozen: a preserve-and-extend contract admits only variants that extend coverage without regressing, an archive keeps alternative lineages for recombination, and failure-, teacher-, and self-derived evidence share one edit interface. Fitness comes from each benchmark's own verifier: no gold solutions, no hand-picked winners. Across four benchmarks that progressively separate the evolution signal from the test, one loop adds about 17 points on average: Terminal-Bench 2.1 rises +7.7 to 83.2% on a matched base and to the verified frontier at 84.7% on a stronger one; TerminalWorld's held-out split reaches 68.3%, ahead of every off-the-shelf agent; WebArena-Infinity real-task pass@1 rises from 43.5% to 93.0% audit-clean; and a Terminal-Bench 2.1 harness transfers unchanged to SWE-bench Verified. What evolves is general agent competence, not benchmark-specific patches, so it survives changes of task, verifier, and base model. A frozen model need not be a fixed agent: harness selection turns evaluation compute into durable capability.",
       "date": "2026-08-14",
-      "upvotes": 110,
+      "upvotes": 111,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.07545",
       "pdf": "https://arxiv.org/pdf/2608.07545.pdf",
@@ -27331,7 +27331,7 @@
       "pdf": "https://arxiv.org/pdf/2608.16977.pdf",
       "id": "arxiv:2608.16977",
       "source": "arxiv",
-      "upvotes": 3,
+      "upvotes": 4,
       "topics": [
         "Reasoning"
       ],
@@ -29204,7 +29204,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19197.pdf",
       "id": "arxiv:2608.19197",
       "source": "arxiv",
-      "upvotes": 44,
+      "upvotes": 45,
       "topics": [
         "LLM Training",
         "Tool Use",
@@ -29434,7 +29434,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18940.pdf",
       "id": "arxiv:2608.18940",
       "source": "arxiv",
-      "upvotes": 29,
+      "upvotes": 30,
       "topics": [
         "Planning",
         "Evaluation",
@@ -30188,7 +30188,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18580.pdf",
       "id": "arxiv:2608.18580",
       "source": "hf",
-      "upvotes": 102,
+      "upvotes": 108,
       "topics": [
         "Alignment",
         "Fine-tuning"
@@ -30481,7 +30481,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18423.pdf",
       "id": "arxiv:2608.18423",
       "source": "arxiv",
-      "upvotes": 15,
+      "upvotes": 16,
       "topics": [
         "Evaluation"
       ],
@@ -30986,7 +30986,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18171.pdf",
       "id": "arxiv:2608.18171",
       "source": "arxiv",
-      "upvotes": 15,
+      "upvotes": 16,
       "topics": [
         "LLM Training",
         "Tool Use",
@@ -31760,7 +31760,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18852.pdf",
       "id": "arxiv:2608.18852",
       "source": "arxiv",
-      "upvotes": 3,
+      "upvotes": 4,
       "topics": [
         "Evaluation",
         "Agent Framework"
@@ -32001,7 +32001,7 @@
       "pdf": "https://arxiv.org/pdf/2608.18565.pdf",
       "id": "arxiv:2608.18565",
       "source": "arxiv",
-      "upvotes": 114,
+      "upvotes": 115,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -32815,7 +32815,7 @@
       ],
       "abstract": "Electrocardiography (ECG), photoplethysmography (PPG), and phonocardiography (PCG) provide complementary views of the same cardiac cycle, yet existing cardiac foundation models are trained for a single sensing modality, leaving the shared physiology across sensors unexploited. We introduce CardioState-JEPA, a cardiac foundation model to learn a single shared representation jointly across ECG, PPG, and PCG, built on a physiology-aware joint-embedding predictive architecture. The model maps heterogeneous waveforms into a common token space, processes them with a single shared Transformer encoder, and learns by predicting masked latent cardiac states, placing the pretraining target on shared physiology rather than sensor-specific waveform appearance. To handle the temporal offsets between electrical, mechanical, and hemodynamic events, cross-modal prediction uses a learned delay aligner that matches signals at the corresponding cardiac time. Because synchronized multi-sensor recordings are scarce, CardioState-JEPA first learns within-modality structure from abundant unimodal data and then uses paired data to align modalities in latent cardiac time. Evaluated as a frozen encoder across 25 downstream tasks spanning ECG, PPG, and PCG, our encoder improves average PPG classification by 8.2 AUROC points, PCG murmur detection by 18.8 AUROC points, and ECG classification by 15.5 AUROC points over the best self-supervised signal baseline and matches or exceeds cardiac models trained with privileged clinical text or supervised labels on several ECG benchmarks. These results establish that heterogeneous cardiac signals can mutually supervise a single foundation model of cardiac physiology.",
       "date": "2026-08-19",
-      "upvotes": 1,
+      "upvotes": 2,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.12944",
       "pdf": "https://arxiv.org/pdf/2608.12944.pdf",
@@ -32956,7 +32956,7 @@
       ],
       "abstract": "Popular facts are memorised more deeply during pretraining and resist removal longer than rare ones, yet existing LLM unlearning methods apply uniform gradient pressure regardless of training-data frequency. We propose the AdaPop (Adaptive Popularity) method, which combines local token confidence with a per-fact popularity-dependent exponent derived from an external proxy (e.g., Wikidata sitelinks, LLM-as-Judge), and automates the forget-retain balance via a dual-ascent controller that adjusts the retain penalty each epoch. Across three model families and two benchmarks, AdaPop leaks ~5x less forgotten content than competing methods under paraphrased queries and ~1.6x less under adversarial reformulations. We support our analysis with internal metrics: under our method, forget-set hidden states move further from the pre-unlearning model's states than under other methods, while retain-set representations remain close.",
       "date": "2026-08-20",
-      "upvotes": 16,
+      "upvotes": 17,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.14229",
       "pdf": "https://arxiv.org/pdf/2608.14229.pdf",
@@ -32979,7 +32979,7 @@
       ],
       "abstract": "Token-level hallucination detectors score each token independently from a single signal, and fail exactly when the generating model is confidently wrong. This paper instead treats hallucination as a temporally extended span and detects it by sequence labeling: each token is scored from a 33-dimensional feature stream that fuses text statistics, Natural Language Inference (NLI) entailment, and language model surprisal, with no access to model internals. A Bidirectional Gated Recurrent Unit (BiGRU) over these features reaches an AUC of 0.840 on RAGTruth (10 seeds), an 11-point gain over an independent logistic-regression baseline (p = 0.002, Wilcoxon signed-rank). A controlled decomposition attributes most of the gain to temporal order rather than model capacity: evidence propagates from confident positions to ambiguous neighbors within a span. The same 0.845 ceiling recurs across recurrent, state-space (Mamba), and attention architectures, locating the bottleneck in the feature set rather than the model. Because it reads only the generated text and external signals, the detector works on closed-source models, and it keeps working on text produced by language models it never saw during training, losing under 4% AUC.",
       "date": "2026-08-20",
-      "upvotes": 2,
+      "upvotes": 3,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.18115",
       "pdf": "https://arxiv.org/pdf/2608.18115.pdf",
@@ -45960,7 +45960,7 @@
       "url": "https://www.semanticscholar.org/paper/16d011e5ad963e6c24e62cf7935b26235525f26c",
       "arxiv": "https://arxiv.org/abs/2608.08466",
       "pdf": "https://arxiv.org/pdf/2608.08466.pdf",
-      "upvotes": 2,
+      "upvotes": 7,
       "topics": [
         "Reasoning",
         "Reflection"
@@ -208958,7 +208958,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19880.pdf",
       "id": "arxiv:2608.19880",
       "source": "hf",
-      "upvotes": 229,
+      "upvotes": 236,
       "topics": [
         "Evaluation"
       ],
@@ -209617,7 +209617,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19854.pdf",
       "id": "arxiv:2608.19854",
       "source": "arxiv",
-      "upvotes": 10,
+      "upvotes": 16,
       "topics": [
         "Planning",
         "Code Agent",
@@ -209730,7 +209730,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19799.pdf",
       "id": "arxiv:2608.19799",
       "source": "arxiv",
-      "upvotes": 51,
+      "upvotes": 57,
       "topics": [
         "Code Agent",
         "Evaluation"
@@ -210537,7 +210537,7 @@
       "pdf": "https://arxiv.org/pdf/2608.20281.pdf",
       "id": "arxiv:2608.20281",
       "source": "arxiv",
-      "upvotes": 4,
+      "upvotes": 10,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -210917,7 +210917,7 @@
       "pdf": "https://arxiv.org/pdf/2608.20202.pdf",
       "id": "arxiv:2608.20202",
       "source": "arxiv",
-      "upvotes": 24,
+      "upvotes": 30,
       "topics": [
         "Reasoning",
         "Evaluation"
@@ -211216,7 +211216,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19863.pdf",
       "id": "arxiv:2608.19863",
       "source": "arxiv",
-      "upvotes": 1,
+      "upvotes": 5,
       "topics": [
         "LLM Training",
         "Evaluation",
@@ -212212,7 +212212,7 @@
       "pdf": "https://arxiv.org/pdf/2608.19891.pdf",
       "id": "arxiv:2608.19891",
       "source": "hf",
-      "upvotes": 4,
+      "upvotes": 10,
       "topics": [
         "VLM Training",
         "RL for LLM"
@@ -212911,7 +212911,7 @@
       ],
       "abstract": "Identity-preserving image generation becomes increasingly unreliable when a scene must contain many specified people. Beyond retaining each identity, the model must bind every reference to a distinct person and location, while training-time identity losses must establish correspondence among several noisy predicted faces. We introduce WithEveryone, a unified framework for generating group images up to ten reference identities. WithEveryone injects each selected identity as an addressed token, predicts a structured identity--layout plan, and renders the plan as a visual condition. Its key objective, Layout-Grounded ID Loss, uses annotated face regions to supervise the intended identities directly, avoiding unstable embedding-based face matching; ID Representation Forcing additionally trains a prediction for each identity before image synthesis. On an identity-disjoint benchmark, WithEveryone achieves the highest target-context identity similarity, improving face similarity from 0.462 for GPT-Image-2 to 0.499, while reducing copy-paste artifacts from 0.169 to 0.055. It further covers 97.3\\% of the requested identities with a duplicate rate of only 2.8\\%. These results show that explicit identity--layout grounding enables identity-preserving generation to scale to larger groups without relying on direct reference-face copying.",
       "date": "2026-08-21",
-      "upvotes": 34,
+      "upvotes": 38,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.20336",
       "pdf": "https://arxiv.org/pdf/2608.20336.pdf",
@@ -226822,7 +226822,7 @@
       ],
       "abstract": "Agent Skills are today either hand-authored or produced in a single LLM generation pass, and consequently possess no closed loop through which they might improve from the interaction failures they actually cause. Recent work does close this loop, but derives its feedback from single-turn question-answering evaluation. The consequence is a sharp asymmetry: once the first round has patched the gaps that a single exchange can reveal, the evolution gradient decays, the defects that surface only across multiple turns remain invisible, and evolution stalls. Governance in these systems is likewise driven by an end-to-end verification score, a scalar gate that can reject a degraded candidate but can neither localize nor repair its structural cause. We argue that the binding constraint on sustained skill evolution is neither editing capability nor the number of iterations, but whether the evaluation feedback keeps supplying trustworthy evolution gradients. We introduce SkillEvo, in which trustworthy feedback generates the gradient and controllable governance constrains its direction. The first component recasts multi-turn user simulation from an evaluation endpoint into a feedback generator: follow-up questions expose defects layer by layer, so that every round of revision both consumes feedback and produces new feedback. The second replaces the passive rejection of a scalar gate with an independent governance layer that actively repairs factual degradation and structural bloat, preventing the gradient from drifting as degradation accumulates. Across six categories of cloud services, 9 production Skills, and 98 skill-reference files, SkillEvo surpasses self-reflection-based evolution by 23.0 points and single- turn-QA-driven evolution by 15.4 points.",
       "date": "2026-08-21",
-      "upvotes": 22,
+      "upvotes": 28,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13120",
       "pdf": "https://arxiv.org/pdf/2608.13120.pdf",
@@ -226848,7 +226848,7 @@
       ],
       "abstract": "Public benchmarks are important measures of Automatic Speech Recognition (ASR) model capabilities. However, by nature of being public, there is risk of models being optimized for these benchmarks in ways that do not generalize well to real-world data. We present a methodology for quantifying benchmark optimization, focusing on cases where the audio underdetermines the reference transcript. We identify three families of behavioral probes that reveal models' capabilities of reproducing benchmark reference spans despite underdetermined audio: reference disagreement, masked-number recovery, and orthographic switching. We find that the highest-scoring open source models output verbatim reference transcript spans even when the relevant audio is contradictory, masked, or ambiguous. Using a variety of mechanistic probes, we show that models respond to narrow acoustic cues to override the faithful representation of the audio in favor of a benchmark-optimized policy. We show the benchmark-optimized behavior can be causally manipulated via low-rank linear steering or simply appending audio to the end of a segment in some cases. Overall, our results indicate that high-performing models exhibit benchmark-conditioned behaviors that can inflate benchmark performance without reflecting improved general-purpose transcription ability.",
       "date": "2026-08-21",
-      "upvotes": 4,
+      "upvotes": 8,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.19936",
       "pdf": "https://arxiv.org/pdf/2608.19936.pdf",
@@ -226877,7 +226877,7 @@
       ],
       "abstract": "Long-form video understanding encompasses tasks that go beyond retrieving isolated events, including tracking an evolving narrative and interpreting social meaning that may remain implicit. However, existing benchmarks rarely evaluate these capabilities jointly, particularly in high-context, non-English media. To address this gap, we introduce NARU, a benchmark designed to evaluate Narrative evolution and Reasoning on cultural Understanding in Japanese long-form video. NARU consists of 1,481 questions grounded in 155 videos totaling 146.8 hours, spanning four narrative and five cultural dimensions. To construct the benchmark at this scale, we propose a hierarchical memory-based annotation pipeline that transforms raw video into structured event, narrative, and cultural annotations, then generates questions via task-oriented synthesis and iterative shortcut removal. The construction process includes two native-speaker verification stages involving 68 annotators. Evaluations across eight model configurations reveal substantial limitations in both long-range narrative integration and culturally grounded reasoning. By exposing these persistent gaps, NARU offers a systematic testing ground for developing MLLMs capable of reliably interpreting long-form, high-context video.",
       "date": "2026-08-21",
-      "upvotes": 2,
+      "upvotes": 7,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.13210",
       "pdf": "https://arxiv.org/pdf/2608.13210.pdf",
@@ -226902,7 +226902,7 @@
       ],
       "abstract": "Should you replace your text-embedding pipeline with a large language model? We answer this with a controlled, cost-aware comparison of ten LLMs across six families and 26 embedding models (118M to 14B parameters) on 37 tasks spanning classification, semantic textual similarity (STS), clustering, pair classification, and retrieval. In aggregate the two paradigms are effectively tied: the best LLM (Gemini 3.1 Pro, 77.6) and the best embedding model (77.2) differ by 0.4 points. Their strengths differ by task: LLMs lead on reasoning-heavy retrieval, embedding models lead on classification, and the two match on clustering, STS, and pair classification. Reaching that parity is expensive. An LLM costs up to 1,431x more than an embedding model of comparable quality (USD 154 vs. USD 0.11 per benchmark pass), and the open LLMs tested process tokens 2.5 to 736x more slowly on the same GPU. Reasoning tokens account for 28 to 81% of LLM inference cost; lower reasoning budgets preserve or improve retrieval quality for most models in our ablation. The Pareto frontier contains the leading embedding models and one LLM, Gemini 3.1 Pro. These results support a division of labour: use embedding models for similarity, classification, and clustering, and reserve LLMs for reasoning-intensive retrieval. Our code, datasets, and results are publicly available at https://github.com/embeddings-benchmark/embedders-dilemma.",
       "date": "2026-08-21",
-      "upvotes": 1,
+      "upvotes": 6,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.12875",
       "pdf": "https://arxiv.org/pdf/2608.12875.pdf",
