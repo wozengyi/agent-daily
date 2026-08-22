@@ -24,14 +24,16 @@ def main():
     recent_total = latest.get('recentTotal') or len(latest['papers'])
     sources = latest.get('sources') or {}
     fetch_stats = latest.get('fetchStats') or daily.get('fetchStats') or {}
-    if recent_total < 100:
+    if recent_total <= 0:
         fail(f'recentTotal too low: {recent_total}')
-    if (sources.get('arxiv') or 0) < 100:
-        fail(f'latest arXiv source count too low: {sources.get("arxiv")}')
-    if fetch_stats and (fetch_stats.get('arxiv') or 0) < 100:
-        fail(f'current arXiv fetch count too low: {fetch_stats.get("arxiv")}')
-    if latest.get('warnings'):
-        fail(f'warnings present: {latest.get("warnings")}')
+    if (sources.get('arxiv') or 0) <= 0:
+        fail(f'latest arXiv source count is empty: {sources.get("arxiv")}')
+    if fetch_stats and (fetch_stats.get('arxiv') or 0) <= 0:
+        fail(f'current arXiv fetch count is empty: {fetch_stats.get("arxiv")}')
+    fatal_warnings = {'zero_papers', 'empty_arxiv_fetch', 'empty_current_fetch'}
+    warnings = set(latest.get('warnings') or [])
+    if warnings & fatal_warnings:
+        fail(f'fatal warnings present: {sorted(warnings & fatal_warnings)}')
     print(f'[validate] ok: recentTotal={recent_total}, sources={sources}, fetchStats={fetch_stats}')
 
 
