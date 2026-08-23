@@ -576,7 +576,7 @@
       "url": "https://arxiv.org/abs/2608.12627",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.15424",
@@ -1417,7 +1417,7 @@
       ],
       "abstract": "An LLM agent's capability depends not only on model weights but on its harness: prompts, tools, skills, and control flow. Self-improvement loops already edit harnesses, yet single-lineage search is path-dependent and local wins often regress other tasks. We introduce DarwinX, which treats self-evolution as selection over a population of harnesses with the model frozen: a preserve-and-extend contract admits only variants that extend coverage without regressing, an archive keeps alternative lineages for recombination, and failure-, teacher-, and self-derived evidence share one edit interface. Fitness comes from each benchmark's own verifier: no gold solutions, no hand-picked winners. Across four benchmarks that progressively separate the evolution signal from the test, one loop adds about 17 points on average: Terminal-Bench 2.1 rises +7.7 to 83.2% on a matched base and to the verified frontier at 84.7% on a stronger one; TerminalWorld's held-out split reaches 68.3%, ahead of every off-the-shelf agent; WebArena-Infinity real-task pass@1 rises from 43.5% to 93.0% audit-clean; and a Terminal-Bench 2.1 harness transfers unchanged to SWE-bench Verified. What evolves is general agent competence, not benchmark-specific patches, so it survives changes of task, verifier, and base model. A frozen model need not be a fixed agent: harness selection turns evaluation compute into durable capability.",
       "date": "2026-08-14",
-      "upvotes": 112,
+      "upvotes": 113,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.07545",
       "pdf": "https://arxiv.org/pdf/2608.07545.pdf",
@@ -1433,7 +1433,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06867",
@@ -1468,7 +1468,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.13505",
@@ -1606,7 +1606,7 @@
       "pdf": "https://arxiv.org/pdf/2608.13505.pdf",
       "id": "arxiv:2608.13505",
       "source": "hf",
-      "upvotes": 68,
+      "upvotes": 69,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -1625,7 +1625,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.13505",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.13560",
@@ -1667,7 +1667,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.13560",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08975",
@@ -1698,7 +1698,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.13552",
@@ -1735,7 +1735,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.12743",
@@ -1778,7 +1778,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12743",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.12149",
@@ -1812,7 +1812,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11745",
@@ -1844,7 +1844,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11752",
@@ -1877,7 +1877,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08888",
@@ -1910,7 +1910,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.13391",
@@ -1945,7 +1945,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07193",
@@ -1976,7 +1976,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.10538",
@@ -2005,7 +2005,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08020",
@@ -2035,7 +2035,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.12990",
@@ -2069,7 +2069,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12990",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.02870",
@@ -2096,7 +2096,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2607.29211",
@@ -2129,7 +2129,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.13430",
@@ -2157,7 +2157,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11660",
@@ -2191,7 +2191,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.12440",
@@ -2216,7 +2216,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12440",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09158",
@@ -2249,7 +2249,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11951",
@@ -2275,7 +2275,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.13883",
@@ -3956,7 +3956,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.00677",
@@ -3990,7 +3990,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.12307",
@@ -4024,7 +4024,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.12036",
@@ -4068,7 +4068,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.05604",
@@ -4084,7 +4084,7 @@
       ],
       "abstract": "Large Language Models (LLMs) increasingly act as agents whose procedural knowledge is stored in reusable skill packages and loaded at inference time. As skill libraries grow, a central challenge is to expose the smallest sufficient executable context under a limited context budget. Existing systems struggle to reuse routines below the whole-skill level, preserve procedural contracts during compression, keep compressed routines executable and expandable, and update the compressed library as skills evolve. These challenges reveal a unit mismatch: skills are retrieved as packages, compressed as text, and converted into execution graphs only after retrieval, whereas reliable reuse requires a contract-bearing procedural unit. We propose SkillZip, an execution-aware procedural abstraction framework that performs contract-preserving compression over section-level graphs. SkillZip rewrites recurring contract-valid motifs into reversible ported macros while preserving boundary signatures, dependency closure, verifier reachability, and source-level expansion. At inference time, it hydrates a compact, dependency-closed context and expands macros only when required. ReZip further integrates new skills and revises risky macros using execution evidence. Comprehensive experiments1 on technical and embodied agent benchmarks show SkillZip consistently outperforms the strongest baseline by up to 12.2 points, while achieving a 3.46x compression ratio with 99.2% dependency preservation and 98.7% verifier reachability. Scaling analyses further confirm robust retrieval across skill libraries ranging from 200 to 100K skills.",
       "date": "2026-08-13",
-      "upvotes": 78,
+      "upvotes": 79,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.05604",
       "pdf": "https://arxiv.org/pdf/2608.05604.pdf",
@@ -4098,7 +4098,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08160",
@@ -4130,7 +4130,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.12314",
@@ -4170,7 +4170,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12314",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.10708",
@@ -4201,7 +4201,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11216",
@@ -4233,7 +4233,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11350",
@@ -4266,7 +4266,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09926",
@@ -4303,7 +4303,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.11878",
@@ -4344,7 +4344,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11562",
@@ -4375,7 +4375,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11616",
@@ -4408,7 +4408,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09805",
@@ -4438,7 +4438,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.10450",
@@ -4466,7 +4466,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.10450",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11367",
@@ -4499,7 +4499,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11274",
@@ -4530,7 +4530,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08107",
@@ -4564,7 +4564,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11045",
@@ -4589,7 +4589,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.12836",
@@ -4616,7 +4616,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06729",
@@ -4651,7 +4651,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.13547",
@@ -4681,7 +4681,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.13547",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2605.03799",
@@ -5406,7 +5406,7 @@
       "url": "https://arxiv.org/abs/2608.12854",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.12843",
@@ -7076,7 +7076,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11205",
@@ -7106,7 +7106,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07645",
@@ -7134,7 +7134,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.10875",
@@ -7164,7 +7164,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.11079",
@@ -7194,7 +7194,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.10812",
@@ -7226,7 +7226,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.10812",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08627",
@@ -7261,7 +7261,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09900",
@@ -7299,7 +7299,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.10692",
@@ -7339,7 +7339,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08389",
@@ -7372,7 +7372,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.10628",
@@ -7408,7 +7408,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.10636",
@@ -7439,7 +7439,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08119",
@@ -7468,7 +7468,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.10366",
@@ -7501,7 +7501,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08814",
@@ -7533,7 +7533,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07458",
@@ -7561,7 +7561,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2607.27670",
@@ -7606,7 +7606,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.11967",
@@ -8821,7 +8821,7 @@
       "url": "https://arxiv.org/abs/2608.11907",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.11816",
@@ -9477,7 +9477,7 @@
       "url": "https://arxiv.org/abs/2608.12127",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "pid": "2608.12122",
@@ -10253,7 +10253,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09819",
@@ -10358,7 +10358,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06296",
@@ -10391,7 +10391,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09802",
@@ -10433,7 +10433,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09867",
@@ -10471,7 +10471,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08311",
@@ -10502,7 +10502,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07169",
@@ -10532,7 +10532,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09119",
@@ -10593,7 +10593,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09873",
@@ -10623,7 +10623,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06751",
@@ -10659,7 +10659,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.04419",
@@ -10691,7 +10691,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07565",
@@ -10725,7 +10725,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08097",
@@ -10758,7 +10758,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07594",
@@ -10793,7 +10793,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08621",
@@ -10824,7 +10824,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09096",
@@ -10858,7 +10858,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08021",
@@ -10896,7 +10896,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07346",
@@ -10934,7 +10934,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.02508",
@@ -10967,7 +10967,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06065",
@@ -11001,7 +11001,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.03499",
@@ -11036,7 +11036,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09420",
@@ -11070,7 +11070,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08477",
@@ -11100,7 +11100,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07886",
@@ -11129,7 +11129,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.03887",
@@ -11155,7 +11155,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09043",
@@ -11180,7 +11180,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08722",
@@ -11204,7 +11204,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2607.27637",
@@ -11237,7 +11237,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07463",
@@ -11268,7 +11268,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08786",
@@ -11302,7 +11302,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06111",
@@ -11330,7 +11330,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09766",
@@ -11376,7 +11376,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09848",
@@ -11401,7 +11401,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.14707",
@@ -11907,7 +11907,7 @@
       ],
       "abstract": "Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) exhibit fundamentally different behaviors in enhancing multi-task reasoning for large language models (LLMs). Our preliminary experiments revealed a phenomenon: SFT suffers from severe task conflicts under multi-stage training, whereas RL enables stable coexistence across diverse tasks. Empirically, we trace this to the parameter level, observing that RL induces sparse and approximately orthogonal updates across tasks. We provide a theoretical explanation for this mechanism by analyzing multi-task gradient interference. Our results reveal a distinction: interference in SFT is norm-limited, scaling with the absolute gradient magnitude, whereas interference in RL is variance-limited, bounded by the gradient variance induced by advantage normalization and on-policy optimization. This small variance bound yields near-orthogonal optimization directions across tasks. Leveraging this insight, we propose Parallel-RL, a paradigm that decouples multi-task training, significantly improving efficiency and flexibility.",
       "date": "2026-08-10",
-      "upvotes": 56,
+      "upvotes": 57,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.03573",
       "pdf": "https://arxiv.org/pdf/2608.03573.pdf",
@@ -11927,7 +11927,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.04205",
@@ -12043,7 +12043,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.03571",
@@ -12073,7 +12073,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07051",
@@ -12107,7 +12107,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06113",
@@ -12139,7 +12139,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2607.23379",
@@ -12168,7 +12168,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.05703",
@@ -12202,7 +12202,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07408",
@@ -12235,7 +12235,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.03796",
@@ -12266,7 +12266,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.02148",
@@ -12298,7 +12298,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.02831",
@@ -12334,7 +12334,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06865",
@@ -12372,7 +12372,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.00675",
@@ -12396,7 +12396,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06714",
@@ -12427,7 +12427,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07110",
@@ -12456,7 +12456,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06013",
@@ -12491,7 +12491,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06756",
@@ -12528,7 +12528,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.04314",
@@ -12570,7 +12570,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.01310",
@@ -12600,7 +12600,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.07341",
@@ -12629,7 +12629,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2603.18846",
@@ -12658,7 +12658,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.06485",
@@ -12688,7 +12688,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2606.00152",
@@ -12719,7 +12719,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.04302",
@@ -12746,7 +12746,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.09142",
@@ -13158,7 +13158,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.08466",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.08640",
@@ -16523,7 +16523,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T13:16:59.857408+00:00"
+      "lastSeenAt": "2026-08-23T16:09:51.234212+00:00"
     },
     {
       "id": "arxiv:2608.04926",
