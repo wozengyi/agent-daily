@@ -1,7 +1,1159 @@
 {
   "year": "2026",
-  "count": 3496,
+  "count": 3535,
   "papers": [
+    {
+      "pid": "2608.15888",
+      "title": "Bounded Agents: Delegation Security for Multi-Agent AI Systems",
+      "abstract": "LLM-based agents can act on behalf of a user to access cloud services, call tools, or invoke agents. At session start, the agent's permissions are set but remain static, and each request is evaluated independently, without considering prior actions. Within its permissions, an agent may act contrary to the delegated task, combine individually permitted actions into a prohibited outcome, or delegate authority to a sub-agent without limiting it. A prompt injection poses a risk only if the agent has authority to perform such actions; this is therefore a problem of authorization architecture, not just the model. The Agentic Principal Chain (APC) tracks delegated authority from one principal to the next. APC evaluates each request against the accumulated session state using six authorization checks. APC carries forward and restricts delegated scope and budgets. Using composition closure, APC checks requests against prior actions to prevent prohibited combinations and enforces the decision outside the model. We prove Blast Radius Monotonicity and Composition Soundness for APC implementations; Composition Soundness is limited to prohibited combinations under a complete restriction set and serialized admission. We evaluated 3,154 instances including InjecAgent, AgentDojo, and ASB. Our compromised-model evaluation tests APC independently of model behavior by inserting the ground-truth attack call after the first legitimate tool call. AgentDojo exfiltration fell from 75-100% to 0% across all four domains; APC blocked all 544 InjecAgent data-stealing cases. Intent binding reduced destruction from 38.6% to 4.0% and manipulation from 90.5% to 12.1%. Authorization latency was 0.24 ms at the 99th percentile on an idle host; across 949 AgentDojo task-injection pairs, utility was 8.6 and 13.9 percentage points lower in the two settings. Implementation, evaluation tools, and data are publicly available.",
+      "date": "2026-08-16",
+      "authors": [
+        "Xabier Muruaga"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15888",
+      "pdf": "https://arxiv.org/pdf/2608.15888.pdf",
+      "id": "arxiv:2608.15888",
+      "source": "arxiv",
+      "upvotes": 4,
+      "topics": [
+        "Agent Safety",
+        "Multi-Agent",
+        "Evaluation"
+      ],
+      "tags": [
+        "Agent Safety",
+        "Multi-Agent",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15888",
+      "hfUrl": "https://huggingface.co/papers/2608.15888",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
+    },
+    {
+      "pid": "2608.15875",
+      "title": "GigaBrain-0.7: Scaling Embodied Foundation Models to Emergent Capabilities with a Three-System Architecture",
+      "abstract": "Vision-language-action (VLA) models have become a dominant paradigm for generalist embodied agents, demonstrating strong complex and long-horizon task completion in structured settings. Yet it remains an open question whether current VLA systems can benefit from more effective architectural design, scale to substantially larger and more heterogeneous data regimes, and achieve broader generalization across tasks and embodiments. To this end, we present GigaBrain-0.7, an embodied foundation model with substantially improved generalization across diverse robot embodiments. Specifically, GigaBrain-0.7 unifies understanding, prediction, and action through a three-system architecture, scales pretraining to over 37,000 hours of heterogeneous embodied data, and introduces one-stage alignment training that jointly optimizes vision-language understanding and multi-embodiment action generation. Compared with the preceding GigaBrain-0 series and prior state-of-the-art models including $π_{0.5}$, GigaBrain-0.7 achieves substantial improvements in foundation zero-shot capabilities, language-conditioned instruction following, and post-training task success rates. In particular, on our in-house Maker H01 platform and mainstream robot embodiments, GigaBrain-0.7 demonstrates strong task adaptability and completion ability across both home and industrial scenarios. All training code and pretrained model weights will be released.",
+      "date": "2026-08-16",
+      "authors": [
+        "GigaBrain Team",
+        "Angen Ye",
+        "Axiang Sun",
+        "Can Jin",
+        "Chenxi Cheng",
+        "Chong Shi",
+        "Dengke Shang",
+        "Dingqian Zhang",
+        "Guan Huang",
+        "Guangqiang Wang",
+        "Guangqing Ding",
+        "Guo Li",
+        "Hangcong Li",
+        "Hengyu Zhong",
+        "Hongtao Lu",
+        "Jianbo Qin",
+        "Jiming Mao",
+        "Jing Zhu",
+        "Jindi Lv",
+        "Jingzhi Cui",
+        "Junjie Xie",
+        "Junyi Bao",
+        "Kai Liu",
+        "Lei Yuan",
+        "Limin Long",
+        "Lv Feng",
+        "Mingming Yu",
+        "Peng Li",
+        "Pengfei Yi",
+        "Qi Li",
+        "Qianli Zhang",
+        "Qingfang Li",
+        "Qitang Hu",
+        "Rui Zhang",
+        "Shaoyan Sun",
+        "Shibo Sun",
+        "Shiying Duan",
+        "Tenghui Chen",
+        "Tianze Liu",
+        "Weijie Ke",
+        "Wenyao Xue",
+        "Xiaofeng Wang",
+        "Xiaoyu Tian",
+        "Xinyu Liu",
+        "Xinze Chen",
+        "Yang Wang",
+        "Yankai Wang",
+        "Yejun Zeng",
+        "Yifan Li",
+        "Yifei Nie",
+        "Yilong Li",
+        "Yilong Liu",
+        "Yongchao Feng",
+        "Yumeng Wang",
+        "Yun Ye",
+        "Zhichao Liu",
+        "Ziheng He",
+        "Zonghai Yang",
+        "Zheng Zhu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15875",
+      "pdf": "https://arxiv.org/pdf/2608.15875.pdf",
+      "id": "arxiv:2608.15875",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Post-Training",
+        "LLM Training",
+        "VLM Training",
+        "Alignment"
+      ],
+      "tags": [
+        "Post-Training",
+        "LLM Training",
+        "VLM Training",
+        "Alignment"
+      ],
+      "url": "https://arxiv.org/abs/2608.15875",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15602",
+      "title": "FluxBin: Flexible LUT-based Ultra-low-bit LLM Inference by Algorithm-Kernel Synergy",
+      "abstract": "While binary quantization theoretically promises extreme compression and acceleration for Large Language Models (LLMs), existing research often overlooks the necessity of specialized hardware kernels, thus failing to unleash the full acceleration potential due to persistent reliance on expensive floating-point arithmetic or runtime dequantization overheads. To bridge this gap, we propose FluxBin (\\textbf{F}lexible \\textbf{L}UT-based \\textbf{U}ltra-low-bit e\\textbf{X}ecution with \\textbf{Bin}ary bases), an algorithm-kernel co-design that synergizes post-training quantization with a highly optimized CUDA kernel. Algorithmically, we introduce Decoupled Row-Column Binary Decomposition to enhance representational capacity while maintaining hardware efficiency, complemented by a Hessian-guided saliency-aware hybrid bases that preserve critical information. At the kernel level, we implement a Lookup Table Building Approach with Scale Fusion to reduce floating-point arithmetic, featuring a Virtual Columnar Mapping that transforms irregular, sparse, and salient matrices into dense execution. Extensive evaluations demonstrate FluxBin achieves up to $5.92\\times$ speedup and $10.19\\times$ energy savings across diverse model architectures, delivering comparable accuracy to heavily fine-tuned methods. This effectively enables the deployment of 70B-scale models on one single A100 GPU with a $4\\times$ memory reduction. Code is available at https://github.com/nicyyyy/FluxBin.",
+      "date": "2026-08-16",
+      "authors": [
+        "Qingyao Yang",
+        "Runming Yang",
+        "He Xiao",
+        "Wendong Xu",
+        "Junyu Chen",
+        "Haobo Liu",
+        "Chenchen Ding",
+        "Ruihan Hu",
+        "Yik-Chung Wu",
+        "Ngai Wong"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15602",
+      "pdf": "https://arxiv.org/pdf/2608.15602.pdf",
+      "id": "arxiv:2608.15602",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Post-Training",
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Post-Training",
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15602",
+      "venue": "arXiv",
+      "publicationKind": "preprint",
+      "published": "2026-08-16",
+      "year": 2026,
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15516",
+      "title": "UniFed-VLM: Federated Instruction Tuning for Vision-Language Models with Multiple Heterogeneity",
+      "abstract": "Vision-Language Models (VLMs) have demonstrated strong performance in multimodal understanding and generation. However, fine-tuning of VLMs typically relies on centralized data, which raises privacy concerns in certain domains (e.g. healthcare). Federated Learning (FL) provides a natural solution by enabling model training without sharing raw data. However, applying FL to VLM instruction tuning is highly challenging. VLMs have substantial parameter scales, and in real-world scenarios, clients exhibit significant heterogeneity in tasks, modalities, and model architectures.   Existing methods mainly focus on simplified settings and are unable to handle such multi-dimensional heterogeneous scenarios. In this work, we study federated instruction tuning under joint heterogeneity in tasks, modalities, and model architectures.   We propose UniFed-VLM, a unified federated instruction tuning framework for VLMs that addresses multiple types of heterogeneity. It consists of two key components: 1) Federated Compensated Subspace Aggregation (FedCSA), which performs subspace-aligned aggregation of parameter-efficient adapters with dynamic weighting and compensation to mitigate heterogeneity-induced conflicts; 2) Two-stage Collaborative Distillation (TCoD), which enables effective knowledge transfer across heterogeneous models via a Mutual Distillation Adapter (MDA) and a mixture-of-experts-based distillation strategy. We conduct experiments on multiple benchmark datasets, and the results show that UniFed-VLM achieves stronger average performance across diverse tasks compared with existing FL methods. The source code is available at: https://github.com/wangpengyu2004/UniFed-VLM.",
+      "date": "2026-08-16",
+      "authors": [
+        "Pengyu Wang",
+        "Baochen Xiong",
+        "Xiaoshan Yang",
+        "Yifan Xu",
+        "Zhang Qimeng",
+        "Haifeng Chen",
+        "Changsheng Xu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15516",
+      "pdf": "https://arxiv.org/pdf/2608.15516.pdf",
+      "id": "arxiv:2608.15516",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "VLM Training",
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "VLM Training",
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15516",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15600",
+      "title": "VARM-Bench: Benchmarking Verifiable Structured Reasoning in Chinese Abusive Speech Moderation",
+      "abstract": "The widespread circulation of abusive online content has increased the need for reliable moderation of Chinese social-media text. Existing Chinese benchmarks support label classification, fine-grained toxicity categorization, and target-aware extraction, but do not provide a unified representation for deterministically verifying the stated basis of a moderation decision. We introduce VARM-Bench, a benchmark for field-anchored chain-of-thought rationales in Chinese abusive-speech moderation. Each instance contains a concise natural-language rationale with explicit anchors for six decisions: target, target type, target explicitness, author stance, harmfulness label, and fine-grained category. Our deterministic protocol evaluates field correctness, target alignment, output validity, complete-record agreement, and hidden record errors conditioned on correct final decisions, without relying on an LLM judge. Under a common structured-output protocol, we evaluate language models across multiple model families using zero-shot prompting, taxonomy guidance, and structured CoT supervision, and analyze lexical-cue sensitivity and field-level errors. Results show that strong label-level performance can conceal substantial errors in complete moderation records. VARM-Bench provides an auditable and reproducible benchmark for evaluating verifiable moderation rationales in Chinese abusive-speech moderation.",
+      "date": "2026-08-16",
+      "authors": [
+        "Mingyu Yuan",
+        "Shengtao Wen",
+        "Lingbing Guo",
+        "Zhen Bi",
+        "Xiang Chen"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15600",
+      "pdf": "https://arxiv.org/pdf/2608.15600.pdf",
+      "id": "arxiv:2608.15600",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning",
+        "Evaluation",
+        "Alignment"
+      ],
+      "tags": [
+        "Reasoning",
+        "Evaluation",
+        "Alignment"
+      ],
+      "url": "https://arxiv.org/abs/2608.15600",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15738",
+      "title": "An AI-Based Adaptive Learning Platform for Multilingual and Low-Resource Educational Contexts: A Case Study on Nigeria",
+      "abstract": "Educational platforms in under-resourced and multilingual contexts, such as Nigeria, often struggle with limited personalisation, inadequate language support, and weak curriculum internationalisation, leading to reduced learner engagement and inclusivity. This paper presents an AI-based adaptive learning platform designed for multilingual and low-resource educational contexts, with a case study on Nigerian Pidgin English. The system integrates fine-tuned large language models (LLMs) within a personalised and adaptive learning (PAL) framework, addressing linguistic inclusivity and computational constraints in resource-limited environments. To enhance linguistic alignment, a curated Nigerian Pidgin corpus was developed and used to fine-tune an instruction-tuned LLM. The study further investigates model optimisation through multi-level quantisation (4-bit, 5-bit, and 8-bit), enabling systematic analysis of trade-offs between semantic fidelity and computational efficiency. Experimental evaluation combines automatic semantic metrics (BLEU, ROUGE-L, BERTScore, perplexity, lexical diversity) with human-centred cultural assessment conducted by native speakers. Results demonstrate that higher-bit quantisation improves semantic preservation and structural coherence, while lower-bit models offer reduced inference latency with minimal degradation in instructional quality. The findings establish a deployable, resource-aware intelligent learning system that balances semantic robustness, cultural relevance, and computational efficiency. This work contributes an experimentally validated framework for adapting large language models to low-resource languages while maintaining practical feasibility for scalable educational deployment.",
+      "date": "2026-08-16",
+      "authors": [
+        "Everistus Ugochukwu Nwogo",
+        "Isibor Kennedy Ihianle",
+        "Pedro Machado",
+        "Jordan J. Bird",
+        "Ahmad Lotfi",
+        "Ahmad Abdulnasir Shuaib",
+        "Isaac Ibukun Akinwumi",
+        "Jonathan Oluranti"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15738",
+      "pdf": "https://arxiv.org/pdf/2608.15738.pdf",
+      "id": "arxiv:2608.15738",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation",
+        "Alignment",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Evaluation",
+        "Alignment",
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15738"
+    },
+    {
+      "pid": "2608.15736",
+      "title": "Toward AI-Friendly Cartography: Understanding How Color Design Influences Foundation Model Spatial Reasoning on Sequential Choropleth Maps",
+      "abstract": "Foundation models (FMs) increasingly support multimodal and geospatial reasoning, yet it remains unclear whether cartographic principles designed for human perception are equally effective for machines. Focusing on sequential choropleth maps, we examine how hue palette, color ordering, and lightness contrast influence FM spatial reasoning. We construct a controlled benchmark of 5,760 maps and 28,800 questions spanning Attribute Identify, Spatial Recognition, Compare, Rank, and Pattern Delineate, and evaluate 21 open-source and proprietary multimodal FMs. Results show that hue choice has limited and inconsistent effects, whereas disrupting sequential color ordering substantially reduces performance, especially for comparison and ranking. Reduced lightness contrast also consistently impairs reasoning, while increasing contrast beyond sufficient separability provides only marginal gains. LoRA fine-tuning improves overall accuracy but preserves these relative sensitivities. Additional factorial experiments further indicate that errors arise from color-and-legend decoding, spatial reasoning, and the integration of thematic attributes with spatial structure. These findings show that conventional sequential ordering and sufficient contrast remain important for machine map understanding and provide empirical guidance for AI-friendly cartographic design.",
+      "date": "2026-08-16",
+      "authors": [
+        "Yonghe Sun",
+        "Zhenjia Liu",
+        "Hua Liao",
+        "Wenjia Xu",
+        "Nai Yang",
+        "Weihua Dong",
+        "Zhiwei Wei"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15736",
+      "pdf": "https://arxiv.org/pdf/2608.15736.pdf",
+      "id": "arxiv:2608.15736",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning",
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Reasoning",
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15736"
+    },
+    {
+      "pid": "2608.15592",
+      "title": "When Entropy Is Not Enough: Reclaiming Lost Semantics in LLM Output Length Prediction",
+      "abstract": "Efficient LLM serving is often bottlenecked by the need to pad sequences to a fixed maximum length, and this wastes compute and degrades throughput. Predicting output lengths in advance makes it possible to adopt length-aware scheduling, and this reduces the overhead. This advantage is especially pronounced in long-context reasoning and reinforcement learning applications. Existing approaches, such as entropy-guided token pooling, use token-wise entropy as their primary signal, but they tend to ignore differences in semantic content across tokens. So, important tokens are often underweighted, and tokens carrying little information receive disproportionate emphasis. This hurts the reliability of length prediction. We introduce ESTP (Entropy-and-Semantic Token Pooling), a lightweight framework that addresses this issue by combining entropy with attention-based importance scores. These scores are derived directly from the self-attention weights computed during the LLM prefill phase, and this allows ESTP to capture both uncertainty and semantic importance with minimal additional computation. Since the framework reuses prefill activations, it adds almost no extra memory overhead and introduces only minimal latency. On the ForeLen benchmark, ESTP outperforms baseline methods, achieves better prediction accuracy and lower error rates in most scenarios. When integrated with a length-aware scheduler in end-to-end system tests, it further helps improve overall throughput and reduce the padding ratio. Our results offer a practical and effective building block for length-aware LLM serving systems.",
+      "date": "2026-08-16",
+      "authors": [
+        "Feiyang Ren",
+        "Shengtao Wen",
+        "Lingbing Guo",
+        "Yu Tian",
+        "Yuanning Cui",
+        "Xiang Chen"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15592",
+      "pdf": "https://arxiv.org/pdf/2608.15592.pdf",
+      "id": "arxiv:2608.15592",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning",
+        "Evaluation",
+        "RL for LLM"
+      ],
+      "tags": [
+        "Reasoning",
+        "Evaluation",
+        "RL for LLM"
+      ],
+      "url": "https://arxiv.org/abs/2608.15592"
+    },
+    {
+      "pid": "2608.15703",
+      "title": "HyMem: Hierarchical Context Management for Long-Horizon Agents via Information Isolation",
+      "abstract": "Large language model (LLM) agents often perform poorly on complex, long-horizon tasks because their context becomes increasingly cluttered over time. As interactions accumulate, detailed execution traces and intermediate outputs dominate the context, making it difficult for the model to retain and use high-level planning information. Most existing methods address this issue through compression or retrieval applied to a single, flat context, which does not clearly separate different types of context information and often leads to degraded reasoning. To address this challenge, we propose HyMem, a hierarchical framework that explicitly separates the agent's context into distinct functional layers. HyMem organizes context by function to separate high-level planning from execution and complex analysis. Its isolated reasoning module handles complex subtasks without adding intermediate reasoning traces to the persistent planning context, while its memory management module preserves task progress across context refreshes through structured summaries. These components reduce redundant context accumulation, retain task-critical information, and support coherent long-horizon reasoning within a limited context window. Experiments on GAIA and Browsecomp-plus show that, with DeepSeek-V4, HyMem achieves average Pass@1 scores of 66.7% and 61.3%, outperforming the strongest baseline by 6.1 and 4.7 percentage points, respectively. Further analysis indicates that HyMem effectively controls the growth of the reasoning context, allowing the model to maintain focus and accuracy across complex, long-horizon tasks.",
+      "date": "2026-08-16",
+      "authors": [
+        "XinQi Wang",
+        "Jinwei Xiao",
+        "Sijia Cui",
+        "Hongming Zhang",
+        "Yanna Wang",
+        "Qingyang Zhang",
+        "Bo Xu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15703",
+      "pdf": "https://arxiv.org/pdf/2608.15703.pdf",
+      "id": "arxiv:2608.15703",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning",
+        "Planning"
+      ],
+      "tags": [
+        "Reasoning",
+        "Planning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15703",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15857",
+      "title": "RAGas: Retrieval-Augmented Gas Optimization for Smart Contracts with Continuous Knowledge Integration",
+      "abstract": "Ethereum is now integral to mission-critical sectors, including finance, healthcare, and supply chain management. Execution fees, commonly referred to as Gas, scale with the computational complexity of their functions. Smart contracts on Ethereum incur execution fees, known as Gas, which increase with computational complexity. Thus, optimizing Gas-intensive code while preserving functional equivalence significantly lowers deployment costs. No existing system continuously exploits evolving Gas usage patterns. We systematically analyze syntactic and semantic constructs that drive excessive Gas use. This yields six high-level categories covering twelve fine-grained antipatterns underpinning a curated knowledge base. We operationalize these insights with RAGas, a three-stage retrieval-augmented generation framework that uses a large language model to pinpoint and automatically fix Gas inefficiencies. Experiments on deployed contracts demonstrate that RAGas reduces Gas usage by up to 11% and achieves high precision and recall in detecting code snippets exhibiting Gas wastage.",
+      "date": "2026-08-16",
+      "authors": [
+        "Yishun Wang",
+        "Wenjin Yi",
+        "Wenkai Li",
+        "Zongwei Li",
+        "Xiaoqi Li"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15857",
+      "pdf": "https://arxiv.org/pdf/2608.15857.pdf",
+      "id": "arxiv:2608.15857",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Agentic Search",
+        "Agentic RAG"
+      ],
+      "tags": [
+        "Agentic Search"
+      ],
+      "url": "https://arxiv.org/abs/2608.15857",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15776",
+      "title": "ALKEMIE Agent: an autonomous platform for computational materials design",
+      "abstract": "Despite the powerful multi-scale modeling methods and high-throughput infrastructures established in the materials community, real material computation workflows remain fragmented and heavily manual, requiring researchers to constantly bridge software tools, data analysis, and intermediate decisions. This growing gap between methodological capability and practical execution highlights the need for a new kind of autonomous computational framework, one that can coordinate tools, knowledge, and workflows in a more unified and adaptive way. Here, we introduce ALKEMIE Agent, an agentic platform in which retrieval-augmented generation, a materials-computation knowledge base, registered skills, database-supported provenance, AI-assisted structure modeling, bounded task execution, tool-calling iteration, and error-diagnostic assistance are integrated within a traceable control loop. The capabilities of ALKEMIE Agent are demonstrated through applications including materials recommendation, structure modeling, phonon calculations, machine-learned interatomic potential training, LAMMPS simulations, Ab Initio Monte Carlo (AIMC) sampling, and active-learning-based materials screening. Finally, we outline the future directions and challenges for the development of agentic platforms for computational materials design.",
+      "date": "2026-08-16",
+      "authors": [
+        "Hongfu Huang",
+        "Yuzhe Li",
+        "Ao Xu",
+        "Bo Liu",
+        "Changrui Wang",
+        "Kan Tang",
+        "Ning Yang",
+        "Shengxian Liu",
+        "Hanyu Liu",
+        "Pengpeng Zhang",
+        "Linggang Zhu",
+        "Fengkai Liu",
+        "Yichen Lu",
+        "Tong Zhao",
+        "Naihua Miao",
+        "Jian Zhou",
+        "Zhimei Sun"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15776",
+      "pdf": "https://arxiv.org/pdf/2608.15776.pdf",
+      "id": "arxiv:2608.15776",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Agentic RAG",
+        "Agentic Search"
+      ],
+      "tags": [
+        "Agentic RAG",
+        "Agentic Search"
+      ],
+      "url": "https://arxiv.org/abs/2608.15776",
+      "published": "2026-08-16",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15504",
+      "title": "PERO: Efficient Robust Post-Training Foundation Models for Encrypted Traffic Classification",
+      "abstract": "Encrypted traffic classification is vital for network security, yet real-world deployments are inherently sensitive to rare but high-loss errors such as misclassification of malicious traffic. The encrypted traffic foundation model, as a promising general-purpose technique, can achieve impressive overall performance. However, employing standard objectives such as empirical risk minimization often overlooks high-risk tail events, and commonly used performance metrics hardly reflect robustness limitations in risk-sensitive scenarios. Directly applying robust optimization objectives, such as conditional value-at-risk, to post-training is computationally prohibitive for large models, as identifying high-loss samples exhausts substantial computation. To this end, we propose Pre-Evaluation Robust Optimization (PERO), an efficient robust post-training framework for encrypted traffic foundation models. PERO employs a lightweight proxy to estimate sample-wise risk and selects a subset of high-risk samples to update the foundation model, decoupling risk estimation from expensive large-model optimization. Extensive experiments on typical encrypted traffic datasets show that PERO achieves competitive or superior robustness and average performance compared to outstanding robust post-training methods, while significantly reducing computational and memory costs.",
+      "date": "2026-08-16",
+      "authors": [
+        "Wumei Du",
+        "Jiarong Wen",
+        "Kaiyu Zhang",
+        "Zi Yang",
+        "Yiqin Lv",
+        "Longfei Zhang",
+        "Dong Liang",
+        "Zheng Xie"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15504",
+      "pdf": "https://arxiv.org/pdf/2608.15504.pdf",
+      "id": "arxiv:2608.15504",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Post-Training",
+        "Evaluation"
+      ],
+      "tags": [
+        "Post-Training",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15504",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15913",
+      "title": "Conjunctive Poisoning in AI Supply-Chain Applications",
+      "abstract": "Large Language and Vision-Language Models are increasingly deployed through inference pipelines that include prompt wrappers (e.g., templates and post-processing scripts) and configuration metadata (e.g., JSON/YAML files) that together shape model outputs. While model weights and binaries are routinely verified, these textual deployment artifacts remain weakly protected despite directly influencing runtime behavior. We show that a malicious developer can pair a benign-looking wrapper with crafted metadata to deterministically alter post-generation behavior without modifying model weights, training data, or inference backend. We study this behavior through a controlled conjunctive-gate implementation, where activation depends on both an embedded wrapper marker and cryptographically bound metadata. We evaluate the attack across fifteen open- and closed-source LLM/VLM deployments, and assess prompt and system level defenses including static metadata inspection, wrapper scanners, PromptShield, and SigStore-based artifact signing. To mitigate this risk, we introduce TIF-BAH, a lightweight middleware defense that verifies wrapper integrity and records behavioral attestations during inference. Our results reveal that wrapper-metadata interactions form an under-protected execution layer in modern AI deployments, exposing a deployment-time behavioral risk that is not captured by model-weight or prompt-level defenses. Code is available at https://github.com/N-H-Arif/llm_temp.",
+      "date": "2026-08-16",
+      "authors": [
+        "Nokimul Hasan Arif",
+        "Qian Lou",
+        "Mengxin Zheng"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15913",
+      "pdf": "https://arxiv.org/pdf/2608.15913.pdf",
+      "id": "arxiv:2608.15913",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "LLM Training",
+        "VLM Training"
+      ],
+      "tags": [
+        "LLM Training",
+        "VLM Training"
+      ],
+      "url": "https://arxiv.org/abs/2608.15913",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15956",
+      "title": "Navigation-Informed Embeddings: Dense-Retriever Adaptation from Agent Search Traces",
+      "abstract": "Agentic retrieval workflows produce query, retrieval, and stopping traces as a byproduct of answering questions. We study how these traces can adapt a deployed dense retriever to changing workflow distributions without new relevance labels, synthetic queries, or LLM judgments. We introduce Navigation-Informed Embeddings (NIE), a family of trace-derived objectives. NIE-Stop turns the stopping document into a soft positive; NIE-Path additionally uses preceding path documents as hard comparisons and imposes ordinal constraints with geometric decay. A BGE encoder adapted from retained source trajectories improves support Recall@20 on an independent target benchmark from 72.2 to 78.0 overall. NIE-Stop reaches 76.9 overall and 52.3 on long paths; NIE-Path raises long-path performance to 55.4, compared with 46.7 for the unadapted encoder. A shuffled-order control under the full path objective loses 3.2 points. Without public-benchmark training, the same adapter also improves nDCG@10 by 1.9 points on standard BEIR HotpotQA. NIE therefore provides a lightweight adaptation channel for settings where trajectories are already retained, with zero incremental labeling cost.",
+      "date": "2026-08-16",
+      "authors": [
+        "Shrey Shah",
+        "Levent Ozgur"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15956",
+      "pdf": "https://arxiv.org/pdf/2608.15956.pdf",
+      "id": "arxiv:2608.15956",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation",
+        "Agentic RAG"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15956",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15755",
+      "title": "Intent-Driven Situation Tracking for User-Centric Multi-Turn Agents",
+      "abstract": "User-centric multi-turn agents must act on an evolving task situation shaped by changing user intents, accumulated tool-grounded facts, missing information, and execution constraints. Existing context-management methods improve the use of past interaction history, but rarely maintain an explicit situation state that separates grounded facts from task-state judgments. As a result, agents often need to infer fine-grained attributes, task dependencies, and constraint satisfaction implicitly from dialogue traces. We propose Intent-Driven Situation States (IDSS), a training-free framework that maintains an explicit situation state alongside the dialogue. IDSS parses tool returns into provenance-aware entities and attributes, tracks user intents, required variables, constraints, and execution status, and propagates new facts to task constraints to update action executability. This allows agents to avoid infeasible actions, advance dependent goals, and reuse relevant information without repeatedly searching raw history. Experiments on three interactive benchmarks across eight LLMs show that IDSS improves task completion, preference elicitation, and interaction efficiency, with clear gains on tasks involving multi-entity coordination, evolving user constraints, and constraint-aware replanning. Ablations and error analyses show that these improvements come from the interaction between fact persistence, intent-centered state tracking, and constraint modeling. These results suggest that explicit situation tracking offers an effective alternative to history-centric context management for reliable user-centric multi-turn agents.",
+      "date": "2026-08-16",
+      "authors": [
+        "Meiling Tao",
+        "Yiling Tao",
+        "Peng Wang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15755",
+      "pdf": "https://arxiv.org/pdf/2608.15755.pdf",
+      "id": "arxiv:2608.15755",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Planning",
+        "Evaluation"
+      ],
+      "tags": [
+        "Planning",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15755"
+    },
+    {
+      "pid": "2608.15709",
+      "title": "Logos: Certified Order-Sensitive SQL Rewrites with Mechanized Semantics and LLM Guidance",
+      "abstract": "SQL rewrite verification must account for duplicate rows, observable row order, and typed value semantics. Existing verifiers have yet to combine proofs over database instances of arbitrary finite cardinality with an ordered-list semantics for nested, tie-sensitive top-k. Unbounded systems reason primarily over bags or handle ordering through syntax-directed restrictions, whereas bounded systems either support only restricted top-k forms or impose a deterministic ordering rather than retain all legal tie-induced outcomes. Support for typed expression and aggregate semantics, observable runtime errors, and integrity constraints also remains partial.   In Rocq, we mechanize a compositional logical semantics for a typed SQL core with order-sensitive operators, capturing all possible ordered lists and observable SQL failures in the supported fragment. To our knowledge, this is the first mechanized SQL semantics to combine nested, tie-sensitive top-k with a closure-based lifting from bag equivalence to ordered-list equivalence, enabling sound reuse of bag-theoretic reasoning while preserving compositionality across order-sensitive and correlated contexts. The formalization further provides executable semantics for PostgreSQL-oriented scalar and aggregate evaluation and an explicit account of integrity constraints. Building on this semantics, we present Logos, an LLM-guided Rocq verifier for unbounded SQL rewrite equivalence. Its agent uses a verified SQL-specific lemma library to construct query-specific Rocq proofs. Our evaluation covers 389 query pairs from Apache Calcite optimizer tests, TPC-H and TPC-DS rewrites, and WeTune's real-application workloads. Logos solves 86.9% of them, compared with 64.0% for SQLSolver, the strongest baseline.",
+      "date": "2026-08-16",
+      "authors": [
+        "Jingyu Ke",
+        "Jingyang Li",
+        "Guoqiang Li"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15709",
+      "pdf": "https://arxiv.org/pdf/2608.15709.pdf",
+      "id": "arxiv:2608.15709",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning",
+        "Evaluation"
+      ],
+      "tags": [
+        "Reasoning",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15709"
+    },
+    {
+      "pid": "2608.15893",
+      "title": "Breaking and Defending LLM-Powered Social Media Bot Detection Systems",
+      "abstract": "The rise of social media bots poses a persistent threat, enabling misinformation, opinion manipulation, and the erosion of trust in online platforms. To combat this, machine learning systems have been developed to detect and limit bot activity, but attackers continuously adapt through techniques such as adversarial learning and behavior imitation, fueling an ongoing arms race between bots and detection tools. Recent advances in large language models (LLMs) have significantly improved bot detection by enabling deeper semantic and contextual analysis of accounts and their content. However, this shift also introduces new attack surfaces, allowing adversaries to craft exploits that directly target the reasoning and generation mechanisms of LLM-based classifiers. Industry tools such as Anthropic's Claude Code Security similarly leverage LLMs for security-critical decisions, further motivating a careful study of their attack surfaces. In this work, we investigate both the offensive and defensive aspects of LLM-powered, threat-specific cybersecurity applications. While centered on the challenge of social media bot detection, our methodology and insights generalize to a broad class of LLM-powered cybersecurity systems, including phishing detection, email classification, and fraud analysis. We introduce two novel adversarial attack strategies that systematically exploit the semantic and contextual weaknesses of LLM-based classifiers, degrading their detection accuracy by up to 48%. To counter these threats, we propose a robust multi-LLM defense architecture designed to preserve detection reliability under adaptive adversarial conditions. Our solution, LSABRE (LLM-powered Social Adversarial Bot Recognition Ensemble), is a multi-LLM framework that substantially improves robustness across a range of attacks, maintaining 86% detection accuracy even under strong, adaptive adversarial pressure.",
+      "date": "2026-08-16",
+      "authors": [
+        "Nof Orenstein",
+        "Yoni Birman"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15893",
+      "pdf": "https://arxiv.org/pdf/2608.15893.pdf",
+      "id": "arxiv:2608.15893",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Agent Safety",
+        "Reasoning"
+      ],
+      "tags": [
+        "Agent Safety",
+        "Reasoning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15893"
+    },
+    {
+      "pid": "2608.15690",
+      "title": "Adding Voice Cloning to Text-to-Audio-Video Models with a Single Zero-Initialised Layer",
+      "abstract": "Text-to-audio-video (T2AV) generation models produce a video and its soundtrack from a textual description, but offer no control over whose voice speaks in the output. We show that a base T2AV model can be turned into a voice-cloning model by adding a single zero-initialized linear layer on top of its audio backbone, fine-tuning for a comparatively short training schedule, and conditioning on a short reference recording at inference time. The reference is injected through two complementary signals: its diffusion latents are prepended to the audio stream, and a global speaker embedding modulates token of the target audio. On a benchmark of 674 speaker-text pairs spanning 30 speakers we compare against five strong voice-cloning text-to-speech baselines: our enhanced 5B model attains the highest speaker-encoder cosine similarity (SECS) across three independent verification networks (ECAPA-TDNN, WavLM-SV, Resemblyzer), statistically significantly outperforming every baseline. A side product of the architecture is that the audio path can be evaluated without the video path at inference time, yielding a ~30x speed-up over the full audio-video diffusion loop while preserving the voice-cloning behaviour.",
+      "date": "2026-08-16",
+      "authors": [
+        "Ivan Mikheev",
+        "Viacheslav Vasilev",
+        "Anna Dmitrienko",
+        "Alexey Letunovskiy",
+        "Ivan Kirillov",
+        "Kirill Chernyshev",
+        "Denis Dimitrov"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15690",
+      "pdf": "https://arxiv.org/pdf/2608.15690.pdf",
+      "id": "arxiv:2608.15690",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15690"
+    },
+    {
+      "pid": "2608.15673",
+      "title": "PL-Guard: Probabilistic Logic Reasoning for LLM Guardrails",
+      "abstract": "Large language model guardrails can be viewed as policy-consistency problems: a system must determine which policy-relevant facts hold in a prompt-response pair and what those facts imply under a given policy. Common approaches, including policy prompting and LLM-as-a-judge pipelines, often overlap the tasks of semantic grounding and policy reasoning: the model both interprets the prompt-response pair and reasons about whether a policy has been violated. This can lead to unsafe compliance with harmful prompts, or refusals to assist benign ones. To separate grounding and reasoning roles, we propose PL-Guard, a neurosymbolic guardrail architecture. Using a symbolic policy interface consisting of predicates and ProbLog rules, a local LLM grounds prompt-response pairs into predicate probabilities using renormalized True/False token scores, while ProbLog performs explicit probabilistic rule inference over the symbolic policy. On the XSTest benchmark, an offline Qwen-based evaluator finds that PL-Guard with a hand-curated policy reduces unsafe compliance from 22.0% for the base model to 0.5%, and below the 6.0% rate of an LLM-as-a-judge baseline. This comes at the cost of higher over-refusal than the LLM-as-a-judge baseline, 14.4% versus 5.2%. These results suggest that separating neural grounding from probabilistic symbolic reasoning can expose the safety-helpfulness tradeoff while making the guardrail's intermediate reasoning steps explicit and auditable.",
+      "date": "2026-08-16",
+      "authors": [
+        "Satchit Chatterji",
+        "Shihan Wang",
+        "Giovanni Sileno",
+        "Erman Acar"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15673",
+      "pdf": "https://arxiv.org/pdf/2608.15673.pdf",
+      "id": "arxiv:2608.15673",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning",
+        "Evaluation"
+      ],
+      "tags": [
+        "Reasoning",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15673"
+    },
+    {
+      "pid": "2608.15591",
+      "title": "Agent Gym: A Framework for Continuous Evaluation and Evolution of LLM Agents Through Human-in-the-Loop Feedback",
+      "abstract": "Large Language Model (LLM) agents deployed in production environments face a fundamental tension: the agent's behavior is frozen at deployment time, while the business rules and edge cases it must handle continue to evolve. Existing approaches address agent construction and one-time evaluation but provide no structured mechanism for continuous post-deployment behavioral correction without modifying the agent's source code. Most of the approaches offered in the market, require intense collection of logs and traces, and re-examining the agent design by the engineering team, a process which is heavy, long and negates the economical value of agentic transformation. We introduce Agent Gym, a modular, domain-agnostic framework that wraps any existing LLM-based agent in a continuous evaluation-and-evolution loop. The framework provides six composable capabilities --- Act, Evaluate, Investigate, Correct, Learn, and Observe --- organized across three architectural zones: a constitution layer that codifies domain knowledge in configuration artifacts, a runtime inference pipeline that chains acting, investigation, and adaptive correction, and a learning loop that enables subject matter experts to discover and validate new correction rules through natural language interaction. The key technical contributions include a hybrid deterministic-LLM correction engine with 21 condition operators and three-tier actions, a three-layer investigation architecture for ground-truth-free compliance validation, and a programmatic safety loop that guarantees rule correctness before human approval. We further introduce the Spec-to-Note Gap, an autoencoder-inspired view of agentic system transparency. An open-source reference implementation for invoice processing demonstrates that the framework is fully operational and ready for adoption.",
+      "date": "2026-08-16",
+      "authors": [
+        "Pouya Ghiasnezhad Omran",
+        "Michael Zimmermann",
+        "Duncan Cambridge",
+        "Ashmita Kapoor",
+        "Tanya Dixit"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15591",
+      "pdf": "https://arxiv.org/pdf/2608.15591.pdf",
+      "id": "arxiv:2608.15591",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15591",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.16951",
+      "title": "The Little Scientist: LLM Agent-Driven Discovery via the Scientific Method",
+      "abstract": "What happens when you teach an LLM-based agent the scientific method?   Motivation: Scientific discovery emerges from cycles of hypothesis, implementation, empirical testing, and feedback. Can this process be automated? We approach automated algorithm design through the lens of the scientific method, where an LLM-based agent goes through each step of the process in an ordered, iterative fashion.   Results: We present The Little Scientist, a framework in which a \"Scientist agent\" works inside an evaluation environment that benchmarks its code and returns structured per-instance diagnostics. When the Scientist plateaus at a local optimum, a \"Kuhn agent\" injects a paradigm-shifting conjecture paired with a cross-disciplinary inspiration, forcing exploration of a different region of the LLM's latent space. We demonstrate the framework on two problems that require fundamentally different modes of discovery. For protein fitness prediction, the Scientist discovered Delta V, an ensemble calibration strategy that ranks first on the ProteinGym DMS Substitutions Zero-Shot leaderboard across all five official evaluation metrics, exceeding the #2 model (VenusREM) by +0.033 mean Spearman correlation across 217 DMS assays. For DNA motif discovery, the Scientist wrote an algorithm from scratch--DALE (Dual-seed Algorithm for Latent Enumeration)--that outperforms STREME (the default in the MEME Suite) across 132 ENCODE transcription factors (mean AUROC 0.842 vs. 0.803, Wilcoxon p < 10^{-6}) while running 11x faster. This demonstrates that the framework can produce genuinely novel algorithms, not just optimize existing components. Together, these results show that an LLM agent stepping through the scientific method can discover both new algorithms and new ensemble strategies that outperform prior solutions. The entire research program consumed 704M tokens on a single virtual machine with no GPUs",
+      "date": "2026-08-16",
+      "authors": [
+        "Travis Smith"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.16951",
+      "pdf": "https://arxiv.org/pdf/2608.16951.pdf",
+      "id": "arxiv:2608.16951",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.16951",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15584",
+      "title": "GraniKV: Asymmetric Granularity KV-Cache Paging for Multi-Agent Systems with Long Shared Prefix",
+      "abstract": "Production paged-serving engines apply uniform paging granularity to the KV cache, even though the two regions of a multi-agent workload have opposite storage requirements: a long shared prefix demands contiguity, while the per-request suffix demands fine-grained allocation.   We present \\textbf{GraniKV}, a KV-cache layer that allocates the shared prefix in a contiguous HOT pool and the suffix in a token-level COLD pool, combined with a per-step dispatcher which selects the appropriate backend among dual backends for each regime (compute-, memory-, or communication-bound). To the best of our knowledge, GraniKV is the first system to apply asymmetric paging granularity to the KV cache of a production paged-serving engine.   At $L_p{=}16$\\,K shared tokens GraniKV reaches $\\mathbf{2.16\\times}$, $\\mathbf{1.98\\times}$, and $\\mathbf{1.57\\times}$ output-token throughput over the production baseline on Llama-3.1-8B/TP=1, Qwen-2.5-14B/TP=2, and Qwen-2.5-32B/TP=4. The gain decomposes: cascade attention integration contributes the majority at saturation; the asymmetric storage layer adds $1.05$--$1.15\\times$ end-to-end while being what makes the batched-GEMM prefix backend possible at all. Under heterogeneous multi-agent serving with \\emph{distinct} prompts of different lengths, the attribution inverts: GraniKV sustains $\\mathbf{1.95\\times}$ while batch-global cascade collapses to parity --- the storage layer alone carries the win in the regime that motivates the paper.",
+      "date": "2026-08-16",
+      "authors": [
+        "Jinhyun Jeon",
+        "Sungjoo Yoo"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15584",
+      "pdf": "https://arxiv.org/pdf/2608.15584.pdf",
+      "id": "arxiv:2608.15584",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Multi-Agent"
+      ],
+      "tags": [
+        "Multi-Agent"
+      ],
+      "url": "https://arxiv.org/abs/2608.15584",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15549",
+      "title": "MistyPilot: Enabling Social-Robot Control through Multi-Agent LLM Skill Orchestration",
+      "abstract": "Programming small social robots from natural-language instructions requires more than invoking isolated APIs. Interactive tasks combine reactive physical behaviors with stateful social behaviors, while existing interfaces often require developers to manually compose APIs into skills, configure their parameters, bind sensor events to skills, and manage task states at runtime. We present MistyPilot, a multi-agent LLM framework that interprets high-level natural-language instructions and orchestrates the corresponding skills on the Misty social robot. A Task Router dispatches each instruction to one of two specialized agents: a Physically Interactive Agent for sensor-triggered robot control and direct skill invocation, and a Social Interaction Agent for dialogue-oriented task-state management and context-dependent multimodal response generation. To improve efficiency, the Social Interaction Agent reuses previously generated results when applicable and invokes full generation otherwise. We evaluate MistyPilot on five component-level suites, with sensor bindings and skill invocations executed on the physical Misty robot, and a preliminary user study with 12 participants. MistyPilot attains high accuracy on routing, sensor-skill binding, task-state parsing, result reuse, and skill extension up to 100 skills, and lower variance than an otherwise identical single-agent baseline, while participants report positive perceptions of usability and interaction quality. The code will be made publicly available via the project page.",
+      "date": "2026-08-16",
+      "authors": [
+        "Xiao Wang",
+        "Lu Dong",
+        "Ifeoma Nwogu",
+        "Srirangaraj Setlur",
+        "Venu Govindaraju"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15549",
+      "pdf": "https://arxiv.org/pdf/2608.15549.pdf",
+      "id": "arxiv:2608.15549",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Multi-Agent"
+      ],
+      "tags": [
+        "Multi-Agent"
+      ],
+      "url": "https://arxiv.org/abs/2608.15549",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15567",
+      "title": "SchurQuant: Groupwise Discrete Optimization for Layer-Wise LLM Quantization",
+      "abstract": "Weight-only post-training quantization (PTQ) enables the deployment of large language models under tight memory budgets, but accuracy often collapses at 2-3 bits. Existing backpropagation-free PTQ optimizers have two limitations: group decisions ignore the correction that the remaining continuous suffix can absorb, and discrete refinements typically keep the affine quantization grid fixed. We introduce SCHUROPT, which analytically eliminates the suffix's optimal continuous response, yielding an exact groupwise quadratic with Schur-complement curvature. It then alternates closed-form row-wise scale/zero-point refitting with coordinate descent over integer codes. With the GPTQ objective fixed, SCHUROPT improves mean zero-shot accuracy on 2-bit Qwen3-4B by 11.88 percentage points (pp). At higher precision, however, tighter reconstruction does not consistently improve end-model metrics. SCHURQUANT therefore combines SCHUROPT with quantized-prefix teacher reconstruction, reference-weight regularization, residual-add targets, and teacher-decision token weighting. Across eight Llama and Qwen models, SCHURQUANT achieves the highest mean zero-shot accuracy among the evaluated backpropagation free PTQ baselines, outperforming the strongest baseline by 9.65 pp at 2 bits.",
+      "date": "2026-08-16",
+      "authors": [
+        "Gunjun Lee",
+        "Sehwan Son",
+        "Younjoo Lee",
+        "Byungjun Kim",
+        "Jung Ho Ahn"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15567",
+      "pdf": "https://arxiv.org/pdf/2608.15567.pdf",
+      "id": "arxiv:2608.15567",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Post-Training"
+      ],
+      "tags": [
+        "Post-Training"
+      ],
+      "url": "https://arxiv.org/abs/2608.15567",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15580",
+      "title": "From Generalist to Specialist: A Context-Fusion Framework for Endoscopic Polyp Reporting with a Frozen VLM",
+      "abstract": "Reliable endoscopic polyp reporting requires integrating quantitative lesion sizing, standardized Paris classification, and clinically meaningful morphological description within a single record. General-purpose vision-language models (VLMs) offer a unified interface for image understanding and report generation. Existing specialization strategies, however, typically rely on task-specific models or model-weight adaptation, leaving unresolved how to introduce reliable specialist knowledge while preserving both this unified interface and the VLM's pretrained capabilities. We introduce a context-fusion framework that specializes a frozen general-purpose VLM through both implicit instruction context and explicit transduction context without modifying its pretrained weights. Specifically, a self-supervised polyp encoder retrieves related image-report pairs as explicit, query-specific evidence, while learned continuous specialist tokens provide implicit instruction context shared across cases. Experiments were conducted on 2,056 expert-annotated public endoscopic images. We compared the framework with general-purpose VLMs, task-specific predictors, and weight-adaptation methods to assess specialist performance, unified reporting, and adaptation efficiency. Across numerical, categorical, and report-generation metrics, the proposed framework substantially improved direct frozen-VLM inference and achieved the strongest overall performance among the evaluated methods. It added trainable parameters equal to only 0.006% of the frozen VLM's parameter count. When the top-1 retrieved case carried the correct target category, our framework corrected 70.5% of the errors made by a weight-adaptation baseline. These findings support the context-fusion framework as a lightweight and effective strategy for specialist adaptation of a frozen VLM.",
+      "date": "2026-08-16",
+      "authors": [
+        "Ruijie Yang",
+        "Yan Zhu",
+        "Peiyao Fu",
+        "Siyuan Li",
+        "Te Luo",
+        "Zhihua Wang",
+        "Quanlin Li",
+        "Pinghong Zhou",
+        "Xian Yang",
+        "Shuo Wang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15580",
+      "pdf": "https://arxiv.org/pdf/2608.15580.pdf",
+      "id": "arxiv:2608.15580",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "VLM Training"
+      ],
+      "tags": [
+        "VLM Training"
+      ],
+      "url": "https://arxiv.org/abs/2608.15580",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.13416",
+      "title": "StreamTTT: Reconciling Real-Time Perception and Long-Term Memory in Streaming VLMs",
+      "abstract": "Humans effortlessly perceive the present while remembering the past, yet streaming VLMs often trade off real-time perception against long-term memory. Prior work shows that shortening the context can sharpen current-scene perception at the expense of long-range recall. To reconcile these abilities, we introduce StreamTTT, which writes long-range history into online-updated fast weights outside the attention context. This leaves a short sliding key-value cache dedicated to recent evidence, mitigating attention dilution. We train StreamTTT jointly on offline long-video QA and a newly constructed real-time QA corpus. On OVO-Bench, under each model's reported input protocol, StreamTTT-4B outperforms the same-scale SimpleStream-4B by 1.4 points in real-time perception and 3.7 points in backward tracing. It also remains competitive with the larger SimpleStream-8B on StreamingBench's Real-Time Visual Understanding (RTVU) subset. Our code will be released.",
+      "date": "2026-08-16",
+      "authors": [
+        "Joya Chen",
+        "Zeyun Zhong",
+        "Mike Zheng Shou"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.13416",
+      "pdf": "https://arxiv.org/pdf/2608.13416.pdf",
+      "id": "arxiv:2608.13416",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Memory"
+      ],
+      "tags": [
+        "Memory"
+      ],
+      "url": "https://arxiv.org/abs/2608.13416",
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+    },
+    {
+      "pid": "2608.15900",
+      "title": "Crystal-structure design by agentic AI in a language of motifs",
+      "abstract": "Data-driven materials discovery interpolates more reliably than it extrapolates and seldom reaches new structure types. We present MatEvolve, an agentic-AI framework designing crystals, proposing each candidate with a stated rationale and testing it. The agent reasons in an interpretable \\emph{language of motifs}, writing each crystal as a \\emph{motif profile} that describes the recurring geometric patterns---the \\emph{motifs}---composing it. The motif profile serves not merely as a description of a material but as the medium for material design: the agent edits the profile and constructs a crystal from the modified one, and the most promising candidates are validated by first-principles calculation. Applied to the design of rare-earth-lean permanent magnets, MatEvolve---built on the state-of-the-art language model Claude Fable~5 without fine-tuning---reaches new structural prototypes more than three times as often as generative models under an equal validation budget, at a comparable on-target-magnet rate. Beyond design, analysing the discovered crystals' human-readable profiles reveals structure--property relationships.",
+      "date": "2026-08-16",
+      "authors": [
+        "Dinh-Khiet Le",
+        "Minh-Quyet Ha",
+        "Hong-Phuc Vu-Dinh",
+        "Takashi Miyake",
+        "Hiori Kino",
+        "Hieu-Chi Dam"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15900",
+      "pdf": "https://arxiv.org/pdf/2608.15900.pdf",
+      "id": "arxiv:2608.15900",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15900"
+    },
+    {
+      "pid": "2608.15884",
+      "title": "Grouping Auction-Consensus Algorithm for Decentralized Task Allocation in Multi-Robot Systems",
+      "abstract": "Decentralized multi-robot task allocation (MRTA) is essential for scalable and resilient autonomous systems. The Consensus-Based Bundle Algorithm (CBBA) is a widely adopted decentralized baseline. However, its individual task-level bidding is poorly aligned with the min-sum objective of minimizing total team travel distance, leading to suboptimal allocations in spatially distributed environments. This paper introduces the Grouping Auction-Consensus Algorithm (GACA). This decentralized MRTA framework adopts the two-phase auction-consensus architecture of CBBA while fundamentally redesigning its bidding mechanism to reason over groups of spatially proximate tasks. A nearest-neighbor preprocessing step partitions tasks into spatially coherent groups before allocation. Agents then iteratively propose structured group-level actions: claiming unassigned groups, acquiring partial groups, or contesting groups held by other agents. Competing actions are resolved through a consensus phase. Operating in the MT-SR-IA problem class, GACA is evaluated against CBBA using a Mixed-Integer Linear Program as the ground-truth optimality reference. Across four swarm sizes and 4,000 test worlds, GACA achieves a median percent optimality of approximately 97% compared to 81--84% for CBBA, while converging in equal or fewer iterations. A scalability evaluation over 3,280 additional problem instances spanning swarm sizes of 5 to 20 agents and task counts of 10 to 50 confirms that these gains generalize robustly across a wide range of problem configurations.",
+      "date": "2026-08-16",
+      "authors": [
+        "Jose Rodriguez",
+        "Sven Koenig",
+        "Wenjie Dong",
+        "Qi Lu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15884",
+      "pdf": "https://arxiv.org/pdf/2608.15884.pdf",
+      "id": "arxiv:2608.15884",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15884"
+    },
+    {
+      "pid": "2608.15832",
+      "title": "The Authority Resolution Framework: A Five-Domain Ontology for Governing Who and What Decides, at Scale",
+      "abstract": "As AI systems become increasingly capable of autonomous action, determining whether an agent is technically capable of performing an action is insufficient: the system must also determine whether the action is authorised in its context.   This paper introduces the Authority Resolution Framework (ARF), a five-domain ontology for representing and resolving authority across organisational roles and informal influence, business concepts, codified processes, machine-readable permissions and executable systems, and external real-world context. ARF defines the Authority Relation (AR) as a cross-domain primitive binding an actor, action, object, bounded context, justification chain, and a calibration measure termed the DNA-Coefficient, which captures divergence between documented authority structures and authority as practiced.   The framework provides a machine-interpretable representation of authority provenance and scope, with JSON-LD representations and knowledge-graph query patterns for authority resolution. ARF is designed to support AI agents in determining the provenance, scope and contextual validity of authority before executing consequential actions. The framework positions authority resolution as a knowledge-representation and reasoning problem at the intersection of ontology engineering, semantic AI, agentic AI and AI governance.",
+      "date": "2026-08-16",
+      "authors": [
+        "Parviz Shariff"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15832",
+      "pdf": "https://arxiv.org/pdf/2608.15832.pdf",
+      "id": "arxiv:2608.15832",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning"
+      ],
+      "tags": [
+        "Reasoning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15832"
+    },
+    {
+      "pid": "2608.15822",
+      "title": "Exact MMS Allocations under Personalized Bivalued Valuations: Goods and Chores",
+      "abstract": "The maximin share (MMS) is a central fairness benchmark for allocating indivisible goods and chores. We study additive valuations in the personalized bivalued setting, where each agent assigns one of two agent-specific values to every item. Whether exact MMS allocations always exist in this setting has remained a major open question, as highlighted by Ebadian, Peters, and Shah and by Garg, Huang, and Segal-Halevi. We answer this question affirmatively: we prove that exact MMS allocations always exist for both goods and chores and can be computed in polynomial time. Our proof combines a quota-based reformulation with an envelope relaxation, a sparse extreme-point construction, and flow-based rounding that controls the total rounding loss.",
+      "date": "2026-08-16",
+      "authors": [
+        "Yuhao Zhang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15822",
+      "pdf": "https://arxiv.org/pdf/2608.15822.pdf",
+      "id": "arxiv:2608.15822",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15822"
+    },
+    {
+      "pid": "2608.15706",
+      "title": "A memory-based three-state model of competing technology adoption: substitution regimes, multi-homing, and churn",
+      "abstract": "Technologies, products, platforms, and behavioral routines often compete through gradual adoption, reinforcement-dependent use, and temporary multi-homing. We formulate a homogeneous, well-mixed, three-state agent-based model of competition between an incumbent option (X) and a challenger (Y). Agents are exclusive users of (X), exclusive users of (Y), or dual adopters (Z). Adoption is memory-based: an exclusive user adds the alternative only after enough adoption-relevant encounters within a finite learning window. Retention is also memory-based: a dual adopter continues to use both options only if each is sufficiently reinforced within a finite retention window. This microscopic mechanism reproduces aggregate usage signatures analogous to the four Adner--Kapoor technology-substitution regimes---creative destruction, robust coexistence, the illusion of resilience, and robust resilience---without explicitly representing ecosystems, complementors, prices, or strategic investment. Starting from the same small challenger seed, the benchmark simulations differ only in adoption burden, retention burden, post-adoption usage preference, and the teaching role of dual adopters. Rolling usage shares reproduce the four aggregate substitution patterns, while state-resolved trajectories and phase portraits reveal distinct microscopic pathways. Thus, similar market-level substitution curves need not have unique causal interpretations: although ecosystem mechanisms may be essential in many empirical cases, finite-memory learning and retention alone can generate qualitatively similar regimes. The model provides a compact baseline linking technology-substitution trajectories to observable individual-level adoption, multi-homing, and discontinuance.",
+      "date": "2026-08-16",
+      "authors": [
+        "Stefano Scialla",
+        "Marco Patriarca",
+        "Els Heinsalu",
+        "Julyan H. E. Cartwright"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15706",
+      "pdf": "https://arxiv.org/pdf/2608.15706.pdf",
+      "id": "arxiv:2608.15706",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15706"
+    },
+    {
+      "pid": "2608.15519",
+      "title": "Topological collapse of higher-order interactions bottlenecks collective intelligence in AI agent societies",
+      "abstract": "Current paradigms in artificial intelligence concentrate on scaling the capabilities of individual models, yet the collective behaviour of interacting agents is shaped by the topology of their interactions rather than by individual cognition alone. Here we show that the binding constraint on collective behaviour in agent societies is topological. Analysing a macroscopic AI social platform of 1.6 million registered agents (174,458 active in the interaction record), we identify a phenomenon we term topological collapse: extreme hub dominance degrades higher-order group interactions into star-shaped broadcast patterns, suppressing the cohesive structure that discontinuous social contagion requires. We formalise this constraint through a Hyperedge Irreducibility Score (HIS) and an analytical topology amplification factor ($Φ$). Across 22 frontier language models from ten vendors, 1,040 controlled simulations and empirical human networks, the bottleneck proves model-agnostic: under a fixed interaction protocol the topological indicators are invariant across models (cross-model HIS s.d. = 0.000 in the pairwise condition) even as behavioural outcomes diverge widely. These findings reframe the design of artificial societies around the geometry of interaction rather than the optimisation of individual cognition, with implications for AI sociology, algorithmic group dynamics, hybrid human-AI ecosystems and collective alignment. The code is publicly available at https://github.com/Darwin-Agent/topological-collapse-agent-societies.",
+      "date": "2026-08-16",
+      "authors": [
+        "Shuo Lu",
+        "Weicheng Meng",
+        "Aijing Yu",
+        "Kun Shao",
+        "Jian Luan",
+        "Ran He",
+        "Jian Liang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15519",
+      "pdf": "https://arxiv.org/pdf/2608.15519.pdf",
+      "id": "arxiv:2608.15519",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Alignment"
+      ],
+      "tags": [
+        "Alignment"
+      ],
+      "url": "https://arxiv.org/abs/2608.15519"
+    },
+    {
+      "pid": "2608.15515",
+      "title": "Weak-Type Bounds for Convolution on the Boolean Hypercube",
+      "abstract": "Let $G$ be the Boolean hypercube which carries uniform measure $λ$, and let $T_μ$ denote convolution by a finite positive measure $μ$ on $G$. For $ψ_μ(u)=\\sup\\{uλ(\\{T_μf\\geq u\\}):f\\geq 0,\\|f\\|_1=1\\},$ we prove Talagrand's convolution conjecture (Talagrand, 1989): if $μ_a=((1+a)δ_1/2+(1-a)δ_{-1}/2)^{\\otimes n}$ and $0<a<1$, then $ψ_{μ_a}(u)\\leq C_a/\\sqrt{\\log u}$ for every $u > 1$ and $n\\geq1$, where $C_a$ depends only on $a$. The proof utilizes the reverse-heat and Boolean-bridge framework of Chen (2025) and the localized terminal-discrepancy method of Xiang and Zhang (2026). We introduce a new power coupling: each reverse edge ratio is split into two geometric powers. This choice produces a switched exponential weight which restores the exact reverse jump rate of the perturbed coordinate. The resulting endpoint comparison yields an anti-concentration profile estimate without the iterated-logarithmic factor. The proof was discovered by the Odin Automatic AI Research Agent.",
+      "date": "2026-08-16",
+      "authors": [
+        "Junwei Lu",
+        "Shengtao Guo",
+        "Ethan X. Fang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15515",
+      "pdf": "https://arxiv.org/pdf/2608.15515.pdf",
+      "id": "arxiv:2608.15515",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Agentic Search"
+      ],
+      "tags": [
+        "Agentic Search"
+      ],
+      "url": "https://arxiv.org/abs/2608.15515"
+    },
+    {
+      "pid": "2608.15932",
+      "title": "Augmenting Text to Increase Translation Difficulty",
+      "abstract": "As state-of-the-art machine translation models saturate standard benchmarks, the field needs more challenging evaluations to distinguish between models of varying quality. We propose augmenting existing benchmarks to increase translation difficulty by combining adversarial optimization with a differentiable translation difficulty estimator. Our Adversarial Translation Optimization (ATO) uses gradients from a combined difficulty and fluency objective to iteratively replace tokens. Because each step branches over candidate substitutions at every position, optimization becomes a tree search problem, which we address with Beam Search. ATO offers a gradient-based alternative to LLM-based dataset creation without LLM prompting, expensive human curation, or task-specific model training. Our ATO-modified benchmark lowers average translation quality (xCOMET) from 0.93 to 0.82, compared to 0.88 for paraphrasing and 0.86 for a zero-shot baseline. Human evaluation shows the modified texts are somewhat less natural than the baselines but remain reasonably grammatical and plausible while being substantially harder to translate. We release two datasets of 350 English texts each, generated by our methods, as well as the code.",
+      "date": "2026-08-16",
+      "authors": [
+        "William Kalikman",
+        "Šimon Sukup",
+        "Michal Tešnar",
+        "Vilém Zouhar"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15932",
+      "pdf": "https://arxiv.org/pdf/2608.15932.pdf",
+      "id": "arxiv:2608.15932",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15932"
+    },
+    {
+      "pid": "2608.15928",
+      "title": "Synthesizing like a chemist: an iterative, feedback-driven loop for materials discovery",
+      "abstract": "Most computationally predicted materials are never synthesized because conventional synthesis optimization is slow, expertise-dependent, and iterative. Here we present a closed-loop framework that automates this expert workflow by placing human tacit knowledge in the loop through a large language model (LLM) that distills synthesis knowledge from the literature, high-throughput hyperspectral imaging for rapid film evaluation, and multi-objective Bayesian optimization guided by experimental feedback. In a paired optimization campaign, LLM-assisted initialization produced more Pareto-optimal samples and higher hypervolume than a Latin hypercube sampling baseline at matched trial counts, and this advantage persisted throughout iterative optimization. We demonstrate the framework by synthesizing the previously unreported perovskite-inspired compound Rb3BiI6 as thin films and validating the optimized films by optical bandgap analysis and X-ray diffraction. The framework transforms synthesis prediction from single-shot recommendation to iterative learning, providing a generalizable strategy to accelerate automated and fully autonomous experimental materials discovery.",
+      "date": "2026-08-16",
+      "authors": [
+        "Fang Sheng",
+        "Steven B. Torrisi",
+        "Amanda Volk",
+        "Kevin Tran",
+        "Koki Nakano",
+        "Brian W. Anthony",
+        "Tonio Buonassisi"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15928",
+      "pdf": "https://arxiv.org/pdf/2608.15928.pdf",
+      "id": "arxiv:2608.15928",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15928"
+    },
+    {
+      "pid": "2608.15843",
+      "title": "Characterising cardiac tissue properties with graph neural networks",
+      "abstract": "Characterising electrophysiological properties of cardiac tissue efficiently and accurately from spatially sparse intracardiac measurements is clinically important for localising ablation targets and improving arrhythmia treatment. We developed a graph neural network-based framework trained on synthetic electrogram signals on 2D flat surfaces to identify areas of interest in the context of cardiac ablation for premature ventricular complexes (PVCs). Our method achieved an average precision of 0.96, 0.97, and 0.95 for the detection of single-patch fibrosis, rapid depolarisation and high excitability, respectively. The trained model can then be applied to 2D curved surfaces with few-shot fine-tuning, demonstrating its generalisation capability. Future work will develop this framework further for clinical use in PVC ablation.",
+      "date": "2026-08-16",
+      "authors": [
+        "Ching-En Chiu",
+        "Yoo Ri Kim",
+        "Magdi Saba",
+        "Danilo Mandic",
+        "Marta Varela"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15843",
+      "pdf": "https://arxiv.org/pdf/2608.15843.pdf",
+      "id": "arxiv:2608.15843",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15843"
+    },
+    {
+      "pid": "2608.15814",
+      "title": "Assessing Attack Surfaces in Generative Search Engines through Publisher Attributes: A Case Study in Political Domains",
+      "abstract": "We characterize the attack surface of generative search engines (GSEs) against poisoning attacks in the political domain, from the perspectives of citation selection and personalization. GSEs integrate web search and answer generation with user preferences and backgrounds using large language models (LLMs). They play a crucial role in how users access information on the web. Because anyone can publish content on the web, GSEs are vulnerable to poisoning attacks that manipulate citations to undermine reliable information delivery. Existing studies on citation evaluation focus on how faithfully answers reflect cited content. However, they leave unexamined the two critical aspects to capture the attack surface of GSEs against poisoning attacks: which publishers GSEs prefer to cite, and how personalization affects citation behavior. To fill this gap, we introduce an evaluation framework that characterizes the attack surface of GSEs against poisoning attacks. Our contributions are twofold: (1) we propose a novel metric, \\emph{content-injection barrier}, which quantifies the difficulty of injecting arbitrary content onto the web with a given level of publisher authority; and (2) we reveal how personalization affects citation behavior by embedding user profiles into GSEs. We conduct experiments on three major GSEs in the political domain of the United States and Japan. Our results show that (a) the attack surface differs across GSE models; (b) the web search functionality of GSEs shapes the attack surface; (c) ruling parties have a broader attack surface than opposition parties; and (d) user profiles have little influence on the attack surface.",
+      "date": "2026-08-16",
+      "authors": [
+        "Riku Mochizuki",
+        "Shusuke Komatsu",
+        "Souta Noguchi",
+        "Kazuto Ataka"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15814",
+      "pdf": "https://arxiv.org/pdf/2608.15814.pdf",
+      "id": "arxiv:2608.15814",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.15814"
+    },
+    {
+      "pid": "2608.15762",
+      "title": "Global Simulation-Guided Dynamic Operator Scheduling for Efficient Multi-Tenant Model Serving",
+      "abstract": "Container-granularity scheduling leaves abundant short-lived idle slices within containers unexploited. Reallocating containers is too heavyweight to utilize such fine-grained opportunities under SLA constraints, and operator-level scheduling requires reasoning about dependencies, memory safety, and cluster-wide execution dynamics in real time.   In this paper, we present SliceScheduler, a dynamic operator-level scheduling system for multi-tenant model serving. The key idea is to expose cluster-wide operator execution state and enable what-if reasoning over scheduling decisions. SliceScheduler consists of four key components. First, we introduce the Global Mapping Graph (GMG), a unified abstraction that captures operator dependencies, tensor shapes, resource mappings, and execution states, providing a real-time, cluster-wide view with explicit resource semantics. Second, we build a global simulator on top of GMG to predict operator-level execution and memory evolution under candidate placements. Third, we design an incremental, simulation-based scheduling module that selects placements to exploit fragmented idle slices while avoiding memory violations and preserving SLA. Finally, we develop an operator executor that materializes scheduling decisions on GPUs and coordinates computation and cross-accelerator transfers. We implement SliceScheduler as a PyTorch backend and evaluate it using production trace replay. Experimental results show that SliceScheduler improves token throughput by 1.10--2.29$\\times$ compared to existing approaches, while maintaining SLA violations within 9\\%. SliceScheduler demonstrates that operator-level scheduling is a practical and effective approach to improving GPU utilization for multi-tenant LLM serving.",
+      "date": "2026-08-16",
+      "authors": [
+        "Weinan Liu",
+        "Zeyuan Ding",
+        "Dian Ding",
+        "Chengcheng Wan",
+        "Lu Tang",
+        "Guangtao Xue",
+        "Jiwu Shu",
+        "Yiming Zhang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15762",
+      "pdf": "https://arxiv.org/pdf/2608.15762.pdf",
+      "id": "arxiv:2608.15762",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning"
+      ],
+      "tags": [
+        "Reasoning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15762"
+    },
+    {
+      "pid": "2608.15665",
+      "title": "SubZero+: Efficient Zeroth-Order LLM Fine-Tuning via Large Learning Rates",
+      "abstract": "Zeroth-order (ZO) optimization enables backpropagation-free fine-tuning of large language models, but existing ZO methods suffer from high-variance gradient estimators, making convergence unstable and highly sensitive to learning rates. We propose SubZero+, an improved SubZero framework that improves stability in three complementary ways: (i) multi-query gradient estimation within layer-specific low-rank subspaces to reduce variance without exhibiting the multi-query paradox; (ii) a subspace Adam optimizer that performs adaptive updates using in-subspace multi-query gradient statistics; and (iii) a sign correction for QR-based subspace construction to ensure Haar-distributed projection matrices, eliminating implementation-dependent orientation ambiguity. Experiments on models from 1.3B to 32B across SuperGLUE, under both full-parameter tuning and LoRA, show that SubZero+ consistently outperforms prior ZO baselines, enlarges the stable learning-rate range, and narrows the gap to first-order methods with minimal extra memory overhead.",
+      "date": "2026-08-16",
+      "authors": [
+        "Ziming Yu",
+        "Shuyao Xiao",
+        "Xingyu Zhao",
+        "Sike Wang",
+        "Pan Zhou",
+        "Peiyu Zang",
+        "Xiangda Yan",
+        "Yongjie Yang",
+        "Jia Li"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.15665",
+      "pdf": "https://arxiv.org/pdf/2608.15665.pdf",
+      "id": "arxiv:2608.15665",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2608.15665"
+    },
     {
       "pid": "2608.11980",
       "title": "Learning from Unreachable Rewards: Hint-Conditioned Reinforcement Learning for Generative Recommendation",
@@ -576,7 +1728,7 @@
       "url": "https://arxiv.org/abs/2608.12627",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.15424",
@@ -1433,7 +2585,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.06867",
@@ -1468,7 +2620,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.13505",
@@ -1625,7 +2777,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.13505",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.13560",
@@ -1667,7 +2819,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.13560",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08975",
@@ -1698,7 +2850,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.13552",
@@ -1735,7 +2887,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.12743",
@@ -1778,7 +2930,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12743",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.12149",
@@ -1812,7 +2964,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11745",
@@ -1844,7 +2996,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11752",
@@ -1877,7 +3029,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08888",
@@ -1910,7 +3062,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.13391",
@@ -1945,7 +3097,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.07193",
@@ -1976,7 +3128,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.10538",
@@ -2005,7 +3157,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08020",
@@ -2035,7 +3187,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.12990",
@@ -2069,7 +3221,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12990",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.02870",
@@ -2096,7 +3248,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2607.29211",
@@ -2129,7 +3281,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.13430",
@@ -2157,7 +3309,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11660",
@@ -2191,7 +3343,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.12440",
@@ -2216,7 +3368,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12440",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09158",
@@ -2249,7 +3401,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11951",
@@ -2275,7 +3427,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.13883",
@@ -3956,7 +5108,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.00677",
@@ -3990,7 +5142,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.12307",
@@ -4024,7 +5176,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.12036",
@@ -4068,7 +5220,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.05604",
@@ -4098,7 +5250,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08160",
@@ -4130,7 +5282,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.12314",
@@ -4170,7 +5322,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12314",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.10708",
@@ -4201,7 +5353,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11216",
@@ -4233,7 +5385,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11350",
@@ -4266,7 +5418,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09926",
@@ -4303,7 +5455,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.11878",
@@ -4344,7 +5496,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11562",
@@ -4375,7 +5527,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11616",
@@ -4408,7 +5560,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09805",
@@ -4438,7 +5590,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.10450",
@@ -4466,7 +5618,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.10450",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11367",
@@ -4499,7 +5651,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11274",
@@ -4530,7 +5682,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08107",
@@ -4564,7 +5716,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11045",
@@ -4589,7 +5741,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.12836",
@@ -4616,7 +5768,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.06729",
@@ -4651,7 +5803,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.13547",
@@ -4681,7 +5833,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.13547",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2605.03799",
@@ -5406,7 +6558,7 @@
       "url": "https://arxiv.org/abs/2608.12854",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.12843",
@@ -7076,7 +8228,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11205",
@@ -7106,7 +8258,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.07645",
@@ -7134,7 +8286,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.10875",
@@ -7164,7 +8316,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.11079",
@@ -7194,7 +8346,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.10812",
@@ -7226,7 +8378,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.10812",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08627",
@@ -7261,7 +8413,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09900",
@@ -7299,7 +8451,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.10692",
@@ -7339,7 +8491,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08389",
@@ -7372,7 +8524,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.10628",
@@ -7408,7 +8560,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.10636",
@@ -7439,7 +8591,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08119",
@@ -7468,7 +8620,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.10366",
@@ -7501,7 +8653,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08814",
@@ -7533,7 +8685,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.07458",
@@ -7561,7 +8713,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2607.27670",
@@ -7606,7 +8758,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.11967",
@@ -8821,7 +9973,7 @@
       "url": "https://arxiv.org/abs/2608.11907",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.11816",
@@ -9477,7 +10629,7 @@
       "url": "https://arxiv.org/abs/2608.12127",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "pid": "2608.12122",
@@ -10253,7 +11405,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09819",
@@ -10358,7 +11510,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.06296",
@@ -10391,7 +11543,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09802",
@@ -10433,7 +11585,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09867",
@@ -10450,7 +11602,7 @@
       ],
       "abstract": "Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with each subsequent request. Building on prior research, we identify an architectural vulnerability: these encrypted blocks are fully compatible and interchangeable across different sessions, users, and models within a provider's ecosystem. We exploit this compatibility to develop a scalable decryption jailbreak. By injecting an encrypted reasoning trace from a given model into a weaker, and less safeguarded model from the same provider, we force it to decode and output the trace verbatim in plaintext, without ever jailbreaking the more capable model directly. This vulnerability enables four distinct attack vectors. First, it circumvents anti-distillation mechanisms, allowing adversaries to extract a proprietary model's reasoning, as we demonstrate across Anthropic, OpenAI, and Google. Second, it allows for large-scale private data extraction. Developers frequently share session logs publicly, unaware of contents of the encrypted blocks. By decoding 315,320 reasoning blocks scraped from public repositories, we recovered 367 Personally Identifiable Information (PII) artifacts and 182 credentials. Third, it inadvertently reveals hazardous information hidden within the reasoning process, even in cases where the model's final, visible output safely rejects a malicious request. Fourth, attackers can leverage this flaw to execute invisible prompt injections, embedding malicious payloads entirely within encrypted blocks to poison public agentic rollouts. Following responsible disclosure, we propose concrete cryptographic and system-level mitigations to secure client-side reasoning.",
       "date": "2026-08-11",
-      "upvotes": 111,
+      "upvotes": 112,
       "source": "hf",
       "arxiv": "https://arxiv.org/abs/2608.09867",
       "pdf": "https://arxiv.org/pdf/2608.09867.pdf",
@@ -10471,7 +11623,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08311",
@@ -10502,7 +11654,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.07169",
@@ -10532,7 +11684,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09119",
@@ -10593,7 +11745,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09873",
@@ -10623,7 +11775,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.06751",
@@ -10659,7 +11811,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.04419",
@@ -10691,7 +11843,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.07565",
@@ -10725,7 +11877,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08097",
@@ -10758,7 +11910,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.07594",
@@ -10793,7 +11945,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08621",
@@ -10824,7 +11976,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09096",
@@ -10858,7 +12010,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08021",
@@ -10896,7 +12048,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.07346",
@@ -10934,7 +12086,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.02508",
@@ -10967,7 +12119,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.06065",
@@ -11001,7 +12153,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.03499",
@@ -11036,7 +12188,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09420",
@@ -11070,7 +12222,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08477",
@@ -11100,7 +12252,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.07886",
@@ -11129,7 +12281,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.03887",
@@ -11155,7 +12307,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09043",
@@ -11180,7 +12332,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08722",
@@ -11204,7 +12356,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2607.27637",
@@ -11237,7 +12389,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.07463",
@@ -11268,7 +12420,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08786",
@@ -11302,7 +12454,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.06111",
@@ -11330,7 +12482,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09766",
@@ -11376,7 +12528,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.09848",
@@ -11401,7 +12553,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.14707",
@@ -13030,7 +14182,10 @@
       ],
       "tags": [
         "Reasoning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.10037",
@@ -13158,7 +14313,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.08466",
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.08640",
@@ -16523,7 +17678,7 @@
       "year": 2026,
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-08-23T21:53:04.341044+00:00"
+      "lastSeenAt": "2026-08-24T02:15:35.603871+00:00"
     },
     {
       "id": "arxiv:2608.04926",
