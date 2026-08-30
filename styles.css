@@ -346,3 +346,38 @@ main {
   .tab { padding: 6px 10px; font-size: 13px; }
 }
 .hidden { display: none !important; }
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .container { padding: 0 16px; }
+  .header-inner { height: 56px; gap: 8px; }
+  .logo span { font-size: 17px; }
+  .logo-badge { width: 24px; height: 24px; font-size: 11px; }
+  main { padding: 20px 0; gap: 0; }
+  .sidebar { 
+    display: block !important;
+    position: static;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .sidebar h3 { margin-top: 16px; }
+  .filter-section { margin-bottom: 16px; }
+  .chips { gap: 4px; }
+  .chip { padding: 4px 8px; font-size: 12px; }
+  .section-header h2 { font-size: 18px; }
+  .paper-card { padding: 16px 0; }
+  .paper-card:hover { margin: 0; padding: 16px 0; border-radius: 0; background: transparent; }
+  .paper-title { font-size: 15px; }
+  .paper-authors, .paper-abstract { font-size: 13px; }
+  .paper-footer { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .paper-actions { width: 100%; justify-content: flex-start; }
+  .btn { padding: 6px 10px; font-size: 12px; }
+  nav.tabs { gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tab { padding: 6px 10px; font-size: 13px; white-space: nowrap; }
+}
+/* 安全区域适配 */
+@supports (padding: max(0px)) {
+  header { padding-top: env(safe-area-inset-top, 0); }
+  main { padding-bottom: max(20px, env(safe-area-inset-bottom, 0)); }
+}

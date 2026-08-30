@@ -1,0 +1,19 @@
+{
+  "name": "Agent Daily · 每日Agent/LLM论文",
+  "short_name": "Agent Daily",
+  "description": "每日最新Agent、LLM、VLM论文推荐",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["news", "education", "productivity"]
+}
