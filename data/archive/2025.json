@@ -23059,7 +23059,10 @@
         "Reasoning",
         "Computer Use",
         "Evaluation"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-09-01T08:58:52.075261+00:00"
     },
     {
       "id": "arxiv:2510.02964",
@@ -36201,7 +36204,10 @@
       "tags": [
         "Agentic Search",
         "Computer Use"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-09-01T08:58:52.075261+00:00"
     },
     {
       "id": "arxiv:2508.04037",
