@@ -5,6 +5,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+BOOTSTRAP_START = '/* AGENT_DAILY_BOOTSTRAP_START */'
+BOOTSTRAP_END = '/* AGENT_DAILY_BOOTSTRAP_END */'
+BOOTSTRAP_PREFIX = 'window.__BUNDLE__='
 
 
 def load(name):
@@ -16,11 +19,36 @@ def fail(message):
     raise SystemExit(1)
 
 
+def load_bootstrap():
+    html = (ROOT / 'index.html').read_text(encoding='utf-8')
+    start = html.find(BOOTSTRAP_START)
+    end = html.find(BOOTSTRAP_END, start + len(BOOTSTRAP_START))
+    payload_start = html.find(BOOTSTRAP_PREFIX, start + len(BOOTSTRAP_START))
+    if start < 0 or end < 0 or payload_start < 0 or payload_start >= end:
+        fail('index.html bootstrap markers or payload are missing')
+    payload_start += len(BOOTSTRAP_PREFIX)
+    payload_end = html.rfind(';', payload_start, end)
+    if payload_end < payload_start:
+        fail('index.html bootstrap payload terminator is missing')
+    try:
+        return json.loads(html[payload_start:payload_end])
+    except json.JSONDecodeError as exc:
+        fail(f'index.html bootstrap payload is invalid JSON: {exc}')
+
+
 def main():
     daily = load('data/daily.json')
     latest = load('data/latest.json')
+    bootstrap = load_bootstrap()
     if not isinstance(daily.get('papers'), list) or not isinstance(latest.get('papers'), list):
         fail('daily/latest papers must be arrays')
+    if bootstrap.get('generatedAt') != daily.get('generatedAt'):
+        fail(
+            'index.html bootstrap is stale: '
+            f'{bootstrap.get("generatedAt")} != {daily.get("generatedAt")}'
+        )
+    if not isinstance(bootstrap.get('papers'), list):
+        fail('index.html bootstrap papers must be an array')
     recent_total = latest.get('recentTotal') or len(latest['papers'])
     sources = latest.get('sources') or {}
     fetch_stats = latest.get('fetchStats') or daily.get('fetchStats') or {}
@@ -34,7 +62,10 @@ def main():
     warnings = set(latest.get('warnings') or [])
     if warnings & fatal_warnings:
         fail(f'fatal warnings present: {sorted(warnings & fatal_warnings)}')
-    print(f'[validate] ok: recentTotal={recent_total}, sources={sources}, fetchStats={fetch_stats}')
+    print(
+        f'[validate] ok: generatedAt={daily.get("generatedAt")}, '
+        f'recentTotal={recent_total}, sources={sources}, fetchStats={fetch_stats}'
+    )
 
 
 if __name__ == '__main__':

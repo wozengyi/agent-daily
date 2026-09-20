@@ -711,19 +711,24 @@ function mountSearchExtras(){
 
 // ---------- Data loading ----------
 async function loadBundle(opts={}){
-  state.loading = true; state.bundleError = null; render();
-  if(!opts.refresh && window.__BUNDLE__ && Array.isArray(window.__BUNDLE__.papers)){
+  state.bundleError = null;
+  const hasBootstrap = !opts.refresh && window.__BUNDLE__ && Array.isArray(window.__BUNDLE__.papers);
+  if(hasBootstrap){
     state.bundle = window.__BUNDLE__;
     state.loading = false;
     render();
     if(!state.archiveIndex && !state.archiveIndexLoading && !state.archiveIndexError){
       loadArchiveIndex();
     }
-    return;
+  } else {
+    state.loading = true;
+    render();
   }
   try{
-    const suffix = opts.refresh ? `?v=${Date.now()}` : `?v=${DATA_VERSION}`;
-    const r = await fetch(`data/daily.json${suffix}`, {cache: opts.refresh ? 'no-store' : 'default'});
+    // The bootstrap keeps first paint fast, but daily.json remains the source
+    // of truth. Always reconcile with the network so a stale HTML snapshot or
+    // service-worker cache cannot pin the homepage to an old build.
+    const r = await fetch(`data/daily.json?v=${Date.now()}`, {cache:'no-store'});
     if(r.ok){
       const d = await r.json();
       if(d && Array.isArray(d.papers)){ state.bundle = d; }
