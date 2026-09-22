@@ -13678,7 +13678,10 @@
         "Agentic Search",
         "Multi-Agent",
         "Reasoning"
-      ]
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-09-22T05:22:10.987909+00:00"
     },
     {
       "id": "arxiv:2511.03094",
