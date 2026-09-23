@@ -13681,7 +13681,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-09-22T23:53:31.104752+00:00"
+      "lastSeenAt": "2026-09-23T05:07:29.396168+00:00"
     },
     {
       "id": "arxiv:2511.03094",
@@ -42128,6 +42128,43 @@
       ]
     },
     {
+      "id": "arxiv:2507.00938",
+      "title": "WebArXiv: Evaluating Multimodal Agents on Time-Invariant arXiv Tasks",
+      "abstract": "Recent progress in large language models (LLMs) has enabled the development of autonomous web agents capable of navigating and interacting with real websites. However, evaluating such agents remains challenging due to the instability and inconsistency of existing benchmarks, which often rely on dynamic content or oversimplified simulations. In this work, we introduce WebArXiv, a static and time-invariant benchmark comprising 275 web-based tasks grounded in the arXiv platform. WebArXiv ensures reproducible and reliable evaluation by anchoring tasks in fixed web snapshots with deterministic ground truths and standardized action trajectories. Through behavioral analysis, we identify a common failure mode, Rigid History Reflection, where agents over-rely on fixed interaction histories. To address this, we propose a lightweight dynamic reflection mechanism that allows agents to selectively retrieve relevant past steps during decision-making. We evaluate ten state-of-the-art web agents on WebArXiv. Results demonstrate clear performance differences across agents and validate the effectiveness of our proposed reflection strategy.",
+      "authors": "Zihao Sun, Meng Fang, Ling Chen",
+      "date": "2025-07-01",
+      "published": "2025-07-01",
+      "year": 2025,
+      "venue": "arXiv.org",
+      "publicationKind": "journal",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "citationCount": 0,
+      "source": "semantic-scholar",
+      "url": "https://www.semanticscholar.org/paper/7f1d6a5c516268d15d4344b5073b720d68505d57",
+      "arxiv": "https://arxiv.org/abs/2507.00938",
+      "pdf": "https://arxiv.org/pdf/2507.00938.pdf",
+      "upvotes": 0,
+      "topics": [
+        "Computer Use",
+        "Evaluation",
+        "Reflection",
+        "Multimodal Agent",
+        "Reasoning",
+        "Memory"
+      ],
+      "tags": [
+        "Computer Use",
+        "Evaluation",
+        "Reflection",
+        "Multimodal Agent"
+      ],
+      "firstSeenAt": "1970-01-01T00:00:00+00:00",
+      "firstSeenAtEstimated": true,
+      "lastSeenAt": "2026-09-23T05:07:29.396168+00:00"
+    },
+    {
       "id": "arxiv:2507.00748",
       "title": "Improving the Reasoning of Multi-Image Grounding in MLLMs via Reinforcement Learning",
       "abstract": "Multimodal Large Language Models (MLLMs) perform well in single-image visual grounding but struggle with real-world tasks that demand cross-image reasoning and multi-modal instructions. To address this, we adopt a reinforcement learning (RL) based post-training strategy for MLLMs in multi-image grounding tasks. We first synthesize high-quality chain-of-thought (CoT) data for cold-start initialization, followed by supervised fine-tuning (SFT) using low-rank adaptation (LoRA). Subsequently, we apply rejection sampling with the merged SFT model to curate reliable RL data and use rule-based RL to guide the model toward optimal reasoning paths. Extensive experiments demonstrate the effectiveness of our approach, achieving +9.04% on MIG-Bench and +4.41% on average across seven out-of-domain benchmarks.",
@@ -42194,38 +42231,6 @@
         "Agentic Search",
         "Multi-Agent",
         "Hallucination"
-      ]
-    },
-    {
-      "id": "arxiv:2507.00938",
-      "title": "WebArXiv: Evaluating Multimodal Agents on Time-Invariant arXiv Tasks",
-      "abstract": "Recent progress in large language models (LLMs) has enabled the development of autonomous web agents capable of navigating and interacting with real websites. However, evaluating such agents remains challenging due to the instability and inconsistency of existing benchmarks, which often rely on dynamic content or oversimplified simulations. In this work, we introduce WebArXiv, a static and time-invariant benchmark comprising 275 web-based tasks grounded in the arXiv platform. WebArXiv ensures reproducible and reliable evaluation by anchoring tasks in fixed web snapshots with deterministic ground truths and standardized action trajectories. Through behavioral analysis, we identify a common failure mode, Rigid History Reflection, where agents over-rely on fixed interaction histories. To address this, we propose a lightweight dynamic reflection mechanism that allows agents to selectively retrieve relevant past steps during decision-making. We evaluate ten state-of-the-art web agents on WebArXiv. Results demonstrate clear performance differences across agents and validate the effectiveness of our proposed reflection strategy.",
-      "authors": "Zihao Sun, Meng Fang, Ling Chen",
-      "date": "2025-07-01",
-      "published": "2025-07-01",
-      "year": 2025,
-      "venue": "arXiv.org",
-      "publicationKind": "journal",
-      "publicationTypes": [
-        "JournalArticle"
-      ],
-      "citationCount": 0,
-      "source": "semantic-scholar",
-      "url": "https://www.semanticscholar.org/paper/7f1d6a5c516268d15d4344b5073b720d68505d57",
-      "arxiv": "https://arxiv.org/abs/2507.00938",
-      "pdf": "https://arxiv.org/pdf/2507.00938.pdf",
-      "upvotes": 0,
-      "topics": [
-        "Computer Use",
-        "Evaluation",
-        "Reflection",
-        "Multimodal Agent"
-      ],
-      "tags": [
-        "Computer Use",
-        "Evaluation",
-        "Reflection",
-        "Multimodal Agent"
       ]
     },
     {
