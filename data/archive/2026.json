@@ -78,7 +78,7 @@
       "announceDate": "2026-10-19",
       "id": "arxiv:2610.22471",
       "source": "hf",
-      "upvotes": 482,
+      "upvotes": 484,
       "topics": [
         "Evaluation"
       ],
@@ -88,7 +88,7 @@
       "url": "https://arxiv.org/abs/2610.22471",
       "hfUrl": "https://huggingface.co/papers/2610.22471",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23479",
@@ -133,7 +133,7 @@
       "url": "https://arxiv.org/abs/2610.23479",
       "hfUrl": "https://huggingface.co/papers/2610.23479",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23181",
@@ -172,7 +172,7 @@
       "url": "https://arxiv.org/abs/2610.23181",
       "hfUrl": "https://huggingface.co/papers/2610.23181",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23542",
@@ -204,7 +204,7 @@
       "url": "https://arxiv.org/abs/2610.23542",
       "hfUrl": "https://huggingface.co/papers/2610.23542",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23839",
@@ -259,7 +259,7 @@
       "url": "https://arxiv.org/abs/2610.23839",
       "hfUrl": "https://huggingface.co/papers/2610.23839",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23036",
@@ -293,7 +293,7 @@
       "url": "https://arxiv.org/abs/2610.23036",
       "hfUrl": "https://huggingface.co/papers/2610.23036",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22602",
@@ -327,7 +327,7 @@
       "url": "https://arxiv.org/abs/2610.22602",
       "hfUrl": "https://huggingface.co/papers/2610.22602",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23841",
@@ -395,7 +395,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23121",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.23121"
     },
     {
@@ -437,7 +437,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23279",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.23279"
     },
     {
@@ -472,7 +472,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22791",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22791"
     },
     {
@@ -513,7 +513,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23230",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.23230"
     },
     {
@@ -552,8 +552,45 @@
       ],
       "url": "https://arxiv.org/abs/2610.23751",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.23751"
+    },
+    {
+      "pid": "2610.22744",
+      "title": "OmniXRef: A Unified Framework for Multimodal Multi-Reference Video Editing",
+      "abstract": "Creative intent in video editing can be expressed through text instructions (e.g., \"remove the people\"), image references (e.g., subject appearance), video references (e.g., camera movement), or a combination of the above. We introduce OmniXRef, a unified framework for multimodal multi-reference video editing that allows users to combine variable numbers of text, image, and video references to control diverse attributes of a source video. We first devise a unified input design with a reference-bank interface and introduce $R^2$-RoPE to support generalization to more references. Then our model, OmniXRef-Model, uses a single-stream diffusion transformer to jointly process the source video and multimodal context from an MLLM in an interleaved sequence. To address the scarcity of training data for video-reference editing, we construct OmniXRef-Data using synthesis pipelines for different editing tasks and combinations of references. We use curriculum learning to progressively increase task complexity and resolution. To support systematic evaluation of video as a control modality, we introduce OmniXRef-Bench, a benchmark for video-reference attribute transfer across Camera, Motion, Content, Style, and Visual Effects (VFX). Comprehensive evaluations show that our OmniXRef-Model outperforms task-specific baselines and commercial models.",
+      "date": "2026-10-19",
+      "authors": [
+        "Xiaoyan Cong",
+        "Tianyu Wang",
+        "Hyeonho Jeong",
+        "Zhifei Zhang",
+        "Yuqian Zhou",
+        "Yijun Li",
+        "Shaoteng Liu",
+        "Zhe Lin",
+        "Srinath Sridhar",
+        "Soo Ye Kim"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.22744",
+      "pdf": "https://arxiv.org/pdf/2610.22744.pdf",
+      "submittedDate": "2026-10-15",
+      "announceDate": "2026-10-19",
+      "id": "arxiv:2610.22744",
+      "source": "arxiv",
+      "upvotes": 24,
+      "topics": [
+        "LLM Training",
+        "Evaluation"
+      ],
+      "tags": [
+        "LLM Training",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.22744",
+      "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.22744"
     },
     {
       "pid": "2610.22448",
@@ -581,7 +618,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22448",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22448"
     },
     {
@@ -624,7 +661,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23344",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.23344"
     },
     {
@@ -668,45 +705,8 @@
       ],
       "url": "https://arxiv.org/abs/2610.23194",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.23194"
-    },
-    {
-      "pid": "2610.22744",
-      "title": "OmniXRef: A Unified Framework for Multimodal Multi-Reference Video Editing",
-      "abstract": "Creative intent in video editing can be expressed through text instructions (e.g., \"remove the people\"), image references (e.g., subject appearance), video references (e.g., camera movement), or a combination of the above. We introduce OmniXRef, a unified framework for multimodal multi-reference video editing that allows users to combine variable numbers of text, image, and video references to control diverse attributes of a source video. We first devise a unified input design with a reference-bank interface and introduce $R^2$-RoPE to support generalization to more references. Then our model, OmniXRef-Model, uses a single-stream diffusion transformer to jointly process the source video and multimodal context from an MLLM in an interleaved sequence. To address the scarcity of training data for video-reference editing, we construct OmniXRef-Data using synthesis pipelines for different editing tasks and combinations of references. We use curriculum learning to progressively increase task complexity and resolution. To support systematic evaluation of video as a control modality, we introduce OmniXRef-Bench, a benchmark for video-reference attribute transfer across Camera, Motion, Content, Style, and Visual Effects (VFX). Comprehensive evaluations show that our OmniXRef-Model outperforms task-specific baselines and commercial models.",
-      "date": "2026-10-19",
-      "authors": [
-        "Xiaoyan Cong",
-        "Tianyu Wang",
-        "Hyeonho Jeong",
-        "Zhifei Zhang",
-        "Yuqian Zhou",
-        "Yijun Li",
-        "Shaoteng Liu",
-        "Zhe Lin",
-        "Srinath Sridhar",
-        "Soo Ye Kim"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.22744",
-      "pdf": "https://arxiv.org/pdf/2610.22744.pdf",
-      "submittedDate": "2026-10-15",
-      "announceDate": "2026-10-19",
-      "id": "arxiv:2610.22744",
-      "source": "arxiv",
-      "upvotes": 23,
-      "topics": [
-        "LLM Training",
-        "Evaluation"
-      ],
-      "tags": [
-        "LLM Training",
-        "Evaluation"
-      ],
-      "url": "https://arxiv.org/abs/2610.22744",
-      "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "hfUrl": "https://huggingface.co/papers/2610.22744"
     },
     {
       "pid": "2610.22444",
@@ -745,7 +745,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22444",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22444"
     },
     {
@@ -778,7 +778,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22951",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22951"
     },
     {
@@ -805,8 +805,42 @@
       ],
       "url": "https://arxiv.org/abs/2610.22722",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22722"
+    },
+    {
+      "pid": "2610.23234",
+      "title": "MultiAgent-OPD: End-to-End Training of Hierarchical Multi-Agent Systems with On-Policy Distillation",
+      "abstract": "In a hierarchical multi-agent system, a Leader assigns tasks and subagents carry them out. Jointly training the Leader and the subagents is difficult because a final answer gives only indirect feedback to the subagents. An LLM judge can score the performance of the subagents, but these scores depend on the judge's own assessment of the quality of subagents' responses. We present MultiAgent-OPD, which combines on-policy distillation with reinforcement learning to jointly train a shared-parameter Leader-Searcher-Answerer team end to end. We first train a Teacher in a Searcher-Answerer workflow using answer correctness. During team training, the frozen Teacher scores student-generated search and summary tokens to provide local process supervision for the Searchers, while the Leader learns from team success and the Answerer from candidate correctness. Across seven datasets, the trained system reaches 38.68% macro avg@4, exceeding Prompted Critic by 4.06 percentage points and C-MAS + RL, the trained cascaded multiagent system, by 2.61 percentage points. The team also solves more questions within four attempts.",
+      "date": "2026-10-19",
+      "authors": [
+        "Yuhan Sun",
+        "Jiaxin Zhao",
+        "Yongdong Luo",
+        "Yibo Hu",
+        "Meiguang Jin",
+        "Junfeng Ma",
+        "Weixun Wang",
+        "Weihang Pan",
+        "Zhongan Bi"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.23234",
+      "pdf": "https://arxiv.org/pdf/2610.23234.pdf",
+      "submittedDate": "2026-10-20",
+      "announceDate": "2026-10-19",
+      "id": "arxiv:2610.23234",
+      "source": "arxiv",
+      "upvotes": 11,
+      "topics": [
+        "Multi-Agent"
+      ],
+      "tags": [
+        "Multi-Agent"
+      ],
+      "url": "https://arxiv.org/abs/2610.23234",
+      "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.23234"
     },
     {
       "pid": "2610.22512",
@@ -842,7 +876,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22512",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22512"
     },
     {
@@ -884,42 +918,8 @@
       ],
       "url": "https://arxiv.org/abs/2610.26765",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.26765"
-    },
-    {
-      "pid": "2610.23234",
-      "title": "MultiAgent-OPD: End-to-End Training of Hierarchical Multi-Agent Systems with On-Policy Distillation",
-      "abstract": "In a hierarchical multi-agent system, a Leader assigns tasks and subagents carry them out. Jointly training the Leader and the subagents is difficult because a final answer gives only indirect feedback to the subagents. An LLM judge can score the performance of the subagents, but these scores depend on the judge's own assessment of the quality of subagents' responses. We present MultiAgent-OPD, which combines on-policy distillation with reinforcement learning to jointly train a shared-parameter Leader-Searcher-Answerer team end to end. We first train a Teacher in a Searcher-Answerer workflow using answer correctness. During team training, the frozen Teacher scores student-generated search and summary tokens to provide local process supervision for the Searchers, while the Leader learns from team success and the Answerer from candidate correctness. Across seven datasets, the trained system reaches 38.68% macro avg@4, exceeding Prompted Critic by 4.06 percentage points and C-MAS + RL, the trained cascaded multiagent system, by 2.61 percentage points. The team also solves more questions within four attempts.",
-      "date": "2026-10-19",
-      "authors": [
-        "Yuhan Sun",
-        "Jiaxin Zhao",
-        "Yongdong Luo",
-        "Yibo Hu",
-        "Meiguang Jin",
-        "Junfeng Ma",
-        "Weixun Wang",
-        "Weihang Pan",
-        "Zhongan Bi"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.23234",
-      "pdf": "https://arxiv.org/pdf/2610.23234.pdf",
-      "submittedDate": "2026-10-20",
-      "announceDate": "2026-10-19",
-      "id": "arxiv:2610.23234",
-      "source": "arxiv",
-      "upvotes": 10,
-      "topics": [
-        "Multi-Agent"
-      ],
-      "tags": [
-        "Multi-Agent"
-      ],
-      "url": "https://arxiv.org/abs/2610.23234",
-      "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "hfUrl": "https://huggingface.co/papers/2610.23234"
     },
     {
       "pid": "2610.22708",
@@ -949,7 +949,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22708",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22708"
     },
     {
@@ -982,7 +982,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23400",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.23400"
     },
     {
@@ -1018,7 +1018,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22732",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22732"
     },
     {
@@ -1960,7 +1960,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23271",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22610",
@@ -2133,7 +2133,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22982",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22964",
@@ -2952,7 +2952,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22887",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22594",
@@ -3433,7 +3433,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22671",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23148",
@@ -3828,7 +3828,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23324",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23772",
@@ -3895,7 +3895,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23263",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23269",
@@ -4127,7 +4127,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.27003",
       "firstSeenAt": "2026-10-21T05:15:29.211346+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23313",
@@ -4687,7 +4687,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23670",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22841",
@@ -6221,7 +6221,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22432",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23248",
@@ -8590,7 +8590,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22959",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23183",
@@ -10254,7 +10254,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22957",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.23325",
@@ -10757,7 +10757,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.26390",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.26684",
@@ -11591,6 +11591,37 @@
       "lastSeenAt": "2026-10-20T21:54:34.554425+00:00"
     },
     {
+      "pid": "2610.24451",
+      "title": "Assessing the CAD Capabilities of General-Purpose AI Models: A Case Study of GPT-6 Astra",
+      "abstract": "Recent advances in general-purpose AI models and agentic systems have enabled them to perform some CAD tasks. A systematic assessment is now needed to establish what these systems can accomplish and how well their outputs meet engineering requirements. This paper presents an empirical study of GPT-6 Astra, a SOTA general-purpose AI model, across four basic CAD tasks: model understanding, generation, editing, and evaluation. We design test cases spanning different levels of complexity and engineering requirements. The results show that GPT-6 Astra can support multiple stages of CAD workflows, with successful outcomes in cases involving nontrivial geometric complexity. This suggests that general-purpose AI is beginning to offer practical value in almost all steps in CAD workflow. However, gaps remain between generating visually plausible geometry and producing valid, functional, and editable CAD models. Recurring errors in freeform geometry, parameter dependencies, and mating relationships between parts limit engineering usefulness. Agentic iterative refinement can improve results but does not consistently resolve critical errors; long completion times further constrain practical use.",
+      "date": "2026-10-17",
+      "authors": [
+        "Qiang Zou",
+        "Jiajun Shen",
+        "Zhijie Yang",
+        "Yuhao Wang",
+        "Shitianyi Leng",
+        "Dongshuo Yin"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.24451",
+      "pdf": "https://arxiv.org/pdf/2610.24451.pdf",
+      "id": "arxiv:2610.24451",
+      "source": "arxiv",
+      "upvotes": 1,
+      "topics": [
+        "Evaluation",
+        "Reflection"
+      ],
+      "tags": [
+        "Evaluation",
+        "Reflection"
+      ],
+      "url": "https://arxiv.org/abs/2610.24451",
+      "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.24451"
+    },
+    {
       "pid": "2610.24603",
       "title": "Refuse the Harm, Complete the Task via Graph-of-Rules Planning for LLM-Enabled Robots",
       "abstract": "Large Language Models (LLMs) are increasingly used in embodied AI for robotic manipulation and planning, but their deployment in physical systems exposes vulnerabilities such as jailbreak attacks that induce unsafe behavior. Existing inference-time defenses are mainly evaluated on short instructions containing a single hazard, whereas realistic tasks may interleave safe and unsafe sub-tasks, conceal hazardous steps, or combine individually safe actions into unsafe outcomes. Such compound instructions make it harder for a single safety decision to distinguish hazardous sub-tasks from legitimate ones, risking either overlooking the hazard or rejecting the whole instruction. We introduce safe task completion, a task that requires an LLM-enabled robot to refuse the harmful part of an instruction while completing its legitimate part. To address this problem, we propose RuleGraph, a multi-agent Graph-of-Rules planning framework that distributes safety enforcement across multiple reasoning and verification stages. Five cooperating agents are used to ground general safety principles into world-specific rules, assess the instruction's sub-tasks in context, and derive a safe goal from the legitimate ones. Planning toward this goal is then organized as a graph of rule-specific nodes, where higher-level nodes inherit the union of their parents' rules, and candidate plans are progressively verified and aggregated until a single plan satisfies every relevant rule. In this way, RuleGraph reduces reliance on a single centralized safety decision. We evaluate RuleGraph on pure-attack and compound instructions across two benchmarks in two environments using Attack Success Rate (ASR) and Task Success Rate (TSR). RuleGraph reduces ASR to 0% on both benchmarks while achieving the highest TSR among all methods, reaching 98.57% on the RoboGuard benchmark and 84.54% on our long-horizon compound instructions.",
@@ -11749,37 +11780,6 @@
       "url": "https://arxiv.org/abs/2610.24845",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
       "lastSeenAt": "2026-10-24T23:39:16.580338+00:00"
-    },
-    {
-      "pid": "2610.24451",
-      "title": "Assessing the CAD Capabilities of General-Purpose AI Models: A Case Study of GPT-6 Astra",
-      "abstract": "Recent advances in general-purpose AI models and agentic systems have enabled them to perform some CAD tasks. A systematic assessment is now needed to establish what these systems can accomplish and how well their outputs meet engineering requirements. This paper presents an empirical study of GPT-6 Astra, a SOTA general-purpose AI model, across four basic CAD tasks: model understanding, generation, editing, and evaluation. We design test cases spanning different levels of complexity and engineering requirements. The results show that GPT-6 Astra can support multiple stages of CAD workflows, with successful outcomes in cases involving nontrivial geometric complexity. This suggests that general-purpose AI is beginning to offer practical value in almost all steps in CAD workflow. However, gaps remain between generating visually plausible geometry and producing valid, functional, and editable CAD models. Recurring errors in freeform geometry, parameter dependencies, and mating relationships between parts limit engineering usefulness. Agentic iterative refinement can improve results but does not consistently resolve critical errors; long completion times further constrain practical use.",
-      "date": "2026-10-17",
-      "authors": [
-        "Qiang Zou",
-        "Jiajun Shen",
-        "Zhijie Yang",
-        "Yuhao Wang",
-        "Shitianyi Leng",
-        "Dongshuo Yin"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.24451",
-      "pdf": "https://arxiv.org/pdf/2610.24451.pdf",
-      "id": "arxiv:2610.24451",
-      "source": "arxiv",
-      "upvotes": 0,
-      "topics": [
-        "Evaluation",
-        "Reflection"
-      ],
-      "tags": [
-        "Evaluation",
-        "Reflection"
-      ],
-      "url": "https://arxiv.org/abs/2610.24451",
-      "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "hfUrl": "https://huggingface.co/papers/2610.24451"
     },
     {
       "pid": "2610.24834",
@@ -11957,7 +11957,7 @@
       "url": "https://arxiv.org/abs/2610.22341",
       "hfUrl": "https://huggingface.co/papers/2610.22341",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22264",
@@ -11992,7 +11992,7 @@
       "url": "https://arxiv.org/abs/2610.22264",
       "hfUrl": "https://huggingface.co/papers/2610.22264",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20818",
@@ -12060,7 +12060,7 @@
       "url": "https://arxiv.org/abs/2610.20818",
       "hfUrl": "https://huggingface.co/papers/2610.20818",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20693",
@@ -12112,7 +12112,7 @@
       "url": "https://arxiv.org/abs/2610.20693",
       "hfUrl": "https://huggingface.co/papers/2610.20693",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22194",
@@ -12166,7 +12166,7 @@
       "url": "https://arxiv.org/abs/2610.22194",
       "hfUrl": "https://huggingface.co/papers/2610.22194",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20731",
@@ -12209,7 +12209,7 @@
       "url": "https://arxiv.org/abs/2610.20731",
       "hfUrl": "https://huggingface.co/papers/2610.20731",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22282",
@@ -12247,7 +12247,7 @@
       "url": "https://arxiv.org/abs/2610.22282",
       "hfUrl": "https://huggingface.co/papers/2610.22282",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22131",
@@ -12282,7 +12282,7 @@
       "url": "https://arxiv.org/abs/2610.22131",
       "hfUrl": "https://huggingface.co/papers/2610.22131",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.21412",
@@ -12317,7 +12317,7 @@
       "url": "https://arxiv.org/abs/2610.21412",
       "hfUrl": "https://huggingface.co/papers/2610.21412",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.21359",
@@ -12354,7 +12354,7 @@
       "url": "https://arxiv.org/abs/2610.21359",
       "hfUrl": "https://huggingface.co/papers/2610.21359",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.21055",
@@ -12395,7 +12395,7 @@
       "url": "https://arxiv.org/abs/2610.21055",
       "hfUrl": "https://huggingface.co/papers/2610.21055",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22322",
@@ -12429,7 +12429,7 @@
       "url": "https://arxiv.org/abs/2610.22322",
       "hfUrl": "https://huggingface.co/papers/2610.22322",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22217",
@@ -12468,7 +12468,7 @@
       "url": "https://arxiv.org/abs/2610.22217",
       "hfUrl": "https://huggingface.co/papers/2610.22217",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.21453",
@@ -12505,7 +12505,7 @@
       "url": "https://arxiv.org/abs/2610.21453",
       "hfUrl": "https://huggingface.co/papers/2610.21453",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22186",
@@ -12603,7 +12603,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21046",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21046"
     },
     {
@@ -12637,7 +12637,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21601",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21601"
     },
     {
@@ -12676,7 +12676,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22276",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22276"
     },
     {
@@ -12720,7 +12720,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22200",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22200"
     },
     {
@@ -12771,7 +12771,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22350",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22350"
     },
     {
@@ -12801,7 +12801,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21783",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21783"
     },
     {
@@ -12845,7 +12845,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20939",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.20939"
     },
     {
@@ -12884,7 +12884,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21306",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21306"
     },
     {
@@ -12926,7 +12926,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21767",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21767"
     },
     {
@@ -12972,7 +12972,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21656",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21656"
     },
     {
@@ -13018,7 +13018,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22355",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22355"
     },
     {
@@ -13049,7 +13049,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21459",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21459"
     },
     {
@@ -13090,7 +13090,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22344",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22344"
     },
     {
@@ -13120,7 +13120,7 @@
       ],
       "url": "https://arxiv.org/abs/2606.31876",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2606.31876"
     },
     {
@@ -13154,7 +13154,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21204",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21204"
     },
     {
@@ -13187,7 +13187,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22352",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22352"
     },
     {
@@ -13234,7 +13234,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21082",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21082"
     },
     {
@@ -13272,7 +13272,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22321",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22321"
     },
     {
@@ -13310,7 +13310,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22234",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22234"
     },
     {
@@ -13341,7 +13341,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22273",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22273"
     },
     {
@@ -13377,7 +13377,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20628",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.20628"
     },
     {
@@ -13439,7 +13439,7 @@
       "announceDate": "2026-10-16",
       "id": "arxiv:2610.21109",
       "source": "arxiv",
-      "upvotes": 6,
+      "upvotes": 7,
       "topics": [
         "Multi-Agent",
         "Evaluation"
@@ -13450,7 +13450,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21109",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21109"
     },
     {
@@ -13600,6 +13600,32 @@
       "hfUrl": "https://huggingface.co/papers/2610.21189"
     },
     {
+      "pid": "2610.14018",
+      "title": "RoboHarness: A Simple Harness Outperforms VLA and World Action Models",
+      "abstract": "The rise of large language models (LLMs) has opened a path toward generalist embodied AI, raising the question of how LLMs can act in the physical world. One straightforward approach is training the model to generate actions: collect robot-action data and video demonstration, refine LLM architecture with an action head, and train a vision-language-action (VLA) model at scale. However, we argue that coding agents have the potential to realize generalist embodied manipulation. All they need is a simple yet effective robot harness. We present RoboHarness: a robotic harness that gives LLM agents a visual-geometric control panel so that they can directly understand and invoke embodied tasks. With RoboHarness, Qwen3.8-Flash-Next outperforms state-of-the-art VLA models on BEHAVIOR Challenge 2025 tasks. The implementation is open source.",
+      "date": "2026-10-16",
+      "authors": [
+        "Bince Qu",
+        "Wei Chen",
+        "Bo Zhang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.14018",
+      "pdf": "https://arxiv.org/pdf/2610.14018.pdf",
+      "id": "arxiv:2610.14018",
+      "source": "arxiv",
+      "upvotes": 2,
+      "topics": [
+        "Code Agent"
+      ],
+      "tags": [
+        "Code Agent"
+      ],
+      "url": "https://arxiv.org/abs/2610.14018",
+      "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.14018"
+    },
+    {
       "pid": "2610.22343",
       "title": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
       "abstract": "Recent 3D world models increasingly use features from geometry foundation models (GFMs) as predictive world states, benefiting from their rich geometric priors. However, the view dependence of these features entangles scene dynamics with camera-induced variation, making the resulting state evolution harder to predict. We propose GeoState, a view-decoupled geometry representation for predictive 3D world modeling that separates scene-state evolution from camera-dependent observation. Specifically, a scene tokenizer aggregates multi-view GFM features into a view-decoupled scene state, which a geometry decoder queries using camera rays. An autoregressive world model then predicts future scene states, while camera motion is modeled separately. The predicted states can therefore be decoded under either predicted or externally specified cameras, while retaining a single context-derived scale throughout the rollout without per-frame scale alignment. Experiments show that GeoState outperforms prior 3D world models on Waymo, supports geometrically consistent cross-view querying, and generalizes zero-shot to KITTI and nuScenes. Project page: https://hongchang-liu.github.io/GeoState-project-page/",
@@ -13633,6 +13659,40 @@
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
       "lastSeenAt": "2026-10-20T21:54:34.554425+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22343"
+    },
+    {
+      "pid": "2610.21561",
+      "title": "DialFork: Going Beyond Factuality to Evaluate Procedural Hallucination in Conversational Agents",
+      "abstract": "Large language models (LLMs) deployed as conversational agents are increasingly expected to follow procedural logic. While factual hallucination has received extensive attention, a different failure mode has been overlooked: procedural hallucination, in which an agent produces individually fluent and factually plausible utterances while deviating from the intended conversational process. We introduce DialFork, the first benchmark to measure this failure mode on raw dialogue text. DialFork is built by forking conformant dialogues at controlled turn positions and injecting one of four hallucination types, yielding 36,278 dialogues across 24 tasks in 12 domains; 30 human annotators validate the construction. We define three evaluation tasks that characterize procedural deviation at three granularities: how far a set of dialogues deviates from conformant ones (monitoring deployed agents), how far a single dialogue does (procedural retrieval), and at which turn a dialogue first goes off-track (real-time guardrails). For the first two, we propose dialog-flow-aware metrics, FlowKL and FlowScore, that compare dialogues by how they unfold rather than their content. At the dialogue level, FlowScore significantly outperforms all baselines across seven encoders, showing that semantic similarity is no substitute for procedural similarity. We release DialFork under the MIT license at https://github.com/idiap/dialfork, hoping the community will measure conversational process alongside content.",
+      "date": "2026-10-16",
+      "authors": [
+        "Sergio Burdisso",
+        "Esaú Villatoro-Tello",
+        "Dairazalia Sánchez-Cortés",
+        "Yanis Labrak",
+        "Jordi Luque",
+        "Milos Cernak",
+        "Petr Motlicek"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.21561",
+      "pdf": "https://arxiv.org/pdf/2610.21561.pdf",
+      "submittedDate": "2026-10-19",
+      "announceDate": "2026-10-16",
+      "id": "arxiv:2610.21561",
+      "source": "arxiv",
+      "upvotes": 1,
+      "topics": [
+        "Hallucination",
+        "Evaluation"
+      ],
+      "tags": [
+        "Hallucination",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.21561",
+      "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.21561"
     },
     {
       "pid": "2606.27210",
@@ -14579,7 +14639,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22039",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.21640",
@@ -15067,7 +15127,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21091",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22124",
@@ -15231,7 +15291,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21449",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.21392",
@@ -16219,7 +16279,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21496",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22249",
@@ -16435,7 +16495,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22363",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22094",
@@ -16753,7 +16813,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23334",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2607.22649",
@@ -16883,7 +16943,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.24282",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22163",
@@ -17651,7 +17711,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21624",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20867",
@@ -18469,7 +18529,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20959",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20852",
@@ -18531,39 +18591,6 @@
       "url": "https://arxiv.org/abs/2610.20776",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
       "lastSeenAt": "2026-10-21T22:00:24.472989+00:00"
-    },
-    {
-      "pid": "2610.21561",
-      "title": "DialFork: Going Beyond Factuality to Evaluate Procedural Hallucination in Conversational Agents",
-      "abstract": "Large language models (LLMs) deployed as conversational agents are increasingly expected to follow procedural logic. While factual hallucination has received extensive attention, a different failure mode has been overlooked: procedural hallucination, in which an agent produces individually fluent and factually plausible utterances while deviating from the intended conversational process. We introduce DialFork, the first benchmark to measure this failure mode on raw dialogue text. DialFork is built by forking conformant dialogues at controlled turn positions and injecting one of four hallucination types, yielding 36,278 dialogues across 24 tasks in 12 domains; 30 human annotators validate the construction. We define three evaluation tasks that characterize procedural deviation at three granularities: how far a set of dialogues deviates from conformant ones (monitoring deployed agents), how far a single dialogue does (procedural retrieval), and at which turn a dialogue first goes off-track (real-time guardrails). For the first two, we propose dialog-flow-aware metrics, FlowKL and FlowScore, that compare dialogues by how they unfold rather than their content. At the dialogue level, FlowScore significantly outperforms all baselines across seven encoders, showing that semantic similarity is no substitute for procedural similarity. We release DialFork under the MIT license at https://github.com/idiap/dialfork, hoping the community will measure conversational process alongside content.",
-      "date": "2026-10-16",
-      "authors": [
-        "Sergio Burdisso",
-        "Esaú Villatoro-Tello",
-        "Dairazalia Sánchez-Cortés",
-        "Yanis Labrak",
-        "Jordi Luque",
-        "Milos Cernak",
-        "Petr Motlicek"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.21561",
-      "pdf": "https://arxiv.org/pdf/2610.21561.pdf",
-      "submittedDate": "2026-10-19",
-      "announceDate": "2026-10-16",
-      "id": "arxiv:2610.21561",
-      "source": "arxiv",
-      "upvotes": 0,
-      "topics": [
-        "Hallucination",
-        "Evaluation"
-      ],
-      "tags": [
-        "Hallucination",
-        "Evaluation"
-      ],
-      "url": "https://arxiv.org/abs/2610.21561",
-      "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-20T21:54:34.554425+00:00"
     },
     {
       "pid": "2610.20824",
@@ -20286,7 +20313,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20811",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.21250",
@@ -21539,7 +21566,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20926",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20845",
@@ -24591,7 +24618,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21325",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.21758",
@@ -25496,31 +25523,6 @@
       "lastSeenAt": "2026-10-20T00:41:12.562453+00:00"
     },
     {
-      "pid": "2610.14018",
-      "title": "RoboHarness: A Simple Harness Outperforms VLA and World Action Models",
-      "abstract": "The rise of large language models (LLMs) has opened a path toward generalist embodied AI, raising the question of how LLMs can act in the physical world. One straightforward approach is training the model to generate actions: collect robot-action data and video demonstration, refine LLM architecture with an action head, and train a vision-language-action (VLA) model at scale. However, we argue that coding agents have the potential to realize generalist embodied manipulation. All they need is a simple yet effective robot harness. We present RoboHarness: a robotic harness that gives LLM agents a visual-geometric control panel so that they can directly understand and invoke embodied tasks. With RoboHarness, Qwen3.8-Flash-Next outperforms state-of-the-art VLA models on BEHAVIOR Challenge 2025 tasks. The implementation is open source.",
-      "date": "2026-10-16",
-      "authors": [
-        "Bince Qu",
-        "Wei Chen",
-        "Bo Zhang"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.14018",
-      "pdf": "https://arxiv.org/pdf/2610.14018.pdf",
-      "id": "arxiv:2610.14018",
-      "source": "arxiv",
-      "upvotes": 0,
-      "topics": [
-        "Code Agent"
-      ],
-      "tags": [
-        "Code Agent"
-      ],
-      "url": "https://arxiv.org/abs/2610.14018",
-      "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-10-24T00:11:27.283884+00:00"
-    },
-    {
       "pid": "2610.24256",
       "title": "TrajEdit: Real-Time Flow-Matching Trajectory Adaptation via FlowEdit and CBF Safety Filter",
       "abstract": "Safe, real-time motion planning is especially difficult when a dynamic obstacle actively pursues the ego agent, requiring rapid adaptation as the environment changes. We present TrajEdit, a hierarchical trajectory planner for pursuit-evasion that combines flow matching, trajectory editing, and safety filtering. Rather than regenerating trajectories from scratch at every step, TrajEdit follows the current plan under nominal conditions and adapts its remaining portion through FlowEdit as the pursuer approaches, and falls back to a control barrier function safety filter if the adversarial agent is within a safety threshold. Our use of FlowEdit for trajectory editing reduces computation time while maintaining a comparable success rate. We evaluate TrajEdit in 2D pursuit-evasion with static obstacles and an adversarial pursuer, demonstrating high success rates with low capture and collision rates, while achieving computational time savings over full replanning baselines.",
@@ -25603,7 +25605,7 @@
       "url": "https://arxiv.org/abs/2610.20571",
       "hfUrl": "https://huggingface.co/papers/2610.20571",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20584",
@@ -25630,7 +25632,7 @@
       "announceDate": "2026-10-15",
       "id": "arxiv:2610.20584",
       "source": "hf",
-      "upvotes": 351,
+      "upvotes": 352,
       "topics": [
         "Post-Training",
         "LLM Training",
@@ -25646,7 +25648,7 @@
       "url": "https://arxiv.org/abs/2610.20584",
       "hfUrl": "https://huggingface.co/papers/2610.20584",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20344",
@@ -25684,7 +25686,7 @@
       "url": "https://arxiv.org/abs/2610.20344",
       "hfUrl": "https://huggingface.co/papers/2610.20344",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.19789",
@@ -25721,7 +25723,7 @@
       "url": "https://arxiv.org/abs/2610.19789",
       "hfUrl": "https://huggingface.co/papers/2610.19789",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20572",
@@ -25755,7 +25757,7 @@
       "url": "https://arxiv.org/abs/2610.20572",
       "hfUrl": "https://huggingface.co/papers/2610.20572",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.19820",
@@ -25794,7 +25796,7 @@
       "url": "https://arxiv.org/abs/2610.19820",
       "hfUrl": "https://huggingface.co/papers/2610.19820",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.19366",
@@ -25903,7 +25905,7 @@
       "url": "https://arxiv.org/abs/2610.19366",
       "hfUrl": "https://huggingface.co/papers/2610.19366",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20442",
@@ -25946,7 +25948,7 @@
       "url": "https://arxiv.org/abs/2610.20442",
       "hfUrl": "https://huggingface.co/papers/2610.20442",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20256",
@@ -25979,7 +25981,7 @@
       "url": "https://arxiv.org/abs/2610.20256",
       "hfUrl": "https://huggingface.co/papers/2610.20256",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.19560",
@@ -26011,7 +26013,7 @@
       "url": "https://arxiv.org/abs/2610.19560",
       "hfUrl": "https://huggingface.co/papers/2610.19560",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.19100",
@@ -26050,7 +26052,7 @@
       "url": "https://arxiv.org/abs/2610.19100",
       "hfUrl": "https://huggingface.co/papers/2610.19100",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20195",
@@ -26083,7 +26085,7 @@
       "url": "https://arxiv.org/abs/2610.20195",
       "hfUrl": "https://huggingface.co/papers/2610.20195",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20609",
@@ -26119,7 +26121,7 @@
       "url": "https://arxiv.org/abs/2610.20609",
       "hfUrl": "https://huggingface.co/papers/2610.20609",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.19525",
@@ -26158,7 +26160,7 @@
       "url": "https://arxiv.org/abs/2610.19525",
       "hfUrl": "https://huggingface.co/papers/2610.19525",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.19551",
@@ -26337,8 +26339,42 @@
       ],
       "url": "https://arxiv.org/abs/2610.19159",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19159"
+    },
+    {
+      "pid": "2610.19687",
+      "title": "Function-Space Temporal Self-Distillation for Policy Optimization",
+      "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) improves reasoning in language models, but scalar outcomes provide coarse supervision over response trajectories. Self-distillation offers denser token-level guidance by comparing an unassisted policy with a feedback-informed self-teacher, yet the teacher evolves with the student, creating unstable targets and motivating additional regularization. We introduce Function-Space Policy Optimization (FSPO), a single-policy framework that combines current privileged adaptation with function-space temporal consolidation. FSPO stores sparse historical next-token distributions as fixed temporal targets, providing temporal separation without maintaining a persistent teacher model. It further introduces privileged disagreement correction to explicitly suppress locally overvalued actions, reliability-adaptive grounding that strengthens reference supervision when self-generated evidence repeatedly fails, and quality and coverage-aware temporal memory that retains verified behaviors and improves privileged demonstrations. Across reasoning and tool-use benchmarks, FSPO achieves the highest average accuracy under a 5-hour training budget, improving over the strongest baseline by approximately 4% points on average while reducing peak memory from about 70 GB to 56 GB on Olmo3-7B-Instruct.",
+      "date": "2026-10-15",
+      "authors": [
+        "Aryan Das",
+        "Arnab Bhattacharya",
+        "Vinay Kumar Verma"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.19687",
+      "pdf": "https://arxiv.org/pdf/2610.19687.pdf",
+      "submittedDate": "2026-10-14",
+      "announceDate": "2026-10-15",
+      "id": "arxiv:2610.19687",
+      "source": "arxiv",
+      "upvotes": 121,
+      "topics": [
+        "Tool Use",
+        "Reasoning",
+        "Evaluation",
+        "RL for LLM"
+      ],
+      "tags": [
+        "Tool Use",
+        "Reasoning",
+        "Evaluation",
+        "RL for LLM"
+      ],
+      "url": "https://arxiv.org/abs/2610.19687",
+      "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.19687"
     },
     {
       "pid": "2610.20556",
@@ -26367,7 +26403,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20556",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.20556"
     },
     {
@@ -26404,7 +26440,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20431",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.20431"
     },
     {
@@ -26442,7 +26478,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20603",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.20603"
     },
     {
@@ -26478,42 +26514,8 @@
       ],
       "url": "https://arxiv.org/abs/2610.19686",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19686"
-    },
-    {
-      "pid": "2610.19687",
-      "title": "Function-Space Temporal Self-Distillation for Policy Optimization",
-      "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) improves reasoning in language models, but scalar outcomes provide coarse supervision over response trajectories. Self-distillation offers denser token-level guidance by comparing an unassisted policy with a feedback-informed self-teacher, yet the teacher evolves with the student, creating unstable targets and motivating additional regularization. We introduce Function-Space Policy Optimization (FSPO), a single-policy framework that combines current privileged adaptation with function-space temporal consolidation. FSPO stores sparse historical next-token distributions as fixed temporal targets, providing temporal separation without maintaining a persistent teacher model. It further introduces privileged disagreement correction to explicitly suppress locally overvalued actions, reliability-adaptive grounding that strengthens reference supervision when self-generated evidence repeatedly fails, and quality and coverage-aware temporal memory that retains verified behaviors and improves privileged demonstrations. Across reasoning and tool-use benchmarks, FSPO achieves the highest average accuracy under a 5-hour training budget, improving over the strongest baseline by approximately 4% points on average while reducing peak memory from about 70 GB to 56 GB on Olmo3-7B-Instruct.",
-      "date": "2026-10-15",
-      "authors": [
-        "Aryan Das",
-        "Arnab Bhattacharya",
-        "Vinay Kumar Verma"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.19687",
-      "pdf": "https://arxiv.org/pdf/2610.19687.pdf",
-      "submittedDate": "2026-10-14",
-      "announceDate": "2026-10-15",
-      "id": "arxiv:2610.19687",
-      "source": "arxiv",
-      "upvotes": 45,
-      "topics": [
-        "Tool Use",
-        "Reasoning",
-        "Evaluation",
-        "RL for LLM"
-      ],
-      "tags": [
-        "Tool Use",
-        "Reasoning",
-        "Evaluation",
-        "RL for LLM"
-      ],
-      "url": "https://arxiv.org/abs/2610.19687",
-      "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "hfUrl": "https://huggingface.co/papers/2610.19687"
     },
     {
       "pid": "2610.19698",
@@ -26552,7 +26554,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19698",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19698"
     },
     {
@@ -26588,7 +26590,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19849",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19849"
     },
     {
@@ -26624,7 +26626,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19376",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19376"
     },
     {
@@ -26656,7 +26658,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19705",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19705"
     },
     {
@@ -26684,7 +26686,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20091",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.20091"
     },
     {
@@ -26719,7 +26721,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19696",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19696"
     },
     {
@@ -26748,7 +26750,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20459",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.20459"
     },
     {
@@ -26786,7 +26788,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20597",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.20597"
     },
     {
@@ -26821,7 +26823,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20019",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.20019"
     },
     {
@@ -26849,7 +26851,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19026",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19026"
     },
     {
@@ -26886,7 +26888,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19439",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19439"
     },
     {
@@ -26920,7 +26922,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19628",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19628"
     },
     {
@@ -26957,7 +26959,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19425",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19425"
     },
     {
@@ -27020,8 +27022,44 @@
       ],
       "url": "https://arxiv.org/abs/2610.19636",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19636"
+    },
+    {
+      "pid": "2610.19589",
+      "title": "JockeyBench: Evaluating LLM Agents on Horse-Racing Decision-Making",
+      "abstract": "Repeated event forecasting requires extracting predictive signals from noisy evidence and evaluating their value across successive decisions. We introduce JockeyBench, a benchmark and evaluation protocol that studies this problem through historical Japanese horse racing. The protocol combines time-gated evidence, priced tools, paired frozen-program controls, and two workflows: executing an LLM-written predictor or acquiring evidence for a fresh per-race LLM forecast. Evaluation separates forecast quality, benchmark-specific net utility, and retrospective betting returns and risk under fixed decision rules. Across 28 model--scaffold configurations on 324 races, paired tests identify seven revision gains and two declines after multiple-testing correction. Yet every configuration has negative mean profit under capped-Kelly settlement. In a four-model comparison, the reusable-program workflow has higher mean betting profit and lower research fees, although both workflows lose on average. Further diagnostics reveal that mean probability bias reverses on selected bets and that profitable individual runs can depend on concentrated returns. These findings motivate evaluating predictive competence, adaptation, resource use, and decision value separately when assessing agents for repeated event forecasting.",
+      "date": "2026-10-15",
+      "authors": [
+        "Zhongwei Xie",
+        "Xingsu Li",
+        "Jingqiao Yu",
+        "Zihao Wang",
+        "Hong ChiTat",
+        "Zhaowei Wang",
+        "Weizhi Du",
+        "Yuxuan Liu",
+        "Huihao Jing",
+        "Jiaxin Bai",
+        "Yangqiu Song"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.19589",
+      "pdf": "https://arxiv.org/pdf/2610.19589.pdf",
+      "submittedDate": "2026-10-14",
+      "announceDate": "2026-10-15",
+      "id": "arxiv:2610.19589",
+      "source": "arxiv",
+      "upvotes": 7,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.19589",
+      "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.19589"
     },
     {
       "pid": "2610.19397",
@@ -27097,42 +27135,6 @@
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
       "lastSeenAt": "2026-10-20T00:41:12.562453+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19063"
-    },
-    {
-      "pid": "2610.19589",
-      "title": "JockeyBench: Evaluating LLM Agents on Horse-Racing Decision-Making",
-      "abstract": "Repeated event forecasting requires extracting predictive signals from noisy evidence and evaluating their value across successive decisions. We introduce JockeyBench, a benchmark and evaluation protocol that studies this problem through historical Japanese horse racing. The protocol combines time-gated evidence, priced tools, paired frozen-program controls, and two workflows: executing an LLM-written predictor or acquiring evidence for a fresh per-race LLM forecast. Evaluation separates forecast quality, benchmark-specific net utility, and retrospective betting returns and risk under fixed decision rules. Across 28 model--scaffold configurations on 324 races, paired tests identify seven revision gains and two declines after multiple-testing correction. Yet every configuration has negative mean profit under capped-Kelly settlement. In a four-model comparison, the reusable-program workflow has higher mean betting profit and lower research fees, although both workflows lose on average. Further diagnostics reveal that mean probability bias reverses on selected bets and that profitable individual runs can depend on concentrated returns. These findings motivate evaluating predictive competence, adaptation, resource use, and decision value separately when assessing agents for repeated event forecasting.",
-      "date": "2026-10-15",
-      "authors": [
-        "Zhongwei Xie",
-        "Xingsu Li",
-        "Jingqiao Yu",
-        "Zihao Wang",
-        "Hong ChiTat",
-        "Zhaowei Wang",
-        "Weizhi Du",
-        "Yuxuan Liu",
-        "Huihao Jing",
-        "Jiaxin Bai",
-        "Yangqiu Song"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.19589",
-      "pdf": "https://arxiv.org/pdf/2610.19589.pdf",
-      "submittedDate": "2026-10-14",
-      "announceDate": "2026-10-15",
-      "id": "arxiv:2610.19589",
-      "source": "arxiv",
-      "upvotes": 4,
-      "topics": [
-        "Evaluation"
-      ],
-      "tags": [
-        "Evaluation"
-      ],
-      "url": "https://arxiv.org/abs/2610.19589",
-      "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "hfUrl": "https://huggingface.co/papers/2610.19589"
     },
     {
       "pid": "2610.20503",
@@ -30515,7 +30517,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20022",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.19386",
@@ -33008,7 +33010,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20303",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.20286",
@@ -33987,7 +33989,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21245",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.22064",
@@ -38951,7 +38953,7 @@
       "url": "https://arxiv.org/abs/2610.18615",
       "hfUrl": "https://huggingface.co/papers/2610.18615",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
     },
@@ -38996,7 +38998,7 @@
       "url": "https://arxiv.org/abs/2610.18860",
       "hfUrl": "https://huggingface.co/papers/2610.18860",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
     },
@@ -39032,7 +39034,7 @@
       "url": "https://arxiv.org/abs/2610.14224",
       "hfUrl": "https://huggingface.co/papers/2610.14224",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-09",
       "announceDate": "2026-10-14"
     },
@@ -39067,7 +39069,7 @@
         "RL for LLM"
       ],
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14"
     },
@@ -39109,7 +39111,7 @@
       "url": "https://arxiv.org/abs/2610.15166",
       "hfUrl": "https://huggingface.co/papers/2610.15166",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-10",
       "announceDate": "2026-10-14"
     },
@@ -39159,7 +39161,7 @@
         "Data Engine"
       ],
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-10",
       "announceDate": "2026-10-14"
     },
@@ -39205,7 +39207,7 @@
       "url": "https://arxiv.org/abs/2610.18067",
       "hfUrl": "https://huggingface.co/papers/2610.18067",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
     },
@@ -39251,7 +39253,7 @@
       "url": "https://arxiv.org/abs/2610.16811",
       "hfUrl": "https://huggingface.co/papers/2610.16811",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14"
     },
@@ -39278,7 +39280,7 @@
         "LLM Training"
       ],
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-10",
       "announceDate": "2026-10-14"
     },
@@ -39321,7 +39323,7 @@
         "Fine-tuning"
       ],
       "firstSeenAt": "2026-10-14T12:21:42.644378+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-10",
       "announceDate": "2026-10-14"
     },
@@ -39360,7 +39362,7 @@
       "url": "https://arxiv.org/abs/2610.18272",
       "hfUrl": "https://huggingface.co/papers/2610.18272",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
     },
@@ -39397,7 +39399,7 @@
       "url": "https://arxiv.org/abs/2610.16354",
       "hfUrl": "https://huggingface.co/papers/2610.16354",
       "firstSeenAt": "2026-10-14T12:21:42.644378+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.16577",
@@ -39429,7 +39431,7 @@
       "url": "https://arxiv.org/abs/2610.16577",
       "hfUrl": "https://huggingface.co/papers/2610.16577",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14"
     },
@@ -39469,7 +39471,7 @@
       "url": "https://arxiv.org/abs/2610.14118",
       "hfUrl": "https://huggingface.co/papers/2610.14118",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-09",
       "announceDate": "2026-10-14"
     },
@@ -39496,7 +39498,7 @@
         "Evaluation"
       ],
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-11",
       "announceDate": "2026-10-14"
     },
@@ -39542,7 +39544,7 @@
         "Data Engine"
       ],
       "firstSeenAt": "2026-10-14T12:21:42.644378+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-11",
       "announceDate": "2026-10-14"
     },
@@ -39573,7 +39575,7 @@
       "url": "https://arxiv.org/abs/2610.17666",
       "hfUrl": "https://huggingface.co/papers/2610.17666",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
     },
@@ -39616,7 +39618,7 @@
       "url": "https://arxiv.org/abs/2610.18010",
       "hfUrl": "https://huggingface.co/papers/2610.18010",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-14",
       "announceDate": "2026-10-14"
     },
@@ -39653,7 +39655,7 @@
       "url": "https://arxiv.org/abs/2610.14293",
       "hfUrl": "https://huggingface.co/papers/2610.14293",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-09",
       "announceDate": "2026-10-14"
     },
@@ -39689,7 +39691,7 @@
         "Multimodal Agent"
       ],
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-11",
       "announceDate": "2026-10-14"
     },
@@ -39722,7 +39724,7 @@
       "url": "https://arxiv.org/abs/2610.14091",
       "hfUrl": "https://huggingface.co/papers/2610.14091",
       "firstSeenAt": "2026-10-14T21:59:26.870418+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "id": "arxiv:2602.05758",
@@ -39757,7 +39759,7 @@
         "Data Engine"
       ],
       "firstSeenAt": "2026-10-14T12:21:42.644378+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "id": "arxiv:2610.14228",
@@ -39786,7 +39788,7 @@
         "World Model"
       ],
       "firstSeenAt": "2026-10-14T12:21:42.644378+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-09",
       "announceDate": "2026-10-14"
     },
@@ -39818,7 +39820,7 @@
       "url": "https://arxiv.org/abs/2610.16118",
       "hfUrl": "https://huggingface.co/papers/2610.16118",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14"
     },
@@ -40154,7 +40156,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18829",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.18829"
@@ -40188,7 +40190,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20424",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.20424"
     },
     {
@@ -40233,7 +40235,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17953",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.17953",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
@@ -40272,7 +40274,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17665",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-14",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17665"
@@ -40296,7 +40298,7 @@
       "pdf": "https://arxiv.org/pdf/2610.18356.pdf",
       "id": "arxiv:2610.18356",
       "source": "arxiv",
-      "upvotes": 134,
+      "upvotes": 135,
       "topics": [
         "VLM Training",
         "Tool Use"
@@ -40307,7 +40309,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18356",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.18356",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
@@ -40340,7 +40342,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18868",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.18868",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
@@ -40375,7 +40377,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17309",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17309"
@@ -40405,7 +40407,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17771",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17771"
@@ -40460,7 +40462,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14157",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-09",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.14157"
@@ -40505,7 +40507,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18072",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.18072"
@@ -40536,7 +40538,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14448",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-10",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.14448"
@@ -40573,7 +40575,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17860",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17860"
@@ -40607,7 +40609,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17928",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.17928",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
@@ -40648,7 +40650,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18861",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.18861"
@@ -40692,7 +40694,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.16784",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.16784"
@@ -40728,7 +40730,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14270",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-09",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.14270"
@@ -40761,7 +40763,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18484",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.18484",
       "submittedDate": "2026-10-14",
       "announceDate": "2026-10-14"
@@ -40800,7 +40802,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18097",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.18097"
@@ -40968,7 +40970,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.15542",
       "firstSeenAt": "2026-10-14T12:21:42.644378+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.15542"
     },
     {
@@ -41007,7 +41009,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17656",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.17656",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
@@ -41048,7 +41050,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.16782",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.16782"
@@ -41081,7 +41083,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.16523",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.16523"
@@ -41113,7 +41115,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18604",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.18604"
@@ -41147,7 +41149,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17959",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17959"
@@ -41182,7 +41184,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17724",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17724"
@@ -41222,7 +41224,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18092",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.18092",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
@@ -41256,7 +41258,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18284",
       "firstSeenAt": "2026-10-14T21:59:26.870418+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.18284"
     },
     {
@@ -41298,7 +41300,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18206",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.18206"
@@ -41335,7 +41337,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14022",
       "firstSeenAt": "2026-10-14T21:59:26.870418+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.14022"
     },
     {
@@ -41366,7 +41368,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18248",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.18248"
@@ -41400,7 +41402,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14774",
       "firstSeenAt": "2026-10-14T12:21:42.644378+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.14774"
     },
     {
@@ -41431,7 +41433,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18461",
       "firstSeenAt": "2026-10-14T21:59:26.870418+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.18461"
     },
     {
@@ -41464,7 +41466,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.16105",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.16105"
@@ -41500,7 +41502,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14162",
       "firstSeenAt": "2026-10-14T12:21:42.644378+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.14162"
     },
     {
@@ -41549,7 +41551,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17184",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17184"
@@ -41580,7 +41582,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.16071",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.16071"
@@ -41613,7 +41615,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17816",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17816"
@@ -41663,7 +41665,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17670",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17670"
@@ -41699,7 +41701,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17246",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17246"
@@ -41728,7 +41730,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17191",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17191"
@@ -41759,8 +41761,45 @@
       ],
       "url": "https://arxiv.org/abs/2610.17016",
       "firstSeenAt": "2026-10-14T21:59:26.870418+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.17016"
+    },
+    {
+      "pid": "2610.18683",
+      "title": "ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning",
+      "abstract": "Reinforcement learning (RL) has emerged as the primary paradigm for optimizing Large Language Model (LLM) agents, yet efficient critic-free algorithms (e.g., GRPO) suffer from a fundamental uniform credit assignment dilemma that broadcasts trajectory-level advantages equally to all actions. Our analysis reveals that this uniformity inherently reinforces structurally invalid actions in preferred trajectories and ignores the downstream cascading influence of early pivotal deviations in unpreferred ones. To resolve this without introducing critic overhead, we propose Progress-Aware Advantage Shaping (ProAS), a plug-and-play framework that leverages a dynamically evolving Agentic Reference Graph (ARG) to achieve fine-grained credit assignment via Masking Unreasonable Incentives (MUI) and Asymmetric Penalty Redistribution (APR). Extensive experiments across Qwen2.5-1.5B-Instruct and Qwen2.5-7B-Instruct demonstrate that ProAS universally elevates mainstream group-based baselines to new state-of-the-art performance, achieving peak success rates of 91.9\\% and 94.3\\% on ALFWorld, alongside 66.7\\% and 70.8\\% on WebShop, respectively. Furthermore, it accelerates training convergence by up to $2.44\\times$ while maintaining strong robustness against imperfect or distilled ARGs. Codes: https://github.com/LINs-lab/ProAS.",
+      "date": "2026-10-14",
+      "authors": [
+        "Bowen Ding",
+        "Mingda Wan",
+        "Yuhan Chen",
+        "Jiyao Yuan",
+        "Qi Zhu",
+        "Futing Wang",
+        "Heyuan Deng",
+        "Fei Mi",
+        "Lifeng Shang",
+        "Tao Lin"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.18683",
+      "pdf": "https://arxiv.org/pdf/2610.18683.pdf",
+      "id": "arxiv:2610.18683",
+      "source": "arxiv",
+      "upvotes": 11,
+      "topics": [
+        "Post-Training",
+        "RL for LLM"
+      ],
+      "tags": [
+        "Post-Training",
+        "RL for LLM"
+      ],
+      "url": "https://arxiv.org/abs/2610.18683",
+      "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
+      "submittedDate": "2026-10-13",
+      "announceDate": "2026-10-14",
+      "hfUrl": "https://huggingface.co/papers/2610.18683"
     },
     {
       "pid": "2610.18598",
@@ -41788,47 +41827,10 @@
       ],
       "url": "https://arxiv.org/abs/2610.18598",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.18598"
-    },
-    {
-      "pid": "2610.18683",
-      "title": "ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning",
-      "abstract": "Reinforcement learning (RL) has emerged as the primary paradigm for optimizing Large Language Model (LLM) agents, yet efficient critic-free algorithms (e.g., GRPO) suffer from a fundamental uniform credit assignment dilemma that broadcasts trajectory-level advantages equally to all actions. Our analysis reveals that this uniformity inherently reinforces structurally invalid actions in preferred trajectories and ignores the downstream cascading influence of early pivotal deviations in unpreferred ones. To resolve this without introducing critic overhead, we propose Progress-Aware Advantage Shaping (ProAS), a plug-and-play framework that leverages a dynamically evolving Agentic Reference Graph (ARG) to achieve fine-grained credit assignment via Masking Unreasonable Incentives (MUI) and Asymmetric Penalty Redistribution (APR). Extensive experiments across Qwen2.5-1.5B-Instruct and Qwen2.5-7B-Instruct demonstrate that ProAS universally elevates mainstream group-based baselines to new state-of-the-art performance, achieving peak success rates of 91.9\\% and 94.3\\% on ALFWorld, alongside 66.7\\% and 70.8\\% on WebShop, respectively. Furthermore, it accelerates training convergence by up to $2.44\\times$ while maintaining strong robustness against imperfect or distilled ARGs. Codes: https://github.com/LINs-lab/ProAS.",
-      "date": "2026-10-14",
-      "authors": [
-        "Bowen Ding",
-        "Mingda Wan",
-        "Yuhan Chen",
-        "Jiyao Yuan",
-        "Qi Zhu",
-        "Futing Wang",
-        "Heyuan Deng",
-        "Fei Mi",
-        "Lifeng Shang",
-        "Tao Lin"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.18683",
-      "pdf": "https://arxiv.org/pdf/2610.18683.pdf",
-      "id": "arxiv:2610.18683",
-      "source": "arxiv",
-      "upvotes": 9,
-      "topics": [
-        "Post-Training",
-        "RL for LLM"
-      ],
-      "tags": [
-        "Post-Training",
-        "RL for LLM"
-      ],
-      "url": "https://arxiv.org/abs/2610.18683",
-      "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "submittedDate": "2026-10-13",
-      "announceDate": "2026-10-14",
-      "hfUrl": "https://huggingface.co/papers/2610.18683"
     },
     {
       "pid": "2610.18082",
@@ -41866,10 +41868,86 @@
       ],
       "url": "https://arxiv.org/abs/2610.18082",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.18082"
+    },
+    {
+      "pid": "2610.14253",
+      "title": "SliderEdit++: Improved Slider Trajectories in Instruction-Based Image Editing",
+      "abstract": "Slider-based control aims to give users continuous, fine-grained control over the intensity of individual edits in instruction-based image editing. However, existing approaches fail to deliver reliable continuous controllability: traversing a slider can produce abrupt visual jumps and non-monotonic changes, while jointly controlled sliders can interfere with one another. To systematically study these limitations, we introduce SlideBench, a comprehensive benchmark for continuous image editing spanning diverse editing categories and equipped with a unified suite of metrics quantifying monotonic progression, perceptual continuity, and inter-slider disentanglement. Building on these observations, we propose SliderEdit++, which explicitly regularizes the intermediate editing trajectory rather than supervising only its endpoints. Our method combines velocity- and semantic-space trajectory regularization with spectral control to encourage smooth, predictable slider traversal, together with a disentanglement objective that reduces interference between independently controlled edits. On SlideBench, SliderEdit++ achieves state-of-the-art performance, improving the overall score by 18.5% relative to the strongest baseline. At the same time, using a few-step editing backbone makes our method approximately 3x to 20x faster than existing slider-based approaches, enabling substantially more responsive interactive editing.",
+      "date": "2026-10-14",
+      "authors": [
+        "Arman Zarei",
+        "Sayan Nag",
+        "Bryan Wang",
+        "Franck Dernoncourt",
+        "Varun Manjunatha",
+        "Nedim Lipka",
+        "Soheil Feizi",
+        "Samyadeep Basu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.14253",
+      "pdf": "https://arxiv.org/pdf/2610.14253.pdf",
+      "submittedDate": "2026-10-09",
+      "announceDate": "2026-10-14",
+      "id": "arxiv:2610.14253",
+      "source": "arxiv",
+      "upvotes": 8,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.14253",
+      "firstSeenAt": "2026-10-14T21:59:26.870418+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.14253"
+    },
+    {
+      "pid": "2610.14465",
+      "title": "Co-adaptive Rule Routing and Constraining for Structured Knowledge Retrieval",
+      "abstract": "Structured knowledge retrieval acquires task-relevant evidence from structured knowledge sources for downstream tasks. Existing methods rely on unconstrained retrieval or predefined query-rule supervision, such as author-paper rules for scientific discovery and anatomy-drug rules for precision medicine. Such supervision is rarely available in practice. We propose Co-Adaptive Rule Routing and Constraining Retrieval (CoRE), which jointly learns which reasoning rule to assign to each query and how to retrieve evidence under that rule, without predefined query-rule pairs. A routing agent selects a rule, and its corresponding retriever traverses the knowledge base and ranks evidence that satisfies the rule's constraints. Because routing and retrieval are interdependent, CoRE alternates between reinforcement learning for the routing policy and contrastive learning for the rule-constrained retriever. The selected rules provide supervision for retriever training, while retrieval performance rewards the routing policy. This closed-loop process enables both components to co-adapt without explicit query-rule supervision. Experiments on STaRK-QA datasets across scientific discovery, biomedical reasoning, and e-commerce knowledge management demonstrate CoRE's effectiveness. Ablations show the benefit of co-adapting the router and retriever. Generation-based routing transfers across datasets and benefits from multi-domain pretraining followed by target-specific fine-tuning. Analysis of rule usage across queries also informs automatic rule refinement and discovery.",
+      "date": "2026-10-14",
+      "authors": [
+        "Zhisheng Qi",
+        "Haoyu Han",
+        "Jiaxi Li",
+        "Bing He",
+        "Huiyuan Chen",
+        "Franck Dernoncourt",
+        "Ryan A. Rossi",
+        "Mahantesh M. Halappanavar",
+        "Jin Lu",
+        "Yu Zhang",
+        "Tianming Liu",
+        "Yu Wang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.14465",
+      "pdf": "https://arxiv.org/pdf/2610.14465.pdf",
+      "submittedDate": "2026-10-17",
+      "announceDate": "2026-10-14",
+      "id": "arxiv:2610.14465",
+      "source": "arxiv",
+      "upvotes": 7,
+      "topics": [
+        "LLM Training",
+        "Reasoning",
+        "Fine-tuning",
+        "RL for LLM"
+      ],
+      "tags": [
+        "LLM Training",
+        "Reasoning",
+        "Fine-tuning",
+        "RL for LLM"
+      ],
+      "url": "https://arxiv.org/abs/2610.14465",
+      "firstSeenAt": "2026-10-14T12:21:42.644378+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.14465"
     },
     {
       "pid": "2610.16402",
@@ -41904,7 +41982,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.16402",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.16402"
@@ -41982,82 +42060,6 @@
       "hfUrl": "https://huggingface.co/papers/2610.18834"
     },
     {
-      "pid": "2610.14465",
-      "title": "Co-adaptive Rule Routing and Constraining for Structured Knowledge Retrieval",
-      "abstract": "Structured knowledge retrieval acquires task-relevant evidence from structured knowledge sources for downstream tasks. Existing methods rely on unconstrained retrieval or predefined query-rule supervision, such as author-paper rules for scientific discovery and anatomy-drug rules for precision medicine. Such supervision is rarely available in practice. We propose Co-Adaptive Rule Routing and Constraining Retrieval (CoRE), which jointly learns which reasoning rule to assign to each query and how to retrieve evidence under that rule, without predefined query-rule pairs. A routing agent selects a rule, and its corresponding retriever traverses the knowledge base and ranks evidence that satisfies the rule's constraints. Because routing and retrieval are interdependent, CoRE alternates between reinforcement learning for the routing policy and contrastive learning for the rule-constrained retriever. The selected rules provide supervision for retriever training, while retrieval performance rewards the routing policy. This closed-loop process enables both components to co-adapt without explicit query-rule supervision. Experiments on STaRK-QA datasets across scientific discovery, biomedical reasoning, and e-commerce knowledge management demonstrate CoRE's effectiveness. Ablations show the benefit of co-adapting the router and retriever. Generation-based routing transfers across datasets and benefits from multi-domain pretraining followed by target-specific fine-tuning. Analysis of rule usage across queries also informs automatic rule refinement and discovery.",
-      "date": "2026-10-14",
-      "authors": [
-        "Zhisheng Qi",
-        "Haoyu Han",
-        "Jiaxi Li",
-        "Bing He",
-        "Huiyuan Chen",
-        "Franck Dernoncourt",
-        "Ryan A. Rossi",
-        "Mahantesh M. Halappanavar",
-        "Jin Lu",
-        "Yu Zhang",
-        "Tianming Liu",
-        "Yu Wang"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.14465",
-      "pdf": "https://arxiv.org/pdf/2610.14465.pdf",
-      "submittedDate": "2026-10-17",
-      "announceDate": "2026-10-14",
-      "id": "arxiv:2610.14465",
-      "source": "arxiv",
-      "upvotes": 3,
-      "topics": [
-        "LLM Training",
-        "Reasoning",
-        "Fine-tuning",
-        "RL for LLM"
-      ],
-      "tags": [
-        "LLM Training",
-        "Reasoning",
-        "Fine-tuning",
-        "RL for LLM"
-      ],
-      "url": "https://arxiv.org/abs/2610.14465",
-      "firstSeenAt": "2026-10-14T12:21:42.644378+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "hfUrl": "https://huggingface.co/papers/2610.14465"
-    },
-    {
-      "pid": "2610.14253",
-      "title": "SliderEdit++: Improved Slider Trajectories in Instruction-Based Image Editing",
-      "abstract": "Slider-based control aims to give users continuous, fine-grained control over the intensity of individual edits in instruction-based image editing. However, existing approaches fail to deliver reliable continuous controllability: traversing a slider can produce abrupt visual jumps and non-monotonic changes, while jointly controlled sliders can interfere with one another. To systematically study these limitations, we introduce SlideBench, a comprehensive benchmark for continuous image editing spanning diverse editing categories and equipped with a unified suite of metrics quantifying monotonic progression, perceptual continuity, and inter-slider disentanglement. Building on these observations, we propose SliderEdit++, which explicitly regularizes the intermediate editing trajectory rather than supervising only its endpoints. Our method combines velocity- and semantic-space trajectory regularization with spectral control to encourage smooth, predictable slider traversal, together with a disentanglement objective that reduces interference between independently controlled edits. On SlideBench, SliderEdit++ achieves state-of-the-art performance, improving the overall score by 18.5% relative to the strongest baseline. At the same time, using a few-step editing backbone makes our method approximately 3x to 20x faster than existing slider-based approaches, enabling substantially more responsive interactive editing.",
-      "date": "2026-10-14",
-      "authors": [
-        "Arman Zarei",
-        "Sayan Nag",
-        "Bryan Wang",
-        "Franck Dernoncourt",
-        "Varun Manjunatha",
-        "Nedim Lipka",
-        "Soheil Feizi",
-        "Samyadeep Basu"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.14253",
-      "pdf": "https://arxiv.org/pdf/2610.14253.pdf",
-      "submittedDate": "2026-10-09",
-      "announceDate": "2026-10-14",
-      "id": "arxiv:2610.14253",
-      "source": "arxiv",
-      "upvotes": 2,
-      "topics": [
-        "Evaluation"
-      ],
-      "tags": [
-        "Evaluation"
-      ],
-      "url": "https://arxiv.org/abs/2610.14253",
-      "firstSeenAt": "2026-10-14T21:59:26.870418+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "hfUrl": "https://huggingface.co/papers/2610.14253"
-    },
-    {
       "pid": "2610.17079",
       "title": "Rethinking LLM-Guided Visual Question Answering: Does Deeper Knowledge Integration Really Help?",
       "abstract": "Knowledge-based Visual Question Answering (VQA) requires reasoning that extends beyond visible image content, demanding external commonsense and factual knowledge. While recent work leverages Large Language Models (LLMs) as knowledge sources, the question of how deeply such guidance should be integrated into a vision language architecture remains underexplored. In this work, we generate structured reasoning guidance, visual focus concepts, distractor elements and external knowledge using Llama~3.3~70B and systematically compare two integration strategies within a unified frozen ViT + FLAN-T5 framework on the OK-VQA benchmark: decision level late fusion and attention-matrix injection. Contrary to the prevailing assumption that deeper integration is superior, we find that shallow late fusion achieves the strongest results (39.4% exact match, +10.0 over the no guidance baseline), outperforming deep attention modification (31.8%) under data scarce fine-tuning. We further contribute an LLM based augmentation pipeline that expands training data more than tenfold via question paraphrasing. Our findings indicate that integration depth must be matched to the data regime.",
@@ -42089,7 +42091,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17079",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.17079"
@@ -42704,7 +42706,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.15910",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-11",
       "announceDate": "2026-10-14"
     },
@@ -43625,7 +43627,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14531",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-10",
       "announceDate": "2026-10-14"
     },
@@ -43876,7 +43878,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17093",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14"
     },
@@ -45209,7 +45211,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17895",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-14",
       "announceDate": "2026-10-14"
     },
@@ -45386,7 +45388,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17710",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
     },
@@ -46700,7 +46702,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18089",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
     },
@@ -46843,7 +46845,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.16318",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14"
     },
@@ -53231,7 +53233,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.15207",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-10",
       "announceDate": "2026-10-14"
     },
@@ -53675,7 +53677,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14698",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-10",
       "announceDate": "2026-10-14"
     },
@@ -61684,7 +61686,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.15884",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-11",
       "announceDate": "2026-10-14"
     },
@@ -64625,7 +64627,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14740",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-10",
       "announceDate": "2026-10-14"
     },
@@ -71943,7 +71945,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18568",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.18568"
     },
     {
@@ -71983,7 +71985,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19128",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19128"
     },
     {
@@ -72022,7 +72024,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17528",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.17922",
@@ -74132,7 +74134,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.13166",
       "firstSeenAt": "2026-10-12T11:20:13.338810+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.13166"
     },
     {
@@ -74165,7 +74167,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.12818",
       "firstSeenAt": "2026-10-12T11:20:13.338810+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.12818"
     },
     {
@@ -74205,7 +74207,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.13781",
       "firstSeenAt": "2026-10-12T11:20:13.338810+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.13781"
     },
     {
@@ -74276,7 +74278,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.13623",
       "firstSeenAt": "2026-10-12T11:20:13.338810+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.13623"
     },
     {
@@ -74443,7 +74445,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.12586",
       "firstSeenAt": "2026-10-12T11:20:13.338810+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.12586"
     },
     {
@@ -79635,7 +79637,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.12942",
       "firstSeenAt": "2026-10-12T11:20:13.338810+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.13259",
@@ -85023,7 +85025,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14766",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.14766"
     },
     {
@@ -86746,7 +86748,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.11942",
       "firstSeenAt": "2026-10-09T22:54:57.623037+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.11942"
     },
     {
@@ -87799,7 +87801,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.10625",
       "firstSeenAt": "2026-10-09T01:27:54.563218+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-07",
       "announceDate": "2026-10-09"
     },
@@ -90768,7 +90770,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.10563",
       "firstSeenAt": "2026-10-09T22:54:57.623037+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.11920",
@@ -99840,7 +99842,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.09872",
       "firstSeenAt": "2026-10-08T01:24:00.101087+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-10-07",
       "announceDate": "2026-10-08",
       "hfUrl": "https://huggingface.co/papers/2610.09872"
@@ -100220,7 +100222,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.09221",
       "firstSeenAt": "2026-10-08T10:57:28.425593+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.09221"
     },
     {
@@ -114146,7 +114148,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.07898",
       "firstSeenAt": "2026-10-07T06:25:18.514196+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.07898"
     },
     {
@@ -117946,7 +117948,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.07257",
       "firstSeenAt": "2026-10-07T06:25:18.514196+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.07075",
@@ -127940,7 +127942,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.06830",
       "firstSeenAt": "2026-10-06T06:49:29.478520+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.06830"
     },
     {
@@ -128161,7 +128163,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.04781",
       "firstSeenAt": "2026-10-06T06:49:29.478520+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.04781"
     },
     {
@@ -128196,7 +128198,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.04184",
       "firstSeenAt": "2026-10-06T06:49:29.478520+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.04184"
     },
     {
@@ -128427,7 +128429,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.05114",
       "firstSeenAt": "2026-10-06T06:49:29.478520+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.05114"
     },
     {
@@ -128498,7 +128500,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.04902",
       "firstSeenAt": "2026-10-06T06:49:29.478520+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.04902"
     },
     {
@@ -133351,7 +133353,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.05132",
       "firstSeenAt": "2026-10-06T06:49:29.478520+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.05182",
@@ -141500,7 +141502,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.06044",
       "firstSeenAt": "2026-10-06T06:49:29.478520+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.04592",
@@ -162212,6 +162214,47 @@
       "hfUrl": "https://huggingface.co/papers/2610.02076"
     },
     {
+      "pid": "2610.01352",
+      "title": "MMVistaReason: Toward Open-Data and Post-Training Recipes for Multimodal Reasoning",
+      "abstract": "Open multimodal reasoning models have benefited from large-scale reasoning supervision, yet reliable post-training remains challenging due to uneven data quality, inefficient supervision construction, imbalanced difficulty, and cross-domain interference. We introduce MMVistaReason (MVR), an open-data post-training recipe with three components: (1) broader capability coverage across complementary Analytical and Real-World reasoning groups, emphasizing structured reasoning versus visual perception and spatial grounding; (2) efficient SFT and RL data construction, standardizing heterogeneous open data through staged cleaning and annotation, combining difficulty-aware cascaded teacher distillation with answer-likelihood-based trajectory selection to construct MVR-SFT-528K, and applying scale-specific frontier filtering for MVR-RL-63K; and (3) specialize-then-integrate training, which trains complementary RL experts and consolidates their capabilities through multi-teacher on-policy distillation (MOPD). Our analyses reveal a capacity-dependent interaction between supervision difficulty, trajectory quality, and model capacity: smaller students benefit more from selected supervision, while larger students are robust to trajectory variation and mixed-domain interference. Mixed-domain RL introduces benchmark-level negative transfer, whereas MOPD provides consistent capability integration, with the preferred KL direction varying across model scales. Across 15 multimodal benchmarks, MVR-4B achieves an average score of 72.8, outperforming Qwen3.5-9B (Instruct) and MMFineReason-8B while using about 70% fewer samples than MMFineReason. Scaling to 9B improves the average to 74.4, surpassing Qwen3.5-35B-A3B (Instruct). Overall, MMVistaReason demonstrates that systematic open-data construction and capacity-aware post-training provide a practical and scalable path toward reliable multimodal reasoning.",
+      "date": "2026-10-02",
+      "authors": [
+        "Juekai Lin",
+        "Honglin Lin",
+        "Yuqian Yuan",
+        "Xiaolong Wu",
+        "Jie Cao",
+        "Liang Liang",
+        "Yunqi Cao",
+        "Yun Zhu",
+        "Wenqiao Zhang",
+        "Lijun Wu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.01352",
+      "pdf": "https://arxiv.org/pdf/2610.01352.pdf",
+      "submittedDate": "2026-10-01",
+      "announceDate": "2026-10-02",
+      "id": "arxiv:2610.01352",
+      "source": "arxiv",
+      "upvotes": 13,
+      "topics": [
+        "Post-Training",
+        "LLM Training",
+        "Reasoning",
+        "Evaluation"
+      ],
+      "tags": [
+        "Post-Training",
+        "LLM Training",
+        "Reasoning",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.01352",
+      "firstSeenAt": "2026-10-02T06:07:04.821113+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.01352"
+    },
+    {
       "pid": "2610.02150",
       "title": "From Knowledge Access to Source Learning: Developing Source-Specific Competence",
       "abstract": "Large language model (LLM) agents increasingly rely on persistent external sources to solve sequences of knowledge-intensive tasks. Existing methods improve how source content is accessed and organized, while agent-memory systems preserve reusable knowledge from prior interactions, but repeated use of the same source is still largely treated as repeated access rather than an opportunity to progressively improve understanding of that source. We study source learning: developing reusable source-specific competence over a persistent authoritative source. We represent this competence with a persistent source model that captures reusable understanding of the source, including how its knowledge is structured, interpreted, and applied. To construct and progressively refine such models, we propose SourceLearn, which combines two complementary learning mechanisms. Self-Directed Source Learning identifies what remains incompletely understood and adaptively revisits the source, while Task-Guided Source Learning uses downstream experience to reveal local representational gaps and recurring needs in how source knowledge should be organized. In both cases, learning signals determine what should be reconsidered, while persistent updates are reconstructed from the authoritative source. Across five benchmarks and three LLM backends, SourceLearn achieves the best performance in 13 of 15 settings, with gains of up to 22.6 points over Hybrid RAG and substantial overall improvements over static source representations and experience-based memory baselines.",
@@ -162285,47 +162328,6 @@
       "firstSeenAt": "2026-10-02T06:07:04.821113+00:00",
       "lastSeenAt": "2026-10-13T19:33:37.586875+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.01108"
-    },
-    {
-      "pid": "2610.01352",
-      "title": "MMVistaReason: Toward Open-Data and Post-Training Recipes for Multimodal Reasoning",
-      "abstract": "Open multimodal reasoning models have benefited from large-scale reasoning supervision, yet reliable post-training remains challenging due to uneven data quality, inefficient supervision construction, imbalanced difficulty, and cross-domain interference. We introduce MMVistaReason (MVR), an open-data post-training recipe with three components: (1) broader capability coverage across complementary Analytical and Real-World reasoning groups, emphasizing structured reasoning versus visual perception and spatial grounding; (2) efficient SFT and RL data construction, standardizing heterogeneous open data through staged cleaning and annotation, combining difficulty-aware cascaded teacher distillation with answer-likelihood-based trajectory selection to construct MVR-SFT-528K, and applying scale-specific frontier filtering for MVR-RL-63K; and (3) specialize-then-integrate training, which trains complementary RL experts and consolidates their capabilities through multi-teacher on-policy distillation (MOPD). Our analyses reveal a capacity-dependent interaction between supervision difficulty, trajectory quality, and model capacity: smaller students benefit more from selected supervision, while larger students are robust to trajectory variation and mixed-domain interference. Mixed-domain RL introduces benchmark-level negative transfer, whereas MOPD provides consistent capability integration, with the preferred KL direction varying across model scales. Across 15 multimodal benchmarks, MVR-4B achieves an average score of 72.8, outperforming Qwen3.5-9B (Instruct) and MMFineReason-8B while using about 70% fewer samples than MMFineReason. Scaling to 9B improves the average to 74.4, surpassing Qwen3.5-35B-A3B (Instruct). Overall, MMVistaReason demonstrates that systematic open-data construction and capacity-aware post-training provide a practical and scalable path toward reliable multimodal reasoning.",
-      "date": "2026-10-02",
-      "authors": [
-        "Juekai Lin",
-        "Honglin Lin",
-        "Yuqian Yuan",
-        "Xiaolong Wu",
-        "Jie Cao",
-        "Liang Liang",
-        "Yunqi Cao",
-        "Yun Zhu",
-        "Wenqiao Zhang",
-        "Lijun Wu"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.01352",
-      "pdf": "https://arxiv.org/pdf/2610.01352.pdf",
-      "submittedDate": "2026-10-01",
-      "announceDate": "2026-10-02",
-      "id": "arxiv:2610.01352",
-      "source": "arxiv",
-      "upvotes": 7,
-      "topics": [
-        "Post-Training",
-        "LLM Training",
-        "Reasoning",
-        "Evaluation"
-      ],
-      "tags": [
-        "Post-Training",
-        "LLM Training",
-        "Reasoning",
-        "Evaluation"
-      ],
-      "url": "https://arxiv.org/abs/2610.01352",
-      "firstSeenAt": "2026-10-02T06:07:04.821113+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "hfUrl": "https://huggingface.co/papers/2610.01352"
     },
     {
       "pid": "2610.00686",
@@ -163012,7 +163014,7 @@
       ],
       "url": "https://arxiv.org/abs/2606.01382",
       "firstSeenAt": "2026-10-05T06:10:31.958407+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.01042",
@@ -163510,7 +163512,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.00661",
       "firstSeenAt": "2026-10-02T06:07:04.821113+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2610.00302",
@@ -178784,7 +178786,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.38847",
       "firstSeenAt": "2026-10-01T10:29:38.822336+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2609.38847"
     },
     {
@@ -179482,7 +179484,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.38377",
       "firstSeenAt": "2026-10-01T10:29:38.822336+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2609.38377"
     },
     {
@@ -180609,7 +180611,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.38645",
       "firstSeenAt": "2026-10-01T10:29:38.822336+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2609.38335",
@@ -185368,7 +185370,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.38661",
       "firstSeenAt": "2026-10-01T10:29:38.822336+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2609.39257",
@@ -198218,7 +198220,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.35942",
       "firstSeenAt": "2026-09-30T05:56:09.327356+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2609.36813",
@@ -201110,7 +201112,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.37976",
       "firstSeenAt": "2026-09-30T05:56:09.327356+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2609.37974",
@@ -218762,7 +218764,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.34565",
       "firstSeenAt": "2026-09-29T10:09:56.323819+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "hfUrl": "https://huggingface.co/papers/2609.34565"
     },
     {
@@ -221139,7 +221141,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.32196",
       "firstSeenAt": "2026-09-29T01:17:28.291290+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00",
       "submittedDate": "2026-09-26",
       "announceDate": "2026-09-29"
     },
@@ -256557,7 +256559,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.31142",
       "firstSeenAt": "2026-09-28T05:49:41.798524+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2609.30986",
@@ -287953,7 +287955,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.25620",
       "firstSeenAt": "2026-09-23T05:07:29.396168+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2609.25755",
@@ -298842,7 +298844,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.24243",
       "firstSeenAt": "2026-09-22T05:22:10.987909+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2609.24768",
@@ -302330,7 +302332,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.22486",
       "firstSeenAt": "2026-09-22T05:22:10.987909+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2609.22836",
@@ -326736,7 +326738,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.19622",
       "firstSeenAt": "2026-09-18T05:09:41.258832+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2609.19657",
@@ -388335,7 +388337,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.10144",
       "firstSeenAt": "2026-09-10T05:11:10.248590+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2609.10092",
@@ -539249,7 +539251,7 @@
       ],
       "url": "https://arxiv.org/abs/2608.23362",
       "firstSeenAt": "2026-08-25T02:11:39.442727+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2608.23357",
@@ -544047,7 +544049,7 @@
       ],
       "url": "https://arxiv.org/abs/2607.21951",
       "firstSeenAt": "2026-08-24T02:15:35.603871+00:00",
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "pid": "2605.24817",
@@ -632882,7 +632884,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "id": "arxiv:2605.15077",
@@ -637115,7 +637117,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-10-27T09:22:53.143790+00:00"
+      "lastSeenAt": "2026-10-27T15:36:50.408826+00:00"
     },
     {
       "id": "arxiv:2605.06716",
