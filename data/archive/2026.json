@@ -1,7 +1,1427 @@
 {
   "year": "2026",
-  "count": 25057,
+  "count": 25106,
   "papers": [
+    {
+      "id": "arxiv:2610.32749",
+      "title": "Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes",
+      "authors": [
+        "Wendi Sang",
+        "Kai Li",
+        "Yifan Li",
+        "Jianqiang Huang",
+        "Xiaolin Hu"
+      ],
+      "abstract": "Streaming audio-visual target speaker extraction (AVTSE) is essential for latency-sensitive applications. However, current causal systems face two coupled gaps. First, standard benchmarks fix the number of speakers at two and ignore the near-/far-field interference, reverberation, and sudden noise of real scenes. Second, high-performance causal architectures are too heavy for edge deployment. Lightweight alternatives try to reclaim capacity by repeatedly invoking a small separator, which offsets the savings. To address the first gap, we release RealSSA, a realistic AVTSE benchmark consisting of RealSSA-Sim and RealSSA-Real. RealSSA-Sim provides controllable simulated scenes with 1--5 dynamic near-field interfering speakers; scenes with far-field interference additionally include 10--15 far-field interfering speakers. RealSSA-Real provides a held-out real-recorded evaluation set. To address the second gap, we propose Falcon, a causal AVTSE method. Its Separator performs multi-scale time-frequency separation in a single encoder--decoder pass. We train Falcon with an encoder-space speaker contrastive loss. This loss suppresses near-field leakage at zero inference cost and transfers across backbones. Falcon achieves state-of-the-art extraction quality on RealSSA-Sim, LRS2-2Mix, LRS3-2Mix, and VoxCeleb2-2Mix. Compared with the causal AV-TFGridNet baseline, it cuts parameters by 91.9%, computation by 20.2 times, and GPU inference latency by 11.1 times. Code and demo are available at https://cslikai.cn/Falcon/.",
+      "date": "2026-10-29",
+      "upvotes": 227,
+      "source": "hf",
+      "arxiv": "https://arxiv.org/abs/2610.32749",
+      "pdf": "https://arxiv.org/pdf/2610.32749.pdf",
+      "hfUrl": "https://huggingface.co/papers/2610.32749",
+      "url": "https://arxiv.org/abs/2610.32749",
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "firstSeenAt": "2026-10-29T06:21:31.193611+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
+    },
+    {
+      "pid": "2610.40293",
+      "title": "MAServeBench: Benchmarking Multi-Agent LLM Serving Systems with Hierarchical Collaboration Workloads",
+      "abstract": "Large language model (LLM)-based multi-agent systems (MAS) coordinate specialized agents to solve complex tasks, turning each user request into interdependent model and tool operations. Unlike independent requests, these operations become ready at different times and consume evolving context as agents coordinate and exchange results. This creates changing patterns of concurrency, computation, and memory demand that can expose different bottlenecks in LLM serving hardware. Yet benchmarking these effects requires capturing the collaboration rules that generate serving workloads, beyond the requests observed during execution. We present MAServeBench, a benchmark that treats multi-agent collaboration as a configurable dimension of serving workloads for LLM serving and hardware evaluation. Its composable stages capture how agents coordinate and exchange context in documented MAS workflows, enabling native executions to generate different workloads even when task inputs and tools remain unchanged. Hierarchical Semantic Traces preserve realized operations and dependencies for reproducible comparisons of legal release constraints at fixed work. Task-linked measurements connect these workloads to serving execution and GPU/NPU hardware behavior, revealing why serving efficiency does not always translate into timely task completion. The benchmark code is available at https://github.com/ShengxuanQiu/MAServeBench.",
+      "date": "2026-10-29",
+      "authors": [
+        "Shengxuan Qiu",
+        "Haochen Huang",
+        "Shuzhang Zhong",
+        "Zizhuo Fu",
+        "Zebin Yang",
+        "Jianming Tong",
+        "Meng Li"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40293",
+      "pdf": "https://arxiv.org/pdf/2610.40293.pdf",
+      "id": "arxiv:2610.40293",
+      "source": "arxiv",
+      "upvotes": 10,
+      "topics": [
+        "Multi-Agent",
+        "Evaluation"
+      ],
+      "tags": [
+        "Multi-Agent",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.40293",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.40293"
+    },
+    {
+      "pid": "2610.40727",
+      "title": "VoxLock: Target-Speaker Extraction for Voice Agents Without an Enrollment Step",
+      "abstract": "A voice agent's speech recognizer transcribes everyone near the microphone, including people other than the caller. I fine-tuned a public causal target-speaker extraction model (REAL-TSE, 27M parameters) on one GPU to work from a voice sample cut from the call itself, and released it as VoxLock. I score it by what a recognizer writes on real recordings. On Krisp's 265-recording benchmark it reaches 4.95% WER against 23.21% unprocessed and lets 9 background words into the transcript over 85 minutes of background-only speech. Its WER is not significantly different from Krisp's best filters and is significantly lower than the other commercial and open systems I tested. On 400 AMI meeting windows built and frozen before scoring, it cuts WER from 42.95% to 10.63%. The 8-bit model runs a live call on 77% of one CPU thread with 24 ms of algorithmic latency. Model, code and per-file scores are open.",
+      "date": "2026-10-29",
+      "authors": [
+        "Arbaz Siddiqui"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40727",
+      "pdf": "https://arxiv.org/pdf/2610.40727.pdf",
+      "id": "arxiv:2610.40727",
+      "source": "arxiv",
+      "upvotes": 5,
+      "topics": [
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2610.40727",
+      "firstSeenAt": "2026-11-02T06:45:52.925515+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.40727"
+    },
+    {
+      "pid": "2607.01033",
+      "title": "The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology",
+      "abstract": "Model organisms (MOs) - language models trained to exhibit undesired or unnatural behaviours - are frequently used as testbeds for evaluating white-box interpretability techniques. Current MOs are typically constructed via post-hoc supervised fine-tuning (SFT). Prior research has shown that interpretability methods can easily identify hidden behaviours in these MOs. However, recent work suggests that such post-hoc training methods may make interpretability unrealistically easy. We investigate this claim by constructing a suite of 61 $\\verb|OLMo2-1B|$- and $\\verb|gemma-3-1b-it|$-based MOs trained with seven different techniques, including standard post-hoc SFT, post-hoc DPO, and more realistic integration of MO data into the OLMo post-training DPO phase. We also use these to train 96 further variants via knowledge distillation. We use these MO variants to benchmark activation oracles, activation steering, the logit lens, and the Jacobian lens. Our findings show that (i) MO interpretability depends strongly on training objective, target behaviour, model architecture, and training data generation pipeline; (ii) substantial variance remains even after controlling for differences in the strength of target behaviour expression; and (iii) both our more realistic $\\textit{integrated training}$ and knowledge distillation often yield less interpretable MOs than standard post-hoc methods. Our results cast substantial doubt on the validity of current MOs as interpretability proxies and suggest actionable steps towards more robust benchmarks.",
+      "date": "2026-10-29",
+      "authors": [
+        "Andrzej Szablewski",
+        "Gabriel Konar-Steenberg",
+        "Raffaello Fornasiere",
+        "Nikita Menon",
+        "Stefan Heimersheim"
+      ],
+      "arxiv": "https://arxiv.org/abs/2607.01033",
+      "pdf": "https://arxiv.org/pdf/2607.01033.pdf",
+      "id": "arxiv:2607.01033",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Post-Training",
+        "LLM Training",
+        "Evaluation",
+        "Interpretability",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Post-Training",
+        "LLM Training",
+        "Evaluation",
+        "Interpretability",
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2607.01033",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2608.07520",
+      "title": "KumbhDoot: A Scale-Ready, LLM-Bounded Architecture for Mass-Gathering Public-Service Assistants",
+      "abstract": "Mass religious gatherings such as the Kumbh Mela concentrate tens of millions of people into a single region over a few weeks, producing intense, repetitive, multilingual, and safety-critical demand for information. The default response, a conversational assistant that routes every query to a large language model (LLM), is poorly matched to this setting: it is costly at scale, slow on emergency paths, prone to hallucination on facts that can cause physical harm, and unusable when connectivity fails. We describe KumbhDoot, an agentic pilgrim assistant for the Nashik Simhastha Kumbh Mela built on a different principle. It operates on a foundational design principle that prioritizes semantic similarity over starting with an LLM. Generative models are invoked only in instances where similarity-based retrieval is insufficient to produce a correct answer. The system utilizes a \"semantic cache\": an embedding-indexed store as a single retrieval primitive, which handles intent routing, answer caching, offline lookups, and multi-agent retrieval. A custom three-tier agent architecture operates directly on this store, ensuring decision paths remain inspectable and avoiding the use of generic multi-agent frameworks that would trigger implicit per-step LLM calls. We present the architecture, an analytical cost model for its per-query economics, and an honest account of where similarity is sufficient and where generative reasoning remains necessary. We argue that for bounded, high-stakes, low-connectivity public-service domains, a similarity-first and LLM-bounded design is not merely cheaper but architecturally more appropriate than an LLM-default one.",
+      "date": "2026-10-29",
+      "authors": [
+        "Saurabh Sakalkar",
+        "Abhishek Singh",
+        "Ramesh Raskar"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.07520",
+      "pdf": "https://arxiv.org/pdf/2608.07520.pdf",
+      "id": "arxiv:2608.07520",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Multi-Agent",
+        "Reasoning",
+        "Hallucination",
+        "Agent Framework"
+      ],
+      "tags": [
+        "Multi-Agent",
+        "Reasoning",
+        "Hallucination",
+        "Agent Framework"
+      ],
+      "url": "https://arxiv.org/abs/2608.07520",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.39427",
+      "title": "EmpDPO: Enabling Emphasis Control in TTS via Direct Preference Optimization",
+      "abstract": "Word-level emphasis conveys meaning that text alone cannot express and is therefore essential for a practical text-to-speech (TTS) system. In this work, we study how to add emphasis control post hoc to a pretrained TTS model that has never been trained with emphasis annotations. We present EmpDPO, a simple, efficient, and effective two-stage recipe that adds emphasis control to a multilingual zero-shot diffusion TTS model through supervised fine-tuning followed by direct preference optimization (DPO). The training signals for both stages come from an off-the-shelf multilingual emphasis detector, so that no manual emphasis annotation or task-specific reward design is needed. We find that DPO can substantially strengthen emphasis control with only a few thousand preference pairs and training steps. Objective and subjective evaluations against strong public systems show that our model produces perceptible emphasis while preserving naturalness and overall quality.",
+      "date": "2026-10-29",
+      "authors": [
+        "Haonan Chen",
+        "Yunyun Wang",
+        "Megan Wei",
+        "Zeyu Jin"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39427",
+      "pdf": "https://arxiv.org/pdf/2610.39427.pdf",
+      "id": "arxiv:2610.39427",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Post-Training",
+        "LLM Training",
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Post-Training",
+        "LLM Training",
+        "Evaluation",
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2610.39427",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.39528",
+      "title": "PRIME W0: Physical Priors from World Models for Embodied Manipulation",
+      "abstract": "Vision-Language-Action (VLA) models excel at instruction following, yet most remain feed-forward: they condition actions only on the current observation and discard both long-horizon temporal context and the hierarchical structure of VLM representations. We present PRIME W0, a hierarchical conditional flow-matching framework that closes this gap through three synergistic designs: (1)per-layer KV injection from a pretrained VLM into an Adaptive MoE action expert; (2)dynamics-aware conditioning via asynchronous world-model subgoal-image prediction and a DINOv2 historical-frame semantic bridge; and (3)Action Dynamic Manifold (ADM) flow matching with covariance-structured noise that respects robot kinematic coupling. PRIME W0 is trained in four stages---VLM pre-training, DAT/NTP visuomotor pre-training, DiT flow-matching decoder assembly with WM injection, and end-to-end SFT---and achieves state-of-the-art results on LIBERO and real-robot benchmarks, with systematic ablations validating each architectural component.",
+      "date": "2026-10-29",
+      "authors": [
+        "Huabin Peng",
+        "Fagang Jin",
+        "Yancong Wei",
+        "Tengfei Ma",
+        "Chuhang Liu",
+        "Chao Yu",
+        "Liqing Chen"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39528",
+      "pdf": "https://arxiv.org/pdf/2610.39528.pdf",
+      "id": "arxiv:2610.39528",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "LLM Training",
+        "VLM Training",
+        "Evaluation",
+        "World Model"
+      ],
+      "tags": [
+        "LLM Training",
+        "VLM Training",
+        "Evaluation",
+        "World Model"
+      ],
+      "url": "https://arxiv.org/abs/2610.39528",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
+    },
+    {
+      "pid": "2610.40999",
+      "title": "A Robust Approach to Belief Mismatch in Non-cooperative Dynamic Games",
+      "abstract": "Game-theoretic models are increasingly used to describe multi-agent interactions in control and robotics applications. However, theoretical and computational complexity makes these models intractable in many dynamic, incomplete information scenarios. Recent work makes strong assumptions to reduce computational complexity: agents share sensor measurements with one another and maintain a common estimate of state uncertainty. Unfortunately, these assumptions enforce a degree of cooperation in generically noncooperative interactions. This paper takes the perspective of an ego agent seeking both computational tractability and robustness to unanticipated behavior of other agents due to mismatched state estimates from private---rather than shared---sensor measurements. To that end, we formulate the game theoretic planning problem in an augmented belief space with perturbed Bayesian dynamics that allows the ego to predict all agents' potentially divergent state estimates. These perturbations are chosen by a hypothetical adversary, ``nature,'' to reflect how non-ego agents' state estimates---based on measurements the ego agent will not see at runtime---may deviate from the ego's own belief. Ultimately, our approach can be understood in the spirit of classical H-infinity robust control, extended to noncooperative, stochastic dynamic games. We present a solver with polynomial-time iterations and conduct two experiments which show how robust belief space reasoning leads ego agents to proactively limit their future vulnerability to model misspecification of other agents' beliefs and actions, reducing performance degradation by over 48%.",
+      "date": "2026-10-29",
+      "authors": [
+        "Ryan Park",
+        "Li-huan Shen",
+        "Jesse Milzman",
+        "Negar Mehr",
+        "David Fridovich-Keil"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40999",
+      "pdf": "https://arxiv.org/pdf/2610.40999.pdf",
+      "id": "arxiv:2610.40999",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Agent Safety",
+        "Multi-Agent",
+        "Reasoning",
+        "Planning"
+      ],
+      "tags": [
+        "Agent Safety",
+        "Multi-Agent",
+        "Reasoning",
+        "Planning"
+      ],
+      "url": "https://arxiv.org/abs/2610.40999",
+      "firstSeenAt": "2026-11-02T06:45:52.925515+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.40016",
+      "title": "LOGIV: Graph-Verified Execution with Causal Local Repair for Long-Horizon Robot Tasks",
+      "abstract": "Agentic robots must turn a high-level goal into actions while keeping the physical conditions needed for future steps valid. A completed action does not ensure that its effects will persist: a later disturbance can invalidate support that the remaining plan still assumes. We present LOGIV, a graph engineering framework for agentic robot execution that uses an explicit task graph to connect symbolic planning, observation-based verification, and embodied action. LOGIV compiles a validated plan into condition-support and resource-ordering edges, checks their physical validity during execution, and uses dependency tracing to determine what must be restored after a failure. Repair is constrained by retained unfinished actions, and the combined continuation is symbolically validated before execution resumes. The framework operates above existing Vision-Language-Action (VLA) and World Action Model (WAM) policies without adding trainable components. Across 20 dual-arm tasks from RoboTwin~V2 and BiCoord with three execution backbones, LOGIV improves mean task success without injected disturbances by 10.67 and 15.33 percentage points, respectively. Under predefined perturbations, it achieves higher task completion and condition restoration than three adapted recovery baselines for every backbone on both benchmarks. On three real-robot tasks, successful trials increase from 12/30 to 17/30. These results support explicit, continuously checked task dependencies as a practical interface for reliable agentic robot execution.",
+      "date": "2026-10-29",
+      "authors": [
+        "Enqiao Lu",
+        "Yuxiang Xie",
+        "Xingrui Yu",
+        "Yuyang Wang",
+        "Yipeng Gu",
+        "Zhenglin Wan",
+        "Pengfei Zhou",
+        "Wangbo Zhao",
+        "Yang You",
+        "Yuxiang Gao",
+        "Ivor Tsang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40016",
+      "pdf": "https://arxiv.org/pdf/2610.40016.pdf",
+      "id": "arxiv:2610.40016",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "VLM Training",
+        "Planning",
+        "Evaluation"
+      ],
+      "tags": [
+        "VLM Training",
+        "Planning",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.40016",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-03T03:07:14.726909+00:00"
+    },
+    {
+      "pid": "2610.39576",
+      "title": "Bayesian Offline Multi-Agent Reinforcement Learning with Latent World Models",
+      "abstract": "Model-based offline multi-agent reinforcement learning (MARL) provides a promising approach to multi-agent decision-making under partial observability, where the global state is unavailable from offline data. However, limited dataset coverage can lead to substantial out-of-distribution (OOD) model errors, which may mislead policy optimization and degrade downstream performance. Existing model-based offline MARL methods typically rely on access to global states or mitigate model errors through pessimistic or conservative policy optimization, leaving the reliability and refinement of learned world models less explored. We propose a Bayesian offline MARL framework that infers latent global states from decentralized observation-action histories and iteratively refines a posterior world model using only offline data. Building on posterior information loss, we extend this criterion to the multi-agent setting as multi-agent posterior information loss (MPIL), which provides a reliability measure for world model refinement and offline evaluation. Theoretically, we establish an upper bound on policy regret that is monotonic in MPIL and further characterize its dependence on the size and state-joint-action coverage of the offline dataset. Experiments on partially observable multi-agent variants of D4RL MuJoCo tasks demonstrate competitive policy performance across diverse offline data conditions, while MPIL-guided refinement improves world model prediction and downstream policy performance. These results support a principled connection between world model reliability, offline data coverage, and policy performance in partially observable offline MARL.",
+      "date": "2026-10-29",
+      "authors": [
+        "Xi Xiong",
+        "Lu Liu",
+        "Yiming Li",
+        "Jakob Foerster"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39576",
+      "pdf": "https://arxiv.org/pdf/2610.39576.pdf",
+      "id": "arxiv:2610.39576",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Multi-Agent",
+        "Evaluation",
+        "World Model"
+      ],
+      "tags": [
+        "Multi-Agent",
+        "Evaluation",
+        "World Model"
+      ],
+      "url": "https://arxiv.org/abs/2610.39576",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
+    },
+    {
+      "pid": "2610.39258",
+      "title": "Agentic LinkDreamer: Adaptive Neuro-Fuzzy World-Model Decision Making for Intermittent V2X Cooperative Perception",
+      "abstract": "Intermittent vehicle-to-everything (V2X) communication can remove collaborator information needed for cooperative perception, degrading object detection during link outages. Existing recovery methods reconstruct missing features but rarely determine when to trust predictions, reuse historical observations, or request fresh information. This paper proposes Agentic LinkDreamer, a soft-computing framework integrating a latent world model with an interpretable neuro-fuzzy decision agent. It maintains causal collaborator memory and uses a relative-motion-conditioned recurrent world model to predict unavailable bird's-eye-view (BEV) features. Prediction uncertainty, perceptual complementarity, memory freshness, communication quality, and residual communication budget form a compact decision state. A differentiable Takagi-Sugeno controller selects among five modes: ego-only perception, motion-compensated historical feature reuse, latent imagination, low-rate temporal-summary refresh, and high-rate collaborator-feature refresh. The policy balances detection risk, communication overhead, latency, predictive uncertainty, and action switching. After link recovery, reflection compares predicted and received features to update uncertainty calibration and causal memory. For reproducible evaluation without assuming unavailable physical-layer traces, we construct a geometry-derived V2X degradation protocol using recorded trajectories and LiDAR-derived scene geometry from V2X-Real. On the real-world V2X-Real V2V split, Agentic LinkDreamer achieves 90.95 AP@0.5 on outage frames and recovers 92.9% of the cooperative-perception performance gap. At a high-performance operating point, it remains only 0.65 AP below the cooperative upper reference while reducing communication volume by approximately 31% relative to continuous high-rate cooperation. This improves resilience under V2X outages.",
+      "date": "2026-10-29",
+      "authors": [
+        "Zhaoyu Liu",
+        "Dongmin Wang",
+        "Liu Cao",
+        "Jijing Cai",
+        "Kai Fang",
+        "Syed Ishtiaque Ahmed",
+        "Almetwally M. Mostafa"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39258",
+      "pdf": "https://arxiv.org/pdf/2610.39258.pdf",
+      "id": "arxiv:2610.39258",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation",
+        "Reflection",
+        "World Model"
+      ],
+      "tags": [
+        "Evaluation",
+        "Reflection",
+        "World Model"
+      ],
+      "url": "https://arxiv.org/abs/2610.39258",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-03T03:07:14.726909+00:00"
+    },
+    {
+      "pid": "2610.40349",
+      "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
+      "abstract": "Human demonstrations offer an efficient and scalable source of data for dexterous robot manipulation, but differences in sensing and hand morphology complicate the transfer of contact-rich interactions. We present TouchBridge, a hardware--software co-designed framework for human-to-robot data transformation. A wearable human demonstration interface and a corresponding robot interface establish cross-embodiment correspondence in visual and fingertip tactile sensing. We introduce Tac-Retarget, a tactile-conditioned retargeting method that uses measured contact to align fingertip contact patches and preserve their spatial relations within and across hands. Unlike object-aware or simulation-based transfer pipelines, Tac-Retarget requires no object mesh, object-pose estimate, or physics simulation for retargeting, enabling direct and scalable conversion of human demonstrations into robot-domain training data. Combined with visual synthesis and camera-anchored action conversion, TouchBridge produces robot-domain demonstrations for fine-tuning a pretrained vision-language-action (VLA) model. Across four real-world contact-rich tasks, policies fine-tuned solely on TouchBridge-converted human demonstrations achieve a 72.5% average success rate, compared with 77.5% using an equal number of teleoperated robot demonstrations, while human demonstration collection is 7.0x faster. Under the same policy and training setup, Tac-Retarget outperforms DexPilot and UniDex by 25.0 and 42.5 percentage points, respectively.",
+      "date": "2026-10-29",
+      "authors": [
+        "Haozhe Zhang",
+        "Gu Zhang",
+        "Zirui Zou",
+        "Yuzheng Chen",
+        "Jinlong Wu",
+        "Zixuan Hu",
+        "Jianke Zhang",
+        "Yucheng Hu",
+        "Zhecheng Yuan",
+        "Huazhe Xu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40349",
+      "pdf": "https://arxiv.org/pdf/2610.40349.pdf",
+      "id": "arxiv:2610.40349",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "LLM Training",
+        "VLM Training",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "LLM Training",
+        "VLM Training",
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2610.40349",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-03T03:07:14.726909+00:00"
+    },
+    {
+      "pid": "2610.39798",
+      "title": "Surrogate Uncertainty for Black-box Visual Grounding",
+      "abstract": "Visual grounding is crucial for robots to understand language instructions with visual observations. This paper addresses the problem of visual grounding uncertainties, where a robot uses a black-box vision-language model (VLM) to ground free-form natural-language instructions to target objects. Prevailing methods derive uncertainty from the VLM itself. Yet, outputs of the VLM, e.g., generated uncertainties, are from the same parameters and structures producing the predictions, and inherit the bias. We give a formal Bayesian definition of the problem that treats the VLM prediction as an observation. An external surrogate Bayesian model then quantifies per-query uncertainty over a local neighborhood of a held-out calibration set, decomposed into aleatoric and epistemic components. A hierarchical retrieval across input modalities realizes a compact joint-space neighborhood, mitigating the curse of dimensionality. The estimator further integrates with conformal prediction or model-based planning for active visual grounding, where robots are allowed to take verbal or physical actions to ground targets. Across grounding benchmarks and state-of-the-art VLMs, it consistently improves both calibration and task performance. On a real Fetch robot under open-world instructions, it enables principled trade-offs between confident action and information gathering, substantially improving robustness.",
+      "date": "2026-10-29",
+      "authors": [
+        "Hanbo Zhang",
+        "Tianrun Hu",
+        "Cedar Site Bai",
+        "Anxing Xiao",
+        "David Hsu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39798",
+      "pdf": "https://arxiv.org/pdf/2610.39798.pdf",
+      "id": "arxiv:2610.39798",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "VLM Training",
+        "Planning",
+        "Evaluation"
+      ],
+      "tags": [
+        "VLM Training",
+        "Planning",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.39798",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
+    },
+    {
+      "pid": "2610.39543",
+      "title": "From Reasoning to Action: Consequence-Grounded Alignment for Vision-Language-Action Models",
+      "abstract": "Reasoning informs decision-making by connecting intended actions with their expected consequences. Recent vision-language-action (VLA) models incorporate embodied chains of thought (ECoTs) to guide action generation. However, such guidance remains implicit, as actions are conditioned on ECoTs rather than explicitly optimized to align with them.   We introduce CoRAct, a consequence-grounded reasoning-to-action alignment framework that explicitly aligns reasoning and action through reward-guided optimization in action noise space. CoRAct formulates two physically grounded ECoT components as verifiable signals: movement specifies intended motion, while waypoints encode expected spatial consequences. A unified Mixture-of-Transformers jointly models ECoT reasoning, action generation, and action-conditioned future prediction. For candidate actions generated from sampled noise, CoRAct computes alignment rewards based on movement consistency and agreement between predicted outcomes and specified waypoints. These rewards guide group-relative optimization of the initial noise distribution, steering action generation toward consistency with intended actions and expected consequences.   Experiments across RoboCasa, VLABench, and real-world manipulation tasks demonstrate improvements in task success, generalization, and reasoning-execution alignment over strong ECoT-based VLA baselines. CoRAct also grounds externally provided ECoTs in executable behavior, enabling zero-shot adaptation to novel scenarios by leveraging knowledge from powerful vision-language models.   Project page and dataset: https://onlyxingxingzyx.github.io/CoRAct/",
+      "date": "2026-10-29",
+      "authors": [
+        "Yixue Zhang",
+        "Wenke Xia",
+        "Kun Wu",
+        "Wenbo Yu",
+        "Pei Ren",
+        "Junnan Nie",
+        "Di Hu",
+        "Zhengping Che",
+        "Chang Liu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39543",
+      "pdf": "https://arxiv.org/pdf/2610.39543.pdf",
+      "id": "arxiv:2610.39543",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "VLM Training",
+        "Reasoning",
+        "Alignment"
+      ],
+      "tags": [
+        "VLM Training",
+        "Reasoning",
+        "Alignment"
+      ],
+      "url": "https://arxiv.org/abs/2610.39543",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.39547",
+      "title": "Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance",
+      "abstract": "Learning-enabled cyber-physical systems (CPS), including autonomous vehicles and UAVs, increasingly incorporate foundation models, yet fragmented assurance practices provide insufficient support for system-level guarantees. We argue that restoring engineering control across stochastic neural, symbolic, and physical boundaries requires a shift from model-centric evaluation to system-level assurance. We introduce the Foundation Model Assurance Stack, connecting three directions: (i) neuro-symbolic architectures that constrain foundation models through explicit symbolic world models, reasoning layers, and interfaces; (ii) semantically grounded, conformance-based testing that combines formal specifications and symbolic world models with foundation-model-assisted specification mining, scenario generation, and test synthesis; and (iii) compositional verification and runtime assurance that target formally tractable components and interfaces through modular contracts, equivalence checking, verified synthesis, uncertainty-aware reasoning, and runtime monitoring and enforcement. Symbolic abstractions establish assurance boundaries between stochastic learning and formal reasoning, connecting testing, verification, and runtime evidence across the system lifecycle. Foundation models serve as constrained assistants whose outputs are independently checked wherever correctness can be formally specified. We identify research challenges in specification engineering, abstraction fidelity, evidence composition, and lifecycle certification, and outline a staged agenda toward trustworthy, deployable, and certifiable learning-enabled CPS.",
+      "date": "2026-10-29",
+      "authors": [
+        "Xi Zheng",
+        "Ivan Ruchkin",
+        "Hong Jin Kang",
+        "Tevfik Bultan",
+        "Vijay Ganesh",
+        "Taylor T. Johnson",
+        "Ziyang Li",
+        "Lei Ma",
+        "Aloysius K. Mok",
+        "Daniel Neider",
+        "Ruzica Piskac",
+        "Nalini Venkatasubramanian",
+        "Simon Thompson",
+        "Sanjoy Baruah"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39547",
+      "pdf": "https://arxiv.org/pdf/2610.39547.pdf",
+      "id": "arxiv:2610.39547",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning",
+        "Evaluation",
+        "World Model"
+      ],
+      "tags": [
+        "Reasoning",
+        "Evaluation",
+        "World Model"
+      ],
+      "url": "https://arxiv.org/abs/2610.39547",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.40116",
+      "title": "Dual-Agent Reinforcement Learning for Vehicle Scheduling and Multi-Energy Dispatch in Electric-Hydrogen-Transport Systems",
+      "abstract": "Electric-hydrogen-transport systems (EHTSs) require coordinated scheduling of electric and hydrogen vehicles together with multi-energy dispatch. These operations form a sequential decision process: upstream vehicle scheduling (VS) determines service allocation and order, thereby endogenously shaping the electricity and hydrogen demands faced by downstream energy dispatch (ED). This paper develops a dual-agent reinforcement learning framework tailored to the heterogeneous decision structures. The vehicle-scheduling agent combines proximal policy optimisation (PPO) with a Plackett-Luce policy to learn vehicle-priority permutations, which are then mapped to feasible charger and refueller assignments through a greedy allocation. The energy-dispatch agent employs twin delayed deep deterministic policy gradient (TD3) for continuous storage and energy-flow control. The directional coupling between the two decision layers is analysed, revealing that updates to the upstream scheduling policy can shift the demand distribution experienced by the downstream dispatcher. A three-stage training mechanism is therefore introduced, combining layer-wise pretraining with concurrent fine-tuning to mitigate the effects of scheduling-induced distribution shifts on downstream ED learning. Year-long case studies show that the proposed framework achieves the lowest vehicle-service delay and energy cost among the 11 evaluated methods, demonstrating effective coordination between vehicle scheduling and multi-energy dispatch.",
+      "date": "2026-10-29",
+      "authors": [
+        "Fulong Yao",
+        "Yiming Xu",
+        "Maurizio Albano",
+        "Liana Cipcigan",
+        "Naeima Hamed",
+        "Bo Zou",
+        "Omar Rana"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40116",
+      "pdf": "https://arxiv.org/pdf/2610.40116.pdf",
+      "id": "arxiv:2610.40116",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "LLM Training",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "LLM Training",
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2610.40116",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-03T03:07:14.726909+00:00"
+    },
+    {
+      "pid": "2610.39846",
+      "title": "TokWatt: an open, boundary-annotated database of AI inference energy, from chat answers to agents",
+      "abstract": "Electricity supply is becoming a binding constraint on the deployment of artificial intelligence (AI), yet public evidence on the energy used by a single AI task is scattered and hard to compare. Published figures for one chatbot answer differ by two orders of magnitude, largely because studies count different parts of the system and measure different units of work. We present TokWatt, an open database of 134 published estimates of AI inference energy drawn from 13 sources (2023-2026) and covering 20 tasks, from classic machine-learning inferences to chat answers, reasoning answers, long-document queries, image and video generation, and coding agents. Each estimate records its functional unit, five measurement-boundary components, method, reported interval, and the location of the value in its source. A reproducible procedure scales estimates to a common server-plus-facility boundary and derives per-task reference values with ranges. The reference values span six orders of magnitude: 0.34 Wh for a short chat answer (range 0.16-0.99 Wh), 4.7 Wh for a reasoning answer, 124 Wh for a short video clip, and 150 Wh for one task delegated to a coding agent. Five independent estimates for default production chat systems agree within a factor of 1.8, and the reference values shift by at most 12% under alternative harmonization parameters. A simple identity links personal use to grid load: E watt-hours per person per day across one billion people corresponds to an average draw of E/24 gigawatts. Data and code are released at https://github.com/AraoufBh/tokwatt, and an online calculator at https://araoufbh.github.io/tokwatt/.",
+      "date": "2026-10-29",
+      "authors": [
+        "Abderaouf Bahi"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39846",
+      "pdf": "https://arxiv.org/pdf/2610.39846.pdf",
+      "id": "arxiv:2610.39846",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning",
+        "Code Agent"
+      ],
+      "tags": [
+        "Reasoning",
+        "Code Agent"
+      ],
+      "url": "https://arxiv.org/abs/2610.39846",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.39680",
+      "title": "Federated Agentic AI for Interference-Aware Adaptive Spectrum Coordination",
+      "abstract": "Emerging intelligent wireless networks increasingly rely on autonomous AI agents to adapt spectrum usage to dynamic and heterogeneous operating conditions. However, collective learning is challenging when agents experience different local interference environments and cannot exchange raw observations due to communication-overhead and privacy constraints. We propose Federated Agentic Spectrum Coordination with Interference Awareness (FASCIA), a federated multi-agent deep reinforcement learning framework for adaptive spectrum coordination. In FASCIA, each network manager acts as an autonomous AI agent that perceives its local interference environment, accumulates experience in a persistent local memory, and learns an adaptive spectrum coordination policy through local interactions. Coordination among agents is achieved through periodic federated aggregation of locally trained models, without exchanging raw sensing data or experience. Since spectrum decisions made by one agent alter the environments observed by others, local learning is inherently heterogeneous and coupled. FASCIA employs proximal regularization to mitigate the resulting model drift and explicitly accounts for inter-carrier interference arising from partially overlapping channels. FASCIA is the first federated agentic AI framework to address this challenging interference-coupled spectrum coordination setting. Extensive simulations demonstrate that FASCIA achieves performance close to the centralized benchmark while avoiding raw-experience exchange and maintaining effectiveness across heterogeneous network configurations.",
+      "date": "2026-10-29",
+      "authors": [
+        "Tomer Baziza Paz",
+        "Yaniv Cohen",
+        "Kobi Cohen"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39680",
+      "pdf": "https://arxiv.org/pdf/2610.39680.pdf",
+      "id": "arxiv:2610.39680",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Multi-Agent",
+        "Evaluation"
+      ],
+      "tags": [
+        "Multi-Agent",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.39680",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.39488",
+      "title": "InterA11y: Interactive Web Accessibility Error Detection with LLM Agents",
+      "abstract": "Large Language Models (LLMs) have shown potential to expand the coverage of web accessibility evaluation. However, current LLM-based checkers neglect much of the interactive and dynamic web contexts, resulting in limited coverage, high false discovery rates, and inconsistent performance across models. We present InterA11y, an agentic accessibility evaluation system that combines rubrics and interactive tools to support LLM agents in evaluating accessibility effectively. The rubrics decompose WCAG success criteria (SC) into testable aspects and guide agents in collecting and interpreting evidence. The interactive tools inspect or operate a webpage deterministically to collect evidence, such as focus appearances and error messages. We developed these rubrics and tools on 682 curated test cases grounded in established accessibility guidelines that target 10 commonly violated SC. We evaluated InterA11y on 197 expert-annotated cases sampled from 54 real webpages. Results show InterA11y achieves higher recall than the strongest evaluated LLM-driven baseline (79.0% vs. 44.4%), while maintaining comparable precision to best rule-based checkers (93.1% vs. 90.3-97.6%), with little variability between models. Further, when equipped with our interactive tools, general-purpose web agents detect more accessibility errors with fewer false positives and less token usage than without these tools.",
+      "date": "2026-10-29",
+      "authors": [
+        "Mingyuan Zhong",
+        "Mengqi Shi",
+        "Davin Win Kyi",
+        "Ajit Mallavarapu",
+        "Xia Chen",
+        "James Fogarty",
+        "Jacob O. Wobbrock"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39488",
+      "pdf": "https://arxiv.org/pdf/2610.39488.pdf",
+      "id": "arxiv:2610.39488",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Computer Use",
+        "Evaluation"
+      ],
+      "tags": [
+        "Computer Use",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.39488",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.39509",
+      "title": "Systematic Evaluation of Adversarial Jailbreaking Attacks and Defenses Across Seven Large Language Models",
+      "abstract": "Large language models (LLMs) deployed in safety-critical settings must resist adversarial inputs designed to elicit harmful outputs. We present a systematic empirical evaluation of five adversarial jailbreaking attack families---direct requests, roleplay-based jailbreaking, hypothetical framing, instruction override, and obfuscation---across seven open-weight and API-accessible LLMs: Llama-3-8B, Llama-3.1-8B, Llama-3.2-3B, Mistral-7B, Qwen2.5-7B, Gemma2-9B, and Phi-4-14B. We further evaluate four defense mechanisms: keyword blacklisting, self-reminder prompting, paraphrase-based sanitization, and perplexity-based filtering against the two most vulnerable models. Our results reveal that obfuscation attacks achieve a mean attack success rate (ASR) of 54.3% across all models and constitute the most transferable adversarial vector, bypassing every evaluated model with nonzero success. We find that model size does not predict adversarial robustness (Spearman r=-0.57, p=0.18), and that models within the same architecture family exhibit dramatically different vulnerability profiles. Self-reminder prompting achieves the most consistent defense, reducing ASR from 44% to 10% on Mistral-7B and from 48% to 5% on Llama-3.1-8B with zero false positives and no additional inference cost. Our code and datasets are publicly available at https://github.com/Mdniloykhan/jailbreak-eval-7llms.",
+      "date": "2026-10-29",
+      "authors": [
+        "Md. Robiul Islam Niloy",
+        "Abu Sayed Md. Mostafizur Rahaman"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39509",
+      "pdf": "https://arxiv.org/pdf/2610.39509.pdf",
+      "id": "arxiv:2610.39509",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Agent Safety",
+        "Evaluation"
+      ],
+      "tags": [
+        "Agent Safety",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.39509",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
+    },
+    {
+      "pid": "2608.05430",
+      "title": "Robust Context-Aware Detection of Malicious Instructions in Text",
+      "abstract": "The remarkable instruction-following ability of modern LLMs has enabled their practical use in orchestrating workflows of tool-using agents. This, however, also exposes such agents to attacks which embed malicious instructions in text, such as indirect prompt injection (IPI). One class of approaches to defend against such attacks aims to detect malicious sentences within otherwise benign text. While a number of approaches for this have been proposed, all tend to be brittle under adaptive paraphrasing attacks, in part because they do not capture sufficient global context to effectively differentiate malicious text from benign. We address this gap by developing an approach for malicious sentence classification that is both context- and query-aware, which we then harden against paraphrasing through two adversarial training (AT) methods: feature-space robust learning and AT with simulated LLM-based paraphrasing. Moreover, we parametrize the AT variants to facilitate a smooth tradeoff between utility and attack robustness. In extensive experiments using IPI benchmarks we show that our approach outperforms state-of-the-art defense baselines under both static and adaptive paraphrasing attacks while preserving high utility. Our code is publicly available at https://github.com/tavia-liu/CAD.",
+      "date": "2026-10-29",
+      "authors": [
+        "Buzhao Liu",
+        "Xinhang Ma",
+        "Yevgeniy Vorobeychik"
+      ],
+      "arxiv": "https://arxiv.org/abs/2608.05430",
+      "pdf": "https://arxiv.org/pdf/2608.05430.pdf",
+      "id": "arxiv:2608.05430",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Agent Safety",
+        "Evaluation"
+      ],
+      "tags": [
+        "Agent Safety",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2608.05430",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.39782",
+      "title": "Assessing AI Companion Chatbot Safety for Vulnerable Users: A Crisis-Stage Multi-Platform Evaluation",
+      "abstract": "AI companion chatbots are increasingly used by vulnerable individuals, including adolescents in suicidal crisis, for emotional support. Existing safety evaluations focus on base models, leaving gaps in product-level assessment, crisis-stage sensitivity, and comparisons between companion apps and general-purpose LLMs. We introduce MIRROR-Eval (Multi-turn Interaction Risk Review: Observing suicidal-crisis Responses), a dataset of 960 annotated 20-turn conversations across eight deployed platform configurations, six clinically grounded personas, and two crisis stages: ideation and explicit planning. An LLM-as-a-Judge pipeline applies an expert-reviewed rubric covering user risk severity, chatbot risk awareness, and intervention behavior. We observe a three-tier harm structure: companion apps (Character.AI and Replika) and Grok 4.3 form a high-harm tier; Gemini 3.1 Pro is mid-range; GPT-5.5 and Claude Sonnet 5 show substantially lower harm. At planning, companion apps show increased glorification and normalisation, advancement toward harmful action, and harmful methods and instructions. Crisis recognition and empathetic language do not ensure safe responses. These findings highlight the need for product-level safety evaluation across crisis stages. Dataset and code: https://huggingface.co/datasets/imda-biztech/MIRROR-Eval. Warning: this paper includes examples that may be offensive or harmful.",
+      "date": "2026-10-29",
+      "authors": [
+        "Huanyue Liao",
+        "Seok Min Lim",
+        "Yan Ling Lim",
+        "Shi Min Cheng",
+        "Kellin Pelrine",
+        "Chen Hui Ong"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39782",
+      "pdf": "https://arxiv.org/pdf/2610.39782.pdf",
+      "id": "arxiv:2610.39782",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Planning",
+        "Evaluation"
+      ],
+      "tags": [
+        "Planning",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.39782",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.39745",
+      "title": "UniffordInteractor: Reasoning the Unified Affordance for Human and Multi-Object Interaction",
+      "abstract": "Deriving plausible and dynamic Human Object Interaction (HOI) has gained tremendous progress in Embodied AI and Immersive AR/VR. While existing HOI methods have effectively explored human interaction with individual or fixed objects, they still show limitations in complex multi-object interaction scenes. Meanwhile, previous approaches focus more on the contact information held by human-object relation, overlooking the significance of the contact situation of various entities (i.e., object-object). To address these limitations, we propose UniffordInteractor, a Reasoning-then-Interacting framework that leverages unified affordance for realistic and long-horizon human and multi-object interaction modeling. At the reasoning stage, we devise a Unified Affordance Reasoner (UAR) that employs a fine-tuned 3D Multimodal Large Language Model for unified object-centric affordance prediction. At the interacting stage, we propose Hierarchical Interaction Generator (HIG), which formulates the interaction generation as a hierarchical (e.g., root to body to hand to objects) autoregressive prediction, conditioned on the obtained unified affordance. Extensive experiments demonstrate that UniffordInteractor surpasses SOTA counterparts in human and multi-object interaction generation.",
+      "date": "2026-10-29",
+      "authors": [
+        "Chen Su",
+        "Xingqun Qi",
+        "Xurui Hu",
+        "Bingkun Yang",
+        "Muyi Sun",
+        "Man Zhang",
+        "Zhenan Sun"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39745",
+      "pdf": "https://arxiv.org/pdf/2610.39745.pdf",
+      "id": "arxiv:2610.39745",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning",
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Reasoning",
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2610.39745",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.40039",
+      "title": "How Far Are We From On-Device VLM Inference? A Measurement Study on Edge NPUs",
+      "abstract": "Diverse optimizations spanning model architecture, inference runtime, and hardware acceleration have been proposed for on-device vision-language model (VLM) deployment on edge NPUs. Still, cross-layer coordination of VLM execution on edge NPUs remains largely underexplored. This paper presents an empirical measurement study across six representative VLMs, three real-world edge platforms, and ten multimodal benchmarks. Our evaluation drills down from end-to-end application-level latency and thermal traces down to low-level kernel-scale execution behaviors, challenging several widely held community assumptions. First, softmax dominates attention costs; even lookup-table-based softmax optimizations cannot eliminate pipeline bubbles that severely underutilize NPU matrix units. Second, theoretical speedups from linear attention vanish under real-NPU execution due to prohibitive tensor-rearrangement overhead. Third, no hardware backend universally dominates autoregressive decoding: attention-tensor-shaped parallelism dictates NPU efficiency and shifts the CPU-NPU performance balance. We further find task-specific Sweet Resolutions for VLMs, which deliver meaningful accuracy gains at only modest latency overhead. Complementing these findings, we provide actionable cross-layer recommendations for hardware architects, runtime developers, and model designers.",
+      "date": "2026-10-29",
+      "authors": [
+        "Huan Yang",
+        "Shiqi Jiang",
+        "Yu Mao",
+        "Chuanyue Xiong",
+        "Deyu Zhang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40039",
+      "pdf": "https://arxiv.org/pdf/2610.40039.pdf",
+      "id": "arxiv:2610.40039",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "VLM Training",
+        "Evaluation"
+      ],
+      "tags": [
+        "VLM Training",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.40039",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.41057",
+      "title": "Out of sync: Accommodation, evaluation, and emergence in five weeks with an agentic AI teammate",
+      "abstract": "As agentic AI in education shifts from reactive tools toward partners that take initiative and persist over time, a central question is how learners relate to, evaluate, and benefit from artificial agency. We conducted a longitudinal experiment in an undergraduate learning analytics course, in which 17 student teams (N = 48) collaborated with a persistent LLM-based teammate across weekly sessions. The agent decided when to intervene through a trigger-based architecture, and its social role was manipulated between teams: a Cognitive Agent that challenged quick consensus or a Supportive Agent that invited quieter members to contribute. Combining chat discourse, post-session surveys, and spoken reflections, we identified distinct patterns unfolding across three timescales. Students accommodated their language to the agent's role immediately, using more social language toward the Supportive Agent from the first session. Their helpfulness evaluations were recalibrated from session to session in relation to the agent's observed behavior, rather than remaining anchored to students' pre-existing attitudes toward AI. A slower crossover emerged in perceived collaboration process and positive-affect word use in reflections: Supportive-Agent teams began below Cognitive-Agent teams and ended above them, although students rated the Supportive Agent less helpful throughout. Because these responses follow different trajectories, single-session evaluations of agentic AI may miss changes that emerge only through repeated interaction.",
+      "date": "2026-10-29",
+      "authors": [
+        "Nia Nixon",
+        "Jaeyoon Choi",
+        "Pedro Martins de Bastos",
+        "Mohammad Amin Samadi"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.41057",
+      "pdf": "https://arxiv.org/pdf/2610.41057.pdf",
+      "id": "arxiv:2610.41057",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation",
+        "Reflection"
+      ],
+      "tags": [
+        "Evaluation",
+        "Reflection"
+      ],
+      "url": "https://arxiv.org/abs/2610.41057",
+      "firstSeenAt": "2026-11-02T06:45:52.925515+00:00",
+      "lastSeenAt": "2026-11-03T03:07:14.726909+00:00"
+    },
+    {
+      "pid": "2610.40988",
+      "title": "Variational Programs with Open Clocks",
+      "abstract": "Variational quantum algorithms leave the durations of Hamiltonian evolutions open for a classical optimizer to set. We present VHamilton, a minimal extension of the Hamilton quantum programming language in which such durations are open clocks: one program denotes a family of Hamiltonian trajectories, and a valuation fills its clocks with exact dyadic times, so that each instance is an ordinary Hamilton program that compiles to circuits as before. Because the semantics stays exact and affine in the clocks, the Hamiltonian structure of a variational program remainsavail able for reasoning about every valuation at once. Equivalence becomes a finite calculation, which we mechanize in Agda for a fragment and use to prove the VHamilton form of the compiler rewrite \"rzz(t) = cx; rz(t); cx\" for every clock value. We then show what the same structure supports in a two-qubit chemistry eigensolver written in VHamilton and run through a Haskell prototype. It supports a fusion of commuting blocks, a closed form and an expressibility proof for the ansatz, and an exact split of the error between the precision of the target and that of the clocks, with a priori bounds. It also supports a coordinate search whose queries per sweep, fixed by the spectra of the generators, do not grow with the precision. On the benchmark this search reaches the numerically verified optimum of a grid of 134 million valuations in 53 energy queries. It finds the grid optimum in only 21 of 30 validation settings, however, so the gain is conditional, not a global-optimization guarantee.",
+      "date": "2026-10-29",
+      "authors": [
+        "Javaria Ghafoor",
+        "Amr Sabry"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40988",
+      "pdf": "https://arxiv.org/pdf/2610.40988.pdf",
+      "id": "arxiv:2610.40988",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning",
+        "Evaluation"
+      ],
+      "tags": [
+        "Reasoning",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.40988",
+      "firstSeenAt": "2026-11-02T06:45:52.925515+00:00",
+      "lastSeenAt": "2026-11-03T03:07:14.726909+00:00"
+    },
+    {
+      "pid": "2610.40010",
+      "title": "Measuring the Value of Communication in Multi-Agent Tracking Under Finite-Rate Belief Sharing",
+      "abstract": "This paper investigates the value of communica- tion (VoC) in cooperative multi-agent tracking under rate- constrained information exchange. Although prior work has studied distributed tracking, quantized communication, and robust fusion, it remains unclear at what communication rate most of the achievable tracking gain is obtained, beyond which additional communication resources yield only marginal benefit. We consider stationary agents that observe a moving target through heterogeneous range and bearing measurements, perform local extended Kalman filtering (EKF), quantize their posterior state means, and fuse exchanged information via covariance intersection (CI). Performance is evaluated versus communication rate relative to no-communication baselines, a centralized oracle, and a CI-perfect reference. The results show that communication is not uniformly beneficial: very low rates can degrade performance due to coarse quantization, whereas moderate rates recover most of the achievable gain. In the considered scenario, increasing the rate from 4 to 12 bit/s per agent reduces the root-mean-square error (RMSE) from 13.93 m to 6.35 m, while a further increase to 32 bit/s per agent improves it only marginally to 5.93 m. This reveals a clear knee region at moderate rates, beyond which the remaining loss is mainly due to the conservatism of the fusion architecture. Overall, the proposed framework characterizes low-rate degradation, communication-efficient operation, and diminishing returns, while highlighting the joint role of rate and sensing geometry in determining communication benefit.",
+      "date": "2026-10-29",
+      "authors": [
+        "Danial Dehghani",
+        "Maximilian Lübke",
+        "Zahra Seifaei",
+        "Norman Franchi"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40010",
+      "pdf": "https://arxiv.org/pdf/2610.40010.pdf",
+      "id": "arxiv:2610.40010",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Multi-Agent"
+      ],
+      "tags": [
+        "Multi-Agent"
+      ],
+      "url": "https://arxiv.org/abs/2610.40010",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.40000",
+      "title": "NORmal: Architecting 3D Ferroelectric NOR Flash as Main Memory -- From Co-Fabricated BEOL Arrays to 200B-Class Multi-Agent LLMs in a Smartphone",
+      "abstract": "Smartphone agents increasingly work as teams, in which a large planner directs parallel workers across long sessions. Running such a team on the device requires 200B-class models and contexts that exceed phone DRAM many times over, yet existing tiers treat flash as storage: UFS starves per-token weight streaming, and mobile High-Bandwidth Flash (HBF) needs a redesigned SoC and cannot absorb continuous KV writes. We show that a non-volatile memory can join an unmodified LPDDR6 bus as a plain rank only if its access latency fits the DRAM timing window, a condition no NAND tier meets. We present NORmal, to our knowledge the first main-memory architecture for 3D ferroelectric NOR flash. We have fabricated and experimentally characterized back-end-of-line (BEOL) 3D FeNOR arrays that co-integrate dense 3-bit MLC and fast, high-endurance in-place-writable SLC with sub-7.5 ns sensing. NORmal turns these co-fabricated arrays into a byte-addressable, deterministic-timing load/store rank on an unmodified LPDDR6 interface through an under-array DRAM-emulation bridge, staggered bank reads with zero-cycle weight swizzling, and posted SLC writes. Across this rank and DRAM, NORmal places agent state by mutability and lifetime rather than by hotness, serving 200B-class models and persistent planner contexts in place while dynamically partitioning subchannels across agent phases. In serving-level simulation on production agent traces, NORmal is 8.9$\\times$--28.0$\\times$ faster than UFS offloading, within 0.4% of an unlimited-DRAM ideal, and 2.8$\\times$--6.3$\\times$ faster than HBF on sessions beyond 256K tokens, with 8.1$\\times$--17.8$\\times$ less memory energy per token.",
+      "date": "2026-10-29",
+      "authors": [
+        "Zhuoran Li",
+        "Chen Gu",
+        "Zhuohang Bian",
+        "Haochen Yu",
+        "Yibo Zhao",
+        "Xuxiao Yang",
+        "Zhaori Cong",
+        "Jinshan Yue",
+        "Qing Luo",
+        "Di Geng",
+        "Ling Li",
+        "Youwei Zhuo"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40000",
+      "pdf": "https://arxiv.org/pdf/2610.40000.pdf",
+      "id": "arxiv:2610.40000",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Multi-Agent"
+      ],
+      "tags": [
+        "Multi-Agent"
+      ],
+      "url": "https://arxiv.org/abs/2610.40000",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
+    },
+    {
+      "pid": "2610.39758",
+      "title": "SEAL: Sealed Queries for Local Sanitization against Indirect Prompt Injection",
+      "abstract": "Indirect prompt injection threatens local LLM agents through untrusted tool outputs, motivating defenses that suppress attacks while preserving task evidence under limited inference budgets. We introduce SEAL, which learns a soft prompt and scoring readout offline to sanitize tool outputs using a frozen task model. SEAL constructs scoring queries from trusted initial context and the learned prompt, keeping the reference independent of inspected tool text. It scores tokens without normalization across context tokens and uses preservation regularization to encourage retention of useful evidence during localized deletion. This design requires neither defense-generated tokens nor a separate verifier model. Across AgentDojo and AgentDyn, SEAL suppresses attacks while improving task completion under attack. Specifically, on AgentDojo, SEAL reduces attack success from 34.6\\% to 0.1\\% and increases Joint---task completion without attack success---from 51.4\\% to 77.5\\%, while using approximately $127\\times$ fewer defense-related tokens than PISanitizer, a state-of-the-art prompt injection defense. Replication on a second backbone with the same training recipe supports applicability across model families.",
+      "date": "2026-10-29",
+      "authors": [
+        "Doohyun Kim",
+        "Donghwa Kang",
+        "Mingyu Jun",
+        "Brent ByungHoon Kang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39758",
+      "pdf": "https://arxiv.org/pdf/2610.39758.pdf",
+      "id": "arxiv:2610.39758",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Agent Safety"
+      ],
+      "tags": [
+        "Agent Safety"
+      ],
+      "url": "https://arxiv.org/abs/2610.39758",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.39446",
+      "title": "Ask to Evolve: A Unified Harness for Lifelong Embodied Navigation with Hybrid Action Space and Persistent Memory",
+      "abstract": "Giving embodied agents the freedom to act autonomously, initiate interactions, and understand their surroundings through experience is a step toward bringing them to life in the physical world. Realizing this vision requires action, interaction, and memory to work together, so that each encounter can inform current decisions and contribute experience for future tasks. We present EvoLife, a unified navigation harness that enables a multimodal embodied agent to choose how to move, when to ask, and what experience to carry forward. Its hybrid action space supports waypoint navigation, local discrete adjustments, pixel-based navigation, and object-directed navigation. Active interaction allows the agent to seek clarification or assistance when it encounters ambiguity or difficulty, while persistent spatial memory binds observations and dialogue to places, retaining useful experience to guide subsequent visits. We evaluate eight benchmarks across four task families: vision-language navigation, object navigation, interactive instance navigation, and continuous multi-task navigation. With an average of only 1.87 active interactions per episode, our method achieves a first-visit success rate (SR) of 100% across four 100-episode sets spanning vision-language navigation and object navigation. Complete-sequence SR reaches 98% on 50 LHPR-VLN sequences and 94% on 50 GOAT-Bench sequences. In the R2R revisit setting, success weighted by path length (SPL) increases from 82.23% to 93.31% with retained experience. Multi-day physical navigation further demonstrates exploration, proactive help-seeking, and revisiting remembered places. Together, these results advance the vision of bringing embodied agents to life through autonomous action, proactive interaction, and the accumulation and reuse of experience.",
+      "date": "2026-10-29",
+      "authors": [
+        "Kai Sheng",
+        "Liuyi Wang",
+        "Jinlong Li",
+        "Haojie Dai",
+        "Chengju Liu",
+        "Qijun Chen"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39446",
+      "pdf": "https://arxiv.org/pdf/2610.39446.pdf",
+      "id": "arxiv:2610.39446",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.39446",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-03T03:07:14.726909+00:00"
+    },
+    {
+      "pid": "2610.39379",
+      "title": "Information-Driven Collaborative Autonomy for Heterogeneous UAV/UGV Teams",
+      "abstract": "This paper considers coordinating a heterogeneous team of unmanned aerial vehicles (UAVs) and unmanned ground vehicles (UGVs) traversing a domain containing an unknown number of potentially hazardous targets. The UAVs provide aerial sensing using onboard optical cameras, adapting their trajectories to ground routes and target information. We formulate the aerial search problem using ergodic control, which distributes sensing effort according to a spatial information density to balance exploration and target localization. The formulation incorporates dynamic camera field-of-view footprints and pose-dependent probabilistic detection models. Angles-only measurements are processed through Bayesian inference and marginalization over data-association hypotheses to obtain a Poisson multi-Bernoulli (PMB) approximation of the target posterior, representing both detected and undetected targets. This belief directs aerial sensing toward unexplored regions along the ground routes and viewpoints that improve target localization. Ground planning combines chance-constrained target avoidance, enforced through confidence sets, with a void-probability objective that favors routes unlikely to contain threats. We solve each team's optimization problem in a fully decentralized manner using a nested SCvx*--C-ADMM scheme, with outer sequential convex programming iterations and inner distributed consensus optimization, accounting for nonlinearities, nonseparable objectives, and continuous-time inter-agent separation constraints. A closed-loop scheme updates both fleets' trajectories as information becomes available and permits ground motion when the remaining route risk falls below a prescribed threshold. Numerical case studies examine sensing geometry and target uncertainty, compare decentralized and centralized solvers, and demonstrate full closed-loop collaboration between multiple UAVs and UGVs.",
+      "date": "2026-10-29",
+      "authors": [
+        "Joshua Yuriv Pilipovsky"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39379",
+      "pdf": "https://arxiv.org/pdf/2610.39379.pdf",
+      "id": "arxiv:2610.39379",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Planning"
+      ],
+      "tags": [
+        "Planning"
+      ],
+      "url": "https://arxiv.org/abs/2610.39379",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-03T03:07:14.726909+00:00"
+    },
+    {
+      "pid": "2610.39329",
+      "title": "Development of a Deep Reinforcement Learning Approach for Transition State Search in Molecular Systems: A Transferable Model Across Structural and Dimensional Variations",
+      "abstract": "We developed a DRL approach for TS searches combining the deep Q-network and the bidirectional long short-term memory architectures to handle variable-sized molecular systems. We applied our method to 1,3,5-hexatriene (Triene), alanine dipeptide (Ala2), and 1,3,5,7-octatetraene (Tetraene) as target systems with the search space limited to backbone dihedral angles. Our model successfully learned the TS search tasks for all examined systems. More importantly, we demonstrate that our model pre-trained on Triene exhibits distinct transfer-learning capabilities across both backbone modifications (Triene to Ala2) and chain extensions (Triene to Tetraene). Such transferability is highly promising for future applications to molecules in general, as it allows an agent trained on simple systems to accelerate TS searches in larger or more complex ones. We expect that these findings on cross-system transferability represent an important step forward in developing DRL-based approaches for TS searches.",
+      "date": "2026-10-29",
+      "authors": [
+        "Takechika Kikkawa",
+        "Shusuke Yamanaka",
+        "Takashi Kawakami",
+        "Mitsutaka Okumura"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39329",
+      "pdf": "https://arxiv.org/pdf/2610.39329.pdf",
+      "id": "arxiv:2610.39329",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Memory"
+      ],
+      "tags": [
+        "Memory"
+      ],
+      "url": "https://arxiv.org/abs/2610.39329",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-03T03:07:14.726909+00:00"
+    },
+    {
+      "pid": "2610.39882",
+      "title": "LAMP: LLM-Driven Analog Placement through Adaptive Tool Composition",
+      "abstract": "Analog placement requires circuit-specific trade-offs among area, matching, routability, and electrical performance. Balancing these trade-offs through predefined objectives and fixed placement flows remains difficult. In this paper, we propose an analog placement framework in which a large language model (LLM) acts as a layout engineer through composable placement components. These components support constraint management, placement and legalization, and lightweight evaluation of routability and electrical performance. Using multimodal checkpoints of the initial and evolving design, the LLM selects and combines components to construct and revise its own placement flow. It also adapts the placement hierarchy by reopening modules or partitioning and regrouping devices, allowing local layouts to respond to global design needs. An experience skill provides reusable design knowledge to guide these decisions. Evaluation on two SMIC 180 nm circuits shows that the framework reduces placement area and improves most measured post-layout performance metrics.",
+      "date": "2026-10-29",
+      "authors": [
+        "Zecheng Xu",
+        "Guanhua Chen",
+        "Yumao Wu",
+        "Keren Zhu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39882",
+      "pdf": "https://arxiv.org/pdf/2610.39882.pdf",
+      "id": "arxiv:2610.39882",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.39882",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.39634",
+      "title": "Evaluating Conversational Explainability in Healthcare: Comparing the Explainability Assistant and a Traditional XAI Dashboard",
+      "abstract": "Conversational interfaces may make explainable AI (XAI) more accessible to users without machine learning expertise, but their benefits over dashboards remain insufficiently characterised in healthcare. Existing systems have typically been evaluated in isolation, leaving unclear whether conversational interaction improves interpretability beyond the underlying explanation methods.   We report a within-subjects user study comparing the Explainability Assistant, an LLM function-calling conversational XAI system, with a traditional dashboard for explaining a heart disease classification model trained on the Cleveland Heart Disease dataset. Both interfaces expose the same Decision Tree classifier and post-hoc explanation methods: SHAP feature attribution, DiCE counterfactuals, and what-if analysis. This design supports comparison of interaction modalities while holding the model and explanation methods constant.   Five participants with healthcare backgrounds, from medical students to practising clinicians and public health researchers, completed parallel task blocks on both interfaces; three participated in follow-up interviews. Task accuracy, Likert ratings, free-text questionnaire responses, and interviews revealed complementary strengths and weaknesses rather than a clear preference for either modality. The assistant offered easier entry and patient-specific explanations, while the dashboard supported simultaneous inspection of global and local information. All three interview participants recommended integrating conversational and dashboard elements within a single clinical workflow.",
+      "date": "2026-10-29",
+      "authors": [
+        "Eduard Barbu",
+        "Rodion Krjutškov",
+        "Anneli Uusküla"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39634",
+      "pdf": "https://arxiv.org/pdf/2610.39634.pdf",
+      "id": "arxiv:2610.39634",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Interpretability"
+      ],
+      "tags": [
+        "Interpretability"
+      ],
+      "url": "https://arxiv.org/abs/2610.39634",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.39550",
+      "title": "Beyond Preference Following: Benchmarking Profile-Query Arbitration in Personalized Text Transformation",
+      "abstract": "Writing assistants use persistent preferences to personalize responses, but these can conflict with the current request. Responses can meet every requirement yet serve the task poorly, while task failures need not involve following a conflicting preference. We introduce Profile Conflict Arbitration (PCA-Bench), a benchmark of 64 rewriting tasks and 256 task-preference pairs. We construct these pairs by varying the profile preference for each fixed text and request, covering different relations between the preference and the request. We assess whether responses meet requirements, how well they achieve the request's goals, and whether they follow preferences. Across three LLMs, we find that when preferences compete with task goals, a higher success rate in meeting both requirements and preferences does not mean better responses: it can come with a greater quality loss compared with responses without a profile. Similar rates of preference following do not imply the same ability to meet the current task's requirements when preferences conflict with them.",
+      "date": "2026-10-29",
+      "authors": [
+        "Tenghao Ji",
+        "Qichen Sun",
+        "Zhuoran Lu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39550",
+      "pdf": "https://arxiv.org/pdf/2610.39550.pdf",
+      "id": "arxiv:2610.39550",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.39550",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.39347",
+      "title": "LLM eBay: A Simple and Truthful Marketplace for Fine-Tuned LLMs Trading",
+      "abstract": "Personalized fine-tuning of Large Language Models (LLMs) enhances user experience but incurs substantial computational costs. Recent studies show that initializing training from a style-similar fine-tuned model reduces adaptation overhead, turning such checkpoints into reusable, tradable assets. A marketplace for these checkpoints, however, faces information asymmetry: sellers may misreport a checkpoint's style, while buyers cannot verify its usefulness before purchase, which invites adverse selection. We introduce LLM eBay, a simple single-round marketplace for trading fine-tuned LLMs. Sellers are paid per purchase at a posted price, and a truncated quadratic proper scoring rule adjusts each payment according to how well the seller's style report agrees with a style signal that the platform measures by generating text on hidden prompts. We show that the score elicits the verifier's expected signal, characterize exactly when truthful reporting is a seller best response under per-purchase demand, and bound the downside risk from noisy verification. In an end-to-end study with real LoRA checkpoints on two base models and three buyer tasks, LLM eBay reduces measured convergence steps by 8.5\\% relative to retrieval over self-reported style (95\\% CI [1.0\\%, 15.9\\%]). In model-based market simulations built on a measured style-to-cost relationship, it cuts style-claim error by 96.5\\% (from 0.424 to 0.015), recovers 96.3\\% of Oracle welfare, saves 72.4\\% of the cost of fine-tuning from the base model, and keeps all providers profitable in the default setting.",
+      "date": "2026-10-29",
+      "authors": [
+        "Jiachen Shen",
+        "Xingke Yang",
+        "Hui Zhong",
+        "Aohan Li",
+        "Tomoaki Ohtsuki",
+        "Xin Fu",
+        "Miao Pan",
+        "Zhu Han"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39347",
+      "pdf": "https://arxiv.org/pdf/2610.39347.pdf",
+      "id": "arxiv:2610.39347",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2610.39347",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.39319",
+      "title": "ProLoop: Progress-Aware Closed-Loop Framework via Structured State Relations for Long-Horizon Robotic Task Planning",
+      "abstract": "Long-horizon robotic tasks are commonly decomposed into semantic subgoals to simplify planning. However, subgoal progress in LLM-based planning is typically inferred implicitly from interaction histories. Inaccurate estimates can misguide execution and allow local errors to propagate. To address this, we propose ProLoop, a Progress-Aware Closed-Loop framework that derives explicit subgoal progress from structured relations between desired and execution states. A learned State-Relation Monitor assesses these relations, which are then aggregated into subgoal progress as ongoing, deviated, or completed. The resulting progress guides execution adaptation, enabling reliable progress-aware control throughout execution. Experiments on AgentBoard ALFWorld and a real-world robotic platform show that ProLoop improves success rate by 12.94% overall and by 15.46% on Hard tasks, while reducing environment interactions by 32.3%.",
+      "date": "2026-10-29",
+      "authors": [
+        "Runxin Zou",
+        "Qingmiao Liang",
+        "Jiatao Zhang",
+        "Xinyan Lv",
+        "Liangyu Qie",
+        "Meiyi Bu",
+        "Wei Song",
+        "Shiqiang Zhu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39319",
+      "pdf": "https://arxiv.org/pdf/2610.39319.pdf",
+      "id": "arxiv:2610.39319",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Planning"
+      ],
+      "tags": [
+        "Planning"
+      ],
+      "url": "https://arxiv.org/abs/2610.39319",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.40477",
+      "title": "Can We Rely on Language Models to Orchestrate Services across the Edge-Cloud Continuum?",
+      "abstract": "Service orchestration across the edge--cloud continuum increasingly uses language models (LMs) to translate intents and operational evidence into scheduling, configuration, diagnosis, and remediation decisions. Yet, useful model outputs do not by themselves establish dependable orchestration: reliability also depends on where the LM enters the decision process, what authority it is granted, how actions are constrained, and what system-level evidence supports the claimed effect. Existing surveys provide limited synthesis of the links between continuum-specific orchestration decisions, LM responsibility, operational authority, assurance controls, and supporting empirical evidence. We systematically review 39 primary studies and develop a five-dimensional analytical framework for connecting system context, orchestration decisions, LM agency, operational safeguards, and evaluation evidence. The synthesis reveals predominantly hybrid designs in which LMs support interpretation, candidate generation, and mitigation planning, while downstream components commonly retain feasibility enforcement and execution authority. Bounded closed-loop remediation is emerging, but continuum-specific constraints remain unevenly represented in decision formulations, and production-scale evidence across heterogeneous edge--cloud environments remains limited. These findings suggest that reliance on LM-enabled orchestration depends on aligning decision constraints, operational authority, safeguards, and evaluation evidence with the claimed system effect.",
+      "date": "2026-10-29",
+      "authors": [
+        "Zhenghao Wu",
+        "Ruihai Dong",
+        "Reza Farahani",
+        "Hamed Haddadi",
+        "Omer Rana",
+        "Hadi Tabatabaee Malazi"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40477",
+      "pdf": "https://arxiv.org/pdf/2610.40477.pdf",
+      "id": "arxiv:2610.40477",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Planning"
+      ],
+      "tags": [
+        "Planning"
+      ],
+      "url": "https://arxiv.org/abs/2610.40477",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.40376",
+      "title": "Combining heavy-tailed keystroke dynamics with eye tracking reveals temporal flexibility in human problem solving",
+      "abstract": "Human problem solving unfolds through complex temporal dynamics that reflect the coordination of perception, cognition, and action. The fine structure of this process is still not very well understood. We use high resolution keystroke logging combined with synchronized eye tracking to examine the micro-temporal structure of human problem solving during written solution construction. Looking at 131,718 inter-keystroke intervals, we find heavy-tailed timing patterns spanning multiple orders of magnitude within the observed range. A three-component Gaussian mixture summarizes overlapping short, intermediate, and long pause ranges. Triangulation with gaze data reveals a systematic shift of attention toward external representations with increasing pause duration. Associations between tail exponents and performance differ across tasks. A larger across-task range of tail exponents ($α_{\\mathrm{range}}$) is positively associated with overall performance after adjusting for prior knowledge and measured process covariates ($β= 0.351$, $p_{\\mathrm{HC3}} = 0.0165$), accounting for an additional 11.3 percentage points of explained variance in this sample. These findings are consistent with the hypothesis that successful reasoning involves adaptive reconfiguration of temporal organization across task demands. The heavy-tailed timing dynamics represent a signature of task dependent cognitive organisation and highlight the potential of keystroke data as an unobtrusive and scalable window into the process of problem solving.",
+      "date": "2026-10-29",
+      "authors": [
+        "Yavuz Dinc",
+        "Fabian Kieser",
+        "Peter Wulff",
+        "Johannes Zierenberg",
+        "Niklas Stausberg",
+        "Karina E. Avila",
+        "Jochen Kuhn",
+        "Stefan Küchemann"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40376",
+      "pdf": "https://arxiv.org/pdf/2610.40376.pdf",
+      "id": "arxiv:2610.40376",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning"
+      ],
+      "tags": [
+        "Reasoning"
+      ],
+      "url": "https://arxiv.org/abs/2610.40376",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.40243",
+      "title": "Recognizing Dominance through Local Improvement",
+      "abstract": "Strategy-proofness is the traditional standard for predictable behavior, yet participants often fail to play dominant strategies. Most existing simplicity concepts attribute these failures to the cost of contingent reasoning, which they lower by comparing the worst case of the dominant strategy with the best case of an alternative. I argue that there is another approach, one that makes more use of the structure of the strategy set, which I formalize as a neighbor relation. Comparing neighboring strategies can reduce the need for contingent reasoning, and, even with a single contingency, it can simplify the search through the strategy set. I introduce a new simplicity criterion: a mechanism is local improvement solvable under a neighbor relation if repeatedly moving to an improving neighbor always reaches a dominant strategy. Strategy-proofness is the criterion under the coarsest relation, and many classical mechanisms satisfy it under finer ones. In extensive-form mechanisms without duplicate dominant strategies, the criterion under one-situation neighbors is strict action-proofness, which is distinct from obvious strategy-proofness. Among local improvement solvable mechanisms that implement the same outcomes, the criterion predicts more dominant-strategy play where the local comparison is salient.",
+      "date": "2026-10-29",
+      "authors": [
+        "Linchen Zhang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40243",
+      "pdf": "https://arxiv.org/pdf/2610.40243.pdf",
+      "id": "arxiv:2610.40243",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning"
+      ],
+      "tags": [
+        "Reasoning"
+      ],
+      "url": "https://arxiv.org/abs/2610.40243",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.39828",
+      "title": "SpeakerTurn: Target-Speaker Semantic Turn Detection in Multi-Speaker Environments",
+      "abstract": "Semantic completeness alone cannot determine when an assistant should respond in a multi-speaker environment: a completed utterance may belong to an interfering speaker, while the designated user is still speaking, acknowledging, or requesting time. We therefore study semantic turn inference conditioned on speaker identity. We propose SpeakerTurn, a framework that jointly predicts the target transcript and turn state from a speech mixture and an independent target-speaker reference. Built on CocktailASR-1, it links semantic decisions to the corresponding target content through joint supervision, distinguishing complete, incomplete, backchannel, wait, and target-absent states, with a separate interruption task. We also examine whether structured chain-of-thought (CoT) supervision improves decisions by representing speaker presence and semantic cues. On a synthetic multi-speaker test set, SpeakerTurn achieves five-state macro F1 of 0.811 and target-transcription character error rate (CER) of 4.20%, correctly resolving all ten reference-swapped interruption pairs. Joint-format transcription and native-interface recognition nevertheless behave differently, and CoT improves validation transcription without improving turn macro F1. These results show why target attribution, semantic turn discrimination, and recognition retention require separate assessment when adapting speech language models for speaker-conditioned interaction.",
+      "date": "2026-10-29",
+      "authors": [
+        "Nan Li",
+        "Hetao Shan",
+        "Jintao Liang",
+        "Jiahao Yan",
+        "Longbiao Wang",
+        "Tubin Huang",
+        "Min Xu"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39828",
+      "pdf": "https://arxiv.org/pdf/2610.39828.pdf",
+      "id": "arxiv:2610.39828",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning"
+      ],
+      "tags": [
+        "Reasoning"
+      ],
+      "url": "https://arxiv.org/abs/2610.39828",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.39791",
+      "title": "Device-Induced Mobility Heterogeneity and Its Impact on Federated Next-Location Prediction",
+      "abstract": "Predicting human mobility is central to network management, urban planning, and location-based services, yet privacy concerns are increasingly pushing such tasks toward federated learning. A key challenge in this setting is the strong heterogeneity of mobility data across users, which leads to non-IID data distributions and can significantly impact model performance and fairness. In this paper, we present a large-scale measurement study of device-level mobility heterogeneity using data from a major MNO in a dense European capital. Our dataset comprises mobility traces derived from network events, covering over 50,000 UEs across 178 smartphone models. We group devices into tiers based on their market segment and show that mobility characteristics, such as spatial range and regularity, vary systematically across these tiers, revealing a previously underexplored source of bias in mobility data. We investigate the implications of this heterogeneity on the use case of federated next-location prediction. In particular, we find that balancing device tiers across silos through tier-aware client selection yields the best results, improving fairness by up to 34.49% without degrading accuracy. In contrast, a FedProx-only approach achieves a 21.46% fairness improvement, offering a reasonable alternative when device information is unavailable, though with lower overall gains.",
+      "date": "2026-10-29",
+      "authors": [
+        "André Felipe Zanella",
+        "Paula Delgado de Santos",
+        "José Suárez-Varela",
+        "David Solans Noguero",
+        "Andra Lutu",
+        "Jesus Omaña-Iglesias"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39791",
+      "pdf": "https://arxiv.org/pdf/2610.39791.pdf",
+      "id": "arxiv:2610.39791",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Planning"
+      ],
+      "tags": [
+        "Planning"
+      ],
+      "url": "https://arxiv.org/abs/2610.39791",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.39723",
+      "title": "Countable Nondeterminism in Weighted Programming with an Application to Mechanized Foundations for Probabilistic Program Verification",
+      "abstract": "Weighted programming is a framework by Batz et al. for describing mathematical models or optimization problems as imperative programs parametrized over semirings and then analyzing them with program verification techniques like weakest precondition calculi. Applications include reasoning about expected outcomes of probabilistic programs and competitive analysis of online algorithms. We extend weighted programming with (1) countable nondeterminism and (2) user-defined additive rewards, where programs are parametrized over modules instead of semirings. The resulting framework enables reasoning about expected resource consumption of probabilistic programs and about optimal scores of combinatorial games. A technical challenge is that wp-calculi for weighted programs with (1) and (2) over arbitrary modules can be unsound, because it is well-known that continuity properties commonly used in program semantics break in the presence of countable nondeterminism. We study conditions under which a wp-style transformer for reasoning about weighted programs is sound with respect to an operational ground truth defined in terms of weighted decision processes (WDPs) - transition systems that generalize Markov decision processes by drawing transition weights and state rewards from a module. Based on those conditions, we show that a range of concrete instances of the weighted programming framework enjoy sound weakest precondition reasoning. We demonstrate the usefulness of our wp-semantics through case studies for different modules. We mechanized our extended weighted programming framework and our main soundness results in the interactive theorem prover Lean. Instantiating these results for probabilistic programming yields, to the best of our knowledge, the first mechanized proof of a fixed point characterization of minimal expected rewards in Markov decision processes with countable nondeterminism.",
+      "date": "2026-10-29",
+      "authors": [
+        "Sebastian Körner",
+        "Oliver Emil Bøving",
+        "Christoph Matheja"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.39723",
+      "pdf": "https://arxiv.org/pdf/2610.39723.pdf",
+      "id": "arxiv:2610.39723",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Reasoning"
+      ],
+      "tags": [
+        "Reasoning"
+      ],
+      "url": "https://arxiv.org/abs/2610.39723",
+      "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2610.40991",
+      "title": "A Temporal Cellular Sheaf Framework for Multi-Agent Systems with Switching Communication Topologies",
+      "abstract": "Cellular sheaves serve as a natural modeling framework for encoding heterogeneity in the state and interaction spaces of multi-agent systems. This work examines switching communication graphs with the use of temporal cellular sheaves, which we construct to represent heterogeneous agent state spaces, the maps that relate them, and their respective communication constraints. We then develop sufficient conditions under which a multi-agent system defined on a temporal cellular sheaf can solve the target tracking problem by generalizing the existing concept of joint connectivity. Using a Lyapunov-based stability analysis, we demonstrate that the target tracking error of the network converges to a neighborhood of the origin.",
+      "date": "2026-10-29",
+      "authors": [
+        "Brandon Fallin",
+        "Wilmer Leal",
+        "Austin Copeland",
+        "Benjamin Merlin Bumpus",
+        "James Fairbanks",
+        "Warren E. Dixon"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40991",
+      "pdf": "https://arxiv.org/pdf/2610.40991.pdf",
+      "id": "arxiv:2610.40991",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Multi-Agent"
+      ],
+      "tags": [
+        "Multi-Agent"
+      ],
+      "url": "https://arxiv.org/abs/2610.40991",
+      "firstSeenAt": "2026-11-02T06:45:52.925515+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.40981",
+      "title": "Towards Elastic Least Privilege for Agent Planning",
+      "abstract": "General-purpose AI agents require authority that changes between tasks and during execution. Common deployments trade broad permissions that expose unnecessary authority and narrow permissions that raise approval requests. Existing mechanisms can enforce dynamic authority, but agent tool interfaces rarely provide the agent's planner, the component that chooses its actions, a means of comparing the authority required by alternative actions or of seeing the cost of the authority it already holds. Drawing on the rich history of access control research, we propose the concept of \\emph{elastic least privilege}, in which an agent begins with a small baseline of authority and may acquire more within an owner-defined envelope. Elevations are leased and measured against a replenishing budget. Their cost increases with power, proximity to mandatory safety invariants, and repeated requests. Costs are visible to the planner, which can prefer lower-privilege choices and release authority it no longer needs. Authority returns automatically to the baseline when a lease expires, when it is released, or when the budget is exhausted, while persistent legitimate demand may prompt an owner-approved change to the baseline. Building on prior risk-priced and budget-aware access control, we redesign these mechanisms for agents. How best to implement the approach and how well it works in practice are open research questions. In this paper, we present how the approach could work, illustrate the model, and set an open research agenda.",
+      "date": "2026-10-29",
+      "authors": [
+        "Simon Parkinson",
+        "Zhipeng Wang",
+        "Mustafa Mustafa"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40981",
+      "pdf": "https://arxiv.org/pdf/2610.40981.pdf",
+      "id": "arxiv:2610.40981",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Planning"
+      ],
+      "tags": [
+        "Planning"
+      ],
+      "url": "https://arxiv.org/abs/2610.40981",
+      "firstSeenAt": "2026-11-02T06:45:52.925515+00:00",
+      "lastSeenAt": "2026-11-03T03:07:14.726909+00:00"
+    },
+    {
+      "pid": "2610.40826",
+      "title": "Joint Estimation and Network Configuration in Multi-Agent Systems",
+      "abstract": "Distributed consensus-based sensing enables a multi-agent system to collaboratively estimate an unknown state by combining local measurements with information received from neighboring agents. In practice, however, the communication network, transmission delays, and finite-rate communication directly affect the disagreement among agents. On the other hand, agreement among agents does not ensure accuracy, particularly when sensors have different measurement uncertainties. We develop a sampled consensus-plus-innovations framework under realistic wireless network constraints that jointly accounts for inter-agent disagreement and estimation inaccuracy. We derive a computable upper bound on the worst-case steady-state estimation error that captures consensus disagreement due to the communication graph, quantization error, and transmission delay, together with estimation inaccuracy, which accounts for measurement uncertainty against the true state. We then use this bound as a network design objective and propose a semi-distributed auction-based algorithm that jointly modifies the communication graph and link-rate allocation. The proposed method preserves connectivity, converges in finite time to a locally auction-stable network configuration, and reduces the bound on the estimation error at every accepted change. The proposed method has been evaluated on various test cases, and the results show that it reduces the estimation error while maintaining fewer links and allocating moderate link rates in a short time.",
+      "date": "2026-10-29",
+      "authors": [
+        "Mohammadreza Barzegaran",
+        "Hamid Jafarkhani"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40826",
+      "pdf": "https://arxiv.org/pdf/2610.40826.pdf",
+      "id": "arxiv:2610.40826",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Multi-Agent"
+      ],
+      "tags": [
+        "Multi-Agent"
+      ],
+      "url": "https://arxiv.org/abs/2610.40826",
+      "firstSeenAt": "2026-11-02T06:45:52.925515+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
+    {
+      "pid": "2610.40983",
+      "title": "LLM Fine-Tuning Workloads: Characterization, Challenges, and Opportunities for Serverless AI",
+      "abstract": "Serverless execution of Large Language Models (LLMs) is becoming important, reflecting their wide societal use. An increasingly present stage in LLM pipelines is fine-tuning, which specializes trained models and improves inference performance. Serverless operation of LLM fine-tuning workloads shifts operational concerns from the user to the provider. For these new workloads, providers face important operational complexities, such as performance issues, resource waste, and even service failure due to misconfiguration. However, optimizing such workloads is still at an early stage, and, relevant to this work, relatively little is currently known about how LLM fine-tuning workloads run in practice. In this work, we address the knowledge gap by characterizing the execution of LLM fine-tuning workloads on clusters equipped with different GPUs, running LLM models at various scales. We analyze IBM's LLMFineTuningBench, a large-scale, diverse profiling dataset of 30,920 fine-tuning experiments that records both successful and failing configurations. We provide quantitative insight into throughput (expressed in tokens/s), scaling, failure, and potential for performance optimization for four commonly used GPU types, in setups of 1 to 32 GPUs. We find that (1) job feasibility (run or fail) depends on workload properties, with failure ratios rising from 52% for small batch sizes (16-64) up to 95% for the largest (1,024); (2) throughput grows logarithmically with batch size; (3) scaling is near-linear when the workload is deployed intra-node, and optimizations such as RoCE substantially improves efficiency for inter-node deployment (e.g., 0.72 vs. 0.26 efficiency without RoCE); and (4) system-level optimizations can outweigh application-level ones (RoCE, up to 2.9$\\times$, vs. Fast MoE, 1.7$\\times$).",
+      "date": "2026-10-29",
+      "authors": [
+        "Radu Nicolae",
+        "Daniele Lotito",
+        "Alexandru Iosup"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40983",
+      "pdf": "https://arxiv.org/pdf/2610.40983.pdf",
+      "id": "arxiv:2610.40983",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Fine-tuning"
+      ],
+      "tags": [
+        "Fine-tuning"
+      ],
+      "url": "https://arxiv.org/abs/2610.40983",
+      "firstSeenAt": "2026-11-02T06:45:52.925515+00:00",
+      "lastSeenAt": "2026-11-03T03:07:14.726909+00:00"
+    },
+    {
+      "pid": "2610.40829",
+      "title": "Arithmetical Characterizations of Two Intuitionistic Logical Principles",
+      "abstract": "This paper investigates the role of negation in arithmetic by analyzing subsystems based on subminimal logic. We introduce NA^PR, a system of subminimal arithmetic equipped with all primitive recursive functions, and answer the following four questions: (1) Can we develop reasonable arithmetic within NA^PR? (2) Can we characterize logical rules Absorption of Negation (An) and Ex Falso Quodlibet (ECQ) by arithmetical principles? (3) Are there strict differences in deductive power among NA^PR, MA^PR, and HA? (4) Do MA^PR and MA, and NA^PR and NA have a similar mutual interpretability relationship as HA? We show the following: First, Heyting Arithmetic (HA) is shown to be a conservative extension of NA^PR for positive formulas. Based on NA^PR, we prove that (ECQ) is equivalent to the definability of disjunction, and that (An) is equivalent to a variant of the least number principle. Furthermore, using the constant domain neighbourhood semantics, we show that the systems NA^PR, MA^PR (written as NA^PR+(An)) and HA (written as NA^PR+(An)+(ECQ)) form a strictly increasing hierarchy of strength. Finally, we demonstrate the essential role of primitive recursive functions in weak arithmetic using classical countermodels.",
+      "date": "2026-10-29",
+      "authors": [
+        "Kaito Ichikura"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.40829",
+      "pdf": "https://arxiv.org/pdf/2610.40829.pdf",
+      "id": "arxiv:2610.40829",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Interpretability"
+      ],
+      "tags": [
+        "Interpretability"
+      ],
+      "url": "https://arxiv.org/abs/2610.40829",
+      "firstSeenAt": "2026-11-02T06:45:52.925515+00:00",
+      "lastSeenAt": "2026-11-02T19:47:54.508852+00:00"
+    },
+    {
+      "pid": "2611.05413",
+      "title": "Morpheus.AI: agents autonomously generate, execute and refine virtual tissue models",
+      "abstract": "Virtual tissue models link observations to mechanistic hypotheses, but building them demands expertise in biology, mathematics and programming. Here, large language model (LLM) agents paired with the simulator Morpheus (Morpheus.AI) autonomously built such models from fifteen benchmark studies, five without a published model. With a frontier LLM, agents that ran their simulations met 83-86% of study-specific criteria in under two hours and for under US\\$4 per model. Such agents could make in silico modeling routine.",
+      "date": "2026-10-29",
+      "authors": [
+        "Prerana Chandratre",
+        "Anjali Sharma",
+        "Justin Bürger Michaelis",
+        "Diego Jahn",
+        "Jörn Starruß",
+        "Lutz Brusch",
+        "Simon Syga"
+      ],
+      "arxiv": "https://arxiv.org/abs/2611.05413",
+      "pdf": "https://arxiv.org/pdf/2611.05413.pdf",
+      "id": "arxiv:2611.05413",
+      "source": "arxiv",
+      "upvotes": 0,
+      "topics": [
+        "Evaluation"
+      ],
+      "tags": [
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2611.05413",
+      "firstSeenAt": "2026-11-05T11:29:27.166505+00:00",
+      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+    },
     {
       "pid": "2610.36077",
       "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
@@ -49,7 +1469,7 @@
       "url": "https://arxiv.org/abs/2610.36077",
       "hfUrl": "https://huggingface.co/papers/2610.36077",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.36729",
@@ -116,7 +1536,7 @@
       "url": "https://arxiv.org/abs/2610.36729",
       "hfUrl": "https://huggingface.co/papers/2610.36729",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.37666",
@@ -152,7 +1572,7 @@
       "url": "https://arxiv.org/abs/2610.37666",
       "hfUrl": "https://huggingface.co/papers/2610.37666",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.37341",
@@ -193,7 +1613,7 @@
       "url": "https://arxiv.org/abs/2610.37341",
       "hfUrl": "https://huggingface.co/papers/2610.37341",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.36456",
@@ -225,7 +1645,7 @@
       "url": "https://arxiv.org/abs/2610.36456",
       "hfUrl": "https://huggingface.co/papers/2610.36456",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.37037",
@@ -271,7 +1691,7 @@
       "url": "https://arxiv.org/abs/2610.37037",
       "hfUrl": "https://huggingface.co/papers/2610.37037",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.36466",
@@ -304,7 +1724,7 @@
       "url": "https://arxiv.org/abs/2610.36466",
       "hfUrl": "https://huggingface.co/papers/2610.36466",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.36269",
@@ -333,7 +1753,7 @@
       "url": "https://arxiv.org/abs/2610.36269",
       "hfUrl": "https://huggingface.co/papers/2610.36269",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.37585",
@@ -718,7 +2138,7 @@
       "url": "https://arxiv.org/abs/2610.37585",
       "hfUrl": "https://huggingface.co/papers/2610.37585",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "id": "arxiv:2602.10657",
@@ -750,7 +2170,7 @@
         "Alignment"
       ],
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.37175",
@@ -782,7 +2202,7 @@
       "url": "https://arxiv.org/abs/2610.37175",
       "hfUrl": "https://huggingface.co/papers/2610.37175",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.37624",
@@ -811,7 +2231,7 @@
       "url": "https://arxiv.org/abs/2610.37624",
       "hfUrl": "https://huggingface.co/papers/2610.37624",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.37255",
@@ -839,7 +2259,7 @@
       "url": "https://arxiv.org/abs/2610.37255",
       "hfUrl": "https://huggingface.co/papers/2610.37255",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.36022",
@@ -870,7 +2290,7 @@
       "url": "https://arxiv.org/abs/2610.36022",
       "hfUrl": "https://huggingface.co/papers/2610.36022",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.36545",
@@ -899,7 +2319,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.36545",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.36545"
     },
     {
@@ -941,7 +2361,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.37161",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.37161"
     },
     {
@@ -978,7 +2398,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.37481",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.37481"
     },
     {
@@ -1012,7 +2432,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.35962",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.35962"
     },
     {
@@ -1045,7 +2465,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.36384",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.36384"
     },
     {
@@ -1075,7 +2495,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.36420",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.36420"
     },
     {
@@ -1102,7 +2522,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.36192",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.36192"
     },
     {
@@ -1122,7 +2542,7 @@
       "announceDate": "2026-10-28",
       "id": "arxiv:2610.36915",
       "source": "arxiv",
-      "upvotes": 3,
+      "upvotes": 4,
       "topics": [
         "Agentic RAG",
         "Agentic Search",
@@ -1135,7 +2555,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.36915",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.36915"
     },
     {
@@ -1167,7 +2587,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.37626",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.37626"
     },
     {
@@ -2467,7 +3887,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.36991",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.36767",
@@ -3185,7 +4605,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.37657",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.36195",
@@ -10617,7 +12037,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.38145",
       "firstSeenAt": "2026-10-30T10:28:30.562588+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.38950",
@@ -10864,7 +12284,7 @@
       "url": "https://arxiv.org/abs/2610.33568",
       "hfUrl": "https://huggingface.co/papers/2610.33568",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.34662",
@@ -10909,7 +12329,7 @@
       "url": "https://arxiv.org/abs/2610.34662",
       "hfUrl": "https://huggingface.co/papers/2610.34662",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.34467",
@@ -10944,7 +12364,7 @@
       "url": "https://arxiv.org/abs/2610.34467",
       "hfUrl": "https://huggingface.co/papers/2610.34467",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.33966",
@@ -10981,7 +12401,7 @@
       "url": "https://arxiv.org/abs/2610.33966",
       "hfUrl": "https://huggingface.co/papers/2610.33966",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.35845",
@@ -11022,7 +12442,7 @@
       "url": "https://arxiv.org/abs/2610.35845",
       "hfUrl": "https://huggingface.co/papers/2610.35845",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.33956",
@@ -11066,7 +12486,7 @@
       "url": "https://arxiv.org/abs/2610.33956",
       "hfUrl": "https://huggingface.co/papers/2610.33956",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.34415",
@@ -11098,7 +12518,7 @@
       "url": "https://arxiv.org/abs/2610.34415",
       "hfUrl": "https://huggingface.co/papers/2610.34415",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.33135",
@@ -11135,7 +12555,7 @@
       "url": "https://arxiv.org/abs/2610.33135",
       "hfUrl": "https://huggingface.co/papers/2610.33135",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.33472",
@@ -11193,7 +12613,7 @@
       "url": "https://arxiv.org/abs/2610.33472",
       "hfUrl": "https://huggingface.co/papers/2610.33472",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.35518",
@@ -11228,7 +12648,7 @@
       "url": "https://arxiv.org/abs/2610.35518",
       "hfUrl": "https://huggingface.co/papers/2610.35518",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.33845",
@@ -11257,7 +12677,7 @@
       "url": "https://arxiv.org/abs/2610.33845",
       "hfUrl": "https://huggingface.co/papers/2610.33845",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "id": "arxiv:2610.34356",
@@ -11297,7 +12717,7 @@
         "Evaluation"
       ],
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.34238",
@@ -11333,7 +12753,7 @@
       "url": "https://arxiv.org/abs/2610.34238",
       "hfUrl": "https://huggingface.co/papers/2610.34238",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.35193",
@@ -11374,7 +12794,7 @@
       "url": "https://arxiv.org/abs/2610.35193",
       "hfUrl": "https://huggingface.co/papers/2610.35193",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.33608",
@@ -11403,7 +12823,7 @@
       "url": "https://arxiv.org/abs/2610.33608",
       "hfUrl": "https://huggingface.co/papers/2610.33608",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.35385",
@@ -11451,7 +12871,7 @@
       "url": "https://arxiv.org/abs/2610.35385",
       "hfUrl": "https://huggingface.co/papers/2610.35385",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.34654",
@@ -11479,7 +12899,7 @@
       "url": "https://arxiv.org/abs/2610.34654",
       "hfUrl": "https://huggingface.co/papers/2610.34654",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.34634",
@@ -11510,7 +12930,7 @@
       "url": "https://arxiv.org/abs/2610.34634",
       "hfUrl": "https://huggingface.co/papers/2610.34634",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.33503",
@@ -11551,7 +12971,7 @@
       "url": "https://arxiv.org/abs/2610.33503",
       "hfUrl": "https://huggingface.co/papers/2610.33503",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.34241",
@@ -11577,7 +12997,7 @@
       "url": "https://arxiv.org/abs/2610.34241",
       "hfUrl": "https://huggingface.co/papers/2610.34241",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.35434",
@@ -11606,7 +13026,7 @@
       "url": "https://arxiv.org/abs/2610.35434",
       "hfUrl": "https://huggingface.co/papers/2610.35434",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.34149",
@@ -11683,7 +13103,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34283",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34283"
     },
     {
@@ -11727,7 +13147,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.35013",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.35013"
     },
     {
@@ -11817,7 +13237,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.35864",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.35864"
     },
     {
@@ -11859,7 +13279,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34073",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34073"
     },
     {
@@ -11895,7 +13315,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.35684",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.35684"
     },
     {
@@ -11923,7 +13343,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.37230",
       "firstSeenAt": "2026-10-28T10:03:19.724179+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.37230"
     },
     {
@@ -11959,7 +13379,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.33413",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.33413"
     },
     {
@@ -12006,7 +13426,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.33624",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.33624"
     },
     {
@@ -12039,7 +13459,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34491",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34491"
     },
     {
@@ -12074,7 +13494,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.33024",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.33024"
     },
     {
@@ -12106,7 +13526,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34722",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34722"
     },
     {
@@ -12149,7 +13569,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.35138",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.35138"
     },
     {
@@ -12183,7 +13603,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34724",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34724"
     },
     {
@@ -12218,7 +13638,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34735",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34735"
     },
     {
@@ -12249,7 +13669,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.33861",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.33861"
     },
     {
@@ -12289,7 +13709,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34386",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34386"
     },
     {
@@ -12328,7 +13748,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.35439",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.35439"
     },
     {
@@ -12358,7 +13778,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.33718",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.33718"
     },
     {
@@ -12388,7 +13808,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34714",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34714"
     },
     {
@@ -12420,7 +13840,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34674",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34674"
     },
     {
@@ -12451,7 +13871,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.35328",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.35328"
     },
     {
@@ -12482,7 +13902,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34577",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34577"
     },
     {
@@ -12513,6 +13933,40 @@
       "hfUrl": "https://huggingface.co/papers/2610.35450"
     },
     {
+      "pid": "2610.35219",
+      "title": "Multi-Agent Relay Thinking",
+      "abstract": "Existing multi-agent collaboration (MAC) methods have primarily explored a group thinking collaboration topology, where agents independently generate solutions and aggregate their outputs. In this work, we investigate an alternative relay thinking topology, where reasoning ownership is dynamically transferred across agents, allowing subsequent agents to inherit and refine an evolving reasoning trajectory. We introduce Multi-Agent Confidence-guided Relay (MACR), a framework that enables dynamical relay collaboration among agents. The key challenge is determining when reasoning should be relayed and which agent should continue the process. method addresses this challenge through confidence-guided relay triggering and a bidding mechanism that selects the next agent based on its confidence. Experiments on four benchmarks show that method outperforms the strongest single-model strategies in accuracy, e.g., +3.3% on MathVista and +3.9% on MMStar, and remains on par with multi-agent strategies while consuming 6.0x less token overhead on HallusionBench and MMStar.Further analysis demonstrates that relay collaboration enables heterogeneous agents to progressively integrate complementary insights, combining heterogeneous capabilities across reasoning stages. Our source code is available at https://github.com/67L1/MACR.",
+      "date": "2026-10-27",
+      "authors": [
+        "Xu Liu",
+        "Jungang Qiao",
+        "Guikun Chen",
+        "Xiaojuan Qi",
+        "Wenguan Wang"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.35219",
+      "pdf": "https://arxiv.org/pdf/2610.35219.pdf",
+      "submittedDate": "2026-10-27",
+      "announceDate": "2026-10-27",
+      "id": "arxiv:2610.35219",
+      "source": "arxiv",
+      "upvotes": 9,
+      "topics": [
+        "Multi-Agent",
+        "Reasoning",
+        "Evaluation"
+      ],
+      "tags": [
+        "Multi-Agent",
+        "Reasoning",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.35219",
+      "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.35219"
+    },
+    {
       "pid": "2610.33732",
       "title": "Trust Mechanisms for Offline Generative AI at the Edge: A Connectivity-Regime Framework and an Empirical Study on a Raspberry Pi 5",
       "abstract": "Generative AI and large language models (LLMs) are moving into the Internet of Things, yet most deployments assume cloud connectivity, and many IoT settings have intermittent, restricted, or no connectivity. We propose a connectivity-regime framework (C0-C4), a taxonomy of inference-time trust mechanisms, and signed, versioned knowledge packs as the update channel for disconnected regimes, and evaluate them on a Raspberry Pi 5 running fully local retrieval-augmented generation under network isolation, with three Qwen2.5 model sizes, three context sizes, and 300 SQuAD 2.0 questions. An empirically calibrated retrieval-score gate detects knowledge gaps almost perfectly (AUROC 0.97) but in-topic unanswerable questions poorly (0.68). A deterministic output validator converts malformed outputs into explicit abstentions with no observed loss of correct answers, while the NLI-based verifier we tested adds little; for the 7B model, 96% of substantive answers to unanswerable-labelled questions match normalized spans of the retrieved passages. A 3B model achieves the same gold-answer containment rate as a 7B model at less than half the latency and estimated energy, although the 7B model far more often exceeds a token-F1 threshold of 0.5; five retrieved passages lower correctness from 75% to 52% compared with three. Verifying a signed pack takes about 4.5 ms versus about 29 min for embedding its passages on the device; signature and hash checks alone accept six of nine tested update attacks that layered verification rejects. Yet a validly signed poisoned pack passes every pack check: on 30 previously correct questions, correct answers drop to zero and 14 return the injected answer. None of the mechanisms we evaluated establishes the truth of the evidence. We release code and data.",
@@ -12540,40 +13994,6 @@
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
       "lastSeenAt": "2026-10-31T19:34:51.106637+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.33732"
-    },
-    {
-      "pid": "2610.35219",
-      "title": "Multi-Agent Relay Thinking",
-      "abstract": "Existing multi-agent collaboration (MAC) methods have primarily explored a group thinking collaboration topology, where agents independently generate solutions and aggregate their outputs. In this work, we investigate an alternative relay thinking topology, where reasoning ownership is dynamically transferred across agents, allowing subsequent agents to inherit and refine an evolving reasoning trajectory. We introduce Multi-Agent Confidence-guided Relay (MACR), a framework that enables dynamical relay collaboration among agents. The key challenge is determining when reasoning should be relayed and which agent should continue the process. method addresses this challenge through confidence-guided relay triggering and a bidding mechanism that selects the next agent based on its confidence. Experiments on four benchmarks show that method outperforms the strongest single-model strategies in accuracy, e.g., +3.3% on MathVista and +3.9% on MMStar, and remains on par with multi-agent strategies while consuming 6.0x less token overhead on HallusionBench and MMStar.Further analysis demonstrates that relay collaboration enables heterogeneous agents to progressively integrate complementary insights, combining heterogeneous capabilities across reasoning stages. Our source code is available at https://github.com/67L1/MACR.",
-      "date": "2026-10-27",
-      "authors": [
-        "Xu Liu",
-        "Jungang Qiao",
-        "Guikun Chen",
-        "Xiaojuan Qi",
-        "Wenguan Wang"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.35219",
-      "pdf": "https://arxiv.org/pdf/2610.35219.pdf",
-      "submittedDate": "2026-10-27",
-      "announceDate": "2026-10-27",
-      "id": "arxiv:2610.35219",
-      "source": "arxiv",
-      "upvotes": 8,
-      "topics": [
-        "Multi-Agent",
-        "Reasoning",
-        "Evaluation"
-      ],
-      "tags": [
-        "Multi-Agent",
-        "Reasoning",
-        "Evaluation"
-      ],
-      "url": "https://arxiv.org/abs/2610.35219",
-      "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
-      "hfUrl": "https://huggingface.co/papers/2610.35219"
     },
     {
       "pid": "2610.33066",
@@ -12620,7 +14040,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.33066",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.33066"
     },
     {
@@ -12664,7 +14084,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.35671",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.35671"
     },
     {
@@ -12702,7 +14122,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34926",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34926"
     },
     {
@@ -12730,7 +14150,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34298",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34298"
     },
     {
@@ -12764,7 +14184,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.33005",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.33005"
     },
     {
@@ -12801,7 +14221,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34921",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34921"
     },
     {
@@ -12868,7 +14288,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.33245",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.33245"
     },
     {
@@ -13375,7 +14795,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.35817",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.35687",
@@ -15367,7 +16787,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34829",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.35293",
@@ -16482,7 +17902,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.33931",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.33357",
@@ -17402,7 +18822,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.23056",
       "firstSeenAt": "2026-09-22T05:22:10.987909+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.32951",
@@ -18018,7 +19438,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.35160",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.33777",
@@ -25834,7 +27254,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.33509",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.34365",
@@ -30886,7 +32306,7 @@
       "url": "https://arxiv.org/abs/2610.32965",
       "hfUrl": "https://huggingface.co/papers/2610.32965",
       "firstSeenAt": "2026-10-26T05:16:10.612383+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.32253",
@@ -30925,7 +32345,7 @@
       "url": "https://arxiv.org/abs/2610.32253",
       "hfUrl": "https://huggingface.co/papers/2610.32253",
       "firstSeenAt": "2026-10-26T05:16:10.612383+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "id": "arxiv:2610.17821",
@@ -30960,7 +32380,7 @@
         "Evaluation"
       ],
       "firstSeenAt": "2026-10-26T05:16:10.612383+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.32285",
@@ -31009,7 +32429,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.32285",
       "firstSeenAt": "2026-10-26T05:16:10.612383+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.32285"
     },
     {
@@ -31046,7 +32466,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.32770",
       "firstSeenAt": "2026-10-26T05:16:10.612383+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.32770"
     },
     {
@@ -31081,7 +32501,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.32002",
       "firstSeenAt": "2026-10-26T05:16:10.612383+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.32002"
     },
     {
@@ -31109,7 +32529,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.31818",
       "firstSeenAt": "2026-10-26T05:16:10.612383+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.31818"
     },
     {
@@ -31137,7 +32557,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.32004",
       "firstSeenAt": "2026-10-26T05:16:10.612383+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.32004"
     },
     {
@@ -31165,7 +32585,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.31810",
       "firstSeenAt": "2026-10-26T05:16:10.612383+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.31810"
     },
     {
@@ -31200,7 +32620,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.32894",
       "firstSeenAt": "2026-10-26T05:16:10.612383+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.32894"
     },
     {
@@ -31491,7 +32911,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.32212",
       "firstSeenAt": "2026-10-26T05:16:10.612383+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.32122",
@@ -40282,7 +41702,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.34186",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.34186"
     },
     {
@@ -40877,7 +42297,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.33546",
       "firstSeenAt": "2026-10-27T09:22:53.143790+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.33489",
@@ -41045,7 +42465,7 @@
       "url": "https://arxiv.org/abs/2610.31668",
       "hfUrl": "https://huggingface.co/papers/2610.31668",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.30181",
@@ -41719,7 +43139,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.30932",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.30932"
     },
     {
@@ -41752,7 +43172,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.31162",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.31162"
     },
     {
@@ -41788,7 +43208,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.31670",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.31670"
     },
     {
@@ -41819,7 +43239,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.31635",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.31635"
     },
     {
@@ -41931,7 +43351,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.31066",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.31066"
     },
     {
@@ -42097,7 +43517,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.31222",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.31222"
     },
     {
@@ -42123,7 +43543,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.30970",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.30970"
     },
     {
@@ -42157,7 +43577,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.30524",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.30524"
     },
     {
@@ -42184,7 +43604,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.30161",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.30161"
     },
     {
@@ -42213,7 +43633,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.31288",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.31288"
     },
     {
@@ -42256,7 +43676,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.30435",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.30435"
     },
     {
@@ -42291,7 +43711,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.31572",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.31572"
     },
     {
@@ -43125,7 +44545,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.30675",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.30888",
@@ -44319,7 +45739,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.31111",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.31649",
@@ -49164,7 +50584,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.31089",
       "firstSeenAt": "2026-10-23T05:25:58.896086+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.30950",
@@ -52751,7 +54171,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.29927",
       "firstSeenAt": "2026-10-22T05:19:14.960775+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.29927"
     },
     {
@@ -52888,7 +54308,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.28679",
       "firstSeenAt": "2026-10-22T05:19:14.960775+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.28679"
     },
     {
@@ -52984,7 +54404,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.29477",
       "firstSeenAt": "2026-10-22T05:19:14.960775+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.29477"
     },
     {
@@ -53095,7 +54515,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.29139",
       "firstSeenAt": "2026-10-22T05:19:14.960775+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.29139"
     },
     {
@@ -53163,7 +54583,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.29552",
       "firstSeenAt": "2026-10-22T05:19:14.960775+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.29552"
     },
     {
@@ -53293,7 +54713,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.29003",
       "firstSeenAt": "2026-10-22T05:19:14.960775+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.29003"
     },
     {
@@ -53328,7 +54748,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.30132",
       "firstSeenAt": "2026-10-22T05:19:14.960775+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.30132"
     },
     {
@@ -63356,7 +64776,7 @@
       "announceDate": "2026-10-21",
       "id": "arxiv:2610.27954",
       "source": "arxiv",
-      "upvotes": 33,
+      "upvotes": 34,
       "topics": [
         "Evaluation"
       ],
@@ -63365,7 +64785,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.27954",
       "firstSeenAt": "2026-10-21T05:15:29.211346+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.27954"
     },
     {
@@ -63683,7 +65103,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.27782",
       "firstSeenAt": "2026-10-21T05:15:29.211346+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.27782"
     },
     {
@@ -63859,7 +65279,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.27100",
       "firstSeenAt": "2026-10-21T05:15:29.211346+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.27100"
     },
     {
@@ -63888,7 +65308,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.27597",
       "firstSeenAt": "2026-10-21T05:15:29.211346+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.27597"
     },
     {
@@ -64749,7 +66169,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.28397",
       "firstSeenAt": "2026-10-21T05:15:29.211346+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.27698",
@@ -68537,7 +69957,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.28229",
       "firstSeenAt": "2026-10-21T05:15:29.211346+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.28316",
@@ -70667,7 +72087,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.27877",
       "firstSeenAt": "2026-10-21T05:15:29.211346+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.27692",
@@ -77259,7 +78679,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.24520",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.24520"
     },
     {
@@ -77642,7 +79062,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23928",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.23928"
     },
     {
@@ -78186,7 +79606,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.26185",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.26185"
     },
     {
@@ -78329,7 +79749,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.24481",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.24481"
     },
     {
@@ -82019,7 +83439,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.26826",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.25678",
@@ -82824,7 +84244,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.26730",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.25458",
@@ -84050,7 +85470,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.25418",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.25493",
@@ -84584,7 +86004,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.26002",
       "firstSeenAt": "2026-10-20T05:15:49.753565+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.26664",
@@ -98882,7 +100302,7 @@
       "url": "https://arxiv.org/abs/2610.23479",
       "hfUrl": "https://huggingface.co/papers/2610.23479",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.23181",
@@ -99146,7 +100566,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22740",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22740"
     },
     {
@@ -99540,7 +100960,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22507",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22507"
     },
     {
@@ -99664,7 +101084,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22990",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22990"
     },
     {
@@ -99698,7 +101118,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23234",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.23234"
     },
     {
@@ -99939,7 +101359,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.22684",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.22684"
     },
     {
@@ -111664,7 +113084,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21240",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21240"
     },
     {
@@ -111926,7 +113346,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14018",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.14018"
     },
     {
@@ -112181,7 +113601,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21109",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21109"
     },
     {
@@ -112215,7 +113635,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21561",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21561"
     },
     {
@@ -112323,7 +113743,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.20832",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.20832"
     },
     {
@@ -112361,7 +113781,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21791",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.21791"
     },
     {
@@ -112432,7 +113852,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.23656",
       "firstSeenAt": "2026-10-19T05:12:30.713434+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.23656"
     },
     {
@@ -114765,7 +116185,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.21450",
       "firstSeenAt": "2026-10-16T04:57:12.260189+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.22167",
@@ -125129,7 +126549,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19687",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19687"
     },
     {
@@ -125415,7 +126835,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19025",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19025"
     },
     {
@@ -125784,7 +127204,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19589",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.19589"
     },
     {
@@ -137868,7 +139288,7 @@
       "url": "https://arxiv.org/abs/2610.15166",
       "hfUrl": "https://huggingface.co/papers/2610.15166",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "submittedDate": "2026-10-10",
       "announceDate": "2026-10-14"
     },
@@ -139844,7 +141264,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.18683",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.18683"
@@ -139884,7 +141304,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.16927",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14",
       "hfUrl": "https://huggingface.co/papers/2610.16927"
@@ -140484,7 +141904,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14253",
       "firstSeenAt": "2026-10-14T21:59:26.870418+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.14253"
     },
     {
@@ -140702,7 +142122,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.14465",
       "firstSeenAt": "2026-10-14T12:21:42.644378+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.14465"
     },
     {
@@ -144297,7 +145717,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17613",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "submittedDate": "2026-10-13",
       "announceDate": "2026-10-14"
     },
@@ -147143,7 +148563,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.15620",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "submittedDate": "2026-10-11",
       "announceDate": "2026-10-14"
     },
@@ -151453,7 +152873,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.15884",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "submittedDate": "2026-10-11",
       "announceDate": "2026-10-14"
     },
@@ -152597,7 +154017,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17009",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "submittedDate": "2026-10-12",
       "announceDate": "2026-10-14"
     },
@@ -158512,7 +159932,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.19772",
       "firstSeenAt": "2026-10-15T05:08:41.054114+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.19774",
@@ -170756,7 +172176,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.17528",
       "firstSeenAt": "2026-10-14T05:19:37.181315+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.17922",
@@ -186423,7 +187843,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.10942",
       "firstSeenAt": "2026-10-09T01:27:54.563218+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "submittedDate": "2026-10-07",
       "announceDate": "2026-10-09"
     },
@@ -191999,7 +193419,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.11773",
       "firstSeenAt": "2026-10-09T22:54:57.623037+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.12391",
@@ -213587,7 +215007,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.08586",
       "firstSeenAt": "2026-10-07T06:25:18.514196+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2610.08033",
@@ -260919,7 +262339,7 @@
       ],
       "url": "https://arxiv.org/abs/2610.01352",
       "firstSeenAt": "2026-10-02T06:07:04.821113+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "hfUrl": "https://huggingface.co/papers/2610.01352"
     },
     {
@@ -277402,6 +278822,45 @@
       "hfUrl": "https://huggingface.co/papers/2610.02054"
     },
     {
+      "pid": "2610.00854",
+      "title": "Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena",
+      "abstract": "Frontier vision-language models (VLMs) combine scene estimation, interaction grounding, and executable actions. Understanding how these abilities support complete robotic tasks is central to evaluating their readiness as robot generalists. We introduce Embodied Agent Arena to examine where local competence supports, or falls short of, complete task success across Geometry, Spatial Reasoning, Affordance, Task Planning, and Manipulation. The arena contains 1,000 cases drawn from 32 established sources and GeoProbe, our new benchmark for geometric estimation on Blender renders and real-scene images. A minimal harness preserves source observations and operations while separating metric precision, functional grounding, and native goal completion. We evaluate seven VLMs, analyze Astra's task-specific advantages, and compare richer-observation execution protocols and multi-round review. Across the arena, Astra's advantage is strongest in precise estimation and usable-contact localization; completing coordinated, goal-directed actions remains the key gap to robot generalism.",
+      "date": "2026-10-01",
+      "authors": [
+        "Haojian Huang",
+        "Pukun Zhao",
+        "Zexi Li",
+        "Yehang Zhang",
+        "Yangkai Wei",
+        "Wenqian Li",
+        "Han Yang",
+        "Kaiwen Zhou",
+        "Ying-Cong Chen",
+        "Yinchuan Li"
+      ],
+      "arxiv": "https://arxiv.org/abs/2610.00854",
+      "pdf": "https://arxiv.org/pdf/2610.00854.pdf",
+      "id": "arxiv:2610.00854",
+      "source": "arxiv",
+      "upvotes": 79,
+      "topics": [
+        "VLM Training",
+        "Reasoning",
+        "Planning",
+        "Evaluation"
+      ],
+      "tags": [
+        "VLM Training",
+        "Reasoning",
+        "Planning",
+        "Evaluation"
+      ],
+      "url": "https://arxiv.org/abs/2610.00854",
+      "firstSeenAt": "2026-10-02T06:07:04.821113+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
+      "hfUrl": "https://huggingface.co/papers/2610.00854"
+    },
+    {
       "pid": "2609.39027",
       "title": "A Missing Piece for Trustworthy AI Reviewers: From Benchmarking Rhetorical Robustness to SciCore Review",
       "abstract": "AI reviewers can assign different judgments to manuscripts that report the same science in different wording, potentially rewarding rhetorical optimization over scientific improvement. We formulate Rhetorical Robustness as the joint requirement of stability across content-preserving rewrites and discrimination across papers. We introduce RobustReview, a controlled full-manuscript benchmark with 1,260 manuscript versions, and evaluate 30 reviewer configurations. The benchmark reveals false robustness, where low rewrite sensitivity coincides with score collapse across papers, and shows that human alignment and rhetorical robustness rank reviewers differently. Moreover, the evaluated content-focused prompting protocol does not consistently improve robustness across backbones. Motivated by these findings, we introduce SciCore, a dual-branch reviewer that averages a full-manuscript judgment with a judgment based on an extracted, structured science core. This design combines manuscript-level assessment with a content-normalized view intended to reduce rhetorical sensitivity. In our primary GPT-5.5 comparison, SciCore achieves a leading joint stability-discrimination profile among the benchmarked reviewers while maintaining competitive human alignment. These results identify rhetorical robustness as a distinct evaluation target and demonstrate the potential of science-core review to improve it.",
@@ -277598,45 +279057,6 @@
       "firstSeenAt": "2026-10-01T10:29:38.822336+00:00",
       "lastSeenAt": "2026-10-18T23:38:49.492362+00:00",
       "hfUrl": "https://huggingface.co/papers/2609.39071"
-    },
-    {
-      "pid": "2610.00854",
-      "title": "Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena",
-      "abstract": "Frontier vision-language models (VLMs) combine scene estimation, interaction grounding, and executable actions. Understanding how these abilities support complete robotic tasks is central to evaluating their readiness as robot generalists. We introduce Embodied Agent Arena to examine where local competence supports, or falls short of, complete task success across Geometry, Spatial Reasoning, Affordance, Task Planning, and Manipulation. The arena contains 1,000 cases drawn from 32 established sources and GeoProbe, our new benchmark for geometric estimation on Blender renders and real-scene images. A minimal harness preserves source observations and operations while separating metric precision, functional grounding, and native goal completion. We evaluate seven VLMs, analyze Astra's task-specific advantages, and compare richer-observation execution protocols and multi-round review. Across the arena, Astra's advantage is strongest in precise estimation and usable-contact localization; completing coordinated, goal-directed actions remains the key gap to robot generalism.",
-      "date": "2026-10-01",
-      "authors": [
-        "Haojian Huang",
-        "Pukun Zhao",
-        "Zexi Li",
-        "Yehang Zhang",
-        "Yangkai Wei",
-        "Wenqian Li",
-        "Han Yang",
-        "Kaiwen Zhou",
-        "Ying-Cong Chen",
-        "Yinchuan Li"
-      ],
-      "arxiv": "https://arxiv.org/abs/2610.00854",
-      "pdf": "https://arxiv.org/pdf/2610.00854.pdf",
-      "id": "arxiv:2610.00854",
-      "source": "arxiv",
-      "upvotes": 53,
-      "topics": [
-        "VLM Training",
-        "Reasoning",
-        "Planning",
-        "Evaluation"
-      ],
-      "tags": [
-        "VLM Training",
-        "Reasoning",
-        "Planning",
-        "Evaluation"
-      ],
-      "url": "https://arxiv.org/abs/2610.00854",
-      "firstSeenAt": "2026-10-02T06:07:04.821113+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
-      "hfUrl": "https://huggingface.co/papers/2610.00854"
     },
     {
       "pid": "2609.40097",
@@ -398814,7 +400234,7 @@
       ],
       "url": "https://arxiv.org/abs/2609.22231",
       "firstSeenAt": "2026-09-22T05:22:10.987909+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "pid": "2609.22234",
@@ -621394,7 +622814,7 @@
       ],
       "url": "https://arxiv.org/abs/2608.22061",
       "firstSeenAt": "2026-08-25T02:11:39.442727+00:00",
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00",
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00",
       "submittedDate": "2026-08-22",
       "announceDate": "2026-08-25"
     },
@@ -708538,7 +709958,7 @@
       ],
       "firstSeenAt": "1970-01-01T00:00:00+00:00",
       "firstSeenAtEstimated": true,
-      "lastSeenAt": "2026-11-05T20:18:12.358765+00:00"
+      "lastSeenAt": "2026-11-06T01:51:20.793493+00:00"
     },
     {
       "id": "s2:2e71910a6309a080787ae5a2b5f917b6903ec59d",
