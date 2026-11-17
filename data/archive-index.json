@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-17T04:12:54.614590+00:00",
-  "archiveTotal": 31227,
+  "generatedAt": "2026-11-17T16:37:15.610326+00:00",
+  "archiveTotal": 31226,
   "topicCounts": {
     "Code Agent": 1262,
     "Evaluation": 17150,
     "LLM Training": 4016,
     "Reasoning": 8255,
     "Tool Use": 1492,
-    "Reflection": 1113,
+    "Reflection": 1112,
     "Post-Training": 3414,
     "Alignment": 4009,
     "Fine-tuning": 4856,
@@ -21,7 +21,7 @@
     "Hallucination": 1333,
     "Data Engine": 625,
     "Agent Safety": 2802,
-    "Planning": 2268,
+    "Planning": 2267,
     "Memory": 613,
     "World Model": 622,
     "Agent Framework": 990,
@@ -33,11 +33,11 @@
   "years": [
     {
       "year": "2026",
-      "count": 27927,
+      "count": 27926,
       "months": [
         {
           "month": "2026-11",
-          "count": 2284
+          "count": 2283
         },
         {
           "month": "2026-10",
